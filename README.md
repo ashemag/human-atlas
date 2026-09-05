@@ -8,6 +8,7 @@ An interactive 3D anatomy explorer built with React, Three.js, and shadcn/ui. Ta
 
 - Orbit, zoom, and select structures directly on the body.
 - Toggle individual systems or use skeleton and organ presets.
+- Focus a body region — head and neck, torso, abdomen, arm, pelvis and hips, or legs — while keeping the current system filters.
 - Move from assembled anatomy to a spaced inventory of every visible piece.
 - Search anatomical names and source identifiers.
 - Isolate a selected structure and read its details.

@@ -20,7 +20,45 @@ export interface Part {id:string;name:string;conceptId:string;system:SystemId;ch
 export interface Concept {id:string;name:string;elements:string[]}
 export interface Atlas {version:string;sex?:'male';source?:string;scope?:string;parts:Part[];concepts:Concept[];chunks:{url:string;bytes:number;gzip?:string;gzipBytes?:number}[];triangles:number}
 export type View = 'three-quarter'|'front'|'back'|'side';
-export interface SceneState {inspectorOpen?:boolean;explode:number;visible:SystemId[];selected:string[];isolate:boolean;view:View;rotate:boolean;reset:number}
+export type RegionId='head-neck'|'torso'|'abdomen'|'arm'|'pelvis'|'legs';
+export const REGIONS:{id:RegionId;name:string;label:string}[]=[
+ {id:'head-neck',name:'Head & neck',label:'Head'},
+ {id:'torso',name:'Torso',label:'Torso'},
+ {id:'abdomen',name:'Abdomen',label:'Abdomen'},
+ {id:'arm',name:'Arm',label:'Arm'},
+ {id:'pelvis',name:'Pelvis & hips',label:'Pelvis'},
+ {id:'legs',name:'Legs',label:'Legs'},
+];
+export interface SceneState {inspectorOpen?:boolean;explode:number;visible:SystemId[];selected:string[];isolate:boolean;region:RegionId|null;view:View;rotate:boolean;reset:number}
+/** Body-normalized Y of C7 vs T1: head/neck includes C7 and above. */
+export const REGION_Y={head:0.835,torso:0.7,abdomen:0.56,pelvis:0.45,arm:0.48,shoulder:0.73} as const;
+const ARM_LATERAL=0.22,SHOULDER_LATERAL=0.165;
+const ARM_NAME=/\b(clavicle|scapula|subclavius)\b/i;
+export function bodyBounds(parts:Part[]):[number[],number[]]{
+ const min=[Infinity,Infinity,Infinity],max=[-Infinity,-Infinity,-Infinity];
+ for(const p of parts)for(let i=0;i<3;i++){min[i]=Math.min(min[i],p.bounds[0][i]);max[i]=Math.max(max[i],p.bounds[1][i]);}
+ return [min,max];
+}
+/** Assign each mesh to one region from its AABB centroid in the atlas body box. Shoulder girdle names override a too-medial clavicle/scapula. */
+export function partRegion(part:Part,body:[number[],number[]]):RegionId{
+ if(ARM_NAME.test(part.name))return 'arm';
+ const [min,max]=body,size=[max[0]-min[0],max[1]-min[1]];
+ const cx=(part.bounds[0][0]+part.bounds[1][0])/2,cy=(part.bounds[0][1]+part.bounds[1][1])/2;
+ const ny=size[1]>0?(cy-min[1])/size[1]:0,lat=size[0]>0?Math.abs((cx-min[0])/size[0]-.5):0;
+ if(ny>=REGION_Y.head)return 'head-neck';
+ if(ny>=REGION_Y.arm&&ny<REGION_Y.head&&(lat>=ARM_LATERAL||ny>=REGION_Y.shoulder&&lat>=SHOULDER_LATERAL))return 'arm';
+ if(ny>=REGION_Y.torso)return 'torso';
+ if(ny>=REGION_Y.abdomen)return 'abdomen';
+ if(ny>=REGION_Y.pelvis)return 'pelvis';
+ return 'legs';
+}
+export function isPartVisible(part:Part,state:Pick<SceneState,'visible'|'selected'|'isolate'|'region'>,body:[number[],number[]]){
+ if(state.isolate)return state.selected.includes(part.id);
+ const selected=state.selected.includes(part.id);
+ if(!state.visible.includes(part.system)&&!selected)return false;
+ if(state.region&&partRegion(part,body)!==state.region&&!selected)return false;
+ return true;
+}
 export const DEFAULT_VISIBLE:SystemId[] = ['cardiac','sensory','skeletal','muscular','arterial','venous','nervous','respiratory','digestive','urinary','lymphatic','endocrine','reproductive','connective'];
 export const EXPLANATIONS:Record<string,string> = {
  'heart':'A muscular pump in the chest. Its right side sends blood to the lungs; its left side sends blood through the systemic circulation.',
