@@ -40,9 +40,9 @@ for (const file of ['atlas.json']) {
    'head-neck':['Mandible','Frontal bone','Atlas','Seventh cervical vertebra','Hyoid bone'],
    torso:['Body of sternum','First thoracic vertebra','Trachea','Cavity of left ventricle'],
    abdomen:['Stomach','Spleen','Pancreas','Left kidney','Caudate lobe of liver'],
-   arm:['Left humerus','Left radius','Left scapula','Left clavicle','Left hamate'],
+   arm:['Left humerus','Left radius','Left scapula','Left clavicle','Left hamate','Distal phalanx of left index finger','Distal phalanx of left middle finger','Proximal phalanx of left thumb','Set of lumbricals of left hand'],
    pelvis:['Left hip bone','Sacrum','Urinary bladder','Prostate'],
-   legs:['Left femur','Left tibia','Left patella','Left talus']
+   legs:['Left femur','Left tibia','Left patella','Left talus','Distal phalanx of left big toe']
   };
   for(const [region,names] of Object.entries(expect))for(const name of names){
    assert.ok(named[name],`missing landmark ${name}`);
@@ -55,6 +55,11 @@ for (const file of ['atlas.json']) {
   assert.ok(!headBones.some(p=>p.name==='Left femur'));
   assert.ok(headBones.length<wholeBones.length);
   assert.ok(whole.length>headBones.length);
+  const handMisplaced=atlas.parts.filter(p=>{
+   const region=partRegion(p,body),n=p.name.toLowerCase();
+   return (region==='pelvis'||region==='legs')&&/finger|thumb|pollicis|interossei of (left|right) hand|lumbricals of (left|right) hand/.test(n)&&!/\btoe\b/.test(n);
+  });
+  assert.equal(handMisplaced.length,0,`hands still in pelvis/legs: ${handMisplaced.map(p=>p.name).slice(0,8).join(', ')}`);
   console.log(`${file}: regional clusters cover ${REGIONS.map(r=>`${r.label} ${counts[r.id]}`).join(', ')}.`);
 }
 const tap=new PointerTap();

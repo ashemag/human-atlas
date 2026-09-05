@@ -30,8 +30,8 @@ export const REGIONS:{id:RegionId;name:string;label:string}[]=[
  {id:'legs',name:'Legs',label:'Legs'},
 ];
 export interface SceneState {inspectorOpen?:boolean;explode:number;visible:SystemId[];selected:string[];isolate:boolean;region:RegionId|null;view:View;rotate:boolean;reset:number}
-/** Body-normalized Y of C7 vs T1: head/neck includes C7 and above. */
-export const REGION_Y={head:0.835,torso:0.7,abdomen:0.56,pelvis:0.45,arm:0.48,shoulder:0.73} as const;
+/** Body-normalized Y of C7 vs T1: head/neck includes C7 and above. Arm floor sits below hanging fingertips, still above the femoral centroid. */
+export const REGION_Y={head:0.835,torso:0.7,abdomen:0.56,pelvis:0.45,arm:0.41,shoulder:0.73} as const;
 const ARM_LATERAL=0.22,SHOULDER_LATERAL=0.165;
 const ARM_NAME=/\b(clavicle|scapula|subclavius)\b/i;
 export function bodyBounds(parts:Part[]):[number[],number[]]{
