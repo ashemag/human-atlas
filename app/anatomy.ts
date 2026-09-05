@@ -29,7 +29,27 @@ export const REGIONS:{id:RegionId;name:string;label:string}[]=[
  {id:'pelvis',name:'Pelvis & hips',label:'Pelvis'},
  {id:'legs',name:'Legs',label:'Legs'},
 ];
-export interface SceneState {inspectorOpen?:boolean;explode:number;visible:SystemId[];selected:string[];isolate:boolean;region:RegionId|null;view:View;rotate:boolean;reset:number}
+export type AreaId='orbit'|'willis'|'brainstem'|'larynx'|'heart'|'lung-root'|'porta'|'celiac'|'kidneys'|'brachial-plexus'|'axilla'|'cubital'|'wrist'|'hand'|'pelvic-viscera'|'popliteal'|'foot';
+export const AREAS:{id:AreaId;name:string;regions:RegionId[];match:RegExp}[]=[
+ {id:'orbit',name:'Orbit',regions:['head-neck'],match:/(choroid|cornea|iris|sclera|lens|eyeball|optic nerve|optic chiasm|optic tract|ophthalmic nerve|lacrimal nerve|oculomotor|trochlear nerve|nasociliary|ciliary ganglion|ciliary nerve|frontal nerve|infratrochlear|supra-orbital nerve|supratrochlear|check ligament|levator palpebrae|trochlea of (left|right) superior oblique|(left|right) (inferior|superior|lateral|medial) rectus|(left|right) (inferior|superior) oblique)/i},
+ {id:'willis',name:'Circle of Willis',regions:['head-neck'],match:/(anterior communicating|posterior communicating|precommunicating part|cerebral arterial circle|basilar artery|internal carotid|vertebral artery|postcommunicating)/i},
+ {id:'brainstem',name:'Brainstem',regions:['head-neck'],match:/(medulla oblongata|^pons$|midbrain|cerebral aqueduct|(inferior|superior) colliculus|peduncle of midbrain|interpeduncular)/i},
+ {id:'larynx',name:'Larynx',regions:['head-neck'],match:/(crico-arytenoid|thyro-arytenoid|arytenoid|epiglot|vocalis|cricoid|thyroid cartilage|hyoid bone|cricothyroid|vocal ligament|conus elasticus|aryepiglottic)/i},
+ {id:'heart',name:'Heart',regions:['torso'],match:/(cavity of (left|right) (ventricle|atrium)|mitral|tricuspid|(aortic|pulmonary) valve|cusp of|wall of ventricle|papillary muscle|coronary (artery|sinus)|ascending aorta|arch of aorta)/i},
+ {id:'lung-root',name:'Lung roots',regions:['torso'],match:/(main bronchus|pulmonary arter|pulmonary vein)/i},
+ {id:'porta',name:'Porta hepatis',regions:['abdomen'],match:/(portal vein|hepatic artery|bile duct|cystic duct|hepatic duct|gallbladder|caudate lobe of liver)/i},
+ {id:'celiac',name:'Celiac trunk',regions:['abdomen'],match:/(celiac trunk|celiac artery|splenic artery|left gastric|common hepatic artery|hepatic artery proper)/i},
+ {id:'kidneys',name:'Kidneys',regions:['abdomen'],match:/(kidney|adrenal|suprarenal|renal arter|renal vein)/i},
+ {id:'brachial-plexus',name:'Brachial plexus',regions:['arm','head-neck'],match:/(scalenus|subclavius|subclavian artery|subclavian vein|axillary artery|axillary vein|clavicle|thoraco-acromial|circumflex humeral|circumflex scapular|subscapular artery|subscapular vein|thoracodorsal artery|thoracodorsal vein|vertebral artery)/i},
+ {id:'axilla',name:'Axilla',regions:['arm'],match:/(axillary (artery|vein)|subscapular|thoracodorsal|circumflex (humeral|scapular)|latissimus|teres major|teres minor|pectoralis minor)/i},
+ {id:'cubital',name:'Cubital fossa',regions:['arm'],match:/(median cubital|brachialis|anconeus|ulnar recurrent|radial recurrent|ulnar collateral|recurrent interosseous)/i},
+ {id:'wrist',name:'Wrist',regions:['arm'],match:/(flexor retinaculum of .+ wrist|scaphoid|lunate|triquetral|pisiform|hamate|capitate|trapezium|trapezoid)/i},
+ {id:'hand',name:'Hand',regions:['arm'],match:/(finger|thumb|pollic|metacar|thenar|palmar digital|interossei of (left|right) hand|lumbricals of (left|right) hand|opponens|abductor digiti minimi of (left|right) hand|dorsal venous network of .+ hand)/i},
+ {id:'pelvic-viscera',name:'Pelvic viscera',regions:['pelvis'],match:/(urinary bladder|prostate|rectum|seminal|deferent|epididymis|testis)/i},
+ {id:'popliteal',name:'Popliteal fossa',regions:['legs'],match:/(popliteal|popliteus|genicular)/i},
+ {id:'foot',name:'Foot',regions:['legs'],match:/\b(foot|toe|talus|calcaneus|metatars|cuneiform|navicular|cuboid|plantar|hallucis|dorsal venous arch of .+ foot)/i},
+];
+export interface SceneState {inspectorOpen?:boolean;explode:number;visible:SystemId[];selected:string[];isolate:boolean;region:RegionId|null;area:AreaId|null;view:View;rotate:boolean;reset:number}
 /** Body-normalized Y of C7 vs T1: head/neck includes C7 and above. Arm floor sits below hanging fingertips, still above the femoral centroid. */
 export const REGION_Y={head:0.835,torso:0.7,abdomen:0.56,pelvis:0.45,arm:0.41,shoulder:0.73} as const;
 const ARM_LATERAL=0.22,SHOULDER_LATERAL=0.165;
@@ -52,10 +72,17 @@ export function partRegion(part:Part,body:[number[],number[]]):RegionId{
  if(ny>=REGION_Y.pelvis)return 'pelvis';
  return 'legs';
 }
-export function isPartVisible(part:Part,state:Pick<SceneState,'visible'|'selected'|'isolate'|'region'>,body:[number[],number[]]){
+export function partInArea(part:Part,areaId:AreaId,body:[number[],number[]]){
+ const area=AREAS.find(a=>a.id===areaId);if(!area||!area.match.test(part.name))return false;
+ if(area.id==='hand'&&partRegion(part,body)!=='arm')return false;
+ if(area.id==='foot'&&partRegion(part,body)!=='legs')return false;
+ return true;
+}
+export function isPartVisible(part:Part,state:Pick<SceneState,'visible'|'selected'|'isolate'|'region'|'area'>,body:[number[],number[]]){
  if(state.isolate)return state.selected.includes(part.id);
  const selected=state.selected.includes(part.id);
  if(!state.visible.includes(part.system)&&!selected)return false;
+ if(state.area)return selected||partInArea(part,state.area,body);
  if(state.region&&partRegion(part,body)!==state.region&&!selected)return false;
  return true;
 }
