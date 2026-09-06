@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # The floor declared in package.json engines, and current.
+        node: ['22.13', '24']
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+
+      - run: npm ci
+
+      - name: Typecheck
+        run: npm run check
+
+      - name: Lint
+        run: npm run lint
+
+      # The validators read the committed binaries, so they catch a manifest that
+      # no longer matches its geometry — the failure mode most likely to reach a
+      # deploy unnoticed, since the viewer only breaks once a chunk is fetched.
+      - name: Validate atlas
+        run: node scripts/validate-atlas.mjs
+
+      - name: Validate interactions
+        run: node scripts/validate-interactions.mjs
+
+      - name: Build
+        run: npm run build
