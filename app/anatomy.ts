@@ -18,7 +18,7 @@ export const SYSTEMS: {id:SystemId;name:string;color:string;description:string}[
 ];
 export interface Part {id:string;name:string;conceptId:string;system:SystemId;chunk:number;positions:number;normals:number;indices:number;vertexCount:number;indexCount:number;bounds:[number[],number[]]}
 export interface Concept {id:string;name:string;elements:string[]}
-export interface Atlas {version:string;sex?:'male';source?:string;scope?:string;parts:Part[];concepts:Concept[];chunks:{url:string;bytes:number;gzip?:string;gzipBytes?:number}[];triangles:number}
+export interface Atlas {version:string;sex?:'male';source?:string;scope?:string;parts:Part[];concepts:Concept[];chunks:{url:string;bytes:number;gzip?:string;gzipBytes?:number;system?:SystemId;parts?:number}[];triangles:number}
 export type View = 'three-quarter'|'front'|'back'|'side';
 export interface SceneState {inspectorOpen?:boolean;explode:number;visible:SystemId[];selected:string[];isolate:boolean;view:View;rotate:boolean;reset:number}
 export const DEFAULT_VISIBLE:SystemId[] = ['cardiac','sensory','skeletal','muscular','arterial','venous','nervous','respiratory','digestive','urinary','lymphatic','endocrine','reproductive','connective'];
@@ -32,5 +32,39 @@ export const EXPLANATIONS:Record<string,string> = {
  'urinary bladder':'A muscular reservoir in the pelvis that stores urine arriving from the kidneys through the ureters.',
  'trachea':'The main airway connecting the larynx to the bronchi. Its cartilage supports keep the airway open during breathing.',
  'diaphragm':'A broad muscle separating the chest and abdomen. When it contracts, it increases chest volume and helps draw air into the lungs.',
+ 'kidney':'A paired organ at the back of the abdomen. Its nephrons filter blood, reabsorb what the body needs, and produce urine that drains into the ureter.',
+ 'ureter':'A muscular tube carrying urine from the kidney to the bladder. Waves of contraction move urine along it rather than gravity alone.',
+ 'urethra':'The final passage carrying urine from the bladder out of the body.',
+ 'right lung':'The right lung has three lobes. Air arriving through the bronchial tree reaches alveoli, where oxygen and carbon dioxide exchange with the blood.',
+ 'left lung':'The left lung has two lobes, leaving room for the heart. Its bronchial tree ends in alveoli where gas exchange takes place.',
+ 'bronchus':'The airways branching from the trachea into each lung, dividing repeatedly into smaller passages that end at the alveoli.',
+ 'esophagus':'A muscular tube from the pharynx to the stomach. Coordinated waves of contraction carry swallowed food downward.',
+ 'small intestine':'The long, coiled segment where most chemical digestion and nutrient absorption occur, beginning at the duodenum.',
+ 'large intestine':'The final segment of the digestive tract. It absorbs water and salts and forms and stores the residue for elimination.',
+ 'duodenum':'The first part of the small intestine. Bile and pancreatic enzymes enter here to continue digestion.',
+ 'gallbladder':'A small sac beneath the liver that concentrates and stores bile, releasing it into the duodenum.',
+ 'rectum':'The terminal part of the large intestine, which stores residue before elimination.',
+ 'cecum':'The pouch at the start of the large intestine, where the small intestine joins it.',
+ 'testis':'A paired organ producing sperm and testosterone. Its seminiferous tubules are the site of sperm formation.',
+ 'epididymis':'A coiled duct on the testis where sperm mature and are stored before transport.',
+ 'seminal vesicle':'A paired gland contributing much of the fluid volume of semen, including sugars that support sperm.',
+ 'prostate':'A gland surrounding the start of the urethra. Its secretions form part of the seminal fluid.',
 };
+
+/** Focused study modes.
+ *
+ * Each mode narrows the atlas to the systems one topic actually needs, which
+ * with system-pure chunks is also all that gets downloaded. `systems` is kept
+ * deliberately tight: the heart concept, for example, reaches into muscular,
+ * arterial and venous geometry, and pulling those in would cost 19 MB to look
+ * at the chambers and valves.
+ */
+export interface Mode {id:string;name:string;systems:SystemId[];focus:string;summary:string;tour:string[]}
+export const MODES: Mode[] = [
+ {id:'heart',name:'Heart',systems:['cardiac'],focus:'FMA7088',summary:'Chambers, valves and septa of the four-chambered pump.',tour:['FMA7088']},
+ {id:'respiratory',name:'Respiratory',systems:['respiratory'],focus:'FMA7394',summary:'The airway from the trachea through the bronchial tree into both lungs.',tour:['FMA7394','FMA7409','FMA7309','FMA7310']},
+ {id:'digestive',name:'Digestive',systems:['digestive'],focus:'FMA7148',summary:'The tract from esophagus to rectum, with the liver and pancreas.',tour:['FMA7131','FMA7148','FMA7206','FMA7200','FMA7201','FMA14544','FMA7197','FMA7202','FMA7198']},
+ {id:'kidney',name:'Kidney',systems:['urinary'],focus:'FMA7203',summary:'Kidneys, ureters, bladder and urethra as one drainage path.',tour:['FMA7203','FMA9704','FMA15900','FMA19667']},
+ {id:'reproductive',name:'Reproductive',systems:['reproductive'],focus:'FMA7210',summary:'Sperm production, maturation and transport, and the accessory glands.',tour:['FMA7210','FMA18255','FMA19386','FMA9600']},
+];
 export function explanation(name:string,system:SystemId){return EXPLANATIONS[name.toLowerCase()] ?? SYSTEMS.find(s=>s.id===system)?.description ?? '';}

@@ -58,9 +58,12 @@ export default function AnatomyScene({atlas,state,onSelect,onProgress,onError}:P
    };materials.push(m);return m;
   };
   const mats=new Map(SYSTEMS.map(s=>[s.id,materialFor(s.id)]));
-  let loaded=0;
-  const loadChunk=async(ci:number)=>{
-   const chunk=atlas.chunks[ci],compressed=!!chunk.gzip&&typeof DecompressionStream!=='undefined';const response=await fetch(compressed?chunk.gzip!:chunk.url,{signal:abort.signal});const buffer=await decodeModelResponse(response,chunk.bytes,compressed);if(disposed)return;
+  // Chunks are system-pure, so only the systems on screen are ever fetched.
+  // A manifest without `system` (the pre-repack shape) is treated as always
+  // required, which keeps this loader working against an older atlas.json.
+  const loadedChunks=new Set<number>(),pendingChunks=new Map<number,Promise<void>>();let requiredChunks=new Set<number>();
+  const report=()=>{let done=0;for(const ci of requiredChunks)if(loadedChunks.has(ci))done++;onProgress(requiredChunks.size?Math.round(done/requiredChunks.size*100):100);};
+  const buildChunk=(ci:number,buffer:ArrayBuffer)=>{
    const groups=new Map<string,T.BufferGeometry[]>();
    atlas.parts.forEach((p,i)=>{
     if(p.chunk!==ci)return;
@@ -72,14 +75,51 @@ export default function AnatomyScene({atlas,state,onSelect,onProgress,onError}:P
     const list=groups.get(p.system)??[];list.push(g);groups.set(p.system,list);
    });
    groups.forEach((gs,system)=>{const geometry=mergeGeometries(gs,false);if(!geometry)throw new Error('Could not assemble anatomy geometry.');geometries.push(geometry);const mesh=new T.Mesh(geometry,mats.get(system as never));mesh.frustumCulled=false;scene.add(mesh);});
-   lastState=null;loaded++;onProgress(Math.round(loaded/atlas.chunks.length*100));dirty=true;
   };
-  (async()=>{try{let cursor=0;await Promise.all(Array.from({length:3},async()=>{while(cursor<atlas.chunks.length){const i=cursor++;await loadChunk(i);}}));if(!disposed){ready=true;dirty=true;}}catch(e){if(!disposed)onError(e instanceof Error?e.message:'Could not load the anatomy.');}})();
+  const loadChunk=(ci:number)=>{
+   const existing=pendingChunks.get(ci);if(existing)return existing;
+   const task=(async()=>{
+    const chunk=atlas.chunks[ci],compressed=!!chunk.gzip&&typeof DecompressionStream!=='undefined';const response=await fetch(compressed?chunk.gzip!:chunk.url,{signal:abort.signal});const buffer=await decodeModelResponse(response,chunk.bytes,compressed);if(disposed)return;
+    buildChunk(ci,buffer);loadedChunks.add(ci);lastState=null;dirty=true;report();
+   })();
+   pendingChunks.set(ci,task);
+   // A failed chunk must not stay cached as pending, or its system can never load.
+   task.catch(()=>pendingChunks.delete(ci));
+   return task;
+  };
+  const chunksFor=(s:SceneState)=>{
+   const visible=new Set(s.visible),selection=new Set(s.selected),need=new Set<number>();
+   atlas.chunks.forEach((c,ci)=>{if(!c.system||visible.has(c.system))need.add(ci);});
+   if(selection.size)atlas.parts.forEach(p=>{if(selection.has(p.id))need.add(p.chunk);});
+   return need;
+  };
+  const ensureChunks=(s:SceneState)=>{
+   requiredChunks=chunksFor(s);report();
+   const queue=[...requiredChunks].filter(ci=>!loadedChunks.has(ci));
+   if(!queue.length){ready=true;return;}
+   ready=false;
+   let cursor=0;
+   const workers=Array.from({length:Math.min(3,queue.length)},async()=>{while(cursor<queue.length){const ci=queue[cursor++];await loadChunk(ci);}});
+   Promise.all(workers).then(()=>{if(!disposed&&[...requiredChunks].every(ci=>loadedChunks.has(ci))){ready=true;dirty=true;}}).catch(e=>{if(!disposed)onError(e instanceof Error?e.message:'Could not load the anatomy.');});
+  };
+  ensureChunks(latest.current);
+  const visibleBox=()=>{
+   const s=latest.current,visible=new Set(s.visible),selection=new Set(s.selected),box=new T.Box3();let count=0;
+   atlas.parts.forEach((p,i)=>{if(s.isolate?selection.has(p.id):visible.has(p.system)||selection.has(p.id)){box.union(bounds[i]);count++;}});
+   return count&&count<atlas.parts.length&&!box.isEmpty()?box:null;
+  };
   const fit=(view:string,extent=0)=>{
    const aspect=camera.aspect,mobile=el.clientWidth<768,normalDistance=mobile?Math.max(4.5,1.8*el.clientHeight/Math.max(160,el.clientHeight-350)/(2*Math.tan(T.MathUtils.degToRad(camera.fov/2)))):4;
    const reservedHeight=mobile?350:270;const availableAspect=Math.max(.35,(el.clientWidth-(mobile?40:340))/Math.max(160,el.clientHeight-reservedHeight));const atlasDistance=Math.max(packingHeight,packingWidth/availableAspect)/(2*Math.tan(T.MathUtils.degToRad(camera.fov/2)))*(el.clientHeight/Math.max(160,el.clientHeight-reservedHeight))*1.08;
    const distance=T.MathUtils.lerp(normalDistance,Math.max(.2,atlasDistance),extent);if(extent>.8)view='front';
    const direction=view==='front'?new T.Vector3(0,.02,1):view==='back'?new T.Vector3(0,.02,-1):view==='side'?new T.Vector3(1,.02,0):new T.Vector3(.35,.06,1).normalize();
+   const subset=extent<=.1&&!latest.current.isolate?visibleBox():null;
+   if(subset){
+    const size=subset.getSize(new T.Vector3()),center=subset.getCenter(new T.Vector3());
+    const heightScale=el.clientHeight/Math.max(160,el.clientHeight-reservedHeight),widthScale=el.clientWidth/Math.max(150,el.clientWidth-(mobile?40:340));
+    const framed=Math.max(size.y*heightScale,size.x*widthScale/camera.aspect,size.z)/(2*Math.tan(T.MathUtils.degToRad(camera.fov/2)))*1.5;
+    controls.target.copy(center);camera.position.copy(center).addScaledVector(direction,Math.max(.12,framed));controls.update();dirty=true;return;
+   }
    controls.target.set(extent>.1&&el.clientWidth>767?-packingWidth*.12:0,extent>.1||mobile?.85:.68,0);camera.position.copy(controls.target).addScaledVector(direction,distance);controls.update();dirty=true;
   };
   const resize=()=>{layoutKey='';lastState=null;renderer.setPixelRatio(Math.min(devicePixelRatio,el.clientWidth<768||el.clientHeight<600?1.5:2));camera.aspect=el.clientWidth/el.clientHeight;camera.updateProjectionMatrix();renderer.setSize(el.clientWidth,el.clientHeight);fit(latest.current.view,amount);};const observer=new ResizeObserver(resize);observer.observe(el);
@@ -98,6 +138,7 @@ export default function AnatomyScene({atlas,state,onSelect,onProgress,onError}:P
   const animate=()=>{
    if(disposed)return;frame=requestAnimationFrame(animate);const dt=Math.min(clock.getDelta(),.05),s=latest.current;
    const changed=lastState?.visible!==s.visible||lastState?.selected!==s.selected||lastState?.isolate!==s.isolate;
+   if(changed)ensureChunks(s);
    const moving=Math.abs(amount-s.explode)>.0001;
    if(moving){amount=T.MathUtils.damp(amount,s.explode,8,dt);dirty=true;}
    if(changed||moving||lastExtent<0){
