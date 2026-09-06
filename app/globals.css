@@ -86,3 +86,19 @@ h1 .edition{font-family:inherit;font-weight:500;font-size:10px;letter-spacing:.0
 @media(max-width:767px){body:has(.detail-sheet) .view-controls{visibility:hidden}}
 
 @media(max-height:600px) and (orientation:landscape){body:has(.detail-sheet) .bottom-dock{left:12px;right:324px;width:auto;transform:none;max-width:none;margin:0}}
+
+/* Focused study modes. Each chip shows what entering it downloads, which is
+   only meaningful because chunks are system-pure. */
+.mode-group{padding:2px 0 10px;border-bottom:1px solid #18253612}
+.mode-heading{display:flex;align-items:center;justify-content:space-between;font-size:11px;font-weight:600;letter-spacing:.04em;color:#8a949e;text-transform:uppercase;padding:0 3px 8px}
+.mode-exit{font-size:11px;color:#697582;padding:4px 7px;border-radius:6px;font-weight:500}
+.mode-list{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.mode-chip{display:flex;flex-direction:column;align-items:flex-start;gap:2px;min-height:44px;padding:7px 9px;border:1px solid var(--border);border-radius:9px;background:#ffffffd9;text-align:left}
+.mode-chip:hover{background:white}
+.mode-chip .mode-name{font-size:12px;font-weight:500;color:#394957;line-height:1.2}
+.mode-chip .mode-size{font-size:10px;font-variant-numeric:tabular-nums;color:#8a949e}
+.mode-chip[aria-pressed=true]{background:#263b480f;border-color:#263b4840}
+.mode-chip[aria-pressed=true] .mode-name{color:#233644}
+.mode-summary{font-size:11px;line-height:1.55;color:#78838f;margin:9px 3px 0}
+@media(max-width:767px){.mode-list{grid-template-columns:1fr 1fr 1fr}.mode-chip{min-height:48px}.mode-summary{display:none}}
+@media(max-height:600px) and (orientation:landscape){.mode-summary{display:none}.mode-group{padding-bottom:7px}}
