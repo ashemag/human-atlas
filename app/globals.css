@@ -87,5 +87,23 @@ h1 .edition{font-family:inherit;font-weight:500;font-size:10px;letter-spacing:.0
 
 @media(max-height:600px) and (orientation:landscape){body:has(.detail-sheet) .bottom-dock{left:12px;right:324px;width:auto;transform:none;max-width:none;margin:0}}
 
+/* Reserve space for the model choice and the female reference's scope. */
+.coverage-note{font-size:11px;line-height:1.4;color:#667481;margin:7px 0 0;max-width:245px}
+.anatomy-choice [data-slot=select-trigger]{min-height:44px}
+@media(max-width:767px) and (orientation:portrait){
+ .view-controls{top:max(190px,calc(env(safe-area-inset-top) + 172px))}
+ .search-panel{top:max(184px,calc(env(safe-area-inset-top) + 166px))}
+ .coverage-note{font-size:10px;max-width:240px}
+ .anatomy-search-results{max-height:min(360px,calc(100dvh - 295px))!important}
+}
+
+/* Shared navigation and route loading state. */
+.atlas-home-link{pointer-events:auto;text-decoration:none;border-radius:4px}
+.route-loading{height:100%;display:flex;flex-direction:column;gap:20px;align-items:center;justify-content:center;padding:24px;text-align:center}
+
+.breast-views{padding:10px 0 8px;border-bottom:1px solid #18253612;flex-shrink:0}.breast-views>span{font-size:11px;color:#65717e}.breast-views>div{display:flex;gap:4px;margin-top:6px}.breast-views button{flex:1;min-height:30px;padding:4px 6px;font-size:11px;border-radius:4px;color:#65717e}.breast-views button[aria-pressed=true]{background:#263b4812;color:#263b48}.breast-views p{font-size:10px;line-height:1.4;color:#75818d;margin:6px 0 0;min-height:28px}
+
+@media(max-width:767px){.breast-views button{min-height:44px}}
+
 /* Keep the longer atlas title clear of phone action buttons. */
 @media(max-width:767px){.identity h1{font-size:clamp(20px,5.6vw,28px)}.identity h1 .edition{display:none}}

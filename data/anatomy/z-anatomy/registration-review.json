@@ -1,0 +1,194 @@
+{
+  "method": "Rigid trimmed nearest-vertex ICP by corresponding bone; fixed meter scale",
+  "limitations": [
+    "Sampling-dependent vertex distances, not point-to-surface distances.",
+    "Source bones differ in shape; a low residual does not validate muscle attachments.",
+    "No female fit or anatomy review performed; no atlas geometry modified."
+  ],
+  "iterations": 40,
+  "sourceBinarySha256": "068fc9730e9fcec3340c96960b29e70756c6cc9565a9d6aca9655fc0cc0f9acc",
+  "sourceWorldToAtlasMatrix": [
+    [
+      0.9999960805222831,
+      -0.00027392775078749097,
+      0.00278637823316283,
+      -0.003921606119880497
+    ],
+    [
+      -0.002789885848303687,
+      -0.013768807740093897,
+      0.9999013133656584,
+      0.01882593983920744
+    ],
+    [
+      -0.00023553561159611277,
+      -0.9999051679519432,
+      -0.013769518000713965,
+      0.011417375970285124
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "scale": 1,
+  "determinant": 0.9999999999999991,
+  "metrics": [
+    {
+      "sourceObject": "Vertebra L1",
+      "atlasId": "FJ3157",
+      "usedForFit": true,
+      "rmsMm": 2.9986326658881968,
+      "medianMm": 2.649956064872987,
+      "p95Mm": 4.991308292763731,
+      "maxMm": 10.746990154103687
+    },
+    {
+      "sourceObject": "Vertebra L2",
+      "atlasId": "FJ3159",
+      "usedForFit": true,
+      "rmsMm": 2.88900287822297,
+      "medianMm": 2.4021846822310877,
+      "p95Mm": 4.971616881678669,
+      "maxMm": 8.873403053245125
+    },
+    {
+      "sourceObject": "Vertebra L3",
+      "atlasId": "FJ3162",
+      "usedForFit": true,
+      "rmsMm": 3.7928734504689405,
+      "medianMm": 3.2553548760976287,
+      "p95Mm": 6.058429681733879,
+      "maxMm": 15.943913061407036
+    },
+    {
+      "sourceObject": "Vertebra L4",
+      "atlasId": "FJ3165",
+      "usedForFit": true,
+      "rmsMm": 6.101301951559665,
+      "medianMm": 4.723409097303623,
+      "p95Mm": 10.610492330137792,
+      "maxMm": 14.552012149612658
+    },
+    {
+      "sourceObject": "Vertebra L5",
+      "atlasId": "FJ3168",
+      "usedForFit": true,
+      "rmsMm": 7.007041537987097,
+      "medianMm": 5.78817879289807,
+      "p95Mm": 11.748137020599687,
+      "maxMm": 13.814152869061278
+    },
+    {
+      "sourceObject": "Eleventh rib.l",
+      "atlasId": "FJ3226",
+      "usedForFit": true,
+      "rmsMm": 6.041733493777913,
+      "medianMm": 5.522307210314557,
+      "p95Mm": 9.717371361273138,
+      "maxMm": 12.451341965124332
+    },
+    {
+      "sourceObject": "Twelfth rib.l",
+      "atlasId": "FJ3227",
+      "usedForFit": true,
+      "rmsMm": 5.128221806921343,
+      "medianMm": 2.9671937961046986,
+      "p95Mm": 11.94984814401166,
+      "maxMm": 15.20604841602712
+    },
+    {
+      "sourceObject": "First rib.l",
+      "atlasId": "FJ3228",
+      "usedForFit": false,
+      "rmsMm": 12.528943866423502,
+      "medianMm": 12.318302827756769,
+      "p95Mm": 16.706043949206606,
+      "maxMm": 17.929261057996847
+    },
+    {
+      "sourceObject": "Eleventh rib.r",
+      "atlasId": "FJ3331",
+      "usedForFit": true,
+      "rmsMm": 6.2304325228790765,
+      "medianMm": 5.7051892618321105,
+      "p95Mm": 9.821075563515171,
+      "maxMm": 12.525523484250009
+    },
+    {
+      "sourceObject": "Twelfth rib.r",
+      "atlasId": "FJ3332",
+      "usedForFit": true,
+      "rmsMm": 4.95730600757057,
+      "medianMm": 2.9345282794112637,
+      "p95Mm": 11.315029260687787,
+      "maxMm": 14.722380519561732
+    },
+    {
+      "sourceObject": "First rib.r",
+      "atlasId": "FJ3334",
+      "usedForFit": false,
+      "rmsMm": 12.577322134117697,
+      "medianMm": 12.365466240896472,
+      "p95Mm": 16.76794320870876,
+      "maxMm": 18.330624329972604
+    },
+    {
+      "sourceObject": "Hip bone.l",
+      "atlasId": "FJ3288",
+      "usedForFit": false,
+      "rmsMm": 11.419274126835045,
+      "medianMm": 9.581198061321764,
+      "p95Mm": 18.966624321434907,
+      "maxMm": 20.99475861853754
+    },
+    {
+      "sourceObject": "Hip bone.r",
+      "atlasId": "FJ3152",
+      "usedForFit": false,
+      "rmsMm": 11.357441768619871,
+      "medianMm": 9.558292720032362,
+      "p95Mm": 18.688949110499845,
+      "maxMm": 22.214525507836683
+    },
+    {
+      "sourceObject": "Femur.l",
+      "atlasId": "FJ3259",
+      "usedForFit": false,
+      "rmsMm": 9.349908602412775,
+      "medianMm": 7.053505265725847,
+      "p95Mm": 16.81638898752509,
+      "maxMm": 23.509975683110667
+    },
+    {
+      "sourceObject": "Femur.r",
+      "atlasId": "FJ3365",
+      "usedForFit": false,
+      "rmsMm": 9.42680329491042,
+      "medianMm": 7.500806093772193,
+      "p95Mm": 16.413654937181068,
+      "maxMm": 22.193128244557105
+    },
+    {
+      "sourceObject": "Scapula.l",
+      "atlasId": "FJ3279",
+      "usedForFit": false,
+      "rmsMm": 10.851815652742074,
+      "medianMm": 9.917172278048957,
+      "p95Mm": 18.34130865713852,
+      "maxMm": 23.133502923802965
+    },
+    {
+      "sourceObject": "Scapula.r",
+      "atlasId": "FJ3384",
+      "usedForFit": false,
+      "rmsMm": 10.995933488710088,
+      "medianMm": 10.05861657608878,
+      "p95Mm": 18.193659456099585,
+      "maxMm": 21.914659467296335
+    }
+  ],
+  "reviewStatus": "Needs visual registration and attachment review before integration"
+}

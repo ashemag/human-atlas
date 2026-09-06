@@ -37,3 +37,7 @@ next-env.d.ts
 /outputs/
 /work/
 *.tsbuildinfo
+
+# Python anatomy tooling
+__pycache__/
+*.pyc

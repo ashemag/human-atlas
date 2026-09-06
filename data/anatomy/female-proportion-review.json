@@ -1,0 +1,499 @@
+{
+  "issue": "SWR-517",
+  "status": "Published after visual review; illustration-guided proportions, not an anatomical standard",
+  "references": [
+    "https://as2.ftcdn.net/v2/jpg/15/60/68/51/1000_F_1560685187_zEMPM1N0EJRxhuaZdNMZYvFaaz7TCT7n.jpg",
+    "https://as2.ftcdn.net/v2/jpg/14/70/93/01/1000_F_1470930188_f4Jov2p3B4BavIshxjOOmDtyqsGCGvyQ.jpg",
+    "https://sketchfab.com/3d-models/ecorche-female-musclenames-anatomy-cda17af4be354c8b8375ff0b1b8a5fe5",
+    "https://as2.ftcdn.net/v2/jpg/00/43/97/89/1000_F_43978903_YzhmBhtc7BjKEc4wph42Gx3zpGTzdJn2.jpg"
+  ],
+  "beforeManifestSha256": "44c57151d3ea87badd028def6a9668bd43a39cca601bc29af44363978728cc33",
+  "afterManifestSha256": "c8989ebb399f504637ca3be63ff760b942e7f455d071e3ecfaffd4d3104dc8ca",
+  "morphBefore": {
+    "stature": 0.95,
+    "lateralKnots": [
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.55,
+        1.0
+      ],
+      [
+        0.8,
+        1.05
+      ],
+      [
+        0.92,
+        1.1
+      ],
+      [
+        1.03,
+        1.1
+      ],
+      [
+        1.21,
+        0.96
+      ],
+      [
+        1.29,
+        0.95
+      ],
+      [
+        1.42,
+        0.91
+      ],
+      [
+        1.48,
+        0.91
+      ],
+      [
+        1.6,
+        1.0
+      ]
+    ],
+    "lateralRadius": 0.17,
+    "thoraxDepth": {
+      "scale": 0.96,
+      "ramp": [
+        1.05,
+        1.15,
+        1.35,
+        1.45
+      ]
+    },
+    "head": {
+      "scale": 0.95,
+      "center": [
+        0.0,
+        1.61,
+        -0.03
+      ],
+      "ramp": [
+        1.44,
+        1.56
+      ]
+    },
+    "nose": {
+      "plane": 0.062,
+      "scale": 0.52,
+      "center": [
+        0.0,
+        1.578
+      ],
+      "radius": [
+        0.03,
+        0.045
+      ],
+      "rampDepth": 0.012
+    }
+  },
+  "morphAfter": {
+    "stature": 0.95,
+    "lateralKnots": [
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.55,
+        1.0
+      ],
+      [
+        0.8,
+        1.08
+      ],
+      [
+        0.92,
+        1.22
+      ],
+      [
+        1.03,
+        1.22
+      ],
+      [
+        1.12,
+        0.955
+      ],
+      [
+        1.21,
+        0.96
+      ],
+      [
+        1.29,
+        0.93
+      ],
+      [
+        1.42,
+        0.85
+      ],
+      [
+        1.48,
+        0.85
+      ],
+      [
+        1.6,
+        1.0
+      ]
+    ],
+    "lateralBlend": {
+      "referenceKnots": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.55,
+          1.0
+        ],
+        [
+          0.8,
+          1.05
+        ],
+        [
+          0.92,
+          1.1
+        ],
+        [
+          1.03,
+          1.1
+        ],
+        [
+          1.21,
+          0.96
+        ],
+        [
+          1.29,
+          0.95
+        ],
+        [
+          1.42,
+          0.91
+        ],
+        [
+          1.48,
+          0.91
+        ],
+        [
+          1.6,
+          1.0
+        ]
+      ],
+      "innerRadius": 0.17,
+      "outerRadius": 0.23,
+      "outerTranslation": -0.006,
+      "heightRamp": [
+        0.45,
+        0.55,
+        1.48,
+        1.6
+      ]
+    },
+    "lateralRadius": 0.17,
+    "thoraxDepth": {
+      "scale": 0.96,
+      "ramp": [
+        1.05,
+        1.15,
+        1.35,
+        1.45
+      ]
+    },
+    "head": {
+      "scale": 0.95,
+      "center": [
+        0.0,
+        1.61,
+        -0.03
+      ],
+      "ramp": [
+        1.44,
+        1.56
+      ]
+    },
+    "nose": {
+      "plane": 0.062,
+      "scale": 0.52,
+      "center": [
+        0.0,
+        1.578
+      ],
+      "radius": [
+        0.03,
+        0.045
+      ],
+      "rampDepth": 0.012
+    }
+  },
+  "parts": 2243,
+  "topologyUnchanged": true,
+  "allVerticalAndDepthCoordinatesExactlyUnchanged": true,
+  "extraBreastInsetsUnchanged": true,
+  "sourceRegistrationTransformsUnchanged": true,
+  "minimumSampledMorphJacobian": 0.3758394170319521,
+  "widths": {
+    "deltoidEnvelope": {
+      "ids": [
+        "FJ1467",
+        "FJ1467M",
+        "FJ1468",
+        "FJ1468M",
+        "FJ1513",
+        "FJ1513M"
+      ],
+      "heightBandM": null,
+      "beforeMm": 413.19045424461365,
+      "afterMm": 401.7985016107559,
+      "changePercent": -2.7570706236871523
+    },
+    "iliumEnvelope": {
+      "ids": [
+        "VH_F_ilium_compact_bone_L",
+        "VH_F_ilium_compact_bone_R"
+      ],
+      "heightBandM": null,
+      "beforeMm": 297.4972724914551,
+      "afterMm": 324.32036101818085,
+      "changePercent": 9.016246872480549
+    },
+    "glutealEnvelope": {
+      "ids": [
+        "FJ1418",
+        "FJ1418M",
+        "FJ1419",
+        "FJ1419M",
+        "FJ1420",
+        "FJ1420M"
+      ],
+      "heightBandM": null,
+      "beforeMm": 307.3276877403259,
+      "afterMm": 334.72396433353424,
+      "changePercent": 8.914353534054698
+    },
+    "scapulaEnvelope": {
+      "ids": [
+        "FJ3279",
+        "FJ3384"
+      ],
+      "heightBandM": null,
+      "beforeMm": 294.39182579517365,
+      "afterMm": 279.8043489456177,
+      "changePercent": -4.95512292508603
+    },
+    "upperThighEnvelope": {
+      "ids": [
+        "FJ1403",
+        "FJ1403M",
+        "FJ1433",
+        "FJ1433M",
+        "FJ1442",
+        "FJ1442M"
+      ],
+      "heightBandM": [
+        0.7,
+        0.83
+      ],
+      "beforeMm": 310.84203720092773,
+      "afterMm": 317.4313008785248,
+      "changePercent": 2.119810993690585
+    },
+    "waistExternalObliqueEnvelope": {
+      "ids": [
+        "FJ1452",
+        "FJ1452M"
+      ],
+      "heightBandM": [
+        1.055,
+        1.09
+      ],
+      "beforeMm": 257.4325203895569,
+      "afterMm": 245.9070086479187,
+      "changePercent": -4.477100144223167
+    }
+  },
+  "glutealToDeltoidWidthRatio": {
+    "before": 0.7437918388075448,
+    "after": 0.8330642423793794
+  },
+  "limbMeshSpans": [
+    {
+      "id": "FJ3259",
+      "name": "Left femur",
+      "beforeMaxMeshSpanMm": 444.55861099540834,
+      "afterMaxMeshSpanMm": 445.5438439397712,
+      "changePercent": 0.2216204837775626,
+      "baselineFarthestVertexIndices": [
+        42,
+        294
+      ],
+      "sameEndpointDistanceAfterMm": 445.54384393977125,
+      "verticalSpanExactlyUnchanged": true
+    },
+    {
+      "id": "FJ3260",
+      "name": "Left fibula",
+      "beforeMaxMeshSpanMm": 364.86889466548706,
+      "afterMaxMeshSpanMm": 364.86889466548706,
+      "changePercent": 0.0,
+      "baselineFarthestVertexIndices": [
+        33,
+        80
+      ],
+      "sameEndpointDistanceAfterMm": 364.86889466548706,
+      "verticalSpanExactlyUnchanged": true
+    },
+    {
+      "id": "FJ3262",
+      "name": "Left humerus",
+      "beforeMaxMeshSpanMm": 297.0585916342149,
+      "afterMaxMeshSpanMm": 297.25571739720147,
+      "changePercent": 0.06635921954052382,
+      "baselineFarthestVertexIndices": [
+        217,
+        365
+      ],
+      "sameEndpointDistanceAfterMm": 296.90301476253876,
+      "verticalSpanExactlyUnchanged": true
+    },
+    {
+      "id": "FJ3277",
+      "name": "Left radius",
+      "beforeMaxMeshSpanMm": 228.4149955553763,
+      "afterMaxMeshSpanMm": 228.46883447860606,
+      "changePercent": 0.023570660542171495,
+      "baselineFarthestVertexIndices": [
+        23,
+        204
+      ],
+      "sameEndpointDistanceAfterMm": 228.46883447860574,
+      "verticalSpanExactlyUnchanged": true
+    },
+    {
+      "id": "FJ3282",
+      "name": "Left tibia",
+      "beforeMaxMeshSpanMm": 362.64045889227606,
+      "afterMaxMeshSpanMm": 362.64045889227606,
+      "changePercent": 0.0,
+      "baselineFarthestVertexIndices": [
+        47,
+        246
+      ],
+      "sameEndpointDistanceAfterMm": 362.64045889227606,
+      "verticalSpanExactlyUnchanged": true
+    },
+    {
+      "id": "FJ3286",
+      "name": "Left ulna",
+      "beforeMaxMeshSpanMm": 243.35587081705316,
+      "afterMaxMeshSpanMm": 243.47950867827822,
+      "changePercent": 0.0508053743720982,
+      "baselineFarthestVertexIndices": [
+        21,
+        182
+      ],
+      "sameEndpointDistanceAfterMm": 243.47950867827802,
+      "verticalSpanExactlyUnchanged": true
+    },
+    {
+      "id": "FJ3349",
+      "name": "Right radius",
+      "beforeMaxMeshSpanMm": 228.25792661623643,
+      "afterMaxMeshSpanMm": 228.32283446999594,
+      "changePercent": 0.028436188272507046,
+      "baselineFarthestVertexIndices": [
+        44,
+        209
+      ],
+      "sameEndpointDistanceAfterMm": 228.32283446999642,
+      "verticalSpanExactlyUnchanged": true
+    },
+    {
+      "id": "FJ3365",
+      "name": "Right femur",
+      "beforeMaxMeshSpanMm": 444.6692922438778,
+      "afterMaxMeshSpanMm": 445.6906018173475,
+      "changePercent": 0.2296784579650213,
+      "baselineFarthestVertexIndices": [
+        301,
+        419
+      ],
+      "sameEndpointDistanceAfterMm": 445.69060181734756,
+      "verticalSpanExactlyUnchanged": true
+    },
+    {
+      "id": "FJ3366",
+      "name": "Right fibula",
+      "beforeMaxMeshSpanMm": 365.0451856557746,
+      "afterMaxMeshSpanMm": 365.0451856557746,
+      "changePercent": 0.0,
+      "baselineFarthestVertexIndices": [
+        14,
+        100
+      ],
+      "sameEndpointDistanceAfterMm": 365.0451856557746,
+      "verticalSpanExactlyUnchanged": true
+    },
+    {
+      "id": "FJ3368",
+      "name": "Right humerus",
+      "beforeMaxMeshSpanMm": 296.81407850790845,
+      "afterMaxMeshSpanMm": 297.1095681023461,
+      "changePercent": 0.09955376642614144,
+      "baselineFarthestVertexIndices": [
+        131,
+        586
+      ],
+      "sameEndpointDistanceAfterMm": 296.64669767162076,
+      "verticalSpanExactlyUnchanged": true
+    },
+    {
+      "id": "FJ3387",
+      "name": "Right tibia",
+      "beforeMaxMeshSpanMm": 362.3034109260973,
+      "afterMaxMeshSpanMm": 362.3034109260973,
+      "changePercent": 0.0,
+      "baselineFarthestVertexIndices": [
+        24,
+        301
+      ],
+      "sameEndpointDistanceAfterMm": 362.3034109260973,
+      "verticalSpanExactlyUnchanged": true
+    },
+    {
+      "id": "FJ3391",
+      "name": "Right ulna",
+      "beforeMaxMeshSpanMm": 243.59502033642582,
+      "afterMaxMeshSpanMm": 243.79058927093607,
+      "changePercent": 0.08028445501067072,
+      "baselineFarthestVertexIndices": [
+        75,
+        157
+      ],
+      "sameEndpointDistanceAfterMm": 243.7463842276156,
+      "verticalSpanExactlyUnchanged": true
+    }
+  ],
+  "limitations": [
+    "Mesh envelope widths and maximum pairwise vertex distances are geometric proxies, not annotated anatomical landmarks or joint-center lengths.",
+    "Unchanged vertical coordinates do not imply every 3D distance is unchanged; lateral redistribution can slightly alter limb mesh spans.",
+    "One shared continuous spatial morph preserves coincidence of points, not anatomical validation of their initial placement.",
+    "A sampled positive Jacobian rules out only sampled local foldovers, not all distortions or physiological problems.",
+    "Illustration proportions guide an artistic reference build, not a universal female-body shape."
+  ],
+  "method": "Composition of two independently measured, hash-linked passes. Original widths/spans come from the first pass; final widths/spans come from the waist pass. Original farthest-vertex endpoint distances are measured again on the final meshes.",
+  "measurementPasses": [
+    {
+      "report": "female-proportion-first-pass.json",
+      "sha256": "0224f81c3f4ca4bc724c1b72ef379da10f4f7623e111786bad641f26c67934dc"
+    },
+    {
+      "report": "female-waist-review.json",
+      "sha256": "4e5bfd25bb6a697fb00f5920a150e6d3329e7f664c47b423b9366634ffe11394"
+    }
+  ],
+  "changedPartsByPass": [
+    1802,
+    475
+  ]
+}

@@ -1,1 +1,24 @@
-{"$schema":"https://openapi.vercel.sh/vercel.json","framework":"vite","buildCommand":"npm run build","outputDirectory":"dist","installCommand":"npm ci"}
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "installCommand": "npm ci",
+  "rewrites": [
+    {
+      "source": "/female",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/male",
+      "destination": "/index.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/male",
+      "permanent": false
+    }
+  ]
+}

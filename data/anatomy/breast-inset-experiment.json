@@ -1,0 +1,2279 @@
+{
+  "issue": "SWR-516",
+  "status": "Candidate comparison only; no correction selected or production meshes edited",
+  "baselineSha256": "0632e80a9e5c1cdd23b2215b977bb2212dfd1968b31a453387a591248c79347c",
+  "fitReportSha256": "682749e3d35fbf174263be7f59deef47a82185d768e9f36d2d27340f5faac9ae",
+  "method": "Reduce the existing extra -8 mm pre-morph inset in 1 mm steps. Preserve vertex topology and original x/y. Apply the exact torso depth/stature derivative to cloned positions; no surface clipping or per-vertex squeezing.",
+  "chestScreen": {
+    "method": "At each unchanged x/y, downward ray from beyond the selected chest mesh bounds finds the frontmost actual musculoskeletal triangle. Positive depth means posterior to this modeled anterior surface; not a closed-volume penetration diagnosis.",
+    "selection": "Same original source-part bound/system/name predicate used by the reconstruction chest projector, measured on current retained geometry; no blur or nearest-filled grid.",
+    "ids": [
+      "FJ1422",
+      "FJ1422M",
+      "FJ1446",
+      "FJ1446M",
+      "FJ1447",
+      "FJ1447M",
+      "FJ1448",
+      "FJ1451",
+      "FJ1451M",
+      "FJ1452",
+      "FJ1452M",
+      "FJ1454",
+      "FJ1454M",
+      "FJ1455",
+      "FJ1455M",
+      "FJ1456",
+      "FJ1456M",
+      "FJ1459",
+      "FJ1459M",
+      "FJ1460",
+      "FJ1460M",
+      "FJ1461",
+      "FJ1461M",
+      "FJ1464",
+      "FJ1464M",
+      "FJ1468",
+      "FJ1468M",
+      "FJ1472",
+      "FJ1472M",
+      "FJ1473",
+      "FJ1473M",
+      "FJ1475",
+      "FJ1475M",
+      "FJ1484",
+      "FJ1484M",
+      "FJ1487",
+      "FJ1487M",
+      "FJ1490",
+      "FJ1490M",
+      "FJ1491",
+      "FJ1491M",
+      "FJ1496",
+      "FJ1496M",
+      "FJ1497",
+      "FJ1497M",
+      "FJ1499",
+      "FJ1499M",
+      "FJ1502",
+      "FJ1502M",
+      "FJ1517",
+      "FJ1517M",
+      "FJ1558",
+      "FJ1565",
+      "FJ1573",
+      "FJ1574",
+      "FJ1575",
+      "FJ1577",
+      "FJ1586",
+      "FJ1587",
+      "FJ1595",
+      "FJ1596",
+      "FJ1597",
+      "FJ1599",
+      "FJ2771",
+      "FJ2786",
+      "FJ2790",
+      "FJ2804",
+      "FJ2808",
+      "FJ3153",
+      "FJ3178",
+      "FJ3228",
+      "FJ3229",
+      "FJ3230",
+      "FJ3231",
+      "FJ3232",
+      "FJ3233",
+      "FJ3234",
+      "FJ3235",
+      "FJ3236",
+      "FJ3237",
+      "FJ3239",
+      "FJ3242",
+      "FJ3245",
+      "FJ3248",
+      "FJ3251",
+      "FJ3254",
+      "FJ3255",
+      "FJ3277",
+      "FJ3286",
+      "FJ3289",
+      "FJ3290",
+      "FJ3333",
+      "FJ3334",
+      "FJ3335",
+      "FJ3336",
+      "FJ3337",
+      "FJ3338",
+      "FJ3339",
+      "FJ3340",
+      "FJ3341",
+      "FJ3342",
+      "FJ3343",
+      "FJ3344",
+      "FJ3345",
+      "FJ3346",
+      "FJ3347",
+      "FJ3348",
+      "FJ3349",
+      "FJ3362",
+      "FJ3391"
+    ],
+    "boundaryToleranceMm": 0.2
+  },
+  "baselineRegions": [
+    {
+      "id": "VH_F_mammary_lobes_L",
+      "nearestEnvelopeBoundary": {
+        "front": {
+          "samples": 0,
+          "outsideDepthMm": null
+        },
+        "back": {
+          "samples": 4244,
+          "outsideDepthMm": {
+            "minMm": 0.2078,
+            "p05Mm": 0.4899,
+            "medianMm": 2.8539,
+            "p95Mm": 8.1788,
+            "maxMm": 10.543
+          }
+        },
+        "rim": {
+          "samples": 0,
+          "outsideDepthMm": null
+        }
+      }
+    },
+    {
+      "id": "VH_F_main_lactiferous_ducts_L",
+      "nearestEnvelopeBoundary": {
+        "front": {
+          "samples": 0,
+          "outsideDepthMm": null
+        },
+        "back": {
+          "samples": 488,
+          "outsideDepthMm": {
+            "minMm": 0.2084,
+            "p05Mm": 0.2995,
+            "medianMm": 1.118,
+            "p95Mm": 7.0645,
+            "maxMm": 7.38
+          }
+        },
+        "rim": {
+          "samples": 0,
+          "outsideDepthMm": null
+        }
+      }
+    },
+    {
+      "id": "VH_F_main_lactiferous_sinuses_L",
+      "nearestEnvelopeBoundary": {
+        "front": {
+          "samples": 0,
+          "outsideDepthMm": null
+        },
+        "back": {
+          "samples": 0,
+          "outsideDepthMm": null
+        },
+        "rim": {
+          "samples": 0,
+          "outsideDepthMm": null
+        }
+      }
+    },
+    {
+      "id": "VH_F_mammary_lobes_R",
+      "nearestEnvelopeBoundary": {
+        "front": {
+          "samples": 0,
+          "outsideDepthMm": null
+        },
+        "back": {
+          "samples": 4200,
+          "outsideDepthMm": {
+            "minMm": 0.2017,
+            "p05Mm": 0.4412,
+            "medianMm": 2.5564,
+            "p95Mm": 7.827,
+            "maxMm": 10.8541
+          }
+        },
+        "rim": {
+          "samples": 0,
+          "outsideDepthMm": null
+        }
+      }
+    },
+    {
+      "id": "VH_F_main_lactiferous_ducts_R",
+      "nearestEnvelopeBoundary": {
+        "front": {
+          "samples": 0,
+          "outsideDepthMm": null
+        },
+        "back": {
+          "samples": 470,
+          "outsideDepthMm": {
+            "minMm": 0.2025,
+            "p05Mm": 0.308,
+            "medianMm": 1.1291,
+            "p95Mm": 6.4732,
+            "maxMm": 6.8691
+          }
+        },
+        "rim": {
+          "samples": 0,
+          "outsideDepthMm": null
+        }
+      }
+    },
+    {
+      "id": "VH_F_main_lactiferous_sinuses_R",
+      "nearestEnvelopeBoundary": {
+        "front": {
+          "samples": 0,
+          "outsideDepthMm": null
+        },
+        "back": {
+          "samples": 0,
+          "outsideDepthMm": null
+        },
+        "rim": {
+          "samples": 0,
+          "outsideDepthMm": null
+        }
+      }
+    }
+  ],
+  "candidates": [
+    {
+      "insetMm": -8,
+      "reductionMm": 0,
+      "parts": [
+        {
+          "id": "VH_F_mammary_lobes_L",
+          "vertices": {
+            "samples": 8846,
+            "counts": {
+              "inside": 4283,
+              "outside": 4244,
+              "boundary": 316,
+              "uncertain": 3
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2078,
+              "p05Mm": 0.4899,
+              "medianMm": 2.8539,
+              "p95Mm": 8.1788,
+              "maxMm": 10.543
+            },
+            "maximumOutsidePointM": [
+              0.10144916921854019,
+              1.1473580598831177,
+              0.06374390423297882
+            ],
+            "nearestEnvelopePointM": [
+              0.10977102071046829,
+              1.1457000970840454,
+              0.07000114768743515
+            ]
+          },
+          "chest": {
+            "samples": 8846,
+            "supportedProjectionSamples": 8846,
+            "posteriorToAnteriorSurface": 5788,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.201,
+              "p05Mm": 0.8843,
+              "medianMm": 6.9358,
+              "p95Mm": 14.9706,
+              "maxMm": 19.9774
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_ducts_L",
+          "vertices": {
+            "samples": 4017,
+            "counts": {
+              "inside": 3458,
+              "outside": 488,
+              "boundary": 71,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2084,
+              "p05Mm": 0.2995,
+              "medianMm": 1.118,
+              "p95Mm": 7.0645,
+              "maxMm": 7.38
+            },
+            "maximumOutsidePointM": [
+              0.10214677453041077,
+              1.1485341787338257,
+              0.06840844452381134
+            ],
+            "nearestEnvelopePointM": [
+              0.10782835632562637,
+              1.1474987268447876,
+              0.07300318032503128
+            ]
+          },
+          "chest": {
+            "samples": 4017,
+            "supportedProjectionSamples": 4017,
+            "posteriorToAnteriorSurface": 1180,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2017,
+              "p05Mm": 0.4732,
+              "medianMm": 3.047,
+              "p95Mm": 10.9265,
+              "maxMm": 14.1051
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_sinuses_L",
+          "vertices": {
+            "samples": 1927,
+            "counts": {
+              "inside": 1927,
+              "outside": 0,
+              "boundary": 0,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": null,
+            "maximumOutsidePointM": null,
+            "nearestEnvelopePointM": null
+          },
+          "chest": {
+            "samples": 1927,
+            "supportedProjectionSamples": 1927,
+            "posteriorToAnteriorSurface": 0,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": null
+          }
+        },
+        {
+          "id": "VH_F_mammary_lobes_R",
+          "vertices": {
+            "samples": 8904,
+            "counts": {
+              "inside": 4392,
+              "outside": 4200,
+              "boundary": 312,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2017,
+              "p05Mm": 0.4412,
+              "medianMm": 2.5564,
+              "p95Mm": 7.827,
+              "maxMm": 10.8541
+            },
+            "maximumOutsidePointM": [
+              -0.09662149101495743,
+              1.1482665538787842,
+              0.06941801309585571
+            ],
+            "nearestEnvelopePointM": [
+              -0.10440514981746674,
+              1.1474006175994873,
+              0.07693304866552353
+            ]
+          },
+          "chest": {
+            "samples": 8904,
+            "supportedProjectionSamples": 8904,
+            "posteriorToAnteriorSurface": 6003,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2022,
+              "p05Mm": 0.8634,
+              "medianMm": 6.2295,
+              "p95Mm": 13.4846,
+              "maxMm": 18.465
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_ducts_R",
+          "vertices": {
+            "samples": 4001,
+            "counts": {
+              "inside": 3417,
+              "outside": 470,
+              "boundary": 114,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2025,
+              "p05Mm": 0.308,
+              "medianMm": 1.1291,
+              "p95Mm": 6.4732,
+              "maxMm": 6.8691
+            },
+            "maximumOutsidePointM": [
+              -0.09773800522089005,
+              1.1499930620193481,
+              0.07406298816204071
+            ],
+            "nearestEnvelopePointM": [
+              -0.10251563042402267,
+              1.149704098701477,
+              0.07898994535207748
+            ]
+          },
+          "chest": {
+            "samples": 4001,
+            "supportedProjectionSamples": 4001,
+            "posteriorToAnteriorSurface": 1063,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2114,
+              "p05Mm": 0.4377,
+              "medianMm": 3.814,
+              "p95Mm": 9.7966,
+              "maxMm": 13.1492
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_sinuses_R",
+          "vertices": {
+            "samples": 1942,
+            "counts": {
+              "inside": 1941,
+              "outside": 0,
+              "boundary": 0,
+              "uncertain": 1
+            },
+            "outsideDistanceMm": null,
+            "maximumOutsidePointM": null,
+            "nearestEnvelopePointM": null
+          },
+          "chest": {
+            "samples": 1942,
+            "supportedProjectionSamples": 1942,
+            "posteriorToAnteriorSurface": 0,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": null
+          }
+        }
+      ]
+    },
+    {
+      "insetMm": -7,
+      "reductionMm": 1,
+      "parts": [
+        {
+          "id": "VH_F_mammary_lobes_L",
+          "vertices": {
+            "samples": 8846,
+            "counts": {
+              "inside": 4683,
+              "outside": 3844,
+              "boundary": 318,
+              "uncertain": 1
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2017,
+              "p05Mm": 0.4479,
+              "medianMm": 2.53,
+              "p95Mm": 7.8109,
+              "maxMm": 10.0018
+            },
+            "maximumOutsidePointM": [
+              0.10144916921854019,
+              1.1473580598831177,
+              0.06465590423297882
+            ],
+            "nearestEnvelopePointM": [
+              0.10934179276227951,
+              1.1457747220993042,
+              0.07059178501367569
+            ]
+          },
+          "chest": {
+            "samples": 8846,
+            "supportedProjectionSamples": 8846,
+            "posteriorToAnteriorSurface": 5404,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2005,
+              "p05Mm": 0.8731,
+              "medianMm": 6.4407,
+              "p95Mm": 14.3595,
+              "maxMm": 19.0654
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_ducts_L",
+          "vertices": {
+            "samples": 4017,
+            "counts": {
+              "inside": 3572,
+              "outside": 357,
+              "boundary": 88,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2006,
+              "p05Mm": 0.2591,
+              "medianMm": 1.3233,
+              "p95Mm": 6.5886,
+              "maxMm": 6.8056
+            },
+            "maximumOutsidePointM": [
+              0.10214677453041077,
+              1.1485341787338257,
+              0.06932044452381134
+            ],
+            "nearestEnvelopePointM": [
+              0.10733609646558762,
+              1.1480401754379272,
+              0.07369565218687057
+            ]
+          },
+          "chest": {
+            "samples": 4017,
+            "supportedProjectionSamples": 4017,
+            "posteriorToAnteriorSurface": 1011,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2107,
+              "p05Mm": 0.4621,
+              "medianMm": 2.89,
+              "p95Mm": 10.3826,
+              "maxMm": 13.1931
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_sinuses_L",
+          "vertices": {
+            "samples": 1927,
+            "counts": {
+              "inside": 1927,
+              "outside": 0,
+              "boundary": 0,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": null,
+            "maximumOutsidePointM": null,
+            "nearestEnvelopePointM": null
+          },
+          "chest": {
+            "samples": 1927,
+            "supportedProjectionSamples": 1927,
+            "posteriorToAnteriorSurface": 0,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": null
+          }
+        },
+        {
+          "id": "VH_F_mammary_lobes_R",
+          "vertices": {
+            "samples": 8904,
+            "counts": {
+              "inside": 4904,
+              "outside": 3711,
+              "boundary": 288,
+              "uncertain": 1
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2001,
+              "p05Mm": 0.4166,
+              "medianMm": 2.233,
+              "p95Mm": 7.4629,
+              "maxMm": 10.2226
+            },
+            "maximumOutsidePointM": [
+              -0.09662149101495743,
+              1.1482665538787842,
+              0.07033001309585571
+            ],
+            "nearestEnvelopePointM": [
+              -0.10395091772079468,
+              1.1474502086639404,
+              0.07740914821624756
+            ]
+          },
+          "chest": {
+            "samples": 8904,
+            "supportedProjectionSamples": 8904,
+            "posteriorToAnteriorSurface": 5601,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.202,
+              "p05Mm": 0.8554,
+              "medianMm": 5.6842,
+              "p95Mm": 12.7227,
+              "maxMm": 17.553
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_ducts_R",
+          "vertices": {
+            "samples": 4001,
+            "counts": {
+              "inside": 3542,
+              "outside": 336,
+              "boundary": 123,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2101,
+              "p05Mm": 0.2618,
+              "medianMm": 0.9934,
+              "p95Mm": 5.9575,
+              "maxMm": 6.2158
+            },
+            "maximumOutsidePointM": [
+              -0.09773800522089005,
+              1.1499930620193481,
+              0.0749749881620407
+            ],
+            "nearestEnvelopePointM": [
+              -0.10203509032726288,
+              1.1497372388839722,
+              0.07945886999368668
+            ]
+          },
+          "chest": {
+            "samples": 4001,
+            "supportedProjectionSamples": 4001,
+            "posteriorToAnteriorSurface": 838,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2012,
+              "p05Mm": 0.4573,
+              "medianMm": 3.7573,
+              "p95Mm": 9.5354,
+              "maxMm": 12.2372
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_sinuses_R",
+          "vertices": {
+            "samples": 1942,
+            "counts": {
+              "inside": 1942,
+              "outside": 0,
+              "boundary": 0,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": null,
+            "maximumOutsidePointM": null,
+            "nearestEnvelopePointM": null
+          },
+          "chest": {
+            "samples": 1942,
+            "supportedProjectionSamples": 1942,
+            "posteriorToAnteriorSurface": 0,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": null
+          }
+        }
+      ]
+    },
+    {
+      "insetMm": -6,
+      "reductionMm": 2,
+      "parts": [
+        {
+          "id": "VH_F_mammary_lobes_L",
+          "vertices": {
+            "samples": 8846,
+            "counts": {
+              "inside": 5128,
+              "outside": 3393,
+              "boundary": 322,
+              "uncertain": 3
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2008,
+              "p05Mm": 0.4024,
+              "medianMm": 2.3159,
+              "p95Mm": 7.3841,
+              "maxMm": 9.4605
+            },
+            "maximumOutsidePointM": [
+              0.10144916921854019,
+              1.1473580598831177,
+              0.06556790423297883
+            ],
+            "nearestEnvelopePointM": [
+              0.10891256481409073,
+              1.145849347114563,
+              0.07118241488933563
+            ]
+          },
+          "chest": {
+            "samples": 8846,
+            "supportedProjectionSamples": 8846,
+            "posteriorToAnteriorSurface": 5030,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2012,
+              "p05Mm": 0.8963,
+              "medianMm": 5.9148,
+              "p95Mm": 13.6272,
+              "maxMm": 18.1534
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_ducts_L",
+          "vertices": {
+            "samples": 4017,
+            "counts": {
+              "inside": 3701,
+              "outside": 244,
+              "boundary": 72,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2044,
+              "p05Mm": 0.2655,
+              "medianMm": 1.5291,
+              "p95Mm": 6.0962,
+              "maxMm": 6.2195
+            },
+            "maximumOutsidePointM": [
+              0.10214677453041077,
+              1.1485341787338257,
+              0.07023244452381135
+            ],
+            "nearestEnvelopePointM": [
+              0.10689809173345566,
+              1.1481424570083618,
+              0.07422669976949692
+            ]
+          },
+          "chest": {
+            "samples": 4017,
+            "supportedProjectionSamples": 4017,
+            "posteriorToAnteriorSurface": 815,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2008,
+              "p05Mm": 0.3674,
+              "medianMm": 2.5877,
+              "p95Mm": 9.969,
+              "maxMm": 12.2811
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_sinuses_L",
+          "vertices": {
+            "samples": 1927,
+            "counts": {
+              "inside": 1927,
+              "outside": 0,
+              "boundary": 0,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": null,
+            "maximumOutsidePointM": null,
+            "nearestEnvelopePointM": null
+          },
+          "chest": {
+            "samples": 1927,
+            "supportedProjectionSamples": 1927,
+            "posteriorToAnteriorSurface": 0,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": null
+          }
+        },
+        {
+          "id": "VH_F_mammary_lobes_R",
+          "vertices": {
+            "samples": 8904,
+            "counts": {
+              "inside": 5374,
+              "outside": 3203,
+              "boundary": 326,
+              "uncertain": 1
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2004,
+              "p05Mm": 0.3431,
+              "medianMm": 1.9665,
+              "p95Mm": 7.0701,
+              "maxMm": 9.5857
+            },
+            "maximumOutsidePointM": [
+              -0.09662149101495743,
+              1.1482665538787842,
+              0.07124201309585572
+            ],
+            "nearestEnvelopePointM": [
+              -0.10340651869773865,
+              1.147709846496582,
+              0.07799021899700165
+            ]
+          },
+          "chest": {
+            "samples": 8904,
+            "supportedProjectionSamples": 8904,
+            "posteriorToAnteriorSurface": 5198,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2025,
+              "p05Mm": 0.7666,
+              "medianMm": 5.1763,
+              "p95Mm": 11.9524,
+              "maxMm": 16.641
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_ducts_R",
+          "vertices": {
+            "samples": 4001,
+            "counts": {
+              "inside": 3675,
+              "outside": 232,
+              "boundary": 93,
+              "uncertain": 1
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2013,
+              "p05Mm": 0.2575,
+              "medianMm": 0.9133,
+              "p95Mm": 5.3441,
+              "maxMm": 5.5464
+            },
+            "maximumOutsidePointM": [
+              -0.09773800522089005,
+              1.1499930620193481,
+              0.07588698816204072
+            ],
+            "nearestEnvelopePointM": [
+              -0.10147714614868164,
+              1.149726152420044,
+              0.07997478544712067
+            ]
+          },
+          "chest": {
+            "samples": 4001,
+            "supportedProjectionSamples": 4001,
+            "posteriorToAnteriorSurface": 704,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2084,
+              "p05Mm": 0.5165,
+              "medianMm": 3.2994,
+              "p95Mm": 10.3925,
+              "maxMm": 11.3252
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_sinuses_R",
+          "vertices": {
+            "samples": 1942,
+            "counts": {
+              "inside": 1942,
+              "outside": 0,
+              "boundary": 0,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": null,
+            "maximumOutsidePointM": null,
+            "nearestEnvelopePointM": null
+          },
+          "chest": {
+            "samples": 1942,
+            "supportedProjectionSamples": 1942,
+            "posteriorToAnteriorSurface": 0,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": null
+          }
+        }
+      ]
+    },
+    {
+      "insetMm": -5,
+      "reductionMm": 3,
+      "parts": [
+        {
+          "id": "VH_F_mammary_lobes_L",
+          "vertices": {
+            "samples": 8846,
+            "counts": {
+              "inside": 5586,
+              "outside": 2913,
+              "boundary": 342,
+              "uncertain": 5
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2008,
+              "p05Mm": 0.3891,
+              "medianMm": 2.1057,
+              "p95Mm": 7.0529,
+              "maxMm": 8.9193
+            },
+            "maximumOutsidePointM": [
+              0.10144916921854019,
+              1.1473580598831177,
+              0.06647990423297882
+            ],
+            "nearestEnvelopePointM": [
+              0.10848333686590195,
+              1.1459240913391113,
+              0.07177305221557617
+            ]
+          },
+          "chest": {
+            "samples": 8846,
+            "supportedProjectionSamples": 8846,
+            "posteriorToAnteriorSurface": 4704,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2022,
+              "p05Mm": 0.7594,
+              "medianMm": 5.3124,
+              "p95Mm": 12.8588,
+              "maxMm": 17.2414
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_ducts_L",
+          "vertices": {
+            "samples": 4017,
+            "counts": {
+              "inside": 3780,
+              "outside": 180,
+              "boundary": 57,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2025,
+              "p05Mm": 0.2632,
+              "medianMm": 1.2266,
+              "p95Mm": 5.5428,
+              "maxMm": 5.6342
+            },
+            "maximumOutsidePointM": [
+              0.10214677453041077,
+              1.1485341787338257,
+              0.07114444452381134
+            ],
+            "nearestEnvelopePointM": [
+              0.1064600870013237,
+              1.1482446193695068,
+              0.07475775480270386
+            ]
+          },
+          "chest": {
+            "samples": 4017,
+            "supportedProjectionSamples": 4017,
+            "posteriorToAnteriorSurface": 614,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2097,
+              "p05Mm": 0.3499,
+              "medianMm": 2.5318,
+              "p95Mm": 10.0797,
+              "maxMm": 11.3691
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_sinuses_L",
+          "vertices": {
+            "samples": 1927,
+            "counts": {
+              "inside": 1927,
+              "outside": 0,
+              "boundary": 0,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": null,
+            "maximumOutsidePointM": null,
+            "nearestEnvelopePointM": null
+          },
+          "chest": {
+            "samples": 1927,
+            "supportedProjectionSamples": 1927,
+            "posteriorToAnteriorSurface": 0,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": null
+          }
+        },
+        {
+          "id": "VH_F_mammary_lobes_R",
+          "vertices": {
+            "samples": 8904,
+            "counts": {
+              "inside": 5900,
+              "outside": 2616,
+              "boundary": 388,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2023,
+              "p05Mm": 0.3633,
+              "medianMm": 1.8035,
+              "p95Mm": 6.6329,
+              "maxMm": 8.9427
+            },
+            "maximumOutsidePointM": [
+              -0.09662149101495743,
+              1.1482665538787842,
+              0.07215401309585572
+            ],
+            "nearestEnvelopePointM": [
+              -0.1029454916715622,
+              1.1478238105773926,
+              0.07846133410930634
+            ]
+          },
+          "chest": {
+            "samples": 8904,
+            "supportedProjectionSamples": 8904,
+            "posteriorToAnteriorSurface": 4778,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2011,
+              "p05Mm": 0.6586,
+              "medianMm": 4.6191,
+              "p95Mm": 11.35,
+              "maxMm": 15.729
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_ducts_R",
+          "vertices": {
+            "samples": 4001,
+            "counts": {
+              "inside": 3787,
+              "outside": 138,
+              "boundary": 76,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2018,
+              "p05Mm": 0.261,
+              "medianMm": 0.9776,
+              "p95Mm": 4.7519,
+              "maxMm": 4.8742
+            },
+            "maximumOutsidePointM": [
+              -0.09773800522089005,
+              1.1499930620193481,
+              0.07679898816204071
+            ],
+            "nearestEnvelopePointM": [
+              -0.10102399438619614,
+              1.1497585773468018,
+              0.08039139211177826
+            ]
+          },
+          "chest": {
+            "samples": 4001,
+            "supportedProjectionSamples": 4001,
+            "posteriorToAnteriorSurface": 621,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2251,
+              "p05Mm": 0.5468,
+              "medianMm": 2.7437,
+              "p95Mm": 9.7871,
+              "maxMm": 10.4132
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_sinuses_R",
+          "vertices": {
+            "samples": 1942,
+            "counts": {
+              "inside": 1942,
+              "outside": 0,
+              "boundary": 0,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": null,
+            "maximumOutsidePointM": null,
+            "nearestEnvelopePointM": null
+          },
+          "chest": {
+            "samples": 1942,
+            "supportedProjectionSamples": 1942,
+            "posteriorToAnteriorSurface": 0,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": null
+          }
+        }
+      ]
+    },
+    {
+      "insetMm": -4,
+      "reductionMm": 4,
+      "parts": [
+        {
+          "id": "VH_F_mammary_lobes_L",
+          "vertices": {
+            "samples": 8846,
+            "counts": {
+              "inside": 6050,
+              "outside": 2478,
+              "boundary": 315,
+              "uncertain": 3
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.201,
+              "p05Mm": 0.3507,
+              "medianMm": 1.9058,
+              "p95Mm": 6.6351,
+              "maxMm": 8.3641
+            },
+            "maximumOutsidePointM": [
+              0.10144916921854019,
+              1.1473580598831177,
+              0.06739190423297882
+            ],
+            "nearestEnvelopePointM": [
+              0.10794966667890549,
+              1.146037220954895,
+              0.07248678803443909
+            ]
+          },
+          "chest": {
+            "samples": 8846,
+            "supportedProjectionSamples": 8846,
+            "posteriorToAnteriorSurface": 4311,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2013,
+              "p05Mm": 0.7664,
+              "medianMm": 4.7737,
+              "p95Mm": 12.1358,
+              "maxMm": 16.3294
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_ducts_L",
+          "vertices": {
+            "samples": 4017,
+            "counts": {
+              "inside": 3852,
+              "outside": 126,
+              "boundary": 36,
+              "uncertain": 3
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2301,
+              "p05Mm": 0.3202,
+              "medianMm": 2.48,
+              "p95Mm": 4.9545,
+              "maxMm": 5.0492
+            },
+            "maximumOutsidePointM": [
+              0.10214677453041077,
+              1.1485341787338257,
+              0.07205644452381134
+            ],
+            "nearestEnvelopePointM": [
+              0.10601136833429337,
+              1.148268222808838,
+              0.07529512792825699
+            ]
+          },
+          "chest": {
+            "samples": 4017,
+            "supportedProjectionSamples": 4017,
+            "posteriorToAnteriorSurface": 498,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.206,
+              "p05Mm": 0.3647,
+              "medianMm": 2.6756,
+              "p95Mm": 9.3907,
+              "maxMm": 10.4571
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_sinuses_L",
+          "vertices": {
+            "samples": 1927,
+            "counts": {
+              "inside": 1927,
+              "outside": 0,
+              "boundary": 0,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": null,
+            "maximumOutsidePointM": null,
+            "nearestEnvelopePointM": null
+          },
+          "chest": {
+            "samples": 1927,
+            "supportedProjectionSamples": 1927,
+            "posteriorToAnteriorSurface": 0,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": null
+          }
+        },
+        {
+          "id": "VH_F_mammary_lobes_R",
+          "vertices": {
+            "samples": 8904,
+            "counts": {
+              "inside": 6446,
+              "outside": 2129,
+              "boundary": 329,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2001,
+              "p05Mm": 0.3244,
+              "medianMm": 1.6588,
+              "p95Mm": 6.1335,
+              "maxMm": 8.2954
+            },
+            "maximumOutsidePointM": [
+              -0.09662149101495743,
+              1.1482665538787842,
+              0.07306601309585571
+            ],
+            "nearestEnvelopePointM": [
+              -0.10242945700883865,
+              1.1479854583740234,
+              0.07898222655057907
+            ]
+          },
+          "chest": {
+            "samples": 8904,
+            "supportedProjectionSamples": 8904,
+            "posteriorToAnteriorSurface": 4279,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2022,
+              "p05Mm": 0.5301,
+              "medianMm": 4.1385,
+              "p95Mm": 10.6999,
+              "maxMm": 14.817
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_ducts_R",
+          "vertices": {
+            "samples": 4001,
+            "counts": {
+              "inside": 3861,
+              "outside": 102,
+              "boundary": 38,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2024,
+              "p05Mm": 0.2347,
+              "medianMm": 1.9274,
+              "p95Mm": 4.1134,
+              "maxMm": 4.2036
+            },
+            "maximumOutsidePointM": [
+              -0.09773800522089005,
+              1.1499930620193481,
+              0.07771098816204071
+            ],
+            "nearestEnvelopePointM": [
+              -0.10058501362800598,
+              1.1497623920440674,
+              0.08079502731561661
+            ]
+          },
+          "chest": {
+            "samples": 4001,
+            "supportedProjectionSamples": 4001,
+            "posteriorToAnteriorSurface": 530,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.201,
+              "p05Mm": 0.5748,
+              "medianMm": 2.1833,
+              "p95Mm": 9.0382,
+              "maxMm": 9.5012
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_sinuses_R",
+          "vertices": {
+            "samples": 1942,
+            "counts": {
+              "inside": 1942,
+              "outside": 0,
+              "boundary": 0,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": null,
+            "maximumOutsidePointM": null,
+            "nearestEnvelopePointM": null
+          },
+          "chest": {
+            "samples": 1942,
+            "supportedProjectionSamples": 1942,
+            "posteriorToAnteriorSurface": 0,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": null
+          }
+        }
+      ]
+    },
+    {
+      "insetMm": -3,
+      "reductionMm": 5,
+      "parts": [
+        {
+          "id": "VH_F_mammary_lobes_L",
+          "vertices": {
+            "samples": 8846,
+            "counts": {
+              "inside": 6488,
+              "outside": 2023,
+              "boundary": 334,
+              "uncertain": 1
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2008,
+              "p05Mm": 0.3308,
+              "medianMm": 1.8363,
+              "p95Mm": 6.1764,
+              "maxMm": 7.8086
+            },
+            "maximumOutsidePointM": [
+              0.10144916921854019,
+              1.1473580598831177,
+              0.06830390423297882
+            ],
+            "nearestEnvelopePointM": [
+              0.10751912742853165,
+              1.1461308002471924,
+              0.07306036353111267
+            ]
+          },
+          "chest": {
+            "samples": 8846,
+            "supportedProjectionSamples": 8846,
+            "posteriorToAnteriorSurface": 3944,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2015,
+              "p05Mm": 0.6597,
+              "medianMm": 4.309,
+              "p95Mm": 11.4411,
+              "maxMm": 15.4174
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_ducts_L",
+          "vertices": {
+            "samples": 4017,
+            "counts": {
+              "inside": 3896,
+              "outside": 79,
+              "boundary": 42,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2038,
+              "p05Mm": 0.2344,
+              "medianMm": 2.9868,
+              "p95Mm": 4.4005,
+              "maxMm": 4.4337
+            },
+            "maximumOutsidePointM": [
+              0.10251601040363312,
+              1.1486785411834717,
+              0.07258716106176376
+            ],
+            "nearestEnvelopePointM": [
+              0.1057102382183075,
+              1.148423671722412,
+              0.07565142959356308
+            ]
+          },
+          "chest": {
+            "samples": 4017,
+            "supportedProjectionSamples": 4017,
+            "posteriorToAnteriorSurface": 364,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2139,
+              "p05Mm": 0.4019,
+              "medianMm": 2.8404,
+              "p95Mm": 8.802,
+              "maxMm": 9.5451
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_sinuses_L",
+          "vertices": {
+            "samples": 1927,
+            "counts": {
+              "inside": 1927,
+              "outside": 0,
+              "boundary": 0,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": null,
+            "maximumOutsidePointM": null,
+            "nearestEnvelopePointM": null
+          },
+          "chest": {
+            "samples": 1927,
+            "supportedProjectionSamples": 1927,
+            "posteriorToAnteriorSurface": 0,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": null
+          }
+        },
+        {
+          "id": "VH_F_mammary_lobes_R",
+          "vertices": {
+            "samples": 8904,
+            "counts": {
+              "inside": 6950,
+              "outside": 1638,
+              "boundary": 316,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2002,
+              "p05Mm": 0.2941,
+              "medianMm": 1.5548,
+              "p95Mm": 5.6838,
+              "maxMm": 7.6209
+            },
+            "maximumOutsidePointM": [
+              -0.09662149101495743,
+              1.1482665538787842,
+              0.07397801309585571
+            ],
+            "nearestEnvelopePointM": [
+              -0.10170367360115051,
+              1.147904872894287,
+              0.07964538037776947
+            ]
+          },
+          "chest": {
+            "samples": 8904,
+            "supportedProjectionSamples": 8904,
+            "posteriorToAnteriorSurface": 3729,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2001,
+              "p05Mm": 0.5767,
+              "medianMm": 3.7587,
+              "p95Mm": 10.1159,
+              "maxMm": 13.905
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_ducts_R",
+          "vertices": {
+            "samples": 4001,
+            "counts": {
+              "inside": 3899,
+              "outside": 66,
+              "boundary": 36,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.3873,
+              "p05Mm": 0.6688,
+              "medianMm": 2.8761,
+              "p95Mm": 3.4806,
+              "maxMm": 3.5343
+            },
+            "maximumOutsidePointM": [
+              -0.09773800522089005,
+              1.1499930620193481,
+              0.0786229881620407
+            ],
+            "nearestEnvelopePointM": [
+              -0.10010585188865662,
+              1.1497901678085327,
+              0.0812389999628067
+            ]
+          },
+          "chest": {
+            "samples": 4001,
+            "supportedProjectionSamples": 4001,
+            "posteriorToAnteriorSurface": 399,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2002,
+              "p05Mm": 0.337,
+              "medianMm": 2.5993,
+              "p95Mm": 8.2606,
+              "maxMm": 8.5892
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_sinuses_R",
+          "vertices": {
+            "samples": 1942,
+            "counts": {
+              "inside": 1942,
+              "outside": 0,
+              "boundary": 0,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": null,
+            "maximumOutsidePointM": null,
+            "nearestEnvelopePointM": null
+          },
+          "chest": {
+            "samples": 1942,
+            "supportedProjectionSamples": 1942,
+            "posteriorToAnteriorSurface": 0,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": null
+          }
+        }
+      ]
+    },
+    {
+      "insetMm": -2,
+      "reductionMm": 6,
+      "parts": [
+        {
+          "id": "VH_F_mammary_lobes_L",
+          "vertices": {
+            "samples": 8846,
+            "counts": {
+              "inside": 6931,
+              "outside": 1632,
+              "boundary": 283,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2005,
+              "p05Mm": 0.2936,
+              "medianMm": 1.7666,
+              "p95Mm": 5.7272,
+              "maxMm": 7.2531
+            },
+            "maximumOutsidePointM": [
+              0.10144916921854019,
+              1.1473580598831177,
+              0.06921590423297883
+            ],
+            "nearestEnvelopePointM": [
+              0.1070885881781578,
+              1.1462243795394897,
+              0.07363392412662506
+            ]
+          },
+          "chest": {
+            "samples": 8846,
+            "supportedProjectionSamples": 8846,
+            "posteriorToAnteriorSurface": 3532,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2008,
+              "p05Mm": 0.5394,
+              "medianMm": 3.8122,
+              "p95Mm": 10.76,
+              "maxMm": 14.5054
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_ducts_L",
+          "vertices": {
+            "samples": 4017,
+            "counts": {
+              "inside": 3692,
+              "outside": 109,
+              "boundary": 215,
+              "uncertain": 1
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2001,
+              "p05Mm": 0.2059,
+              "medianMm": 1.5826,
+              "p95Mm": 3.769,
+              "maxMm": 3.8048
+            },
+            "maximumOutsidePointM": [
+              0.1027640774846077,
+              1.1485041379928589,
+              0.07322136616420746
+            ],
+            "nearestEnvelopePointM": [
+              0.10551238059997559,
+              1.1481941938400269,
+              0.07583431154489517
+            ]
+          },
+          "chest": {
+            "samples": 4017,
+            "supportedProjectionSamples": 4017,
+            "posteriorToAnteriorSurface": 284,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2112,
+              "p05Mm": 0.4479,
+              "medianMm": 2.3288,
+              "p95Mm": 8.015,
+              "maxMm": 8.6331
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_sinuses_L",
+          "vertices": {
+            "samples": 1927,
+            "counts": {
+              "inside": 1803,
+              "outside": 0,
+              "boundary": 124,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": null,
+            "maximumOutsidePointM": null,
+            "nearestEnvelopePointM": null
+          },
+          "chest": {
+            "samples": 1927,
+            "supportedProjectionSamples": 1927,
+            "posteriorToAnteriorSurface": 0,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": null
+          }
+        },
+        {
+          "id": "VH_F_mammary_lobes_R",
+          "vertices": {
+            "samples": 8904,
+            "counts": {
+              "inside": 7395,
+              "outside": 1205,
+              "boundary": 304,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2007,
+              "p05Mm": 0.2977,
+              "medianMm": 1.5482,
+              "p95Mm": 5.3275,
+              "maxMm": 6.9436
+            },
+            "maximumOutsidePointM": [
+              -0.09662149101495743,
+              1.1482665538787842,
+              0.07489001309585572
+            ],
+            "nearestEnvelopePointM": [
+              -0.10129127651453018,
+              1.1478511095046997,
+              0.0800119936466217
+            ]
+          },
+          "chest": {
+            "samples": 8904,
+            "supportedProjectionSamples": 8904,
+            "posteriorToAnteriorSurface": 3279,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2008,
+              "p05Mm": 0.545,
+              "medianMm": 3.289,
+              "p95Mm": 9.5636,
+              "maxMm": 12.993
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_ducts_R",
+          "vertices": {
+            "samples": 4001,
+            "counts": {
+              "inside": 3707,
+              "outside": 77,
+              "boundary": 217,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2025,
+              "p05Mm": 0.2088,
+              "medianMm": 1.215,
+              "p95Mm": 2.8022,
+              "maxMm": 2.8593
+            },
+            "maximumOutsidePointM": [
+              -0.09773800522089005,
+              1.1499930620193481,
+              0.07953498816204072
+            ],
+            "nearestEnvelopePointM": [
+              -0.09965360909700394,
+              1.1498289108276367,
+              0.08165135979652405
+            ]
+          },
+          "chest": {
+            "samples": 4001,
+            "supportedProjectionSamples": 4001,
+            "posteriorToAnteriorSurface": 286,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2096,
+              "p05Mm": 0.3172,
+              "medianMm": 3.1348,
+              "p95Mm": 7.4247,
+              "maxMm": 7.6772
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_sinuses_R",
+          "vertices": {
+            "samples": 1942,
+            "counts": {
+              "inside": 1876,
+              "outside": 0,
+              "boundary": 66,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": null,
+            "maximumOutsidePointM": null,
+            "nearestEnvelopePointM": null
+          },
+          "chest": {
+            "samples": 1942,
+            "supportedProjectionSamples": 1942,
+            "posteriorToAnteriorSurface": 0,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": null
+          }
+        }
+      ]
+    },
+    {
+      "insetMm": -1,
+      "reductionMm": 7,
+      "parts": [
+        {
+          "id": "VH_F_mammary_lobes_L",
+          "vertices": {
+            "samples": 8846,
+            "counts": {
+              "inside": 7332,
+              "outside": 1267,
+              "boundary": 245,
+              "uncertain": 2
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2006,
+              "p05Mm": 0.2904,
+              "medianMm": 1.7687,
+              "p95Mm": 5.3549,
+              "maxMm": 6.6976
+            },
+            "maximumOutsidePointM": [
+              0.10144916921854019,
+              1.1473580598831177,
+              0.07012790423297882
+            ],
+            "nearestEnvelopePointM": [
+              0.10665804892778397,
+              1.1463178396224976,
+              0.07420749962329865
+            ]
+          },
+          "chest": {
+            "samples": 8846,
+            "supportedProjectionSamples": 8846,
+            "posteriorToAnteriorSurface": 3068,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2008,
+              "p05Mm": 0.5177,
+              "medianMm": 3.3799,
+              "p95Mm": 10.1367,
+              "maxMm": 13.5934
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_ducts_L",
+          "vertices": {
+            "samples": 4017,
+            "counts": {
+              "inside": 3591,
+              "outside": 377,
+              "boundary": 49,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2019,
+              "p05Mm": 0.2613,
+              "medianMm": 0.5978,
+              "p95Mm": 2.9604,
+              "maxMm": 3.1763
+            },
+            "maximumOutsidePointM": [
+              0.1027640774846077,
+              1.1485041379928589,
+              0.07413336616420746
+            ],
+            "nearestEnvelopePointM": [
+              0.10505244135856628,
+              1.148321509361267,
+              0.07632862776517868
+            ]
+          },
+          "chest": {
+            "samples": 4017,
+            "supportedProjectionSamples": 4017,
+            "posteriorToAnteriorSurface": 232,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2011,
+              "p05Mm": 0.3991,
+              "medianMm": 1.6717,
+              "p95Mm": 7.2126,
+              "maxMm": 7.7211
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_sinuses_L",
+          "vertices": {
+            "samples": 1927,
+            "counts": {
+              "inside": 1090,
+              "outside": 262,
+              "boundary": 575,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.202,
+              "p05Mm": 0.2115,
+              "medianMm": 0.3098,
+              "p95Mm": 0.5327,
+              "maxMm": 0.5899
+            },
+            "maximumOutsidePointM": [
+              0.10162045806646347,
+              1.169969916343689,
+              0.09990579616689682
+            ],
+            "nearestEnvelopePointM": [
+              0.10117117315530777,
+              1.1701240539550781,
+              0.09955599159002304
+            ]
+          },
+          "chest": {
+            "samples": 1927,
+            "supportedProjectionSamples": 1927,
+            "posteriorToAnteriorSurface": 0,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": null
+          }
+        },
+        {
+          "id": "VH_F_mammary_lobes_R",
+          "vertices": {
+            "samples": 8904,
+            "counts": {
+              "inside": 7796,
+              "outside": 906,
+              "boundary": 202,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2014,
+              "p05Mm": 0.3091,
+              "medianMm": 1.5078,
+              "p95Mm": 4.8841,
+              "maxMm": 6.2709
+            },
+            "maximumOutsidePointM": [
+              -0.09662149101495743,
+              1.1482665538787842,
+              0.07580201309585571
+            ],
+            "nearestEnvelopePointM": [
+              -0.10083884000778198,
+              1.1478912830352783,
+              0.08042775094509125
+            ]
+          },
+          "chest": {
+            "samples": 8904,
+            "supportedProjectionSamples": 8904,
+            "posteriorToAnteriorSurface": 2810,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2034,
+              "p05Mm": 0.4728,
+              "medianMm": 2.8525,
+              "p95Mm": 8.9414,
+              "maxMm": 12.081
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_ducts_R",
+          "vertices": {
+            "samples": 4001,
+            "counts": {
+              "inside": 3585,
+              "outside": 353,
+              "boundary": 63,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2004,
+              "p05Mm": 0.2332,
+              "medianMm": 0.5799,
+              "p95Mm": 1.907,
+              "maxMm": 2.1847
+            },
+            "maximumOutsidePointM": [
+              -0.09773800522089005,
+              1.1499930620193481,
+              0.08044698816204071
+            ],
+            "nearestEnvelopePointM": [
+              -0.09920291602611542,
+              1.1498647928237915,
+              0.08206264674663544
+            ]
+          },
+          "chest": {
+            "samples": 4001,
+            "supportedProjectionSamples": 4001,
+            "posteriorToAnteriorSurface": 211,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2485,
+              "p05Mm": 0.7174,
+              "medianMm": 2.6682,
+              "p95Mm": 6.591,
+              "maxMm": 6.7652
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_sinuses_R",
+          "vertices": {
+            "samples": 1942,
+            "counts": {
+              "inside": 1187,
+              "outside": 220,
+              "boundary": 535,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2016,
+              "p05Mm": 0.2091,
+              "medianMm": 0.3082,
+              "p95Mm": 0.5233,
+              "maxMm": 0.5697
+            },
+            "maximumOutsidePointM": [
+              -0.09647943824529648,
+              1.1718026399612427,
+              0.10681338590049744
+            ],
+            "nearestEnvelopePointM": [
+              -0.0960686206817627,
+              1.1719566583633423,
+              0.10644996911287308
+            ]
+          },
+          "chest": {
+            "samples": 1942,
+            "supportedProjectionSamples": 1942,
+            "posteriorToAnteriorSurface": 0,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": null
+          }
+        }
+      ]
+    },
+    {
+      "insetMm": 0,
+      "reductionMm": 8,
+      "parts": [
+        {
+          "id": "VH_F_mammary_lobes_L",
+          "vertices": {
+            "samples": 8846,
+            "counts": {
+              "inside": 7678,
+              "outside": 967,
+              "boundary": 197,
+              "uncertain": 4
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2023,
+              "p05Mm": 0.3085,
+              "medianMm": 1.735,
+              "p95Mm": 4.9327,
+              "maxMm": 6.103
+            },
+            "maximumOutsidePointM": [
+              0.10144916921854019,
+              1.1473580598831177,
+              0.07103990423297882
+            ],
+            "nearestEnvelopePointM": [
+              0.10586758702993393,
+              1.1465102434158325,
+              0.07516368478536606
+            ]
+          },
+          "chest": {
+            "samples": 8846,
+            "supportedProjectionSamples": 8846,
+            "posteriorToAnteriorSurface": 2638,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2008,
+              "p05Mm": 0.464,
+              "medianMm": 3.1077,
+              "p95Mm": 9.4772,
+              "maxMm": 12.6814
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_ducts_L",
+          "vertices": {
+            "samples": 4017,
+            "counts": {
+              "inside": 3494,
+              "outside": 442,
+              "boundary": 81,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2042,
+              "p05Mm": 0.2861,
+              "medianMm": 1.0151,
+              "p95Mm": 2.2446,
+              "maxMm": 2.546
+            },
+            "maximumOutsidePointM": [
+              0.1027640774846077,
+              1.1485041379928589,
+              0.07504536616420746
+            ],
+            "nearestEnvelopePointM": [
+              0.10459833592176437,
+              1.1483577489852905,
+              0.0768050029873848
+            ]
+          },
+          "chest": {
+            "samples": 4017,
+            "supportedProjectionSamples": 4017,
+            "posteriorToAnteriorSurface": 171,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2143,
+              "p05Mm": 0.3187,
+              "medianMm": 1.4231,
+              "p95Mm": 6.417,
+              "maxMm": 6.8091
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_sinuses_L",
+          "vertices": {
+            "samples": 1927,
+            "counts": {
+              "inside": 414,
+              "outside": 991,
+              "boundary": 520,
+              "uncertain": 2
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2008,
+              "p05Mm": 0.2307,
+              "medianMm": 0.5545,
+              "p95Mm": 0.9804,
+              "maxMm": 1.1307
+            },
+            "maximumOutsidePointM": [
+              0.10162045806646347,
+              1.169969916343689,
+              0.10081779616689682
+            ],
+            "nearestEnvelopePointM": [
+              0.10075923055410385,
+              1.1702650785446167,
+              0.10014725476503372
+            ]
+          },
+          "chest": {
+            "samples": 1927,
+            "supportedProjectionSamples": 1927,
+            "posteriorToAnteriorSurface": 0,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": null
+          }
+        },
+        {
+          "id": "VH_F_mammary_lobes_R",
+          "vertices": {
+            "samples": 8904,
+            "counts": {
+              "inside": 8089,
+              "outside": 640,
+              "boundary": 175,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2001,
+              "p05Mm": 0.2983,
+              "medianMm": 1.6851,
+              "p95Mm": 4.6265,
+              "maxMm": 5.5977
+            },
+            "maximumOutsidePointM": [
+              -0.09662149101495743,
+              1.1482665538787842,
+              0.07671401309585571
+            ],
+            "nearestEnvelopePointM": [
+              -0.10035756230354309,
+              1.1479213237762451,
+              0.08086814731359482
+            ]
+          },
+          "chest": {
+            "samples": 8904,
+            "supportedProjectionSamples": 8904,
+            "posteriorToAnteriorSurface": 2298,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2004,
+              "p05Mm": 0.4132,
+              "medianMm": 2.5764,
+              "p95Mm": 8.365,
+              "maxMm": 11.169
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_ducts_R",
+          "vertices": {
+            "samples": 4001,
+            "counts": {
+              "inside": 3512,
+              "outside": 419,
+              "boundary": 70,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2003,
+              "p05Mm": 0.5103,
+              "medianMm": 1.0579,
+              "p95Mm": 1.3611,
+              "maxMm": 1.5256
+            },
+            "maximumOutsidePointM": [
+              -0.0984315350651741,
+              1.1724590063095093,
+              0.10638045924520492
+            ],
+            "nearestEnvelopePointM": [
+              -0.09733083844184875,
+              1.1728692054748535,
+              0.10540691763162613
+            ]
+          },
+          "chest": {
+            "samples": 4001,
+            "supportedProjectionSamples": 4001,
+            "posteriorToAnteriorSurface": 193,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": {
+              "minMm": 0.2065,
+              "p05Mm": 0.5441,
+              "medianMm": 1.896,
+              "p95Mm": 5.6938,
+              "maxMm": 5.8532
+            }
+          }
+        },
+        {
+          "id": "VH_F_main_lactiferous_sinuses_R",
+          "vertices": {
+            "samples": 1942,
+            "counts": {
+              "inside": 505,
+              "outside": 941,
+              "boundary": 496,
+              "uncertain": 0
+            },
+            "outsideDistanceMm": {
+              "minMm": 0.2002,
+              "p05Mm": 0.2428,
+              "medianMm": 0.5598,
+              "p95Mm": 1.004,
+              "maxMm": 1.1511
+            },
+            "maximumOutsidePointM": [
+              -0.09647943824529648,
+              1.1718026399612427,
+              0.10772538590049743
+            ],
+            "nearestEnvelopePointM": [
+              -0.0956486165523529,
+              1.1721148490905762,
+              0.10699236392974854
+            ]
+          },
+          "chest": {
+            "samples": 1942,
+            "supportedProjectionSamples": 1942,
+            "posteriorToAnteriorSurface": 0,
+            "unsupportedProjectionSamples": 0,
+            "posteriorDepthMm": null
+          }
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Procedural envelope containment is a rendering-assembly criterion, not adipose/gland histology or anatomical certification.",
+    "All three internal tissue groups shift coherently for each candidate; external nipples/areola and suspensory ligaments are not moved.",
+    "Moving ducts/sinuses can affect their continuity with unchanged nipple anatomy; that interface requires separate validation.",
+    "Posterior-to-chest-surface depth is a projected geometric test; it does not classify tissue-volume intersections or complete chest anatomy.",
+    "Candidate sweep initially measures all source vertices; triangle centroids must be checked for any candidate proposed for production."
+  ]
+}

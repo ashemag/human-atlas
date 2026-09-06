@@ -1,0 +1,738 @@
+{
+  "issue": "SWR-513",
+  "status": "Rejected for production: geometry-only correspondences, no reviewed anatomical landmarks or attachment constraints",
+  "method": "Mean nearest-surface correspondence displacements from three source proximity patches, equally weighted by region, translation capped at 5 mm. Uniform translation preserves pelvis internal shape, but does not validate registration.",
+  "sourceAuditSha256": "d9c792ee595a90db5eeacf75250ffb12951330b1445add6f56e63f774d7bd7a3",
+  "anchorSuggestions": [
+    {
+      "name": "Right femur / hip envelope",
+      "vertices": 29,
+      "translationM": [
+        0.001437603030923273,
+        0.001231504832024258,
+        -0.0006679155135868258
+      ]
+    },
+    {
+      "name": "Left femur / hip envelope",
+      "vertices": 31,
+      "translationM": [
+        -6.908727501737081e-05,
+        0.0007973024302944181,
+        -0.0007451759422648443
+      ]
+    },
+    {
+      "name": "L5 disc / sacrum",
+      "vertices": 619,
+      "translationM": [
+        -8.965050746677658e-05,
+        -0.004583542291237041,
+        0.002546205906398634
+      ]
+    }
+  ],
+  "unboundedTranslationM": [
+    0.00042628841614637515,
+    -0.0008515783429727883,
+    0.0003777048168489879
+  ],
+  "evaluatedTranslationM": [
+    0.00042628841614637515,
+    -0.0008515783429727883,
+    0.0003777048168489879
+  ],
+  "productionGeometryChanged": false,
+  "limitations": [
+    "Closest points can lie on non-articular or wrong-facing surfaces.",
+    "Source proximity patches are not anatomical contact, origin, insertion, or cartilage annotations.",
+    "No rotation or local reshape was attempted; fitting a wrong global objective is not a valid anatomical correction.",
+    "Comparison scores do not certify registration even if all improve."
+  ],
+  "results": [
+    {
+      "name": "Right femur / hip envelope",
+      "patchVertices": 29,
+      "before": {
+        "minMm": 0.0091,
+        "p05Mm": 0.1636,
+        "medianMm": 3.4809,
+        "p95Mm": 9.2742,
+        "maxMm": 10.101
+      },
+      "after": {
+        "minMm": 0.0635,
+        "p05Mm": 0.1529,
+        "medianMm": 3.4264,
+        "p95Mm": 9.1508,
+        "maxMm": 9.4389
+      },
+      "p95ChangeMm": -0.1234
+    },
+    {
+      "name": "Right gluteus maximus",
+      "patchVertices": 312,
+      "before": {
+        "minMm": 0.0746,
+        "p05Mm": 0.2385,
+        "medianMm": 5.5075,
+        "p95Mm": 25.0972,
+        "maxMm": 32.909
+      },
+      "after": {
+        "minMm": 0.0638,
+        "p05Mm": 0.3028,
+        "medianMm": 4.9749,
+        "p95Mm": 24.2321,
+        "maxMm": 32.1365
+      },
+      "p95ChangeMm": -0.8651
+    },
+    {
+      "name": "Right gluteus medius",
+      "patchVertices": 335,
+      "before": {
+        "minMm": 0.005,
+        "p05Mm": 0.1386,
+        "medianMm": 2.6594,
+        "p95Mm": 7.7855,
+        "maxMm": 10.2194
+      },
+      "after": {
+        "minMm": 0.004,
+        "p05Mm": 0.056,
+        "medianMm": 2.5285,
+        "p95Mm": 7.4886,
+        "maxMm": 9.8155
+      },
+      "p95ChangeMm": -0.2969
+    },
+    {
+      "name": "Right gluteus minimus",
+      "patchVertices": 370,
+      "before": {
+        "minMm": 0.0316,
+        "p05Mm": 0.2188,
+        "medianMm": 1.9634,
+        "p95Mm": 6.2843,
+        "maxMm": 8.0423
+      },
+      "after": {
+        "minMm": 0.0054,
+        "p05Mm": 0.1008,
+        "medianMm": 1.8355,
+        "p95Mm": 5.9023,
+        "maxMm": 7.5996
+      },
+      "p95ChangeMm": -0.382
+    },
+    {
+      "name": "Right iliacus",
+      "patchVertices": 733,
+      "before": {
+        "minMm": 0.0061,
+        "p05Mm": 0.0817,
+        "medianMm": 0.8587,
+        "p95Mm": 3.5674,
+        "maxMm": 5.9837
+      },
+      "after": {
+        "minMm": 0.0185,
+        "p05Mm": 0.0666,
+        "medianMm": 0.7628,
+        "p95Mm": 3.5919,
+        "maxMm": 6.2159
+      },
+      "p95ChangeMm": 0.0245
+    },
+    {
+      "name": "Right adductor brevis",
+      "patchVertices": 25,
+      "before": {
+        "minMm": 0.0282,
+        "p05Mm": 0.1219,
+        "medianMm": 1.211,
+        "p95Mm": 3.7566,
+        "maxMm": 3.7566
+      },
+      "after": {
+        "minMm": 0.2816,
+        "p05Mm": 0.4177,
+        "medianMm": 1.736,
+        "p95Mm": 4.2999,
+        "maxMm": 4.2999
+      },
+      "p95ChangeMm": 0.5433
+    },
+    {
+      "name": "Right adductor longus",
+      "patchVertices": 87,
+      "before": {
+        "minMm": 0.1817,
+        "p05Mm": 0.6198,
+        "medianMm": 7.3449,
+        "p95Mm": 8.0571,
+        "maxMm": 8.3628
+      },
+      "after": {
+        "minMm": 0.0305,
+        "p05Mm": 0.9415,
+        "medianMm": 7.1644,
+        "p95Mm": 7.9221,
+        "maxMm": 8.2194
+      },
+      "p95ChangeMm": -0.135
+    },
+    {
+      "name": "Right adductor magnus",
+      "patchVertices": 136,
+      "before": {
+        "minMm": 0.0675,
+        "p05Mm": 0.1607,
+        "medianMm": 5.6803,
+        "p95Mm": 9.5597,
+        "maxMm": 10.0487
+      },
+      "after": {
+        "minMm": 0.2463,
+        "p05Mm": 0.548,
+        "medianMm": 5.0688,
+        "p95Mm": 9.1692,
+        "maxMm": 9.6821
+      },
+      "p95ChangeMm": -0.3905
+    },
+    {
+      "name": "Right adductor minimus",
+      "patchVertices": 28,
+      "before": {
+        "minMm": 0.0321,
+        "p05Mm": 0.0616,
+        "medianMm": 1.2978,
+        "p95Mm": 2.1242,
+        "maxMm": 2.6217
+      },
+      "after": {
+        "minMm": 0.2842,
+        "p05Mm": 0.4121,
+        "medianMm": 1.6945,
+        "p95Mm": 2.4289,
+        "maxMm": 2.4828
+      },
+      "p95ChangeMm": 0.3047
+    },
+    {
+      "name": "Right piriformis",
+      "patchVertices": 233,
+      "before": {
+        "minMm": 0.9436,
+        "p05Mm": 2.2673,
+        "medianMm": 10.8844,
+        "p95Mm": 13.3286,
+        "maxMm": 17.9012
+      },
+      "after": {
+        "minMm": 1.8466,
+        "p05Mm": 2.8483,
+        "medianMm": 9.8665,
+        "p95Mm": 12.336,
+        "maxMm": 17.2212
+      },
+      "p95ChangeMm": -0.9926
+    },
+    {
+      "name": "Right obturator internus",
+      "patchVertices": 680,
+      "before": {
+        "minMm": 0.009,
+        "p05Mm": 0.0853,
+        "medianMm": 1.9294,
+        "p95Mm": 10.1794,
+        "maxMm": 13.4031
+      },
+      "after": {
+        "minMm": 0.0089,
+        "p05Mm": 0.1702,
+        "medianMm": 1.9281,
+        "p95Mm": 10.2742,
+        "maxMm": 13.5148
+      },
+      "p95ChangeMm": 0.0948
+    },
+    {
+      "name": "Right obturator externus",
+      "patchVertices": 228,
+      "before": {
+        "minMm": 0.0222,
+        "p05Mm": 0.1021,
+        "medianMm": 1.1199,
+        "p95Mm": 4.5001,
+        "maxMm": 5.2425
+      },
+      "after": {
+        "minMm": 0.0059,
+        "p05Mm": 0.0485,
+        "medianMm": 1.3794,
+        "p95Mm": 4.66,
+        "maxMm": 5.4028
+      },
+      "p95ChangeMm": 0.1599
+    },
+    {
+      "name": "Right gemellus inferior",
+      "patchVertices": 227,
+      "before": {
+        "minMm": 0.0767,
+        "p05Mm": 2.8007,
+        "medianMm": 11.0288,
+        "p95Mm": 12.4388,
+        "maxMm": 12.9153
+      },
+      "after": {
+        "minMm": 0.5154,
+        "p05Mm": 3.1293,
+        "medianMm": 10.911,
+        "p95Mm": 12.5394,
+        "maxMm": 12.8167
+      },
+      "p95ChangeMm": 0.1006
+    },
+    {
+      "name": "Right gemellus superior",
+      "patchVertices": 231,
+      "before": {
+        "minMm": 0.4115,
+        "p05Mm": 3.8335,
+        "medianMm": 9.0065,
+        "p95Mm": 10.2501,
+        "maxMm": 10.4124
+      },
+      "after": {
+        "minMm": 0.1368,
+        "p05Mm": 4.3304,
+        "medianMm": 8.7996,
+        "p95Mm": 9.9861,
+        "maxMm": 10.1615
+      },
+      "p95ChangeMm": -0.264
+    },
+    {
+      "name": "Right semimembranosus",
+      "patchVertices": 122,
+      "before": {
+        "minMm": 2.1205,
+        "p05Mm": 2.6321,
+        "medianMm": 10.5259,
+        "p95Mm": 11.5515,
+        "maxMm": 11.8678
+      },
+      "after": {
+        "minMm": 1.7554,
+        "p05Mm": 2.2705,
+        "medianMm": 10.2164,
+        "p95Mm": 11.2969,
+        "maxMm": 11.6354
+      },
+      "p95ChangeMm": -0.2546
+    },
+    {
+      "name": "Right semitendinosus",
+      "patchVertices": 140,
+      "before": {
+        "minMm": 2.2732,
+        "p05Mm": 2.608,
+        "medianMm": 11.8701,
+        "p95Mm": 13.3081,
+        "maxMm": 13.5573
+      },
+      "after": {
+        "minMm": 1.8953,
+        "p05Mm": 2.2906,
+        "medianMm": 11.7199,
+        "p95Mm": 13.3296,
+        "maxMm": 13.4651
+      },
+      "p95ChangeMm": 0.0215
+    },
+    {
+      "name": "Long head of right biceps femoris",
+      "patchVertices": 40,
+      "before": {
+        "minMm": 3.8546,
+        "p05Mm": 5.6113,
+        "medianMm": 10.5829,
+        "p95Mm": 14.3739,
+        "maxMm": 14.4039
+      },
+      "after": {
+        "minMm": 3.5791,
+        "p05Mm": 5.3119,
+        "medianMm": 10.4886,
+        "p95Mm": 14.1723,
+        "maxMm": 14.269
+      },
+      "p95ChangeMm": -0.2016
+    },
+    {
+      "name": "Left femur / hip envelope",
+      "patchVertices": 31,
+      "before": {
+        "minMm": 0.4323,
+        "p05Mm": 0.7806,
+        "medianMm": 4.2957,
+        "p95Mm": 8.943,
+        "maxMm": 10.5865
+      },
+      "after": {
+        "minMm": 0.0395,
+        "p05Mm": 0.7445,
+        "medianMm": 4.1955,
+        "p95Mm": 9.2253,
+        "maxMm": 10.091
+      },
+      "p95ChangeMm": 0.2823
+    },
+    {
+      "name": "Left gluteus maximus",
+      "patchVertices": 319,
+      "before": {
+        "minMm": 0.0408,
+        "p05Mm": 0.2943,
+        "medianMm": 4.2612,
+        "p95Mm": 25.1516,
+        "maxMm": 33.0241
+      },
+      "after": {
+        "minMm": 0.019,
+        "p05Mm": 0.4234,
+        "medianMm": 4.4069,
+        "p95Mm": 24.3047,
+        "maxMm": 32.2081
+      },
+      "p95ChangeMm": -0.8469
+    },
+    {
+      "name": "Left gluteus medius",
+      "patchVertices": 342,
+      "before": {
+        "minMm": 0.0781,
+        "p05Mm": 0.3467,
+        "medianMm": 3.5937,
+        "p95Mm": 6.7598,
+        "maxMm": 8.6905
+      },
+      "after": {
+        "minMm": 0.0148,
+        "p05Mm": 0.1975,
+        "medianMm": 3.3643,
+        "p95Mm": 6.4187,
+        "maxMm": 9.1449
+      },
+      "p95ChangeMm": -0.3411
+    },
+    {
+      "name": "Left gluteus minimus",
+      "patchVertices": 389,
+      "before": {
+        "minMm": 0.0222,
+        "p05Mm": 0.2837,
+        "medianMm": 2.8706,
+        "p95Mm": 6.315,
+        "maxMm": 7.5704
+      },
+      "after": {
+        "minMm": 0.0051,
+        "p05Mm": 0.2225,
+        "medianMm": 3.0128,
+        "p95Mm": 6.5319,
+        "maxMm": 7.8523
+      },
+      "p95ChangeMm": 0.2169
+    },
+    {
+      "name": "Left iliacus",
+      "patchVertices": 768,
+      "before": {
+        "minMm": 0.0388,
+        "p05Mm": 0.3913,
+        "medianMm": 1.7386,
+        "p95Mm": 4.2737,
+        "maxMm": 6.2913
+      },
+      "after": {
+        "minMm": 0.0152,
+        "p05Mm": 0.463,
+        "medianMm": 2.2365,
+        "p95Mm": 4.0223,
+        "maxMm": 6.7267
+      },
+      "p95ChangeMm": -0.2514
+    },
+    {
+      "name": "Left adductor brevis",
+      "patchVertices": 24,
+      "before": {
+        "minMm": 0.2029,
+        "p05Mm": 0.2448,
+        "medianMm": 0.7534,
+        "p95Mm": 1.8255,
+        "maxMm": 2.3213
+      },
+      "after": {
+        "minMm": 0.0225,
+        "p05Mm": 0.0225,
+        "medianMm": 1.3398,
+        "p95Mm": 2.548,
+        "maxMm": 2.548
+      },
+      "p95ChangeMm": 0.7225
+    },
+    {
+      "name": "Left adductor longus",
+      "patchVertices": 83,
+      "before": {
+        "minMm": 0.0304,
+        "p05Mm": 0.7925,
+        "medianMm": 5.9187,
+        "p95Mm": 6.4022,
+        "maxMm": 6.7443
+      },
+      "after": {
+        "minMm": 0.458,
+        "p05Mm": 0.724,
+        "medianMm": 5.5763,
+        "p95Mm": 6.1043,
+        "maxMm": 6.4174
+      },
+      "p95ChangeMm": -0.2979
+    },
+    {
+      "name": "Left adductor magnus",
+      "patchVertices": 138,
+      "before": {
+        "minMm": 0.0328,
+        "p05Mm": 0.1308,
+        "medianMm": 7.3833,
+        "p95Mm": 11.6013,
+        "maxMm": 12.1356
+      },
+      "after": {
+        "minMm": 0.129,
+        "p05Mm": 0.225,
+        "medianMm": 7.3485,
+        "p95Mm": 12.0516,
+        "maxMm": 12.5623
+      },
+      "p95ChangeMm": 0.4503
+    },
+    {
+      "name": "Left adductor minimus",
+      "patchVertices": 31,
+      "before": {
+        "minMm": 0.1231,
+        "p05Mm": 0.1975,
+        "medianMm": 0.9669,
+        "p95Mm": 2.2472,
+        "maxMm": 3.0403
+      },
+      "after": {
+        "minMm": 0.0008,
+        "p05Mm": 0.089,
+        "medianMm": 1.9466,
+        "p95Mm": 2.9638,
+        "maxMm": 2.9937
+      },
+      "p95ChangeMm": 0.7166
+    },
+    {
+      "name": "Left piriformis",
+      "patchVertices": 185,
+      "before": {
+        "minMm": 2.7676,
+        "p05Mm": 3.2759,
+        "medianMm": 9.0066,
+        "p95Mm": 13.0149,
+        "maxMm": 17.7742
+      },
+      "after": {
+        "minMm": 2.8973,
+        "p05Mm": 3.474,
+        "medianMm": 8.3896,
+        "p95Mm": 12.2573,
+        "maxMm": 16.9092
+      },
+      "p95ChangeMm": -0.7576
+    },
+    {
+      "name": "Left obturator internus",
+      "patchVertices": 692,
+      "before": {
+        "minMm": 0.0024,
+        "p05Mm": 0.2284,
+        "medianMm": 1.8077,
+        "p95Mm": 11.6463,
+        "maxMm": 12.8614
+      },
+      "after": {
+        "minMm": 0.011,
+        "p05Mm": 0.1671,
+        "medianMm": 2.0593,
+        "p95Mm": 12.3067,
+        "maxMm": 13.6729
+      },
+      "p95ChangeMm": 0.6604
+    },
+    {
+      "name": "Left obturator externus",
+      "patchVertices": 228,
+      "before": {
+        "minMm": 0.0245,
+        "p05Mm": 0.0738,
+        "medianMm": 2.3122,
+        "p95Mm": 7.0598,
+        "maxMm": 7.3687
+      },
+      "after": {
+        "minMm": 0.0622,
+        "p05Mm": 0.1882,
+        "medianMm": 2.0569,
+        "p95Mm": 7.8569,
+        "maxMm": 8.1886
+      },
+      "p95ChangeMm": 0.7971
+    },
+    {
+      "name": "Left gemellus inferior",
+      "patchVertices": 223,
+      "before": {
+        "minMm": 1.1078,
+        "p05Mm": 3.4836,
+        "medianMm": 11.6483,
+        "p95Mm": 12.4733,
+        "maxMm": 12.7748
+      },
+      "after": {
+        "minMm": 1.1806,
+        "p05Mm": 3.8621,
+        "medianMm": 12.2479,
+        "p95Mm": 13.0881,
+        "maxMm": 13.4755
+      },
+      "p95ChangeMm": 0.6148
+    },
+    {
+      "name": "Left gemellus superior",
+      "patchVertices": 234,
+      "before": {
+        "minMm": 0.2024,
+        "p05Mm": 5.3036,
+        "medianMm": 9.9183,
+        "p95Mm": 11.0521,
+        "maxMm": 11.1511
+      },
+      "after": {
+        "minMm": 0.2576,
+        "p05Mm": 5.5433,
+        "medianMm": 10.4647,
+        "p95Mm": 11.5728,
+        "maxMm": 11.6615
+      },
+      "p95ChangeMm": 0.5207
+    },
+    {
+      "name": "Left semimembranosus",
+      "patchVertices": 123,
+      "before": {
+        "minMm": 4.2641,
+        "p05Mm": 4.5716,
+        "medianMm": 12.7027,
+        "p95Mm": 13.6403,
+        "maxMm": 13.8896
+      },
+      "after": {
+        "minMm": 4.2909,
+        "p05Mm": 4.6165,
+        "medianMm": 12.9935,
+        "p95Mm": 13.8406,
+        "maxMm": 14.097
+      },
+      "p95ChangeMm": 0.2003
+    },
+    {
+      "name": "Left semitendinosus",
+      "patchVertices": 137,
+      "before": {
+        "minMm": 3.8331,
+        "p05Mm": 4.483,
+        "medianMm": 13.2007,
+        "p95Mm": 14.3233,
+        "maxMm": 14.5767
+      },
+      "after": {
+        "minMm": 3.9497,
+        "p05Mm": 4.4905,
+        "medianMm": 13.5245,
+        "p95Mm": 14.7825,
+        "maxMm": 15.0912
+      },
+      "p95ChangeMm": 0.4592
+    },
+    {
+      "name": "Long head of left biceps femoris",
+      "patchVertices": 41,
+      "before": {
+        "minMm": 5.6265,
+        "p05Mm": 5.6265,
+        "medianMm": 11.8883,
+        "p95Mm": 15.7088,
+        "maxMm": 15.7088
+      },
+      "after": {
+        "minMm": 5.3921,
+        "p05Mm": 5.3921,
+        "medianMm": 12.1074,
+        "p95Mm": 15.9795,
+        "maxMm": 15.9795
+      },
+      "p95ChangeMm": 0.2707
+    },
+    {
+      "name": "L5 / sacrum",
+      "patchVertices": 39,
+      "before": {
+        "minMm": 0.045,
+        "p05Mm": 0.8583,
+        "medianMm": 2.8139,
+        "p95Mm": 5.3803,
+        "maxMm": 7.1331
+      },
+      "after": {
+        "minMm": 0.167,
+        "p05Mm": 0.6086,
+        "medianMm": 2.7997,
+        "p95Mm": 5.3356,
+        "maxMm": 6.4528
+      },
+      "p95ChangeMm": -0.0447
+    },
+    {
+      "name": "L5 disc / sacrum",
+      "patchVertices": 619,
+      "before": {
+        "minMm": 0.0323,
+        "p05Mm": 0.9547,
+        "medianMm": 7.3017,
+        "p95Mm": 12.8883,
+        "maxMm": 15.2624
+      },
+      "after": {
+        "minMm": 0.0174,
+        "p05Mm": 1.3782,
+        "medianMm": 6.8882,
+        "p95Mm": 12.1166,
+        "maxMm": 14.5722
+      },
+      "p95ChangeMm": -0.7717
+    }
+  ]
+}

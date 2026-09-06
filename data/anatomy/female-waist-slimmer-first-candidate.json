@@ -1,0 +1,4973 @@
+{
+  "issue": "SWR-517",
+  "status": "Visual-reference proportion candidate; not a population or anatomical standard",
+  "references": [
+    "https://as2.ftcdn.net/v2/jpg/00/77/91/69/1000_F_77916955_HK9TuhgkxYxzm4SC3uvUbdCKZyRZ83FG.jpg"
+  ],
+  "beforeManifestSha256": "e753425a2c6bffcde9e2dc6478e37f96c2e4bec20f2f5ce1a1a0bdef0233eabf",
+  "afterManifestSha256": "f21f0b907c15f1cb656a0deddd3cdcf81bba9629ad4e3176c0efe3b41fc0a84e",
+  "morphBefore": {
+    "stature": 0.95,
+    "lateralKnots": [
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.55,
+        1.0
+      ],
+      [
+        0.8,
+        1.08
+      ],
+      [
+        0.92,
+        1.15
+      ],
+      [
+        1.03,
+        1.15
+      ],
+      [
+        1.12,
+        0.955
+      ],
+      [
+        1.21,
+        0.96
+      ],
+      [
+        1.29,
+        0.93
+      ],
+      [
+        1.42,
+        0.88
+      ],
+      [
+        1.48,
+        0.88
+      ],
+      [
+        1.6,
+        1.0
+      ]
+    ],
+    "lateralBlend": {
+      "referenceKnots": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.55,
+          1.0
+        ],
+        [
+          0.8,
+          1.05
+        ],
+        [
+          0.92,
+          1.1
+        ],
+        [
+          1.03,
+          1.1
+        ],
+        [
+          1.21,
+          0.96
+        ],
+        [
+          1.29,
+          0.95
+        ],
+        [
+          1.42,
+          0.91
+        ],
+        [
+          1.48,
+          0.91
+        ],
+        [
+          1.6,
+          1.0
+        ]
+      ],
+      "innerRadius": 0.17,
+      "outerRadius": 0.23,
+      "outerTranslation": -0.003,
+      "heightRamp": [
+        0.45,
+        0.55,
+        1.48,
+        1.6
+      ]
+    },
+    "lateralRadius": 0.17,
+    "thoraxDepth": {
+      "scale": 0.96,
+      "ramp": [
+        1.05,
+        1.15,
+        1.35,
+        1.45
+      ]
+    },
+    "gluteProjection": {
+      "partIds": [
+        "FJ1418",
+        "FJ1418M",
+        "FJ3513",
+        "FJ3606"
+      ],
+      "scope": "BodyParts3D bilateral gluteus maximus and inferior gluteal veins only; posterior/inferior components excluded from bones, pelvic organs, ligaments and lumbar muscles",
+      "amplitude": 0.02,
+      "centerX": 0.07,
+      "centerY": 0.88,
+      "radiusX": 0.1,
+      "radiusY": 0.18,
+      "midlineRamp": [
+        0.03,
+        0.05
+      ],
+      "depthRamp": [
+        -0.12,
+        -0.095
+      ],
+      "lowerDepth": {
+        "heightRise": [
+          0.78,
+          0.86
+        ],
+        "heightFade": [
+          0.83,
+          0.895
+        ],
+        "depthRamp": [
+          -0.1,
+          -0.06
+        ]
+      },
+      "inferior": {
+        "amplitude": 0.022,
+        "posteriorFade": [
+          -0.12,
+          -0.075
+        ],
+        "midlineRamp": [
+          0.006,
+          0.02
+        ],
+        "lateralFade": [
+          0.065,
+          0.105
+        ],
+        "heightRamp": [
+          0.76,
+          0.8,
+          0.84,
+          0.885
+        ],
+        "depthRamp": [
+          -0.09,
+          -0.06
+        ]
+      }
+    },
+    "head": {
+      "scale": 0.95,
+      "center": [
+        0.0,
+        1.61,
+        -0.03
+      ],
+      "ramp": [
+        1.44,
+        1.56
+      ]
+    },
+    "nose": {
+      "plane": 0.062,
+      "scale": 0.52,
+      "center": [
+        0.0,
+        1.578
+      ],
+      "radius": [
+        0.03,
+        0.045
+      ],
+      "rampDepth": 0.012
+    }
+  },
+  "morphAfter": {
+    "stature": 0.95,
+    "lateralKnots": [
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.55,
+        1.0
+      ],
+      [
+        0.8,
+        1.08
+      ],
+      [
+        0.92,
+        1.15
+      ],
+      [
+        1.03,
+        1.15
+      ],
+      [
+        1.12,
+        0.86
+      ],
+      [
+        1.21,
+        0.96
+      ],
+      [
+        1.29,
+        0.93
+      ],
+      [
+        1.42,
+        0.88
+      ],
+      [
+        1.48,
+        0.88
+      ],
+      [
+        1.6,
+        1.0
+      ]
+    ],
+    "lateralBlend": {
+      "referenceKnots": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.55,
+          1.0
+        ],
+        [
+          0.8,
+          1.05
+        ],
+        [
+          0.92,
+          1.1
+        ],
+        [
+          1.03,
+          1.1
+        ],
+        [
+          1.21,
+          0.96
+        ],
+        [
+          1.29,
+          0.95
+        ],
+        [
+          1.42,
+          0.91
+        ],
+        [
+          1.48,
+          0.91
+        ],
+        [
+          1.6,
+          1.0
+        ]
+      ],
+      "innerRadius": 0.17,
+      "outerRadius": 0.23,
+      "outerTranslation": -0.003,
+      "heightRamp": [
+        0.45,
+        0.55,
+        1.48,
+        1.6
+      ]
+    },
+    "lateralRadius": 0.17,
+    "thoraxDepth": {
+      "scale": 0.96,
+      "ramp": [
+        1.05,
+        1.15,
+        1.35,
+        1.45
+      ]
+    },
+    "gluteProjection": {
+      "partIds": [
+        "FJ1418",
+        "FJ1418M",
+        "FJ3513",
+        "FJ3606"
+      ],
+      "scope": "BodyParts3D bilateral gluteus maximus and inferior gluteal veins only; posterior/inferior components excluded from bones, pelvic organs, ligaments and lumbar muscles",
+      "amplitude": 0.02,
+      "centerX": 0.07,
+      "centerY": 0.88,
+      "radiusX": 0.1,
+      "radiusY": 0.18,
+      "midlineRamp": [
+        0.03,
+        0.05
+      ],
+      "depthRamp": [
+        -0.12,
+        -0.095
+      ],
+      "lowerDepth": {
+        "heightRise": [
+          0.78,
+          0.86
+        ],
+        "heightFade": [
+          0.83,
+          0.895
+        ],
+        "depthRamp": [
+          -0.1,
+          -0.06
+        ]
+      },
+      "inferior": {
+        "amplitude": 0.022,
+        "posteriorFade": [
+          -0.12,
+          -0.075
+        ],
+        "midlineRamp": [
+          0.006,
+          0.02
+        ],
+        "lateralFade": [
+          0.065,
+          0.105
+        ],
+        "heightRamp": [
+          0.76,
+          0.8,
+          0.84,
+          0.885
+        ],
+        "depthRamp": [
+          -0.09,
+          -0.06
+        ]
+      }
+    },
+    "head": {
+      "scale": 0.95,
+      "center": [
+        0.0,
+        1.61,
+        -0.03
+      ],
+      "ramp": [
+        1.44,
+        1.56
+      ]
+    },
+    "nose": {
+      "plane": 0.062,
+      "scale": 0.52,
+      "center": [
+        0.0,
+        1.578
+      ],
+      "radius": [
+        0.03,
+        0.045
+      ],
+      "rampDepth": 0.012
+    }
+  },
+  "parts": 2243,
+  "changedParts": 475,
+  "topologyUnchanged": true,
+  "allVerticalAndDepthCoordinatesExactlyUnchanged": true,
+  "extraBreastInsetsUnchanged": true,
+  "sourceRegistrationTransformsUnchanged": true,
+  "minimumSampledMorphJacobian": 0.3771252597161118,
+  "widths": {
+    "deltoidEnvelope": {
+      "ids": [
+        "FJ1467",
+        "FJ1467M",
+        "FJ1468",
+        "FJ1468M",
+        "FJ1513",
+        "FJ1513M"
+      ],
+      "heightBandM": null,
+      "beforeMm": 407.4839800596237,
+      "afterMm": 407.4839800596237,
+      "changePercent": 0.0
+    },
+    "iliumEnvelope": {
+      "ids": [
+        "VH_F_ilium_compact_bone_L",
+        "VH_F_ilium_compact_bone_R"
+      ],
+      "heightBandM": null,
+      "beforeMm": 308.67354571819305,
+      "afterMm": 308.67354571819305,
+      "changePercent": 0.0
+    },
+    "glutealEnvelope": {
+      "ids": [
+        "FJ1418",
+        "FJ1418M",
+        "FJ1419",
+        "FJ1419M",
+        "FJ1420",
+        "FJ1420M"
+      ],
+      "heightBandM": null,
+      "beforeMm": 318.7428116798401,
+      "afterMm": 318.7428116798401,
+      "changePercent": 0.0
+    },
+    "scapulaEnvelope": {
+      "ids": [
+        "FJ3279",
+        "FJ3384"
+      ],
+      "heightBandM": null,
+      "beforeMm": 287.09807991981506,
+      "afterMm": 287.09807991981506,
+      "changePercent": 0.0
+    },
+    "upperThighEnvelope": {
+      "ids": [
+        "FJ1403",
+        "FJ1403M",
+        "FJ1433",
+        "FJ1433M",
+        "FJ1442",
+        "FJ1442M"
+      ],
+      "heightBandM": [
+        0.7,
+        0.83
+      ],
+      "beforeMm": 317.4313008785248,
+      "afterMm": 317.4313008785248,
+      "changePercent": 0.0
+    },
+    "waistExternalObliqueEnvelope": {
+      "ids": [
+        "FJ1452",
+        "FJ1452M"
+      ],
+      "heightBandM": [
+        1.055,
+        1.09
+      ],
+      "beforeMm": 245.9070086479187,
+      "afterMm": 229.4195368885994,
+      "changePercent": -6.7047587825874055
+    }
+  },
+  "glutealToDeltoidWidthRatio": {
+    "before": 0.7822217001836517,
+    "after": 0.7822217001836517
+  },
+  "limbMeshSpans": [
+    {
+      "id": "FJ3259",
+      "name": "Left femur",
+      "beforeMaxMeshSpanMm": 444.94792618997405,
+      "afterMaxMeshSpanMm": 444.94792618997405,
+      "changePercent": 0.0,
+      "baselineFarthestVertexIndices": [
+        42,
+        294
+      ],
+      "sameEndpointDistanceAfterMm": 444.9479261899741,
+      "verticalSpanExactlyUnchanged": true
+    },
+    {
+      "id": "FJ3260",
+      "name": "Left fibula",
+      "beforeMaxMeshSpanMm": 364.86889466548706,
+      "afterMaxMeshSpanMm": 364.86889466548706,
+      "changePercent": 0.0,
+      "baselineFarthestVertexIndices": [
+        33,
+        80
+      ],
+      "sameEndpointDistanceAfterMm": 364.86889466548706,
+      "verticalSpanExactlyUnchanged": true
+    },
+    {
+      "id": "FJ3262",
+      "name": "Left humerus",
+      "beforeMaxMeshSpanMm": 297.0547978866358,
+      "afterMaxMeshSpanMm": 297.0547978866358,
+      "changePercent": 0.0,
+      "baselineFarthestVertexIndices": [
+        144,
+        562
+      ],
+      "sameEndpointDistanceAfterMm": 297.05479788663575,
+      "verticalSpanExactlyUnchanged": true
+    },
+    {
+      "id": "FJ3277",
+      "name": "Left radius",
+      "beforeMaxMeshSpanMm": 228.5015007222316,
+      "afterMaxMeshSpanMm": 228.63627696683398,
+      "changePercent": 0.05898265183221785,
+      "baselineFarthestVertexIndices": [
+        23,
+        204
+      ],
+      "sameEndpointDistanceAfterMm": 228.63627696683366,
+      "verticalSpanExactlyUnchanged": true
+    },
+    {
+      "id": "FJ3282",
+      "name": "Left tibia",
+      "beforeMaxMeshSpanMm": 362.64045889227606,
+      "afterMaxMeshSpanMm": 362.64045889227606,
+      "changePercent": 0.0,
+      "baselineFarthestVertexIndices": [
+        47,
+        246
+      ],
+      "sameEndpointDistanceAfterMm": 362.64045889227606,
+      "verticalSpanExactlyUnchanged": true
+    },
+    {
+      "id": "FJ3286",
+      "name": "Left ulna",
+      "beforeMaxMeshSpanMm": 243.69103691495607,
+      "afterMaxMeshSpanMm": 244.67394434825437,
+      "changePercent": 0.40334164347672896,
+      "baselineFarthestVertexIndices": [
+        21,
+        215
+      ],
+      "sameEndpointDistanceAfterMm": 244.67394434825448,
+      "verticalSpanExactlyUnchanged": true
+    },
+    {
+      "id": "FJ3349",
+      "name": "Right radius",
+      "beforeMaxMeshSpanMm": 228.3622998202829,
+      "afterMaxMeshSpanMm": 228.52517175033813,
+      "changePercent": 0.07132172437542827,
+      "baselineFarthestVertexIndices": [
+        44,
+        209
+      ],
+      "sameEndpointDistanceAfterMm": 228.52517175033816,
+      "verticalSpanExactlyUnchanged": true
+    },
+    {
+      "id": "FJ3365",
+      "name": "Right femur",
+      "beforeMaxMeshSpanMm": 445.0739812731792,
+      "afterMaxMeshSpanMm": 445.0739812731792,
+      "changePercent": 0.0,
+      "baselineFarthestVertexIndices": [
+        301,
+        419
+      ],
+      "sameEndpointDistanceAfterMm": 445.0739812731793,
+      "verticalSpanExactlyUnchanged": true
+    },
+    {
+      "id": "FJ3366",
+      "name": "Right fibula",
+      "beforeMaxMeshSpanMm": 365.0451856557746,
+      "afterMaxMeshSpanMm": 365.0451856557746,
+      "changePercent": 0.0,
+      "baselineFarthestVertexIndices": [
+        14,
+        100
+      ],
+      "sameEndpointDistanceAfterMm": 365.0451856557746,
+      "verticalSpanExactlyUnchanged": true
+    },
+    {
+      "id": "FJ3368",
+      "name": "Right humerus",
+      "beforeMaxMeshSpanMm": 296.91610406741813,
+      "afterMaxMeshSpanMm": 296.91610406741813,
+      "changePercent": 0.0,
+      "baselineFarthestVertexIndices": [
+        0,
+        586
+      ],
+      "sameEndpointDistanceAfterMm": 296.91610406741773,
+      "verticalSpanExactlyUnchanged": true
+    },
+    {
+      "id": "FJ3387",
+      "name": "Right tibia",
+      "beforeMaxMeshSpanMm": 362.3034109260973,
+      "afterMaxMeshSpanMm": 362.3034109260973,
+      "changePercent": 0.0,
+      "baselineFarthestVertexIndices": [
+        24,
+        301
+      ],
+      "sameEndpointDistanceAfterMm": 362.3034109260973,
+      "verticalSpanExactlyUnchanged": true
+    },
+    {
+      "id": "FJ3391",
+      "name": "Right ulna",
+      "beforeMaxMeshSpanMm": 244.01174306558215,
+      "afterMaxMeshSpanMm": 245.03694791225985,
+      "changePercent": 0.420145700283836,
+      "baselineFarthestVertexIndices": [
+        73,
+        157
+      ],
+      "sameEndpointDistanceAfterMm": 245.0369479122598,
+      "verticalSpanExactlyUnchanged": true
+    }
+  ],
+  "limitations": [
+    "Mesh envelope widths and maximum pairwise vertex distances are geometric proxies, not annotated anatomical landmarks or joint-center lengths.",
+    "Unchanged vertical coordinates do not imply every 3D distance is unchanged; lateral redistribution can slightly alter limb mesh spans.",
+    "One shared continuous spatial morph preserves coincidence of points, not anatomical validation of their initial placement.",
+    "A sampled positive Jacobian rules out only sampled local foldovers, not all distortions or physiological problems.",
+    "Illustration proportions guide an artistic reference build, not a universal female-body shape."
+  ],
+  "waistLocalization": {
+    "method": "Exact stored vertex/index comparison; changed output y must be inside source-height interval times stature. The waist band is below the head morph and above the localized glute field, so y/stature recovers its source-frame height.",
+    "changedKnot": {
+      "sourceHeightM": 1.12,
+      "before": 0.955,
+      "after": 0.86
+    },
+    "sourceHeightIntervalM": [
+      1.03,
+      1.21
+    ],
+    "outputHeightIntervalM": [
+      0.9784999999999999,
+      1.1495
+    ],
+    "onlyIntendedKnotChanged": true,
+    "topologyAndVerticalDepthCoordinatesUnchanged": true,
+    "outsideHeightIntervalExactlyUnchanged": true,
+    "protectedGlutePositionsAndNormalsExactlyUnchanged": true,
+    "protectedGluteIds": [
+      "FJ1418",
+      "FJ1418M",
+      "FJ1419",
+      "FJ1419M",
+      "FJ1420",
+      "FJ1420M",
+      "FJ3513",
+      "FJ3606"
+    ],
+    "hipShoulderGluteScapulaUpperThighEnvelopeWidthsUnchanged": true,
+    "affectedParts": [
+      {
+        "id": "FJ1473M",
+        "name": "Humeral head of left flexor carpi ulnaris",
+        "system": "muscular",
+        "changedVertices": 299,
+        "maxLateralDisplacementMm": 11.389434337615967,
+        "lateralSpanBeforeMm": 79.47538793087006,
+        "lateralSpanAfterMm": 90.86482226848602
+      },
+      {
+        "id": "FJ1473",
+        "name": "Humeral head of right flexor carpi ulnaris",
+        "system": "muscular",
+        "changedVertices": 301,
+        "maxLateralDisplacementMm": 11.367633938789368,
+        "lateralSpanBeforeMm": 79.26976680755615,
+        "lateralSpanAfterMm": 90.60904383659363
+      },
+      {
+        "id": "FJ1475",
+        "name": "Right flexor digitorum superficialis",
+        "system": "muscular",
+        "changedVertices": 701,
+        "maxLateralDisplacementMm": 11.29867136478424,
+        "lateralSpanBeforeMm": 130.89412450790405,
+        "lateralSpanAfterMm": 142.16695725917816
+      },
+      {
+        "id": "FJ1475M",
+        "name": "Left flexor digitorum superficialis",
+        "system": "muscular",
+        "changedVertices": 700,
+        "maxLateralDisplacementMm": 11.29867136478424,
+        "lateralSpanBeforeMm": 130.89412450790405,
+        "lateralSpanAfterMm": 142.16695725917816
+      },
+      {
+        "id": "FJ3368",
+        "name": "Right humerus",
+        "system": "skeletal",
+        "changedVertices": 191,
+        "maxLateralDisplacementMm": 11.292994022369385,
+        "lateralSpanBeforeMm": 107.57377743721008,
+        "lateralSpanAfterMm": 107.57377743721008
+      },
+      {
+        "id": "FJ3262",
+        "name": "Left humerus",
+        "system": "skeletal",
+        "changedVertices": 193,
+        "maxLateralDisplacementMm": 11.267468333244324,
+        "lateralSpanBeforeMm": 107.52900689840317,
+        "lateralSpanAfterMm": 107.52900689840317
+      },
+      {
+        "id": "FJ1502",
+        "name": "Right palmaris longus",
+        "system": "muscular",
+        "changedVertices": 337,
+        "maxLateralDisplacementMm": 11.143609881401062,
+        "lateralSpanBeforeMm": 115.85094034671783,
+        "lateralSpanAfterMm": 126.88767910003662
+      },
+      {
+        "id": "FJ1502M",
+        "name": "Left palmaris longus",
+        "system": "muscular",
+        "changedVertices": 326,
+        "maxLateralDisplacementMm": 11.143609881401062,
+        "lateralSpanBeforeMm": 115.85094034671783,
+        "lateralSpanAfterMm": 126.88767910003662
+      },
+      {
+        "id": "FJ2218",
+        "name": "Left basilic vein",
+        "system": "venous",
+        "changedVertices": 678,
+        "maxLateralDisplacementMm": 11.07962429523468,
+        "lateralSpanBeforeMm": 97.26975858211517,
+        "lateralSpanAfterMm": 97.26975858211517
+      },
+      {
+        "id": "FJ2270",
+        "name": "Right basilic vein",
+        "system": "venous",
+        "changedVertices": 650,
+        "maxLateralDisplacementMm": 10.970547795295715,
+        "lateralSpanBeforeMm": 97.29540348052979,
+        "lateralSpanAfterMm": 97.29540348052979
+      },
+      {
+        "id": "FJ1496",
+        "name": "Right flexor carpi radialis",
+        "system": "muscular",
+        "changedVertices": 109,
+        "maxLateralDisplacementMm": 10.327532887458801,
+        "lateralSpanBeforeMm": 96.73622250556946,
+        "lateralSpanAfterMm": 106.75521194934845
+      },
+      {
+        "id": "FJ1496M",
+        "name": "Left flexor carpi radialis",
+        "system": "muscular",
+        "changedVertices": 112,
+        "maxLateralDisplacementMm": 10.327532887458801,
+        "lateralSpanBeforeMm": 96.73622250556946,
+        "lateralSpanAfterMm": 106.75521194934845
+      },
+      {
+        "id": "FJ2374",
+        "name": "Left superior ulnar collateral artery",
+        "system": "arterial",
+        "changedVertices": 164,
+        "maxLateralDisplacementMm": 10.202378034591675,
+        "lateralSpanBeforeMm": 7.519081234931946,
+        "lateralSpanAfterMm": 14.702767133712769
+      },
+      {
+        "id": "FJ2373",
+        "name": "Right superior ulnar collateral artery",
+        "system": "arterial",
+        "changedVertices": 164,
+        "maxLateralDisplacementMm": 10.200947523117065,
+        "lateralSpanBeforeMm": 7.466018199920654,
+        "lateralSpanAfterMm": 14.753282070159912
+      },
+      {
+        "id": "FJ1452",
+        "name": "Right external oblique",
+        "system": "muscular",
+        "changedVertices": 7853,
+        "maxLateralDisplacementMm": 9.962357580661774,
+        "lateralSpanBeforeMm": 146.4918563142419,
+        "lateralSpanAfterMm": 146.4918563142419
+      },
+      {
+        "id": "FJ1452M",
+        "name": "Left external oblique",
+        "system": "muscular",
+        "changedVertices": 7835,
+        "maxLateralDisplacementMm": 9.954042732715607,
+        "lateralSpanBeforeMm": 146.4918563142419,
+        "lateralSpanAfterMm": 146.4918563142419
+      },
+      {
+        "id": "FJ2293",
+        "name": "Right posterior ulnar recurrent artery",
+        "system": "arterial",
+        "changedVertices": 196,
+        "maxLateralDisplacementMm": 9.877189993858337,
+        "lateralSpanBeforeMm": 11.841773986816406,
+        "lateralSpanAfterMm": 14.925703406333923
+      },
+      {
+        "id": "FJ2241",
+        "name": "Left posterior ulnar recurrent artery",
+        "system": "arterial",
+        "changedVertices": 190,
+        "maxLateralDisplacementMm": 9.87657904624939,
+        "lateralSpanBeforeMm": 11.833027005195618,
+        "lateralSpanAfterMm": 14.9153470993042
+      },
+      {
+        "id": "FJ1480",
+        "name": "Medial head of right triceps brachii",
+        "system": "muscular",
+        "changedVertices": 226,
+        "maxLateralDisplacementMm": 9.720146656036377,
+        "lateralSpanBeforeMm": 61.774417757987976,
+        "lateralSpanAfterMm": 61.70026957988739
+      },
+      {
+        "id": "FJ1480M",
+        "name": "Medial head of left triceps brachii",
+        "system": "muscular",
+        "changedVertices": 227,
+        "maxLateralDisplacementMm": 9.720146656036377,
+        "lateralSpanBeforeMm": 61.77349388599396,
+        "lateralSpanAfterMm": 61.69934570789337
+      },
+      {
+        "id": "FJ1451M",
+        "name": "External intercostal muscle",
+        "system": "muscular",
+        "changedVertices": 8350,
+        "maxLateralDisplacementMm": 9.593188762664795,
+        "lateralSpanBeforeMm": 105.50211183726788,
+        "lateralSpanAfterMm": 105.50211183726788
+      },
+      {
+        "id": "FJ1451",
+        "name": "external intercostal muscle",
+        "system": "muscular",
+        "changedVertices": 8357,
+        "maxLateralDisplacementMm": 9.59041714668274,
+        "lateralSpanBeforeMm": 105.50191812217236,
+        "lateralSpanAfterMm": 105.50191812217236
+      },
+      {
+        "id": "FJ2287",
+        "name": "Right median cubital vein",
+        "system": "venous",
+        "changedVertices": 232,
+        "maxLateralDisplacementMm": 9.551763534545898,
+        "lateralSpanBeforeMm": 57.09433555603027,
+        "lateralSpanAfterMm": 66.32940471172333
+      },
+      {
+        "id": "FJ2235",
+        "name": "Left median cubital vein",
+        "system": "venous",
+        "changedVertices": 228,
+        "maxLateralDisplacementMm": 9.545058012008667,
+        "lateralSpanBeforeMm": 57.08795785903931,
+        "lateralSpanAfterMm": 66.3267970085144
+      },
+      {
+        "id": "FJ3330",
+        "name": "Right tenth rib",
+        "system": "skeletal",
+        "changedVertices": 535,
+        "maxLateralDisplacementMm": 9.497180581092834,
+        "lateralSpanBeforeMm": 97.71672450006008,
+        "lateralSpanAfterMm": 88.32149021327496
+      },
+      {
+        "id": "FJ1454",
+        "name": "innermost intercostal muscle",
+        "system": "muscular",
+        "changedVertices": 8172,
+        "maxLateralDisplacementMm": 9.49171930551529,
+        "lateralSpanBeforeMm": 77.29876786470413,
+        "lateralSpanAfterMm": 78.7896178662777
+      },
+      {
+        "id": "FJ1454M",
+        "name": "Innermost intercostal muscle",
+        "system": "muscular",
+        "changedVertices": 8224,
+        "maxLateralDisplacementMm": 9.49171930551529,
+        "lateralSpanBeforeMm": 77.29876786470413,
+        "lateralSpanAfterMm": 78.7896178662777
+      },
+      {
+        "id": "FJ1455",
+        "name": "internal intercostal muscle",
+        "system": "muscular",
+        "changedVertices": 8938,
+        "maxLateralDisplacementMm": 9.464837610721588,
+        "lateralSpanBeforeMm": 106.91485274583101,
+        "lateralSpanAfterMm": 106.91485274583101
+      },
+      {
+        "id": "FJ1455M",
+        "name": "Internal intercostal muscle",
+        "system": "muscular",
+        "changedVertices": 8916,
+        "maxLateralDisplacementMm": 9.464435279369354,
+        "lateralSpanBeforeMm": 106.97553865611553,
+        "lateralSpanAfterMm": 106.97553865611553
+      },
+      {
+        "id": "FJ3225",
+        "name": "Left tenth rib",
+        "system": "skeletal",
+        "changedVertices": 518,
+        "maxLateralDisplacementMm": 9.438343346118927,
+        "lateralSpanBeforeMm": 97.76181913912296,
+        "lateralSpanAfterMm": 88.42848427593708
+      },
+      {
+        "id": "FJ3131",
+        "name": "Diaphragm",
+        "system": "muscular",
+        "changedVertices": 4415,
+        "maxLateralDisplacementMm": 9.313076734542847,
+        "lateralSpanBeforeMm": 222.4637120962143,
+        "lateralSpanAfterMm": 217.10051596164703
+      },
+      {
+        "id": "FJ1975",
+        "name": "Posterior intercostal arteries",
+        "system": "arterial",
+        "changedVertices": 1292,
+        "maxLateralDisplacementMm": 9.237289428710938,
+        "lateralSpanBeforeMm": 120.79389439895749,
+        "lateralSpanAfterMm": 120.79389439895749
+      },
+      {
+        "id": "FJ1961",
+        "name": "Posterior intercostal arteries",
+        "system": "arterial",
+        "changedVertices": 1272,
+        "maxLateralDisplacementMm": 9.236976504325867,
+        "lateralSpanBeforeMm": 138.81825096905231,
+        "lateralSpanAfterMm": 138.81825096905231
+      },
+      {
+        "id": "FJ1985",
+        "name": "Set of anterior intercostal veins",
+        "system": "venous",
+        "changedVertices": 1174,
+        "maxLateralDisplacementMm": 9.190984070301056,
+        "lateralSpanBeforeMm": 111.10136192291975,
+        "lateralSpanAfterMm": 111.10136192291975
+      },
+      {
+        "id": "FJ1994",
+        "name": "Set of anterior intercostal veins",
+        "system": "venous",
+        "changedVertices": 1249,
+        "maxLateralDisplacementMm": 9.19090211391449,
+        "lateralSpanBeforeMm": 112.10066825151443,
+        "lateralSpanAfterMm": 112.10066825151443
+      },
+      {
+        "id": "FJ3348",
+        "name": "Right ninth rib",
+        "system": "skeletal",
+        "changedVertices": 428,
+        "maxLateralDisplacementMm": 9.144842624664307,
+        "lateralSpanBeforeMm": 103.99757605046034,
+        "lateralSpanAfterMm": 97.97001164406538
+      },
+      {
+        "id": "FJ2267",
+        "name": "Right inferior ulnar collateral artery",
+        "system": "arterial",
+        "changedVertices": 136,
+        "maxLateralDisplacementMm": 9.118437767028809,
+        "lateralSpanBeforeMm": 13.306468725204468,
+        "lateralSpanAfterMm": 15.1042640209198
+      },
+      {
+        "id": "FJ2215",
+        "name": "Left inferior ulnar collateral artery",
+        "system": "arterial",
+        "changedVertices": 133,
+        "maxLateralDisplacementMm": 9.105399250984192,
+        "lateralSpanBeforeMm": 13.382449746131897,
+        "lateralSpanAfterMm": 15.005409717559814
+      },
+      {
+        "id": "FJ3519",
+        "name": "Left inferior phrenic artery",
+        "system": "arterial",
+        "changedVertices": 192,
+        "maxLateralDisplacementMm": 9.10109281539917,
+        "lateralSpanBeforeMm": 2.970457077026367,
+        "lateralSpanAfterMm": 6.148345768451691
+      },
+      {
+        "id": "FJ3236",
+        "name": "Left ninth rib",
+        "system": "skeletal",
+        "changedVertices": 413,
+        "maxLateralDisplacementMm": 9.072870016098022,
+        "lateralSpanBeforeMm": 103.9213165640831,
+        "lateralSpanAfterMm": 97.94727712869644
+      },
+      {
+        "id": "FJ3451",
+        "name": "Inferior phrenic vein",
+        "system": "venous",
+        "changedVertices": 255,
+        "maxLateralDisplacementMm": 9.063370525836945,
+        "lateralSpanBeforeMm": 28.832070529460907,
+        "lateralSpanAfterMm": 26.340559124946594
+      },
+      {
+        "id": "FJ1474",
+        "name": "Humeral head of right pronator teres",
+        "system": "muscular",
+        "changedVertices": 233,
+        "maxLateralDisplacementMm": 8.957773447036743,
+        "lateralSpanBeforeMm": 83.13976228237152,
+        "lateralSpanAfterMm": 91.84865653514862
+      },
+      {
+        "id": "FJ1474M",
+        "name": "Humeral head of left pronator teres",
+        "system": "muscular",
+        "changedVertices": 240,
+        "maxLateralDisplacementMm": 8.957773447036743,
+        "lateralSpanBeforeMm": 83.13976228237152,
+        "lateralSpanAfterMm": 91.84865653514862
+      },
+      {
+        "id": "FJ3624",
+        "name": "Right inferior phrenic artery",
+        "system": "arterial",
+        "changedVertices": 234,
+        "maxLateralDisplacementMm": 8.894436061382294,
+        "lateralSpanBeforeMm": 7.9941824078559875,
+        "lateralSpanAfterMm": 14.826416969299316
+      },
+      {
+        "id": "FJ3653",
+        "name": "Superior phrenic vein",
+        "system": "venous",
+        "changedVertices": 441,
+        "maxLateralDisplacementMm": 8.86537879705429,
+        "lateralSpanBeforeMm": 39.6522656083107,
+        "lateralSpanAfterMm": 38.28081488609314
+      },
+      {
+        "id": "FJ2234",
+        "name": "Left median antebrachial vein",
+        "system": "venous",
+        "changedVertices": 320,
+        "maxLateralDisplacementMm": 8.771687746047974,
+        "lateralSpanBeforeMm": 92.26484596729279,
+        "lateralSpanAfterMm": 100.98473727703094
+      },
+      {
+        "id": "FJ2286",
+        "name": "Right median antebrachial vein",
+        "system": "venous",
+        "changedVertices": 327,
+        "maxLateralDisplacementMm": 8.766964077949524,
+        "lateralSpanBeforeMm": 92.28783845901489,
+        "lateralSpanAfterMm": 100.96615552902222
+      },
+      {
+        "id": "FJ2409",
+        "name": "Hepatovenous segment VII",
+        "system": "venous",
+        "changedVertices": 1454,
+        "maxLateralDisplacementMm": 8.618593215942383,
+        "lateralSpanBeforeMm": 85.83933115005493,
+        "lateralSpanAfterMm": 83.80159735679626
+      },
+      {
+        "id": "FJ2822",
+        "name": "Hepatovenous segment VI",
+        "system": "venous",
+        "changedVertices": 2263,
+        "maxLateralDisplacementMm": 8.586205542087555,
+        "lateralSpanBeforeMm": 85.3995531797409,
+        "lateralSpanAfterMm": 83.26752483844757
+      },
+      {
+        "id": "FJ2561",
+        "name": "Spleen",
+        "system": "lymphatic",
+        "changedVertices": 624,
+        "maxLateralDisplacementMm": 8.417807519435883,
+        "lateralSpanBeforeMm": 53.27467992901802,
+        "lateralSpanAfterMm": 48.028379678726196
+      },
+      {
+        "id": "FJ2567",
+        "name": "Descending colon",
+        "system": "digestive",
+        "changedVertices": 614,
+        "maxLateralDisplacementMm": 8.348032832145691,
+        "lateralSpanBeforeMm": 145.45214734971523,
+        "lateralSpanAfterMm": 145.45214734971523
+      },
+      {
+        "id": "FJ3626",
+        "name": "Right inferior phrenic artery",
+        "system": "arterial",
+        "changedVertices": 236,
+        "maxLateralDisplacementMm": 8.321478962898254,
+        "lateralSpanBeforeMm": 17.15574413537979,
+        "lateralSpanAfterMm": 23.06997776031494
+      },
+      {
+        "id": "FJ3331",
+        "name": "Right eleventh rib",
+        "system": "skeletal",
+        "changedVertices": 538,
+        "maxLateralDisplacementMm": 8.300818502902985,
+        "lateralSpanBeforeMm": 89.15905468165874,
+        "lateralSpanAfterMm": 82.47452415525913
+      },
+      {
+        "id": "FJ1479",
+        "name": "Long head of right triceps brachii",
+        "system": "muscular",
+        "changedVertices": 228,
+        "maxLateralDisplacementMm": 8.30051302909851,
+        "lateralSpanBeforeMm": 87.3691514134407,
+        "lateralSpanAfterMm": 85.68718284368515
+      },
+      {
+        "id": "FJ1479M",
+        "name": "Long head of left triceps brachii",
+        "system": "muscular",
+        "changedVertices": 228,
+        "maxLateralDisplacementMm": 8.263975381851196,
+        "lateralSpanBeforeMm": 87.3691514134407,
+        "lateralSpanAfterMm": 85.68718284368515
+      },
+      {
+        "id": "FJ2570",
+        "name": "Taenia omentalis",
+        "system": "digestive",
+        "changedVertices": 2957,
+        "maxLateralDisplacementMm": 8.223861455917358,
+        "lateralSpanBeforeMm": 258.83038341999054,
+        "lateralSpanAfterMm": 258.83038341999054
+      },
+      {
+        "id": "FJ3226",
+        "name": "Left eleventh rib",
+        "system": "skeletal",
+        "changedVertices": 537,
+        "maxLateralDisplacementMm": 8.199073374271393,
+        "lateralSpanBeforeMm": 89.13157787173986,
+        "lateralSpanAfterMm": 82.47843571007252
+      },
+      {
+        "id": "FJ3452",
+        "name": "Inferior phrenic vein",
+        "system": "venous",
+        "changedVertices": 118,
+        "maxLateralDisplacementMm": 8.134059607982635,
+        "lateralSpanBeforeMm": 19.623152911663055,
+        "lateralSpanAfterMm": 23.69503676891327
+      },
+      {
+        "id": "FJ1988",
+        "name": "Left musculophrenic vein",
+        "system": "venous",
+        "changedVertices": 224,
+        "maxLateralDisplacementMm": 8.044898509979248,
+        "lateralSpanBeforeMm": 92.79879741370678,
+        "lateralSpanAfterMm": 85.36128513514996
+      },
+      {
+        "id": "FJ1996",
+        "name": "Right musculophrenic vein",
+        "system": "venous",
+        "changedVertices": 216,
+        "maxLateralDisplacementMm": 8.038036525249481,
+        "lateralSpanBeforeMm": 92.77096763253212,
+        "lateralSpanAfterMm": 85.32493934035301
+      },
+      {
+        "id": "FJ2572",
+        "name": "Transverse colon",
+        "system": "digestive",
+        "changedVertices": 1350,
+        "maxLateralDisplacementMm": 7.851004600524902,
+        "lateralSpanBeforeMm": 169.22883689403534,
+        "lateralSpanAfterMm": 154.23675626516342
+      },
+      {
+        "id": "FJ2566",
+        "name": "Ascending colon",
+        "system": "digestive",
+        "changedVertices": 640,
+        "maxLateralDisplacementMm": 7.838316261768341,
+        "lateralSpanBeforeMm": 77.56059616804123,
+        "lateralSpanAfterMm": 83.08025822043419
+      },
+      {
+        "id": "FJ3515",
+        "name": "Left inferior phrenic artery",
+        "system": "arterial",
+        "changedVertices": 251,
+        "maxLateralDisplacementMm": 7.807709276676178,
+        "lateralSpanBeforeMm": 77.7692012488842,
+        "lateralSpanAfterMm": 76.36575028300285
+      },
+      {
+        "id": "FJ1969",
+        "name": "Right musculophrenic artery",
+        "system": "arterial",
+        "changedVertices": 202,
+        "maxLateralDisplacementMm": 7.644124329090118,
+        "lateralSpanBeforeMm": 101.18191596120596,
+        "lateralSpanAfterMm": 96.73774149268866
+      },
+      {
+        "id": "FJ1979",
+        "name": "Left musculophrenic artery",
+        "system": "arterial",
+        "changedVertices": 202,
+        "maxLateralDisplacementMm": 7.639981806278229,
+        "lateralSpanBeforeMm": 101.18233226239681,
+        "lateralSpanAfterMm": 96.69563733041286
+      },
+      {
+        "id": "FJ1518",
+        "name": "Ulnar head of right flexor carpi ulnaris",
+        "system": "muscular",
+        "changedVertices": 228,
+        "maxLateralDisplacementMm": 7.628902792930603,
+        "lateralSpanBeforeMm": 46.31051421165466,
+        "lateralSpanAfterMm": 53.939417004585266
+      },
+      {
+        "id": "FJ1518M",
+        "name": "Ulnar head of left flexor carpi ulnaris",
+        "system": "muscular",
+        "changedVertices": 232,
+        "maxLateralDisplacementMm": 7.628902792930603,
+        "lateralSpanBeforeMm": 46.31051421165466,
+        "lateralSpanAfterMm": 53.939417004585266
+      },
+      {
+        "id": "FJ3145",
+        "name": "Left kidney",
+        "system": "urinary",
+        "changedVertices": 762,
+        "maxLateralDisplacementMm": 7.437512278556824,
+        "lateralSpanBeforeMm": 54.26384508609772,
+        "lateralSpanAfterMm": 51.78388208150864
+      },
+      {
+        "id": "FJ3398",
+        "name": "Transverse mesocolon",
+        "system": "digestive",
+        "changedVertices": 462,
+        "maxLateralDisplacementMm": 7.431939244270325,
+        "lateralSpanBeforeMm": 167.30666160583496,
+        "lateralSpanAfterMm": 163.7721061706543
+      },
+      {
+        "id": "FJ1486",
+        "name": "Right brachialis",
+        "system": "muscular",
+        "changedVertices": 374,
+        "maxLateralDisplacementMm": 7.3975324630737305,
+        "lateralSpanBeforeMm": 55.81887066364288,
+        "lateralSpanAfterMm": 57.82710015773773
+      },
+      {
+        "id": "FJ1486M",
+        "name": "Left brachialis",
+        "system": "muscular",
+        "changedVertices": 376,
+        "maxLateralDisplacementMm": 7.3975324630737305,
+        "lateralSpanBeforeMm": 55.81887066364288,
+        "lateralSpanAfterMm": 57.82710015773773
+      },
+      {
+        "id": "FJ2054",
+        "name": "Posterior segmental branch of left renal artery",
+        "system": "arterial",
+        "changedVertices": 284,
+        "maxLateralDisplacementMm": 7.329389452934265,
+        "lateralSpanBeforeMm": 48.03238809108734,
+        "lateralSpanAfterMm": 44.47523504495621
+      },
+      {
+        "id": "FJ3652",
+        "name": "Superior phrenic vein",
+        "system": "venous",
+        "changedVertices": 237,
+        "maxLateralDisplacementMm": 7.278852164745331,
+        "lateralSpanBeforeMm": 38.20638358592987,
+        "lateralSpanAfterMm": 37.13134676218033
+      },
+      {
+        "id": "FJ3391",
+        "name": "Right ulna",
+        "system": "skeletal",
+        "changedVertices": 182,
+        "maxLateralDisplacementMm": 7.265031337738037,
+        "lateralSpanBeforeMm": 61.499908566474915,
+        "lateralSpanAfterMm": 68.76493990421295
+      },
+      {
+        "id": "FJ3286",
+        "name": "Left ulna",
+        "system": "skeletal",
+        "changedVertices": 178,
+        "maxLateralDisplacementMm": 7.230281829833984,
+        "lateralSpanBeforeMm": 60.99952757358551,
+        "lateralSpanAfterMm": 68.2298094034195
+      },
+      {
+        "id": "FJ3632",
+        "name": "Lumbar artery",
+        "system": "arterial",
+        "changedVertices": 1388,
+        "maxLateralDisplacementMm": 7.194653153419495,
+        "lateralSpanBeforeMm": 99.87531194929034,
+        "lateralSpanAfterMm": 99.90217089944053
+      },
+      {
+        "id": "FJ3631",
+        "name": "Lumbar vein",
+        "system": "venous",
+        "changedVertices": 1067,
+        "maxLateralDisplacementMm": 7.120870053768158,
+        "lateralSpanBeforeMm": 79.62661236524582,
+        "lateralSpanAfterMm": 81.44230209290981
+      },
+      {
+        "id": "FJ2311",
+        "name": "Right anterior ulnar recurrent artery",
+        "system": "arterial",
+        "changedVertices": 96,
+        "maxLateralDisplacementMm": 7.11098313331604,
+        "lateralSpanBeforeMm": 26.280269026756287,
+        "lateralSpanAfterMm": 31.995028257369995
+      },
+      {
+        "id": "FJ2259",
+        "name": "Left anterior ulnar recurrent artery",
+        "system": "arterial",
+        "changedVertices": 93,
+        "maxLateralDisplacementMm": 7.105350494384766,
+        "lateralSpanBeforeMm": 26.26529335975647,
+        "lateralSpanAfterMm": 31.97300434112549
+      },
+      {
+        "id": "FJ3636",
+        "name": "Lumbar artery",
+        "system": "arterial",
+        "changedVertices": 1397,
+        "maxLateralDisplacementMm": 7.067888975143433,
+        "lateralSpanBeforeMm": 102.82687423750758,
+        "lateralSpanAfterMm": 102.54624346271157
+      },
+      {
+        "id": "FJ3635",
+        "name": "Lumbar vein",
+        "system": "venous",
+        "changedVertices": 1076,
+        "maxLateralDisplacementMm": 7.063806056976318,
+        "lateralSpanBeforeMm": 86.90504170954227,
+        "lateralSpanAfterMm": 88.01568578928709
+      },
+      {
+        "id": "FJ1541M",
+        "name": "Left serratus posterior inferior",
+        "system": "muscular",
+        "changedVertices": 3257,
+        "maxLateralDisplacementMm": 7.0399269461631775,
+        "lateralSpanBeforeMm": 99.90184265188873,
+        "lateralSpanAfterMm": 99.38963945023715
+      },
+      {
+        "id": "FJ1541",
+        "name": "Right serratus posterior inferior",
+        "system": "muscular",
+        "changedVertices": 3279,
+        "maxLateralDisplacementMm": 7.039919495582581,
+        "lateralSpanBeforeMm": 99.90184265188873,
+        "lateralSpanAfterMm": 99.38963945023715
+      },
+      {
+        "id": "FJ2041",
+        "name": "Right anterior segmental artery",
+        "system": "arterial",
+        "changedVertices": 158,
+        "maxLateralDisplacementMm": 6.988644599914551,
+        "lateralSpanBeforeMm": 24.742454290390015,
+        "lateralSpanAfterMm": 22.584035992622375
+      },
+      {
+        "id": "FJ3147",
+        "name": "Right kidney",
+        "system": "urinary",
+        "changedVertices": 747,
+        "maxLateralDisplacementMm": 6.962813436985016,
+        "lateralSpanBeforeMm": 54.0152732282877,
+        "lateralSpanAfterMm": 54.15993556380272
+      },
+      {
+        "id": "FJ2341",
+        "name": "Right medial brachial vein",
+        "system": "venous",
+        "changedVertices": 139,
+        "maxLateralDisplacementMm": 6.777748465538025,
+        "lateralSpanBeforeMm": 77.17831432819366,
+        "lateralSpanAfterMm": 76.03257894515991
+      },
+      {
+        "id": "FJ2313",
+        "name": "Left medial brachial vein",
+        "system": "venous",
+        "changedVertices": 161,
+        "maxLateralDisplacementMm": 6.772294640541077,
+        "lateralSpanBeforeMm": 77.21681892871857,
+        "lateralSpanAfterMm": 76.06735825538635
+      },
+      {
+        "id": "FJ2821",
+        "name": "Hepatovenous segment V",
+        "system": "venous",
+        "changedVertices": 1809,
+        "maxLateralDisplacementMm": 6.755203008651733,
+        "lateralSpanBeforeMm": 71.76135666668415,
+        "lateralSpanAfterMm": 70.69017551839352
+      },
+      {
+        "id": "FJ3461",
+        "name": "Anterior division of left renal artery",
+        "system": "arterial",
+        "changedVertices": 1106,
+        "maxLateralDisplacementMm": 6.697826087474823,
+        "lateralSpanBeforeMm": 37.65364736318588,
+        "lateralSpanAfterMm": 36.17563843727112
+      },
+      {
+        "id": "FJ3478",
+        "name": "Left renal vein",
+        "system": "venous",
+        "changedVertices": 2324,
+        "maxLateralDisplacementMm": 6.66721910238266,
+        "lateralSpanBeforeMm": 52.43137292563915,
+        "lateralSpanAfterMm": 49.857839941978455
+      },
+      {
+        "id": "FJ2568",
+        "name": "Taenia libera",
+        "system": "digestive",
+        "changedVertices": 3697,
+        "maxLateralDisplacementMm": 6.598278880119324,
+        "lateralSpanBeforeMm": 216.62867069244385,
+        "lateralSpanAfterMm": 216.62867069244385
+      },
+      {
+        "id": "FJ2606",
+        "name": "Proximal part of jejunum",
+        "system": "digestive",
+        "changedVertices": 201,
+        "maxLateralDisplacementMm": 6.565466523170471,
+        "lateralSpanBeforeMm": 74.4040198624134,
+        "lateralSpanAfterMm": 70.05657069385052
+      },
+      {
+        "id": "FJ3144",
+        "name": "Left ureter",
+        "system": "urinary",
+        "changedVertices": 322,
+        "maxLateralDisplacementMm": 6.517462432384491,
+        "lateralSpanBeforeMm": 47.422802075743675,
+        "lateralSpanAfterMm": 42.60703735053539
+      },
+      {
+        "id": "FJ2044",
+        "name": "Right anterior segmental artery",
+        "system": "arterial",
+        "changedVertices": 154,
+        "maxLateralDisplacementMm": 6.425723433494568,
+        "lateralSpanBeforeMm": 38.53961080312729,
+        "lateralSpanAfterMm": 37.19581291079521
+      },
+      {
+        "id": "FJ3332",
+        "name": "Right twelfth rib",
+        "system": "skeletal",
+        "changedVertices": 372,
+        "maxLateralDisplacementMm": 6.420977413654327,
+        "lateralSpanBeforeMm": 65.36185182631016,
+        "lateralSpanAfterMm": 60.73417700827122
+      },
+      {
+        "id": "FJ3501",
+        "name": "Left gastro-epiploic artery",
+        "system": "arterial",
+        "changedVertices": 280,
+        "maxLateralDisplacementMm": 6.410717964172363,
+        "lateralSpanBeforeMm": 32.5070321559906,
+        "lateralSpanAfterMm": 32.03305974602699
+      },
+      {
+        "id": "FJ3502",
+        "name": "Left gastroepiploic vein",
+        "system": "venous",
+        "changedVertices": 238,
+        "maxLateralDisplacementMm": 6.3813552260398865,
+        "lateralSpanBeforeMm": 31.644228845834732,
+        "lateralSpanAfterMm": 31.211089342832565
+      },
+      {
+        "id": "FJ3227",
+        "name": "Left twelfth rib",
+        "system": "skeletal",
+        "changedVertices": 367,
+        "maxLateralDisplacementMm": 6.318636238574982,
+        "lateralSpanBeforeMm": 65.2934992685914,
+        "lateralSpanAfterMm": 60.731688514351845
+      },
+      {
+        "id": "FJ2271",
+        "name": "Right brachial artery",
+        "system": "arterial",
+        "changedVertices": 120,
+        "maxLateralDisplacementMm": 6.3181072473526,
+        "lateralSpanBeforeMm": 84.37541127204895,
+        "lateralSpanAfterMm": 83.06822180747986
+      },
+      {
+        "id": "FJ1459",
+        "name": "Right serratus anterior",
+        "system": "muscular",
+        "changedVertices": 661,
+        "maxLateralDisplacementMm": 6.317108869552612,
+        "lateralSpanBeforeMm": 82.71607384085655,
+        "lateralSpanAfterMm": 82.71607384085655
+      },
+      {
+        "id": "FJ1459M",
+        "name": "Left serratus anterior",
+        "system": "muscular",
+        "changedVertices": 664,
+        "maxLateralDisplacementMm": 6.317108869552612,
+        "lateralSpanBeforeMm": 82.71607384085655,
+        "lateralSpanAfterMm": 82.71607384085655
+      },
+      {
+        "id": "FJ2219",
+        "name": "Left brachial artery",
+        "system": "arterial",
+        "changedVertices": 133,
+        "maxLateralDisplacementMm": 6.3161700963974,
+        "lateralSpanBeforeMm": 84.33704078197479,
+        "lateralSpanAfterMm": 83.01378786563873
+      },
+      {
+        "id": "FJ2564",
+        "name": "Stomach",
+        "system": "digestive",
+        "changedVertices": 660,
+        "maxLateralDisplacementMm": 6.3019245862960815,
+        "lateralSpanBeforeMm": 122.69268743693829,
+        "lateralSpanAfterMm": 118.70138347148895
+      },
+      {
+        "id": "FJ3347",
+        "name": "Right eighth rib",
+        "system": "skeletal",
+        "changedVertices": 323,
+        "maxLateralDisplacementMm": 6.276212632656097,
+        "lateralSpanBeforeMm": 109.86585263162851,
+        "lateralSpanAfterMm": 108.11458621174097
+      },
+      {
+        "id": "FJ3235",
+        "name": "Left eighth rib",
+        "system": "skeletal",
+        "changedVertices": 325,
+        "maxLateralDisplacementMm": 6.213359534740448,
+        "lateralSpanBeforeMm": 109.75623596459627,
+        "lateralSpanAfterMm": 108.04512817412615
+      },
+      {
+        "id": "FJ3625",
+        "name": "Right inferior phrenic artery",
+        "system": "arterial",
+        "changedVertices": 302,
+        "maxLateralDisplacementMm": 6.18385523557663,
+        "lateralSpanBeforeMm": 18.90447735786438,
+        "lateralSpanAfterMm": 24.633631110191345
+      },
+      {
+        "id": "FJ2617",
+        "name": "Proximal part of jejunum",
+        "system": "digestive",
+        "changedVertices": 135,
+        "maxLateralDisplacementMm": 6.146661937236786,
+        "lateralSpanBeforeMm": 37.63984516263008,
+        "lateralSpanAfterMm": 34.524768590927124
+      },
+      {
+        "id": "FJ3563",
+        "name": "Anterior division of right renal artery",
+        "system": "arterial",
+        "changedVertices": 1006,
+        "maxLateralDisplacementMm": 6.109878420829773,
+        "lateralSpanBeforeMm": 43.5511339455843,
+        "lateralSpanAfterMm": 43.669961392879486
+      },
+      {
+        "id": "FJ2569",
+        "name": "Taenia mesocolica",
+        "system": "digestive",
+        "changedVertices": 4411,
+        "maxLateralDisplacementMm": 6.103958934545517,
+        "lateralSpanBeforeMm": 183.6635023355484,
+        "lateralSpanAfterMm": 183.6635023355484
+      },
+      {
+        "id": "FJ3578",
+        "name": "Right renal vein",
+        "system": "venous",
+        "changedVertices": 2388,
+        "maxLateralDisplacementMm": 6.027258932590485,
+        "lateralSpanBeforeMm": 50.56985095143318,
+        "lateralSpanAfterMm": 49.79514330625534
+      },
+      {
+        "id": "FJ3146",
+        "name": "Right ureter",
+        "system": "urinary",
+        "changedVertices": 379,
+        "maxLateralDisplacementMm": 6.015170365571976,
+        "lateralSpanBeforeMm": 60.920560732483864,
+        "lateralSpanAfterMm": 57.85770155489445
+      },
+      {
+        "id": "FJ1987",
+        "name": "Left subcostal vein",
+        "system": "venous",
+        "changedVertices": 180,
+        "maxLateralDisplacementMm": 5.97342848777771,
+        "lateralSpanBeforeMm": 59.00566466152668,
+        "lateralSpanAfterMm": 55.10139837861061
+      },
+      {
+        "id": "FJ3460",
+        "name": "Anterior division of left renal artery",
+        "system": "arterial",
+        "changedVertices": 221,
+        "maxLateralDisplacementMm": 5.9566013514995575,
+        "lateralSpanBeforeMm": 8.679483085870743,
+        "lateralSpanAfterMm": 7.7633000910282135
+      },
+      {
+        "id": "FJ2045",
+        "name": "Posterior segmental branch of right renal artery",
+        "system": "arterial",
+        "changedVertices": 282,
+        "maxLateralDisplacementMm": 5.944646894931793,
+        "lateralSpanBeforeMm": 54.49103191494942,
+        "lateralSpanAfterMm": 54.77010831236839
+      },
+      {
+        "id": "FJ2049",
+        "name": "Inferior segmental branch of left renal artery",
+        "system": "arterial",
+        "changedVertices": 160,
+        "maxLateralDisplacementMm": 5.919322371482849,
+        "lateralSpanBeforeMm": 32.93875977396965,
+        "lateralSpanAfterMm": 31.281687319278717
+      },
+      {
+        "id": "FJ1977",
+        "name": "Left subcostal artery",
+        "system": "arterial",
+        "changedVertices": 236,
+        "maxLateralDisplacementMm": 5.855206400156021,
+        "lateralSpanBeforeMm": 68.47267597913742,
+        "lateralSpanAfterMm": 64.07428625971079
+      },
+      {
+        "id": "FJ1995",
+        "name": "Right subcostal vein",
+        "system": "venous",
+        "changedVertices": 204,
+        "maxLateralDisplacementMm": 5.802512168884277,
+        "lateralSpanBeforeMm": 68.15251242369413,
+        "lateralSpanAfterMm": 63.642971217632294
+      },
+      {
+        "id": "FJ3575",
+        "name": "Posterior division of right renal artery",
+        "system": "arterial",
+        "changedVertices": 281,
+        "maxLateralDisplacementMm": 5.7618096470832825,
+        "lateralSpanBeforeMm": 43.35610009729862,
+        "lateralSpanAfterMm": 39.92878831923008
+      },
+      {
+        "id": "FJ1967",
+        "name": "Right subcostal artery",
+        "system": "arterial",
+        "changedVertices": 231,
+        "maxLateralDisplacementMm": 5.7262517511844635,
+        "lateralSpanBeforeMm": 80.98085131496191,
+        "lateralSpanAfterMm": 75.79380343668163
+      },
+      {
+        "id": "FJ1527",
+        "name": "Right iliocostalis lumborum",
+        "system": "muscular",
+        "changedVertices": 1184,
+        "maxLateralDisplacementMm": 5.684558302164078,
+        "lateralSpanBeforeMm": 85.863605607301,
+        "lateralSpanAfterMm": 85.863605607301
+      },
+      {
+        "id": "FJ1527M",
+        "name": "Left iliocostalis lumborum",
+        "system": "muscular",
+        "changedVertices": 1185,
+        "maxLateralDisplacementMm": 5.684558302164078,
+        "lateralSpanBeforeMm": 85.89665638282895,
+        "lateralSpanAfterMm": 85.89665638282895
+      },
+      {
+        "id": "FJ2562",
+        "name": "Splenic artery",
+        "system": "arterial",
+        "changedVertices": 744,
+        "maxLateralDisplacementMm": 5.679145455360413,
+        "lateralSpanBeforeMm": 89.98469798825681,
+        "lateralSpanAfterMm": 85.21434071008116
+      },
+      {
+        "id": "FJ3591",
+        "name": "Right colic vein",
+        "system": "venous",
+        "changedVertices": 651,
+        "maxLateralDisplacementMm": 5.648501217365265,
+        "lateralSpanBeforeMm": 62.68058344721794,
+        "lateralSpanAfterMm": 59.84955746680498
+      },
+      {
+        "id": "FJ3640",
+        "name": "Splenic artery",
+        "system": "arterial",
+        "changedVertices": 782,
+        "maxLateralDisplacementMm": 5.634047091007233,
+        "lateralSpanBeforeMm": 86.16272965446115,
+        "lateralSpanAfterMm": 81.18452364578843
+      },
+      {
+        "id": "FJ2573",
+        "name": "Duodenum",
+        "system": "digestive",
+        "changedVertices": 883,
+        "maxLateralDisplacementMm": 5.617067217826843,
+        "lateralSpanBeforeMm": 90.65442159771919,
+        "lateralSpanAfterMm": 83.74470844864845
+      },
+      {
+        "id": "FJ3641",
+        "name": "Splenic vein",
+        "system": "venous",
+        "changedVertices": 660,
+        "maxLateralDisplacementMm": 5.529843270778656,
+        "lateralSpanBeforeMm": 102.0866921171546,
+        "lateralSpanAfterMm": 95.76945099979639
+      },
+      {
+        "id": "FJ3118",
+        "name": "Posterior inferior segmental tributary of right hepatic vein",
+        "system": "venous",
+        "changedVertices": 116,
+        "maxLateralDisplacementMm": 5.520053207874298,
+        "lateralSpanBeforeMm": 74.25118237733841,
+        "lateralSpanAfterMm": 68.749338388443
+      },
+      {
+        "id": "FJ3542",
+        "name": "Middle colic artery",
+        "system": "arterial",
+        "changedVertices": 546,
+        "maxLateralDisplacementMm": 5.51171600818634,
+        "lateralSpanBeforeMm": 119.1391758620739,
+        "lateralSpanAfterMm": 109.21606793999672
+      },
+      {
+        "id": "FJ3590",
+        "name": "Right colic artery",
+        "system": "arterial",
+        "changedVertices": 656,
+        "maxLateralDisplacementMm": 5.507424473762512,
+        "lateralSpanBeforeMm": 62.68935929983854,
+        "lateralSpanAfterMm": 59.8999815993011
+      },
+      {
+        "id": "FJ3654",
+        "name": "Superior phrenic vein",
+        "system": "venous",
+        "changedVertices": 189,
+        "maxLateralDisplacementMm": 5.481809377670288,
+        "lateralSpanBeforeMm": 9.655967354774475,
+        "lateralSpanAfterMm": 7.33637809753418
+      },
+      {
+        "id": "FJ2042",
+        "name": "Superior segmental branch of right renal artery",
+        "system": "arterial",
+        "changedVertices": 188,
+        "maxLateralDisplacementMm": 5.472410470247269,
+        "lateralSpanBeforeMm": 10.178107768297195,
+        "lateralSpanAfterMm": 10.665647685527802
+      },
+      {
+        "id": "FJ3111",
+        "name": "Posterior inferior segmental branch of right portal vein",
+        "system": "venous",
+        "changedVertices": 326,
+        "maxLateralDisplacementMm": 5.458176136016846,
+        "lateralSpanBeforeMm": 53.4762479364872,
+        "lateralSpanAfterMm": 49.291400238871574
+      },
+      {
+        "id": "FJ1913",
+        "name": "Right portal vein",
+        "system": "venous",
+        "changedVertices": 444,
+        "maxLateralDisplacementMm": 5.436360836029053,
+        "lateralSpanBeforeMm": 50.951048731803894,
+        "lateralSpanAfterMm": 45.585185289382935
+      },
+      {
+        "id": "FJ3113",
+        "name": "Posterior superior segmental branch of right portal vein",
+        "system": "venous",
+        "changedVertices": 306,
+        "maxLateralDisplacementMm": 5.428701639175415,
+        "lateralSpanBeforeMm": 77.51649897545576,
+        "lateralSpanAfterMm": 72.21471425145864
+      },
+      {
+        "id": "FJ3543",
+        "name": "Middle colic vein",
+        "system": "venous",
+        "changedVertices": 547,
+        "maxLateralDisplacementMm": 5.423218011856079,
+        "lateralSpanBeforeMm": 115.60037359595299,
+        "lateralSpanAfterMm": 105.88769614696503
+      },
+      {
+        "id": "FJ3108",
+        "name": "Posterior inferior tributary of right hepatic biliary tree",
+        "system": "digestive",
+        "changedVertices": 369,
+        "maxLateralDisplacementMm": 5.4160431027412415,
+        "lateralSpanBeforeMm": 49.79516193270683,
+        "lateralSpanAfterMm": 45.382317155599594
+      },
+      {
+        "id": "FJ3114",
+        "name": "Posterior inferior segmental hepatic artery",
+        "system": "arterial",
+        "changedVertices": 343,
+        "maxLateralDisplacementMm": 5.377002060413361,
+        "lateralSpanBeforeMm": 50.03278888761997,
+        "lateralSpanAfterMm": 45.776527374982834
+      },
+      {
+        "id": "FJ3115",
+        "name": "Posterior superior segmental hepatic artery",
+        "system": "arterial",
+        "changedVertices": 355,
+        "maxLateralDisplacementMm": 5.341716110706329,
+        "lateralSpanBeforeMm": 77.51310244202614,
+        "lateralSpanAfterMm": 72.27669470012188
+      },
+      {
+        "id": "FJ3584",
+        "name": "Right inferior suprarenal artery",
+        "system": "arterial",
+        "changedVertices": 534,
+        "maxLateralDisplacementMm": 5.33796101808548,
+        "lateralSpanBeforeMm": 36.566633731126785,
+        "lateralSpanAfterMm": 33.79933349788189
+      },
+      {
+        "id": "FJ2043",
+        "name": "Inferior segmental branch of right renal artery",
+        "system": "arterial",
+        "changedVertices": 139,
+        "maxLateralDisplacementMm": 5.320340394973755,
+        "lateralSpanBeforeMm": 33.36501121520996,
+        "lateralSpanAfterMm": 34.12329778075218
+      },
+      {
+        "id": "FJ3463",
+        "name": "Anterior division of left renal artery",
+        "system": "arterial",
+        "changedVertices": 378,
+        "maxLateralDisplacementMm": 5.3170062601566315,
+        "lateralSpanBeforeMm": 40.28299078345299,
+        "lateralSpanAfterMm": 38.39975409209728
+      },
+      {
+        "id": "FJ3573",
+        "name": "Posterior division of right renal artery",
+        "system": "arterial",
+        "changedVertices": 279,
+        "maxLateralDisplacementMm": 5.314286798238754,
+        "lateralSpanBeforeMm": 11.862441897392273,
+        "lateralSpanAfterMm": 11.266201734542847
+      },
+      {
+        "id": "FJ3620",
+        "name": "Right inferior phrenic artery",
+        "system": "arterial",
+        "changedVertices": 157,
+        "maxLateralDisplacementMm": 5.296148359775543,
+        "lateralSpanBeforeMm": 67.53934919834137,
+        "lateralSpanAfterMm": 65.26632606983185
+      },
+      {
+        "id": "FJ2025",
+        "name": "Marginal colic artery",
+        "system": "arterial",
+        "changedVertices": 502,
+        "maxLateralDisplacementMm": 5.287583917379379,
+        "lateralSpanBeforeMm": 150.72186291217804,
+        "lateralSpanAfterMm": 150.72186291217804
+      },
+      {
+        "id": "FJ3534",
+        "name": "Marginal artery of colon",
+        "system": "arterial",
+        "changedVertices": 501,
+        "maxLateralDisplacementMm": 5.287583917379379,
+        "lateralSpanBeforeMm": 150.629922747612,
+        "lateralSpanAfterMm": 150.629922747612
+      },
+      {
+        "id": "FJ3396",
+        "name": "Mesentery of small intestine",
+        "system": "digestive",
+        "changedVertices": 16704,
+        "maxLateralDisplacementMm": 5.258724093437195,
+        "lateralSpanBeforeMm": 185.29537320137024,
+        "lateralSpanAfterMm": 184.82832610607147
+      },
+      {
+        "id": "FJ3597",
+        "name": "Right gastroepiploic vein",
+        "system": "venous",
+        "changedVertices": 326,
+        "maxLateralDisplacementMm": 5.2033402025699615,
+        "lateralSpanBeforeMm": 70.66394854336977,
+        "lateralSpanAfterMm": 63.924605026841164
+      },
+      {
+        "id": "FJ2053",
+        "name": "Posterior segmental branch of left renal artery",
+        "system": "arterial",
+        "changedVertices": 182,
+        "maxLateralDisplacementMm": 5.19663468003273,
+        "lateralSpanBeforeMm": 12.582454830408096,
+        "lateralSpanAfterMm": 12.657906860113144
+      },
+      {
+        "id": "FJ3562",
+        "name": "Anterior division of right renal artery",
+        "system": "arterial",
+        "changedVertices": 335,
+        "maxLateralDisplacementMm": 5.131058394908905,
+        "lateralSpanBeforeMm": 12.924056500196457,
+        "lateralSpanAfterMm": 13.902466744184494
+      },
+      {
+        "id": "FJ3458",
+        "name": "Anterior division of left renal artery",
+        "system": "arterial",
+        "changedVertices": 207,
+        "maxLateralDisplacementMm": 5.117613822221756,
+        "lateralSpanBeforeMm": 30.562184751033783,
+        "lateralSpanAfterMm": 27.946706861257553
+      },
+      {
+        "id": "FJ2629",
+        "name": "Parenchyma of pancreas",
+        "system": "digestive",
+        "changedVertices": 1139,
+        "maxLateralDisplacementMm": 5.0919800996780396,
+        "lateralSpanBeforeMm": 109.82811450958252,
+        "lateralSpanAfterMm": 100.95315799117088
+      },
+      {
+        "id": "FJ1895",
+        "name": "Pancreas",
+        "system": "digestive",
+        "changedVertices": 1276,
+        "maxLateralDisplacementMm": 5.091972649097443,
+        "lateralSpanBeforeMm": 109.8320484161377,
+        "lateralSpanAfterMm": 100.97629204392433
+      },
+      {
+        "id": "FJ2817",
+        "name": "Gallbladder",
+        "system": "digestive",
+        "changedVertices": 649,
+        "maxLateralDisplacementMm": 5.061693489551544,
+        "lateralSpanBeforeMm": 33.13187696039677,
+        "lateralSpanAfterMm": 29.429081827402115
+      },
+      {
+        "id": "FJ3596",
+        "name": "Right gastro-epiploic artery",
+        "system": "arterial",
+        "changedVertices": 427,
+        "maxLateralDisplacementMm": 5.028326064348221,
+        "lateralSpanBeforeMm": 69.51642222702503,
+        "lateralSpanAfterMm": 62.952096574008465
+      },
+      {
+        "id": "FJ3473",
+        "name": "Posterior division of left renal artery",
+        "system": "arterial",
+        "changedVertices": 226,
+        "maxLateralDisplacementMm": 4.989411681890488,
+        "lateralSpanBeforeMm": 37.68695145845413,
+        "lateralSpanAfterMm": 34.132612869143486
+      },
+      {
+        "id": "FJ3399",
+        "name": "Ascending branch of left colic artery",
+        "system": "arterial",
+        "changedVertices": 233,
+        "maxLateralDisplacementMm": 4.8713646829128265,
+        "lateralSpanBeforeMm": 24.937376379966736,
+        "lateralSpanAfterMm": 20.964961498975754
+      },
+      {
+        "id": "FJ3400",
+        "name": "Left colic vein",
+        "system": "venous",
+        "changedVertices": 217,
+        "maxLateralDisplacementMm": 4.732929170131683,
+        "lateralSpanBeforeMm": 24.512503296136856,
+        "lateralSpanAfterMm": 20.53055912256241
+      },
+      {
+        "id": "FJ3475",
+        "name": "Posterior division of left renal artery",
+        "system": "arterial",
+        "changedVertices": 158,
+        "maxLateralDisplacementMm": 4.699356853961945,
+        "lateralSpanBeforeMm": 13.239100575447083,
+        "lateralSpanAfterMm": 12.021783739328384
+      },
+      {
+        "id": "FJ3559",
+        "name": "Anterior division of right renal artery",
+        "system": "arterial",
+        "changedVertices": 314,
+        "maxLateralDisplacementMm": 4.661839455366135,
+        "lateralSpanBeforeMm": 17.43963360786438,
+        "lateralSpanAfterMm": 15.721388161182404
+      },
+      {
+        "id": "FJ3517",
+        "name": "Left inferior phrenic artery",
+        "system": "arterial",
+        "changedVertices": 231,
+        "maxLateralDisplacementMm": 4.657424986362457,
+        "lateralSpanBeforeMm": 21.47272229194641,
+        "lateralSpanAfterMm": 25.845922529697418
+      },
+      {
+        "id": "FJ2620",
+        "name": "Distal part of jejunum",
+        "system": "digestive",
+        "changedVertices": 154,
+        "maxLateralDisplacementMm": 4.6272799372673035,
+        "lateralSpanBeforeMm": 31.28337487578392,
+        "lateralSpanAfterMm": 29.301077127456665
+      },
+      {
+        "id": "FJ2623",
+        "name": "Proximal part of jejunum",
+        "system": "digestive",
+        "changedVertices": 202,
+        "maxLateralDisplacementMm": 4.583239555358887,
+        "lateralSpanBeforeMm": 79.95736598968506,
+        "lateralSpanAfterMm": 79.53183352947235
+      },
+      {
+        "id": "FJ3574",
+        "name": "Posterior division of right renal artery",
+        "system": "arterial",
+        "changedVertices": 212,
+        "maxLateralDisplacementMm": 4.571136087179184,
+        "lateralSpanBeforeMm": 17.382703721523285,
+        "lateralSpanAfterMm": 17.660118639469147
+      },
+      {
+        "id": "FJ1896",
+        "name": "Pancreatic duct",
+        "system": "digestive",
+        "changedVertices": 2745,
+        "maxLateralDisplacementMm": 4.548873752355576,
+        "lateralSpanBeforeMm": 100.95060989260674,
+        "lateralSpanAfterMm": 92.08250418305397
+      },
+      {
+        "id": "FJ2405",
+        "name": "Right portal vein",
+        "system": "venous",
+        "changedVertices": 1308,
+        "maxLateralDisplacementMm": 4.547983407974243,
+        "lateralSpanBeforeMm": 69.5500299334526,
+        "lateralSpanAfterMm": 65.68275019526482
+      },
+      {
+        "id": "FJ2622",
+        "name": "Proximal part of jejunum",
+        "system": "digestive",
+        "changedVertices": 99,
+        "maxLateralDisplacementMm": 4.531040787696838,
+        "lateralSpanBeforeMm": 36.61106899380684,
+        "lateralSpanAfterMm": 34.828443080186844
+      },
+      {
+        "id": "FJ2621",
+        "name": "Distal part of jejunum",
+        "system": "digestive",
+        "changedVertices": 222,
+        "maxLateralDisplacementMm": 4.525311291217804,
+        "lateralSpanBeforeMm": 60.49857288599014,
+        "lateralSpanAfterMm": 59.987567365169525
+      },
+      {
+        "id": "FJ2630",
+        "name": "Pancreatic duct tree",
+        "system": "digestive",
+        "changedVertices": 2534,
+        "maxLateralDisplacementMm": 4.494085907936096,
+        "lateralSpanBeforeMm": 106.52048885822296,
+        "lateralSpanAfterMm": 97.9510135948658
+      },
+      {
+        "id": "FJ2404",
+        "name": "Left portal vein",
+        "system": "venous",
+        "changedVertices": 1549,
+        "maxLateralDisplacementMm": 4.491180181503296,
+        "lateralSpanBeforeMm": 125.37409737706184,
+        "lateralSpanAfterMm": 125.37409737706184
+      },
+      {
+        "id": "FJ3459",
+        "name": "Anterior division of left renal artery",
+        "system": "arterial",
+        "changedVertices": 240,
+        "maxLateralDisplacementMm": 4.43258136510849,
+        "lateralSpanBeforeMm": 6.806723773479462,
+        "lateralSpanAfterMm": 6.656616926193237
+      },
+      {
+        "id": "FJ3467",
+        "name": "Left inferior suprarenal artery",
+        "system": "arterial",
+        "changedVertices": 676,
+        "maxLateralDisplacementMm": 4.405282437801361,
+        "lateralSpanBeforeMm": 49.18208718299866,
+        "lateralSpanAfterMm": 46.770041808485985
+      },
+      {
+        "id": "FJ1516",
+        "name": "Ulnar head of right pronator teres",
+        "system": "muscular",
+        "changedVertices": 132,
+        "maxLateralDisplacementMm": 4.368320107460022,
+        "lateralSpanBeforeMm": 59.57706272602081,
+        "lateralSpanAfterMm": 63.945382833480835
+      },
+      {
+        "id": "FJ1516M",
+        "name": "Ulnar head of left pronator teres",
+        "system": "muscular",
+        "changedVertices": 133,
+        "maxLateralDisplacementMm": 4.368320107460022,
+        "lateralSpanBeforeMm": 59.57706272602081,
+        "lateralSpanAfterMm": 63.945382833480835
+      },
+      {
+        "id": "FJ2052",
+        "name": "Superior segmental branch of left renal artery",
+        "system": "arterial",
+        "changedVertices": 167,
+        "maxLateralDisplacementMm": 4.336986690759659,
+        "lateralSpanBeforeMm": 6.534148007631302,
+        "lateralSpanAfterMm": 8.039433509111404
+      },
+      {
+        "id": "FJ3544",
+        "name": "Splenic artery",
+        "system": "arterial",
+        "changedVertices": 1273,
+        "maxLateralDisplacementMm": 4.304457455873489,
+        "lateralSpanBeforeMm": 44.70953159034252,
+        "lateralSpanAfterMm": 41.941000148653984
+      },
+      {
+        "id": "FJ3130",
+        "name": "Right adrenal gland",
+        "system": "endocrine",
+        "changedVertices": 734,
+        "maxLateralDisplacementMm": 4.262026399374008,
+        "lateralSpanBeforeMm": 29.085474088788033,
+        "lateralSpanAfterMm": 27.449220418930054
+      },
+      {
+        "id": "FJ3462",
+        "name": "Anterior division of left renal artery",
+        "system": "arterial",
+        "changedVertices": 337,
+        "maxLateralDisplacementMm": 4.256613552570343,
+        "lateralSpanBeforeMm": 24.009641259908676,
+        "lateralSpanAfterMm": 22.645706310868263
+      },
+      {
+        "id": "FJ3560",
+        "name": "Anterior division of right renal artery",
+        "system": "arterial",
+        "changedVertices": 314,
+        "maxLateralDisplacementMm": 4.218000918626785,
+        "lateralSpanBeforeMm": 10.190445929765701,
+        "lateralSpanAfterMm": 9.13824513554573
+      },
+      {
+        "id": "FJ3474",
+        "name": "Posterior division of left renal artery",
+        "system": "arterial",
+        "changedVertices": 173,
+        "maxLateralDisplacementMm": 4.206012934446335,
+        "lateralSpanBeforeMm": 8.704539388418198,
+        "lateralSpanAfterMm": 8.20029154419899
+      },
+      {
+        "id": "FJ3545",
+        "name": "Pancreaticoduodenal vein",
+        "system": "venous",
+        "changedVertices": 471,
+        "maxLateralDisplacementMm": 4.198916256427765,
+        "lateralSpanBeforeMm": 33.16326439380646,
+        "lateralSpanAfterMm": 30.011089518666267
+      },
+      {
+        "id": "FJ1497M",
+        "name": "Left flexor digitorum profundus",
+        "system": "muscular",
+        "changedVertices": 314,
+        "maxLateralDisplacementMm": 4.19248640537262,
+        "lateralSpanBeforeMm": 99.44003820419312,
+        "lateralSpanAfterMm": 103.63252460956573
+      },
+      {
+        "id": "FJ1497",
+        "name": "Right flexor digitorum profundus",
+        "system": "muscular",
+        "changedVertices": 312,
+        "maxLateralDisplacementMm": 4.156157374382019,
+        "lateralSpanBeforeMm": 99.23405945301056,
+        "lateralSpanAfterMm": 103.39021682739258
+      },
+      {
+        "id": "FJ1485",
+        "name": "Right anconeus",
+        "system": "muscular",
+        "changedVertices": 700,
+        "maxLateralDisplacementMm": 4.030942916870117,
+        "lateralSpanBeforeMm": 26.712924242019653,
+        "lateralSpanAfterMm": 30.6815505027771
+      },
+      {
+        "id": "FJ1485M",
+        "name": "Left anconeus",
+        "system": "muscular",
+        "changedVertices": 693,
+        "maxLateralDisplacementMm": 4.030942916870117,
+        "lateralSpanBeforeMm": 26.712924242019653,
+        "lateralSpanAfterMm": 30.6815505027771
+      },
+      {
+        "id": "FJ3419",
+        "name": "Caudal pancreatic artery",
+        "system": "arterial",
+        "changedVertices": 475,
+        "maxLateralDisplacementMm": 4.01986762881279,
+        "lateralSpanBeforeMm": 26.378203183412552,
+        "lateralSpanAfterMm": 24.909548461437225
+      },
+      {
+        "id": "FJ3083",
+        "name": "Anterior inferior segmental tributary of middle hepatic vein",
+        "system": "venous",
+        "changedVertices": 90,
+        "maxLateralDisplacementMm": 3.9875470101833344,
+        "lateralSpanBeforeMm": 56.769668124616146,
+        "lateralSpanAfterMm": 54.430133663117886
+      },
+      {
+        "id": "FJ1528",
+        "name": "Right iliocostalis thoracis",
+        "system": "muscular",
+        "changedVertices": 309,
+        "maxLateralDisplacementMm": 3.982044756412506,
+        "lateralSpanBeforeMm": 43.798964470624924,
+        "lateralSpanAfterMm": 46.99968174099922
+      },
+      {
+        "id": "FJ1528M",
+        "name": "Left iliocostalis thoracis",
+        "system": "muscular",
+        "changedVertices": 311,
+        "maxLateralDisplacementMm": 3.982044756412506,
+        "lateralSpanBeforeMm": 43.798964470624924,
+        "lateralSpanAfterMm": 46.99968174099922
+      },
+      {
+        "id": "FJ1512",
+        "name": "Short head of right biceps brachii",
+        "system": "muscular",
+        "changedVertices": 454,
+        "maxLateralDisplacementMm": 3.917783498764038,
+        "lateralSpanBeforeMm": 81.18101954460144,
+        "lateralSpanAfterMm": 78.99285852909088
+      },
+      {
+        "id": "FJ1512M",
+        "name": "Short head of left biceps brachii",
+        "system": "muscular",
+        "changedVertices": 452,
+        "maxLateralDisplacementMm": 3.917783498764038,
+        "lateralSpanBeforeMm": 81.18101954460144,
+        "lateralSpanAfterMm": 78.99285852909088
+      },
+      {
+        "id": "FJ3409",
+        "name": "Anterior superior pancreaticoduodenal artery",
+        "system": "arterial",
+        "changedVertices": 270,
+        "maxLateralDisplacementMm": 3.892749547958374,
+        "lateralSpanBeforeMm": 34.791710786521435,
+        "lateralSpanAfterMm": 31.745686661452055
+      },
+      {
+        "id": "FJ1477",
+        "name": "Lateral head of right triceps brachii",
+        "system": "muscular",
+        "changedVertices": 297,
+        "maxLateralDisplacementMm": 3.8644224405288696,
+        "lateralSpanBeforeMm": 54.47256565093994,
+        "lateralSpanAfterMm": 54.47256565093994
+      },
+      {
+        "id": "FJ1477M",
+        "name": "Lateral head of left triceps brachii",
+        "system": "muscular",
+        "changedVertices": 298,
+        "maxLateralDisplacementMm": 3.8644224405288696,
+        "lateralSpanBeforeMm": 54.47256565093994,
+        "lateralSpanAfterMm": 54.47256565093994
+      },
+      {
+        "id": "FJ3561",
+        "name": "Anterior division of right renal artery",
+        "system": "arterial",
+        "changedVertices": 259,
+        "maxLateralDisplacementMm": 3.8493946194648743,
+        "lateralSpanBeforeMm": 23.298844695091248,
+        "lateralSpanAfterMm": 22.695641964673996
+      },
+      {
+        "id": "FJ3129",
+        "name": "Left adrenal gland",
+        "system": "endocrine",
+        "changedVertices": 791,
+        "maxLateralDisplacementMm": 3.6993101239204407,
+        "lateralSpanBeforeMm": 44.00100000202656,
+        "lateralSpanAfterMm": 42.32251085340977
+      },
+      {
+        "id": "FJ3420",
+        "name": "Splenic artery",
+        "system": "arterial",
+        "changedVertices": 590,
+        "maxLateralDisplacementMm": 3.6100484430789948,
+        "lateralSpanBeforeMm": 6.173335015773773,
+        "lateralSpanAfterMm": 5.646150559186935
+      },
+      {
+        "id": "FJ3401",
+        "name": "Anterior inferior pancreaticoduodenal artery",
+        "system": "arterial",
+        "changedVertices": 210,
+        "maxLateralDisplacementMm": 3.6006271839141846,
+        "lateralSpanBeforeMm": 29.333950020372868,
+        "lateralSpanAfterMm": 26.933819986879826
+      },
+      {
+        "id": "FJ1535",
+        "name": "Right longissimus thoracis",
+        "system": "muscular",
+        "changedVertices": 1761,
+        "maxLateralDisplacementMm": 3.593429923057556,
+        "lateralSpanBeforeMm": 61.143853527028114,
+        "lateralSpanAfterMm": 61.12892716191709
+      },
+      {
+        "id": "FJ1535M",
+        "name": "Left longissimus thoracis",
+        "system": "muscular",
+        "changedVertices": 1795,
+        "maxLateralDisplacementMm": 3.593429923057556,
+        "lateralSpanBeforeMm": 61.143853527028114,
+        "lateralSpanAfterMm": 61.12892716191709
+      },
+      {
+        "id": "FJ2038",
+        "name": "Right renal artery",
+        "system": "arterial",
+        "changedVertices": 119,
+        "maxLateralDisplacementMm": 3.592204302549362,
+        "lateralSpanBeforeMm": 50.4130395129323,
+        "lateralSpanAfterMm": 45.735166408121586
+      },
+      {
+        "id": "FJ1431",
+        "name": "Right psoas major",
+        "system": "muscular",
+        "changedVertices": 949,
+        "maxLateralDisplacementMm": 3.587234765291214,
+        "lateralSpanBeforeMm": 109.32689532637596,
+        "lateralSpanAfterMm": 109.73464231938124
+      },
+      {
+        "id": "FJ1431M",
+        "name": "Left psoas major",
+        "system": "muscular",
+        "changedVertices": 934,
+        "maxLateralDisplacementMm": 3.587234765291214,
+        "lateralSpanBeforeMm": 109.35884341597557,
+        "lateralSpanAfterMm": 109.76659040898085
+      },
+      {
+        "id": "FJ2820",
+        "name": "Hepatovenous segment IV",
+        "system": "venous",
+        "changedVertices": 3023,
+        "maxLateralDisplacementMm": 3.572855144739151,
+        "lateralSpanBeforeMm": 52.489944733679295,
+        "lateralSpanAfterMm": 51.51440296322107
+      },
+      {
+        "id": "FJ1463",
+        "name": "Set of right levatores costarum longi",
+        "system": "muscular",
+        "changedVertices": 539,
+        "maxLateralDisplacementMm": 3.5295262932777405,
+        "lateralSpanBeforeMm": 41.53228923678398,
+        "lateralSpanAfterMm": 41.53228923678398
+      },
+      {
+        "id": "FJ1463M",
+        "name": "Set of left levatores costarum longi",
+        "system": "muscular",
+        "changedVertices": 519,
+        "maxLateralDisplacementMm": 3.5295262932777405,
+        "lateralSpanBeforeMm": 41.532304137945175,
+        "lateralSpanAfterMm": 41.532304137945175
+      },
+      {
+        "id": "FJ3086",
+        "name": "Anterior inferior segmental tributary of middle hepatic vein",
+        "system": "venous",
+        "changedVertices": 150,
+        "maxLateralDisplacementMm": 3.503989428281784,
+        "lateralSpanBeforeMm": 12.082800269126892,
+        "lateralSpanAfterMm": 15.174217522144318
+      },
+      {
+        "id": "FJ2046",
+        "name": "Left renal artery",
+        "system": "arterial",
+        "changedVertices": 165,
+        "maxLateralDisplacementMm": 3.489747643470764,
+        "lateralSpanBeforeMm": 32.544618006795645,
+        "lateralSpanAfterMm": 29.388009570538998
+      },
+      {
+        "id": "FJ3586",
+        "name": "Right middle suprarenal artery",
+        "system": "arterial",
+        "changedVertices": 530,
+        "maxLateralDisplacementMm": 3.4462586045265198,
+        "lateralSpanBeforeMm": 55.9905250556767,
+        "lateralSpanAfterMm": 52.13722866028547
+      },
+      {
+        "id": "FJ3074",
+        "name": "Anterior inferior segmental branch of right portal vein",
+        "system": "venous",
+        "changedVertices": 407,
+        "maxLateralDisplacementMm": 3.4424588084220886,
+        "lateralSpanBeforeMm": 47.367651015520096,
+        "lateralSpanAfterMm": 47.56629094481468
+      },
+      {
+        "id": "FJ3075",
+        "name": "Anterior inferior segmental hepatic artery",
+        "system": "arterial",
+        "changedVertices": 578,
+        "maxLateralDisplacementMm": 3.431379795074463,
+        "lateralSpanBeforeMm": 37.248749285936356,
+        "lateralSpanAfterMm": 37.54289075732231
+      },
+      {
+        "id": "FJ3576",
+        "name": "Trunk of right renal artery",
+        "system": "arterial",
+        "changedVertices": 145,
+        "maxLateralDisplacementMm": 3.4206993877887726,
+        "lateralSpanBeforeMm": 48.76801650971174,
+        "lateralSpanAfterMm": 44.19113229960203
+      },
+      {
+        "id": "FJ3476",
+        "name": "Trunk of left renal artery",
+        "system": "arterial",
+        "changedVertices": 132,
+        "maxLateralDisplacementMm": 3.4201331436634064,
+        "lateralSpanBeforeMm": 31.587830977514386,
+        "lateralSpanAfterMm": 28.50658493116498
+      },
+      {
+        "id": "FJ1478",
+        "name": "Long head of right biceps brachii",
+        "system": "muscular",
+        "changedVertices": 194,
+        "maxLateralDisplacementMm": 3.419533371925354,
+        "lateralSpanBeforeMm": 110.27110368013382,
+        "lateralSpanAfterMm": 110.27056723833084
+      },
+      {
+        "id": "FJ1478M",
+        "name": "Long head of left biceps brachii",
+        "system": "muscular",
+        "changedVertices": 178,
+        "maxLateralDisplacementMm": 3.419533371925354,
+        "lateralSpanBeforeMm": 110.27110368013382,
+        "lateralSpanAfterMm": 110.27056723833084
+      },
+      {
+        "id": "FJ3079",
+        "name": "Common hepatic duct",
+        "system": "digestive",
+        "changedVertices": 315,
+        "maxLateralDisplacementMm": 3.4085065126419067,
+        "lateralSpanBeforeMm": 24.409322068095207,
+        "lateralSpanAfterMm": 21.936889737844467
+      },
+      {
+        "id": "FJ1858",
+        "name": "Hepatovenous segment IX",
+        "system": "venous",
+        "changedVertices": 1009,
+        "maxLateralDisplacementMm": 3.3741965889930725,
+        "lateralSpanBeforeMm": 87.15837635099888,
+        "lateralSpanAfterMm": 86.39620803296566
+      },
+      {
+        "id": "FJ3558",
+        "name": "Anterior division of right renal artery",
+        "system": "arterial",
+        "changedVertices": 217,
+        "maxLateralDisplacementMm": 3.3736340701580048,
+        "lateralSpanBeforeMm": 31.57951682806015,
+        "lateralSpanAfterMm": 31.886255368590355
+      },
+      {
+        "id": "FJ3072",
+        "name": "Anterior inferior tributary of right hepatic biliary tree",
+        "system": "digestive",
+        "changedVertices": 577,
+        "maxLateralDisplacementMm": 3.3713430166244507,
+        "lateralSpanBeforeMm": 36.24708950519562,
+        "lateralSpanAfterMm": 36.65979206562042
+      },
+      {
+        "id": "FJ2823",
+        "name": "Hepatovenous segment VIII",
+        "system": "venous",
+        "changedVertices": 1605,
+        "maxLateralDisplacementMm": 3.352448344230652,
+        "lateralSpanBeforeMm": 87.00619451701641,
+        "lateralSpanAfterMm": 86.16909570991993
+      },
+      {
+        "id": "FJ1462",
+        "name": "Set of right levatores costarum breves",
+        "system": "muscular",
+        "changedVertices": 1032,
+        "maxLateralDisplacementMm": 3.3062994480133057,
+        "lateralSpanBeforeMm": 43.67103986442089,
+        "lateralSpanAfterMm": 43.977243825793266
+      },
+      {
+        "id": "FJ1462M",
+        "name": "Set of left levatores costarum breves",
+        "system": "muscular",
+        "changedVertices": 1001,
+        "maxLateralDisplacementMm": 3.3062994480133057,
+        "lateralSpanBeforeMm": 43.67103986442089,
+        "lateralSpanAfterMm": 43.977243825793266
+      },
+      {
+        "id": "FJ2285",
+        "name": "Right lateral thoracic vein",
+        "system": "venous",
+        "changedVertices": 52,
+        "maxLateralDisplacementMm": 3.288835287094116,
+        "lateralSpanBeforeMm": 18.135301768779755,
+        "lateralSpanAfterMm": 18.135301768779755
+      },
+      {
+        "id": "FJ2233",
+        "name": "Left lateral thoracic vein",
+        "system": "venous",
+        "changedVertices": 51,
+        "maxLateralDisplacementMm": 3.288276493549347,
+        "lateralSpanBeforeMm": 18.095463514328003,
+        "lateralSpanAfterMm": 18.095463514328003
+      },
+      {
+        "id": "FJ3159",
+        "name": "Second lumbar vertebra",
+        "system": "skeletal",
+        "changedVertices": 1493,
+        "maxLateralDisplacementMm": 3.2307319343090057,
+        "lateralSpanBeforeMm": 73.61128553748131,
+        "lateralSpanAfterMm": 67.30500981211662
+      },
+      {
+        "id": "FJ1547",
+        "name": "lateral lumbar intertransversarius",
+        "system": "muscular",
+        "changedVertices": 983,
+        "maxLateralDisplacementMm": 3.186555579304695,
+        "lateralSpanBeforeMm": 34.032413735985756,
+        "lateralSpanAfterMm": 35.09252704679966
+      },
+      {
+        "id": "FJ1547M",
+        "name": "Lateral lumbar intertransversarius",
+        "system": "muscular",
+        "changedVertices": 985,
+        "maxLateralDisplacementMm": 3.186555579304695,
+        "lateralSpanBeforeMm": 34.032413735985756,
+        "lateralSpanAfterMm": 35.09252704679966
+      },
+      {
+        "id": "FJ3557",
+        "name": "Posterior superior pancreaticoduodenal artery",
+        "system": "arterial",
+        "changedVertices": 270,
+        "maxLateralDisplacementMm": 3.1359270215034485,
+        "lateralSpanBeforeMm": 19.32754088193178,
+        "lateralSpanAfterMm": 17.34337955713272
+      },
+      {
+        "id": "FJ3581",
+        "name": "Ureteric segment of right renal artery",
+        "system": "arterial",
+        "changedVertices": 173,
+        "maxLateralDisplacementMm": 3.1342916190624237,
+        "lateralSpanBeforeMm": 10.266553610563278,
+        "lateralSpanAfterMm": 8.16565565764904
+      },
+      {
+        "id": "FJ3157",
+        "name": "First lumbar vertebra",
+        "system": "skeletal",
+        "changedVertices": 1391,
+        "maxLateralDisplacementMm": 3.102889284491539,
+        "lateralSpanBeforeMm": 63.77759575843811,
+        "lateralSpanAfterMm": 57.70230479538441
+      },
+      {
+        "id": "FJ3481",
+        "name": "Ureteric segment of left renal artery",
+        "system": "arterial",
+        "changedVertices": 414,
+        "maxLateralDisplacementMm": 3.0813999474048615,
+        "lateralSpanBeforeMm": 11.259231716394424,
+        "lateralSpanAfterMm": 10.805387049913406
+      },
+      {
+        "id": "FJ3448",
+        "name": "Inferior phrenic vein",
+        "system": "venous",
+        "changedVertices": 177,
+        "maxLateralDisplacementMm": 3.050006926059723,
+        "lateralSpanBeforeMm": 81.62486925721169,
+        "lateralSpanAfterMm": 81.44381269812584
+      },
+      {
+        "id": "FJ3433",
+        "name": "Great pancreatic artery",
+        "system": "arterial",
+        "changedVertices": 141,
+        "maxLateralDisplacementMm": 3.039170056581497,
+        "lateralSpanBeforeMm": 3.538951277732849,
+        "lateralSpanAfterMm": 3.7826858460903168
+      },
+      {
+        "id": "FJ3480",
+        "name": "Left suprarenal vein",
+        "system": "venous",
+        "changedVertices": 297,
+        "maxLateralDisplacementMm": 3.027908504009247,
+        "lateralSpanBeforeMm": 15.685757622122765,
+        "lateralSpanAfterMm": 16.52652397751808
+      },
+      {
+        "id": "FJ3546",
+        "name": "Posterior inferior pancreaticoduodenal artery",
+        "system": "arterial",
+        "changedVertices": 240,
+        "maxLateralDisplacementMm": 3.013506531715393,
+        "lateralSpanBeforeMm": 21.24770451337099,
+        "lateralSpanAfterMm": 19.209916703402996
+      },
+      {
+        "id": "FJ1548",
+        "name": "medial lumbar intertransversarius",
+        "system": "muscular",
+        "changedVertices": 650,
+        "maxLateralDisplacementMm": 2.998190000653267,
+        "lateralSpanBeforeMm": 31.49625100195408,
+        "lateralSpanAfterMm": 33.3554744720459
+      },
+      {
+        "id": "FJ1548M",
+        "name": "Medial lumbar intertransversarius",
+        "system": "muscular",
+        "changedVertices": 646,
+        "maxLateralDisplacementMm": 2.998190000653267,
+        "lateralSpanBeforeMm": 31.49625100195408,
+        "lateralSpanAfterMm": 33.3554744720459
+      },
+      {
+        "id": "FJ3121",
+        "name": "Anterior superior segmental tributary of right hepatic vein",
+        "system": "venous",
+        "changedVertices": 262,
+        "maxLateralDisplacementMm": 2.966310828924179,
+        "lateralSpanBeforeMm": 55.17134442925453,
+        "lateralSpanAfterMm": 55.62234669923782
+      },
+      {
+        "id": "FJ3580",
+        "name": "Right suprarenal vein",
+        "system": "venous",
+        "changedVertices": 386,
+        "maxLateralDisplacementMm": 2.90839746594429,
+        "lateralSpanBeforeMm": 24.743402376770973,
+        "lateralSpanAfterMm": 24.30933713912964
+      },
+      {
+        "id": "FJ3655",
+        "name": "Pancreaticoduodenal vein",
+        "system": "venous",
+        "changedVertices": 240,
+        "maxLateralDisplacementMm": 2.8347913175821304,
+        "lateralSpanBeforeMm": 16.760308295488358,
+        "lateralSpanAfterMm": 14.541423879563808
+      },
+      {
+        "id": "FJ3477",
+        "name": "Left renal vein",
+        "system": "venous",
+        "changedVertices": 327,
+        "maxLateralDisplacementMm": 2.8088316321372986,
+        "lateralSpanBeforeMm": 43.251090683043,
+        "lateralSpanAfterMm": 39.08741753548384
+      },
+      {
+        "id": "FJ3110",
+        "name": "Posterior superior tributary of right hepatic biliary tree",
+        "system": "digestive",
+        "changedVertices": 327,
+        "maxLateralDisplacementMm": 2.80027836561203,
+        "lateralSpanBeforeMm": 42.8401343524456,
+        "lateralSpanAfterMm": 42.77243837714195
+      },
+      {
+        "id": "FJ3646",
+        "name": "Pancreaticoduodenal vein",
+        "system": "venous",
+        "changedVertices": 254,
+        "maxLateralDisplacementMm": 2.7317143976688385,
+        "lateralSpanBeforeMm": 20.29087021946907,
+        "lateralSpanAfterMm": 18.363960087299347
+      },
+      {
+        "id": "FJ1522",
+        "name": "Right lumbar rotator",
+        "system": "muscular",
+        "changedVertices": 2919,
+        "maxLateralDisplacementMm": 2.6427116245031357,
+        "lateralSpanBeforeMm": 43.07711578439921,
+        "lateralSpanAfterMm": 43.025857652537525
+      },
+      {
+        "id": "FJ1522M",
+        "name": "Left lumbar rotator",
+        "system": "muscular",
+        "changedVertices": 2919,
+        "maxLateralDisplacementMm": 2.6427116245031357,
+        "lateralSpanBeforeMm": 43.07711578439921,
+        "lateralSpanAfterMm": 43.025857652537525
+      },
+      {
+        "id": "FJ2416",
+        "name": "Right hepatic vein",
+        "system": "venous",
+        "changedVertices": 777,
+        "maxLateralDisplacementMm": 2.559468150138855,
+        "lateralSpanBeforeMm": 80.41604794561863,
+        "lateralSpanAfterMm": 80.14725334942341
+      },
+      {
+        "id": "FJ3577",
+        "name": "Right renal vein",
+        "system": "venous",
+        "changedVertices": 170,
+        "maxLateralDisplacementMm": 2.5479011237621307,
+        "lateralSpanBeforeMm": 20.77279333025217,
+        "lateralSpanAfterMm": 19.017056562006474
+      },
+      {
+        "id": "FJ2616",
+        "name": "Distal part of jejunum",
+        "system": "digestive",
+        "changedVertices": 227,
+        "maxLateralDisplacementMm": 2.45116651058197,
+        "lateralSpanBeforeMm": 63.53817135095596,
+        "lateralSpanAfterMm": 61.463989317417145
+      },
+      {
+        "id": "FJ3444",
+        "name": "Inferior pancreatic artery",
+        "system": "arterial",
+        "changedVertices": 227,
+        "maxLateralDisplacementMm": 2.384619787335396,
+        "lateralSpanBeforeMm": 18.842880614101887,
+        "lateralSpanAfterMm": 17.294944263994694
+      },
+      {
+        "id": "FJ3582",
+        "name": "Ureteric segment of right renal artery",
+        "system": "arterial",
+        "changedVertices": 211,
+        "maxLateralDisplacementMm": 2.2774990648031235,
+        "lateralSpanBeforeMm": 7.395362481474876,
+        "lateralSpanAfterMm": 8.240871131420135
+      },
+      {
+        "id": "FJ3443",
+        "name": "Inferior mesenteric vein",
+        "system": "venous",
+        "changedVertices": 100,
+        "maxLateralDisplacementMm": 2.269551157951355,
+        "lateralSpanBeforeMm": 20.71275468915701,
+        "lateralSpanAfterMm": 20.162242464721203
+      },
+      {
+        "id": "FJ3447",
+        "name": "Inferior phrenic vein",
+        "system": "venous",
+        "changedVertices": 123,
+        "maxLateralDisplacementMm": 2.2132061421871185,
+        "lateralSpanBeforeMm": 40.57868290692568,
+        "lateralSpanAfterMm": 40.57868290692568
+      },
+      {
+        "id": "FJ3415",
+        "name": "Ileocolic vein",
+        "system": "venous",
+        "changedVertices": 267,
+        "maxLateralDisplacementMm": 2.149514853954315,
+        "lateralSpanBeforeMm": 47.94962331652641,
+        "lateralSpanAfterMm": 47.18337021768093
+      },
+      {
+        "id": "FJ2618",
+        "name": "Distal part of jejunum",
+        "system": "digestive",
+        "changedVertices": 117,
+        "maxLateralDisplacementMm": 2.148006111383438,
+        "lateralSpanBeforeMm": 40.77992308884859,
+        "lateralSpanAfterMm": 39.3086327239871
+      },
+      {
+        "id": "FJ2296",
+        "name": "Right radial vein",
+        "system": "venous",
+        "changedVertices": 209,
+        "maxLateralDisplacementMm": 2.123236656188965,
+        "lateralSpanBeforeMm": 59.132710099220276,
+        "lateralSpanAfterMm": 61.25384569168091
+      },
+      {
+        "id": "FJ3472",
+        "name": "Left middle suprarenal artery",
+        "system": "arterial",
+        "changedVertices": 495,
+        "maxLateralDisplacementMm": 2.1225735545158386,
+        "lateralSpanBeforeMm": 45.38705572485924,
+        "lateralSpanAfterMm": 44.17956620454788
+      },
+      {
+        "id": "FJ2244",
+        "name": "Left radial vein",
+        "system": "venous",
+        "changedVertices": 196,
+        "maxLateralDisplacementMm": 2.119213342666626,
+        "lateralSpanBeforeMm": 59.141069650650024,
+        "lateralSpanAfterMm": 61.25885248184204
+      },
+      {
+        "id": "FJ2242",
+        "name": "Left radial artery",
+        "system": "arterial",
+        "changedVertices": 96,
+        "maxLateralDisplacementMm": 2.1073520183563232,
+        "lateralSpanBeforeMm": 69.02511417865753,
+        "lateralSpanAfterMm": 71.13246619701385
+      },
+      {
+        "id": "FJ2294",
+        "name": "Right radial artery",
+        "system": "arterial",
+        "changedVertices": 88,
+        "maxLateralDisplacementMm": 2.105206251144409,
+        "lateralSpanBeforeMm": 69.0661370754242,
+        "lateralSpanAfterMm": 71.1713433265686
+      },
+      {
+        "id": "FJ2310",
+        "name": "Right ulnar artery",
+        "system": "arterial",
+        "changedVertices": 350,
+        "maxLateralDisplacementMm": 2.1043717861175537,
+        "lateralSpanBeforeMm": 34.84252095222473,
+        "lateralSpanAfterMm": 36.946892738342285
+      },
+      {
+        "id": "FJ3414",
+        "name": "Ascending branch of inferior branch of ileocolic artery",
+        "system": "arterial",
+        "changedVertices": 257,
+        "maxLateralDisplacementMm": 2.0992159843444824,
+        "lateralSpanBeforeMm": 47.98831045627594,
+        "lateralSpanAfterMm": 47.09116742014885
+      },
+      {
+        "id": "FJ2258",
+        "name": "Left ulnar artery",
+        "system": "arterial",
+        "changedVertices": 365,
+        "maxLateralDisplacementMm": 2.0960569381713867,
+        "lateralSpanBeforeMm": 34.808456897735596,
+        "lateralSpanAfterMm": 36.90369427204132
+      },
+      {
+        "id": "FJ3589",
+        "name": "Right ascending lumbar vein",
+        "system": "venous",
+        "changedVertices": 574,
+        "maxLateralDisplacementMm": 2.0303763449192047,
+        "lateralSpanBeforeMm": 12.243006378412247,
+        "lateralSpanAfterMm": 12.243006378412247
+      },
+      {
+        "id": "FJ3162",
+        "name": "Third lumbar vertebra",
+        "system": "skeletal",
+        "changedVertices": 1420,
+        "maxLateralDisplacementMm": 1.9647255539894104,
+        "lateralSpanBeforeMm": 79.3960653245449,
+        "lateralSpanAfterMm": 76.13404840230942
+      },
+      {
+        "id": "FJ3212",
+        "name": "Intervertebral disk of first lumbar vertebra",
+        "system": "skeletal",
+        "changedVertices": 3399,
+        "maxLateralDisplacementMm": 1.9597206264734268,
+        "lateralSpanBeforeMm": 38.578936830163,
+        "lateralSpanAfterMm": 34.772271290421486
+      },
+      {
+        "id": "FJ2362",
+        "name": "Middle collateral branch of right deep brachial artery",
+        "system": "arterial",
+        "changedVertices": 187,
+        "maxLateralDisplacementMm": 1.9384920597076416,
+        "lateralSpanBeforeMm": 25.696322321891785,
+        "lateralSpanAfterMm": 25.59228241443634
+      },
+      {
+        "id": "FJ3345",
+        "name": "Right seventh costal cartilage",
+        "system": "skeletal",
+        "changedVertices": 211,
+        "maxLateralDisplacementMm": 1.9331201910972595,
+        "lateralSpanBeforeMm": 96.66420239955187,
+        "lateralSpanAfterMm": 95.65885830670595
+      },
+      {
+        "id": "FJ3518",
+        "name": "Left inferior phrenic artery",
+        "system": "arterial",
+        "changedVertices": 176,
+        "maxLateralDisplacementMm": 1.932092010974884,
+        "lateralSpanBeforeMm": 28.55120599269867,
+        "lateralSpanAfterMm": 27.69327163696289
+      },
+      {
+        "id": "FJ2331",
+        "name": "Middle collateral branch of left deep brachial artery",
+        "system": "arterial",
+        "changedVertices": 210,
+        "maxLateralDisplacementMm": 1.92984938621521,
+        "lateralSpanBeforeMm": 25.75671672821045,
+        "lateralSpanAfterMm": 25.66574513912201
+      },
+      {
+        "id": "FJ3511",
+        "name": "Left inferior epigastric artery",
+        "system": "arterial",
+        "changedVertices": 272,
+        "maxLateralDisplacementMm": 1.9230395555496216,
+        "lateralSpanBeforeMm": 32.87921845912933,
+        "lateralSpanAfterMm": 34.74535793066025
+      },
+      {
+        "id": "FJ3604",
+        "name": "Right inferior epigastric artery",
+        "system": "arterial",
+        "changedVertices": 256,
+        "maxLateralDisplacementMm": 1.9226111471652985,
+        "lateralSpanBeforeMm": 41.41174256801605,
+        "lateralSpanAfterMm": 43.27969439327717
+      },
+      {
+        "id": "FJ3255",
+        "name": "Left seventh costal cartilage",
+        "system": "skeletal",
+        "changedVertices": 209,
+        "maxLateralDisplacementMm": 1.9112005829811096,
+        "lateralSpanBeforeMm": 96.37257596477866,
+        "lateralSpanAfterMm": 95.36012401804328
+      },
+      {
+        "id": "FJ2260",
+        "name": "Left ulnar vein",
+        "system": "venous",
+        "changedVertices": 203,
+        "maxLateralDisplacementMm": 1.9091218709945679,
+        "lateralSpanBeforeMm": 41.46642982959747,
+        "lateralSpanAfterMm": 43.37555170059204
+      },
+      {
+        "id": "FJ2312",
+        "name": "Right ulnar vein",
+        "system": "venous",
+        "changedVertices": 212,
+        "maxLateralDisplacementMm": 1.9055157899856567,
+        "lateralSpanBeforeMm": 41.43533110618591,
+        "lateralSpanAfterMm": 43.34084689617157
+      },
+      {
+        "id": "FJ2619",
+        "name": "Distal part of jejunum",
+        "system": "digestive",
+        "changedVertices": 141,
+        "maxLateralDisplacementMm": 1.9020214676856995,
+        "lateralSpanBeforeMm": 60.83894148468971,
+        "lateralSpanAfterMm": 60.01671962440014
+      },
+      {
+        "id": "FJ3659",
+        "name": "Inferior vena cava",
+        "system": "venous",
+        "changedVertices": 258,
+        "maxLateralDisplacementMm": 1.803046092391014,
+        "lateralSpanBeforeMm": 19.314445089548826,
+        "lateralSpanAfterMm": 18.521217396482825
+      },
+      {
+        "id": "FJ3346",
+        "name": "Right seventh rib",
+        "system": "skeletal",
+        "changedVertices": 208,
+        "maxLateralDisplacementMm": 1.793883740901947,
+        "lateralSpanBeforeMm": 113.59629034996033,
+        "lateralSpanAfterMm": 113.59629034996033
+      },
+      {
+        "id": "FJ3234",
+        "name": "Left seventh rib",
+        "system": "skeletal",
+        "changedVertices": 208,
+        "maxLateralDisplacementMm": 1.7777755856513977,
+        "lateralSpanBeforeMm": 113.53826522827148,
+        "lateralSpanAfterMm": 113.53826522827148
+      },
+      {
+        "id": "FJ3493",
+        "name": "Left ascending lumbar vein",
+        "system": "venous",
+        "changedVertices": 150,
+        "maxLateralDisplacementMm": 1.647450029850006,
+        "lateralSpanBeforeMm": 23.502498399466276,
+        "lateralSpanAfterMm": 24.06845660880208
+      },
+      {
+        "id": "FJ3512",
+        "name": "Left inferior epigastric vein",
+        "system": "venous",
+        "changedVertices": 306,
+        "maxLateralDisplacementMm": 1.6404930502176285,
+        "lateralSpanBeforeMm": 28.90646830201149,
+        "lateralSpanAfterMm": 30.469979159533978
+      },
+      {
+        "id": "FJ3605",
+        "name": "Right inferior epigastric vein",
+        "system": "venous",
+        "changedVertices": 330,
+        "maxLateralDisplacementMm": 1.6404632478952408,
+        "lateralSpanBeforeMm": 29.473131522536278,
+        "lateralSpanAfterMm": 31.033804640173912
+      },
+      {
+        "id": "FJ3211",
+        "name": "Intervertebral disk",
+        "system": "skeletal",
+        "changedVertices": 3614,
+        "maxLateralDisplacementMm": 1.6184095293283463,
+        "lateralSpanBeforeMm": 38.37529756128788,
+        "lateralSpanAfterMm": 35.40269285440445
+      },
+      {
+        "id": "FJ3434",
+        "name": "Hemiazygos vein",
+        "system": "venous",
+        "changedVertices": 150,
+        "maxLateralDisplacementMm": 1.6141347587108612,
+        "lateralSpanBeforeMm": 35.95639951527119,
+        "lateralSpanAfterMm": 34.349311143159866
+      },
+      {
+        "id": "FJ3658",
+        "name": "Ascending lumbar vein",
+        "system": "venous",
+        "changedVertices": 660,
+        "maxLateralDisplacementMm": 1.6015265136957169,
+        "lateralSpanBeforeMm": 48.55618253350258,
+        "lateralSpanAfterMm": 47.89424128830433
+      },
+      {
+        "id": "FJ3120",
+        "name": "Posterior inferior segmental tributary of right hepatic vein",
+        "system": "venous",
+        "changedVertices": 151,
+        "maxLateralDisplacementMm": 1.588236540555954,
+        "lateralSpanBeforeMm": 13.272207230329514,
+        "lateralSpanAfterMm": 11.952165514230728
+      },
+      {
+        "id": "FJ2275",
+        "name": "Right common interosseous artery",
+        "system": "arterial",
+        "changedVertices": 222,
+        "maxLateralDisplacementMm": 1.5305131673812866,
+        "lateralSpanBeforeMm": 11.690586805343628,
+        "lateralSpanAfterMm": 12.990474700927734
+      },
+      {
+        "id": "FJ1938",
+        "name": "Right lateral thoracic artery",
+        "system": "arterial",
+        "changedVertices": 57,
+        "maxLateralDisplacementMm": 1.5301257371902466,
+        "lateralSpanBeforeMm": 26.54293179512024,
+        "lateralSpanAfterMm": 26.536762714385986
+      },
+      {
+        "id": "FJ2223",
+        "name": "Left common interosseous artery",
+        "system": "arterial",
+        "changedVertices": 220,
+        "maxLateralDisplacementMm": 1.528814435005188,
+        "lateralSpanBeforeMm": 11.700361967086792,
+        "lateralSpanAfterMm": 12.997984886169434
+      },
+      {
+        "id": "FJ1976",
+        "name": "Left lateral thoracic artery",
+        "system": "arterial",
+        "changedVertices": 62,
+        "maxLateralDisplacementMm": 1.5218332409858704,
+        "lateralSpanBeforeMm": 26.487097144126892,
+        "lateralSpanAfterMm": 26.470325887203217
+      },
+      {
+        "id": "FJ2819",
+        "name": "Hepatovenous segment III",
+        "system": "venous",
+        "changedVertices": 914,
+        "maxLateralDisplacementMm": 1.5095360577106476,
+        "lateralSpanBeforeMm": 68.53667460381985,
+        "lateralSpanAfterMm": 68.16796807106584
+      },
+      {
+        "id": "FJ3214",
+        "name": "Intervertebral disk of second lumbar vertebra",
+        "system": "skeletal",
+        "changedVertices": 2955,
+        "maxLateralDisplacementMm": 1.47915817797184,
+        "lateralSpanBeforeMm": 43.13565790653229,
+        "lateralSpanAfterMm": 40.45817442238331
+      },
+      {
+        "id": "FJ1932",
+        "name": "Abdominal aorta",
+        "system": "arterial",
+        "changedVertices": 177,
+        "maxLateralDisplacementMm": 1.468178816139698,
+        "lateralSpanBeforeMm": 19.211013161111623,
+        "lateralSpanAfterMm": 19.211008213460445
+      },
+      {
+        "id": "FJ3156",
+        "name": "Twelfth thoracic vertebra",
+        "system": "skeletal",
+        "changedVertices": 1228,
+        "maxLateralDisplacementMm": 1.3988986611366272,
+        "lateralSpanBeforeMm": 39.50093872845173,
+        "lateralSpanAfterMm": 37.099605426192284
+      },
+      {
+        "id": "FJ2625",
+        "name": "Proximal part of jejunum",
+        "system": "digestive",
+        "changedVertices": 79,
+        "maxLateralDisplacementMm": 1.3937391340732574,
+        "lateralSpanBeforeMm": 28.87185476720333,
+        "lateralSpanAfterMm": 28.59645988792181
+      },
+      {
+        "id": "FJ1446",
+        "name": "Abdominal part of right pectoralis major",
+        "system": "muscular",
+        "changedVertices": 225,
+        "maxLateralDisplacementMm": 1.3837367296218872,
+        "lateralSpanBeforeMm": 116.88677966594696,
+        "lateralSpanAfterMm": 116.99694767594337
+      },
+      {
+        "id": "FJ1446M",
+        "name": "Abdominal part of left pectoralis major",
+        "system": "muscular",
+        "changedVertices": 231,
+        "maxLateralDisplacementMm": 1.3837367296218872,
+        "lateralSpanBeforeMm": 116.88677966594696,
+        "lateralSpanAfterMm": 116.99694767594337
+      },
+      {
+        "id": "FJ2824",
+        "name": "Hepatovenous segment VIII",
+        "system": "venous",
+        "changedVertices": 1047,
+        "maxLateralDisplacementMm": 1.371733844280243,
+        "lateralSpanBeforeMm": 84.19430814683437,
+        "lateralSpanAfterMm": 84.19430814683437
+      },
+      {
+        "id": "FJ2624",
+        "name": "Proximal part of jejunum",
+        "system": "digestive",
+        "changedVertices": 94,
+        "maxLateralDisplacementMm": 1.329578459262848,
+        "lateralSpanBeforeMm": 23.380503058433533,
+        "lateralSpanAfterMm": 23.09667132794857
+      },
+      {
+        "id": "FJ1971",
+        "name": "Left superior epigastric artery",
+        "system": "arterial",
+        "changedVertices": 204,
+        "maxLateralDisplacementMm": 1.326889730989933,
+        "lateralSpanBeforeMm": 9.856244549155235,
+        "lateralSpanAfterMm": 9.261421859264374
+      },
+      {
+        "id": "FJ1936",
+        "name": "Right superior epigastric artery",
+        "system": "arterial",
+        "changedVertices": 194,
+        "maxLateralDisplacementMm": 1.3238051906228065,
+        "lateralSpanBeforeMm": 9.851837530732155,
+        "lateralSpanAfterMm": 9.272716008126736
+      },
+      {
+        "id": "FJ3446",
+        "name": "Inferior pancreaticoduodenal artery",
+        "system": "arterial",
+        "changedVertices": 154,
+        "maxLateralDisplacementMm": 1.322755590081215,
+        "lateralSpanBeforeMm": 14.149755705147982,
+        "lateralSpanAfterMm": 12.897694890853018
+      },
+      {
+        "id": "FJ3119",
+        "name": "Posterior superior segmental tributary of right hepatic vein",
+        "system": "venous",
+        "changedVertices": 69,
+        "maxLateralDisplacementMm": 1.3149753212928772,
+        "lateralSpanBeforeMm": 43.16456988453865,
+        "lateralSpanAfterMm": 42.768802493810654
+      },
+      {
+        "id": "FJ3080",
+        "name": "Cystic duct",
+        "system": "digestive",
+        "changedVertices": 155,
+        "maxLateralDisplacementMm": 1.2584049254655838,
+        "lateralSpanBeforeMm": 8.014919236302376,
+        "lateralSpanAfterMm": 7.987514138221741
+      },
+      {
+        "id": "FJ3427",
+        "name": "Descending aorta",
+        "system": "arterial",
+        "changedVertices": 176,
+        "maxLateralDisplacementMm": 1.240515150129795,
+        "lateralSpanBeforeMm": 32.02687972225249,
+        "lateralSpanAfterMm": 31.832562992349267
+      },
+      {
+        "id": "FJ2816",
+        "name": "Caudate lobe of liver",
+        "system": "digestive",
+        "changedVertices": 370,
+        "maxLateralDisplacementMm": 1.118682324886322,
+        "lateralSpanBeforeMm": 41.002850048244,
+        "lateralSpanAfterMm": 39.97205849736929
+      },
+      {
+        "id": "FJ3429",
+        "name": "Left colic vein",
+        "system": "venous",
+        "changedVertices": 189,
+        "maxLateralDisplacementMm": 1.1041872203350067,
+        "lateralSpanBeforeMm": 41.38128086924553,
+        "lateralSpanAfterMm": 41.89800098538399
+      },
+      {
+        "id": "FJ1540",
+        "name": "Right semispinalis thoracis",
+        "system": "muscular",
+        "changedVertices": 296,
+        "maxLateralDisplacementMm": 1.1029858142137527,
+        "lateralSpanBeforeMm": 29.487957013770938,
+        "lateralSpanAfterMm": 29.487957013770938
+      },
+      {
+        "id": "FJ1540M",
+        "name": "Left semispinalis thoracis",
+        "system": "muscular",
+        "changedVertices": 309,
+        "maxLateralDisplacementMm": 1.1029858142137527,
+        "lateralSpanBeforeMm": 29.487957013770938,
+        "lateralSpanAfterMm": 29.487957013770938
+      },
+      {
+        "id": "FJ1525",
+        "name": "thoracic rotator",
+        "system": "muscular",
+        "changedVertices": 788,
+        "maxLateralDisplacementMm": 1.0942015796899796,
+        "lateralSpanBeforeMm": 27.789396233856678,
+        "lateralSpanAfterMm": 27.789396233856678
+      },
+      {
+        "id": "FJ1525M",
+        "name": "Thoracic rotator",
+        "system": "muscular",
+        "changedVertices": 781,
+        "maxLateralDisplacementMm": 1.0942015796899796,
+        "lateralSpanBeforeMm": 27.789396233856678,
+        "lateralSpanAfterMm": 27.789396233856678
+      },
+      {
+        "id": "FJ1853",
+        "name": "Hepatic portal vein",
+        "system": "venous",
+        "changedVertices": 396,
+        "maxLateralDisplacementMm": 1.0649245232343674,
+        "lateralSpanBeforeMm": 13.10555124655366,
+        "lateralSpanAfterMm": 13.291185721755028
+      },
+      {
+        "id": "FJ3082",
+        "name": "Pre-hepatic portal vein",
+        "system": "venous",
+        "changedVertices": 396,
+        "maxLateralDisplacementMm": 1.0617133229970932,
+        "lateralSpanBeforeMm": 13.100197073072195,
+        "lateralSpanAfterMm": 13.286688830703497
+      },
+      {
+        "id": "FJ2414",
+        "name": "Middle hepatic vein",
+        "system": "venous",
+        "changedVertices": 202,
+        "maxLateralDisplacementMm": 1.0571889579296112,
+        "lateralSpanBeforeMm": 50.25258148089051,
+        "lateralSpanAfterMm": 50.24367431178689
+      },
+      {
+        "id": "FJ3647",
+        "name": "Superior mesenteric vein",
+        "system": "venous",
+        "changedVertices": 161,
+        "maxLateralDisplacementMm": 1.0525630787014961,
+        "lateralSpanBeforeMm": 63.398000318557024,
+        "lateralSpanAfterMm": 63.84983379393816
+      },
+      {
+        "id": "FJ3428",
+        "name": "Descending branch of left colic artery",
+        "system": "arterial",
+        "changedVertices": 180,
+        "maxLateralDisplacementMm": 1.0491162538528442,
+        "lateralSpanBeforeMm": 41.20667651295662,
+        "lateralSpanAfterMm": 41.68078489601612
+      },
+      {
+        "id": "FJ3595",
+        "name": "Right gastric vein",
+        "system": "venous",
+        "changedVertices": 250,
+        "maxLateralDisplacementMm": 1.041686162352562,
+        "lateralSpanBeforeMm": 21.760522795375437,
+        "lateralSpanAfterMm": 20.722840097732842
+      },
+      {
+        "id": "FJ3277",
+        "name": "Left radius",
+        "system": "skeletal",
+        "changedVertices": 43,
+        "maxLateralDisplacementMm": 0.9579956531524658,
+        "lateralSpanBeforeMm": 64.76424634456635,
+        "lateralSpanAfterMm": 65.72224199771881
+      },
+      {
+        "id": "FJ3109",
+        "name": "Posterior superior tributary of right hepatic biliary tree",
+        "system": "digestive",
+        "changedVertices": 147,
+        "maxLateralDisplacementMm": 0.951819121837616,
+        "lateralSpanBeforeMm": 7.461033761501312,
+        "lateralSpanAfterMm": 8.2569420337677
+      },
+      {
+        "id": "FJ3594",
+        "name": "Right gastric artery",
+        "system": "arterial",
+        "changedVertices": 251,
+        "maxLateralDisplacementMm": 0.9466297924518585,
+        "lateralSpanBeforeMm": 30.92176653444767,
+        "lateralSpanAfterMm": 29.335378669202328
+      },
+      {
+        "id": "FJ2628",
+        "name": "Middle part of jejunum",
+        "system": "digestive",
+        "changedVertices": 85,
+        "maxLateralDisplacementMm": 0.9305514395236969,
+        "lateralSpanBeforeMm": 39.59572687745094,
+        "lateralSpanAfterMm": 39.59572687745094
+      },
+      {
+        "id": "FJ2627",
+        "name": "Proximal part of jejunum",
+        "system": "digestive",
+        "changedVertices": 84,
+        "maxLateralDisplacementMm": 0.9244494140148163,
+        "lateralSpanBeforeMm": 38.25734928250313,
+        "lateralSpanAfterMm": 37.89162263274193
+      },
+      {
+        "id": "FJ3499",
+        "name": "Left gastric artery",
+        "system": "arterial",
+        "changedVertices": 478,
+        "maxLateralDisplacementMm": 0.920075923204422,
+        "lateralSpanBeforeMm": 19.87570244818926,
+        "lateralSpanAfterMm": 19.645110238343477
+      },
+      {
+        "id": "FJ2245",
+        "name": "Left recurrent interosseous artery",
+        "system": "arterial",
+        "changedVertices": 145,
+        "maxLateralDisplacementMm": 0.9110420942306519,
+        "lateralSpanBeforeMm": 13.642355799674988,
+        "lateralSpanAfterMm": 14.506146311759949
+      },
+      {
+        "id": "FJ3349",
+        "name": "Right radius",
+        "system": "skeletal",
+        "changedVertices": 32,
+        "maxLateralDisplacementMm": 0.906035304069519,
+        "lateralSpanBeforeMm": 64.51381742954254,
+        "lateralSpanAfterMm": 65.41985273361206
+      },
+      {
+        "id": "FJ2297",
+        "name": "Right recurrent interosseous artery",
+        "system": "arterial",
+        "changedVertices": 141,
+        "maxLateralDisplacementMm": 0.9014159440994263,
+        "lateralSpanBeforeMm": 13.57327401638031,
+        "lateralSpanAfterMm": 14.433756470680237
+      },
+      {
+        "id": "FJ3430",
+        "name": "Dorsal pancreatic artery",
+        "system": "arterial",
+        "changedVertices": 244,
+        "maxLateralDisplacementMm": 0.8969083428382874,
+        "lateralSpanBeforeMm": 6.021253066137433,
+        "lateralSpanAfterMm": 5.5197495967149734
+      },
+      {
+        "id": "FJ1544",
+        "name": "Right spinalis thoracis",
+        "system": "muscular",
+        "changedVertices": 976,
+        "maxLateralDisplacementMm": 0.8880225941538811,
+        "lateralSpanBeforeMm": 12.489194283261895,
+        "lateralSpanAfterMm": 12.48913281597197
+      },
+      {
+        "id": "FJ3619",
+        "name": "Right inferior phrenic artery",
+        "system": "arterial",
+        "changedVertices": 121,
+        "maxLateralDisplacementMm": 0.8799117058515549,
+        "lateralSpanBeforeMm": 76.52162236627191,
+        "lateralSpanAfterMm": 76.46407262654975
+      },
+      {
+        "id": "FJ3514",
+        "name": "Left inferior phrenic artery",
+        "system": "arterial",
+        "changedVertices": 116,
+        "maxLateralDisplacementMm": 0.8472595363855362,
+        "lateralSpanBeforeMm": 32.263075932860374,
+        "lateralSpanAfterMm": 32.263075932860374
+      },
+      {
+        "id": "FJ3432",
+        "name": "Trunk of gastroduodenal artery",
+        "system": "arterial",
+        "changedVertices": 117,
+        "maxLateralDisplacementMm": 0.8408986032009125,
+        "lateralSpanBeforeMm": 4.988476634025574,
+        "lateralSpanAfterMm": 4.497654270380735
+      },
+      {
+        "id": "FJ1544M",
+        "name": "Left spinalis thoracis",
+        "system": "muscular",
+        "changedVertices": 986,
+        "maxLateralDisplacementMm": 0.8169645443558693,
+        "lateralSpanBeforeMm": 12.489194283261895,
+        "lateralSpanAfterMm": 12.48913281597197
+      },
+      {
+        "id": "FJ3500",
+        "name": "Left gastric vein",
+        "system": "venous",
+        "changedVertices": 575,
+        "maxLateralDisplacementMm": 0.794852152466774,
+        "lateralSpanBeforeMm": 35.99694836884737,
+        "lateralSpanAfterMm": 35.01736093312502
+      },
+      {
+        "id": "FJ3112",
+        "name": "Posterior superior segmental branch of right portal vein",
+        "system": "venous",
+        "changedVertices": 122,
+        "maxLateralDisplacementMm": 0.7897205650806427,
+        "lateralSpanBeforeMm": 6.797332316637039,
+        "lateralSpanAfterMm": 6.9963037967681885
+      },
+      {
+        "id": "FJ3081",
+        "name": "Hepatic artery proper",
+        "system": "arterial",
+        "changedVertices": 176,
+        "maxLateralDisplacementMm": 0.7866406813263893,
+        "lateralSpanBeforeMm": 10.02846285700798,
+        "lateralSpanAfterMm": 10.28426829725504
+      },
+      {
+        "id": "FJ3520",
+        "name": "Left inferior phrenic artery",
+        "system": "arterial",
+        "changedVertices": 103,
+        "maxLateralDisplacementMm": 0.7845684885978699,
+        "lateralSpanBeforeMm": 11.69058308005333,
+        "lateralSpanAfterMm": 12.436974793672562
+      },
+      {
+        "id": "FJ3078",
+        "name": "Common hepatic artery",
+        "system": "arterial",
+        "changedVertices": 184,
+        "maxLateralDisplacementMm": 0.777936540544033,
+        "lateralSpanBeforeMm": 19.200006034225225,
+        "lateralSpanAfterMm": 18.122579902410507
+      },
+      {
+        "id": "FJ2262",
+        "name": "Radial collateral branch of right deep brachial artery",
+        "system": "arterial",
+        "changedVertices": 133,
+        "maxLateralDisplacementMm": 0.7759779691696167,
+        "lateralSpanBeforeMm": 29.591143131256104,
+        "lateralSpanAfterMm": 30.003711581230164
+      },
+      {
+        "id": "FJ3441",
+        "name": "Inferior vena cava",
+        "system": "venous",
+        "changedVertices": 128,
+        "maxLateralDisplacementMm": 0.77100470662117,
+        "lateralSpanBeforeMm": 20.17257153056562,
+        "lateralSpanAfterMm": 20.17257153056562
+      },
+      {
+        "id": "FJ2261",
+        "name": "Radial collateral branch of left deep brachial artery",
+        "system": "arterial",
+        "changedVertices": 145,
+        "maxLateralDisplacementMm": 0.7695406675338745,
+        "lateralSpanBeforeMm": 29.59197759628296,
+        "lateralSpanAfterMm": 30.019447207450867
+      },
+      {
+        "id": "FJ1448",
+        "name": "Linea alba",
+        "system": "connective",
+        "changedVertices": 90,
+        "maxLateralDisplacementMm": 0.760336872190237,
+        "lateralSpanBeforeMm": 17.77012273669243,
+        "lateralSpanAfterMm": 17.56682898849249
+      },
+      {
+        "id": "FJ3416",
+        "name": "Azygos vein",
+        "system": "venous",
+        "changedVertices": 371,
+        "maxLateralDisplacementMm": 0.7575768977403641,
+        "lateralSpanBeforeMm": 11.304146144539118,
+        "lateralSpanAfterMm": 11.304146144539118
+      },
+      {
+        "id": "FJ3644",
+        "name": "Trunk of superior mesenteric artery",
+        "system": "arterial",
+        "changedVertices": 158,
+        "maxLateralDisplacementMm": 0.748682301491499,
+        "lateralSpanBeforeMm": 73.95357917994261,
+        "lateralSpanAfterMm": 73.20489687845111
+      },
+      {
+        "id": "FJ1928",
+        "name": "Superior mesenteric artery",
+        "system": "arterial",
+        "changedVertices": 188,
+        "maxLateralDisplacementMm": 0.7363134063780308,
+        "lateralSpanBeforeMm": 73.83862556889653,
+        "lateralSpanAfterMm": 73.1023121625185
+      },
+      {
+        "id": "FJ2011",
+        "name": "Superior mesenteric artery",
+        "system": "arterial",
+        "changedVertices": 187,
+        "maxLateralDisplacementMm": 0.7363124750554562,
+        "lateralSpanBeforeMm": 73.83861625567079,
+        "lateralSpanAfterMm": 73.10230378061533
+      },
+      {
+        "id": "FJ3210",
+        "name": "Intervertebral disk of eleventh thoracic vertebra",
+        "system": "skeletal",
+        "changedVertices": 2892,
+        "maxLateralDisplacementMm": 0.7053166627883911,
+        "lateralSpanBeforeMm": 36.60747408866882,
+        "lateralSpanAfterMm": 35.40468402206898
+      },
+      {
+        "id": "FJ2608",
+        "name": "Middle part of jejunum",
+        "system": "digestive",
+        "changedVertices": 49,
+        "maxLateralDisplacementMm": 0.6863772869110107,
+        "lateralSpanBeforeMm": 34.987784922122955,
+        "lateralSpanAfterMm": 34.95081514120102
+      },
+      {
+        "id": "FJ3155",
+        "name": "Eleventh thoracic vertebra",
+        "system": "skeletal",
+        "changedVertices": 1238,
+        "maxLateralDisplacementMm": 0.6795721128582954,
+        "lateralSpanBeforeMm": 47.662850469350815,
+        "lateralSpanAfterMm": 46.913573518395424
+      },
+      {
+        "id": "FJ3096",
+        "name": "Left hepatic duct",
+        "system": "digestive",
+        "changedVertices": 372,
+        "maxLateralDisplacementMm": 0.6545465439558029,
+        "lateralSpanBeforeMm": 30.22352373227477,
+        "lateralSpanAfterMm": 29.606889933347702
+      },
+      {
+        "id": "FJ3123",
+        "name": "Right hepatic duct",
+        "system": "digestive",
+        "changedVertices": 115,
+        "maxLateralDisplacementMm": 0.6537772715091705,
+        "lateralSpanBeforeMm": 8.685451000928879,
+        "lateralSpanAfterMm": 8.632905781269073
+      },
+      {
+        "id": "FJ2607",
+        "name": "Middle part of jejunum",
+        "system": "digestive",
+        "changedVertices": 49,
+        "maxLateralDisplacementMm": 0.6372332572937012,
+        "lateralSpanBeforeMm": 49.84086751937866,
+        "lateralSpanAfterMm": 49.71802234649658
+      },
+      {
+        "id": "FJ1846",
+        "name": "Celiac artery",
+        "system": "arterial",
+        "changedVertices": 133,
+        "maxLateralDisplacementMm": 0.6115473806858063,
+        "lateralSpanBeforeMm": 10.130656766705215,
+        "lateralSpanAfterMm": 9.629318548832089
+      },
+      {
+        "id": "FJ2013",
+        "name": "Celiac artery",
+        "system": "arterial",
+        "changedVertices": 133,
+        "maxLateralDisplacementMm": 0.6115473806858063,
+        "lateralSpanBeforeMm": 10.130656766705215,
+        "lateralSpanAfterMm": 9.629318548832089
+      },
+      {
+        "id": "FJ3421",
+        "name": "Celiac trunk",
+        "system": "arterial",
+        "changedVertices": 133,
+        "maxLateralDisplacementMm": 0.6115473806858063,
+        "lateralSpanBeforeMm": 10.130656766705215,
+        "lateralSpanAfterMm": 9.629318548832089
+      },
+      {
+        "id": "FJ1924",
+        "name": "Right lobe branch of right hepatic artery",
+        "system": "arterial",
+        "changedVertices": 248,
+        "maxLateralDisplacementMm": 0.604826956987381,
+        "lateralSpanBeforeMm": 42.76885837316513,
+        "lateralSpanAfterMm": 42.69564151763916
+      },
+      {
+        "id": "FJ2394",
+        "name": "Right lobe branch of right hepatic artery",
+        "system": "arterial",
+        "changedVertices": 248,
+        "maxLateralDisplacementMm": 0.604826956987381,
+        "lateralSpanBeforeMm": 42.76885837316513,
+        "lateralSpanAfterMm": 42.69564151763916
+      },
+      {
+        "id": "FJ3116",
+        "name": "Posterior superior segmental hepatic artery",
+        "system": "arterial",
+        "changedVertices": 256,
+        "maxLateralDisplacementMm": 0.604826956987381,
+        "lateralSpanBeforeMm": 42.76885837316513,
+        "lateralSpanAfterMm": 42.69564151763916
+      },
+      {
+        "id": "FJ3071",
+        "name": "Anterior superior tributary of right hepatic biliary tree",
+        "system": "digestive",
+        "changedVertices": 158,
+        "maxLateralDisplacementMm": 0.6031151860952377,
+        "lateralSpanBeforeMm": 47.4772360175848,
+        "lateralSpanAfterMm": 47.97564633190632
+      },
+      {
+        "id": "FJ3165",
+        "name": "Fourth lumbar vertebra",
+        "system": "skeletal",
+        "changedVertices": 1234,
+        "maxLateralDisplacementMm": 0.5975700914859772,
+        "lateralSpanBeforeMm": 89.98443931341171,
+        "lateralSpanAfterMm": 89.1408771276474
+      },
+      {
+        "id": "FJ3495",
+        "name": "Left colic vein",
+        "system": "venous",
+        "changedVertices": 67,
+        "maxLateralDisplacementMm": 0.5943737924098969,
+        "lateralSpanBeforeMm": 11.919453740119934,
+        "lateralSpanAfterMm": 11.667490005493164
+      },
+      {
+        "id": "FJ3494",
+        "name": "Left colic artery",
+        "system": "arterial",
+        "changedVertices": 130,
+        "maxLateralDisplacementMm": 0.5917884409427643,
+        "lateralSpanBeforeMm": 19.729779101908207,
+        "lateralSpanAfterMm": 19.344392232596874
+      },
+      {
+        "id": "FJ2626",
+        "name": "Proximal part of jejunum",
+        "system": "digestive",
+        "changedVertices": 160,
+        "maxLateralDisplacementMm": 0.5853194743394852,
+        "lateralSpanBeforeMm": 45.93032132834196,
+        "lateralSpanAfterMm": 45.998348854482174
+      },
+      {
+        "id": "FJ3128",
+        "name": "Medial inferior segmental branch of left portal vein",
+        "system": "venous",
+        "changedVertices": 306,
+        "maxLateralDisplacementMm": 0.5610715597867966,
+        "lateralSpanBeforeMm": 28.892606496810913,
+        "lateralSpanAfterMm": 28.337260708212852
+      },
+      {
+        "id": "FJ1916",
+        "name": "Caudate lobe branch of right hepatic artery",
+        "system": "arterial",
+        "changedVertices": 209,
+        "maxLateralDisplacementMm": 0.5512386560440063,
+        "lateralSpanBeforeMm": 15.037991106510162,
+        "lateralSpanAfterMm": 14.581333845853806
+      },
+      {
+        "id": "FJ2386",
+        "name": "Caudate lobe branch of right hepatic artery",
+        "system": "arterial",
+        "changedVertices": 209,
+        "maxLateralDisplacementMm": 0.5512386560440063,
+        "lateralSpanBeforeMm": 15.037991106510162,
+        "lateralSpanAfterMm": 14.581333845853806
+      },
+      {
+        "id": "FJ3103",
+        "name": "Medial inferior tributary of left hepatic biliary tree",
+        "system": "digestive",
+        "changedVertices": 331,
+        "maxLateralDisplacementMm": 0.5483720451593399,
+        "lateralSpanBeforeMm": 27.571269311010838,
+        "lateralSpanAfterMm": 27.02284697443247
+      },
+      {
+        "id": "FJ1505",
+        "name": "Right supinator",
+        "system": "muscular",
+        "changedVertices": 187,
+        "maxLateralDisplacementMm": 0.5077719688415527,
+        "lateralSpanBeforeMm": 37.51499950885773,
+        "lateralSpanAfterMm": 38.02277147769928
+      },
+      {
+        "id": "FJ1505M",
+        "name": "Left supinator",
+        "system": "muscular",
+        "changedVertices": 195,
+        "maxLateralDisplacementMm": 0.5077719688415527,
+        "lateralSpanBeforeMm": 37.51595318317413,
+        "lateralSpanAfterMm": 38.023725152015686
+      },
+      {
+        "id": "FJ3125",
+        "name": "Lateral inferior segmental branch of left portal vein",
+        "system": "venous",
+        "changedVertices": 239,
+        "maxLateralDisplacementMm": 0.5044825375080109,
+        "lateralSpanBeforeMm": 45.19465542398393,
+        "lateralSpanAfterMm": 45.108761405572295
+      },
+      {
+        "id": "FJ3106",
+        "name": "Medial inferior segmental hepatic artery",
+        "system": "arterial",
+        "changedVertices": 208,
+        "maxLateralDisplacementMm": 0.5044266581535339,
+        "lateralSpanBeforeMm": 24.865735322237015,
+        "lateralSpanAfterMm": 24.359834846109152
+      },
+      {
+        "id": "FJ1893",
+        "name": "Left portal vein",
+        "system": "venous",
+        "changedVertices": 83,
+        "maxLateralDisplacementMm": 0.5036611109972,
+        "lateralSpanBeforeMm": 74.08097013831139,
+        "lateralSpanAfterMm": 74.08097013831139
+      },
+      {
+        "id": "FJ3093",
+        "name": "Lateral superior segmental hepatic artery",
+        "system": "arterial",
+        "changedVertices": 150,
+        "maxLateralDisplacementMm": 0.4934873431921005,
+        "lateralSpanBeforeMm": 28.220724314451218,
+        "lateralSpanAfterMm": 28.22192572057247
+      },
+      {
+        "id": "FJ3090",
+        "name": "Lateral superior tributary of left hepatic biliary tree",
+        "system": "digestive",
+        "changedVertices": 145,
+        "maxLateralDisplacementMm": 0.48545002937316895,
+        "lateralSpanBeforeMm": 28.14372070133686,
+        "lateralSpanAfterMm": 28.14372256398201
+      },
+      {
+        "id": "FJ2277",
+        "name": "Right deep brachial artery",
+        "system": "arterial",
+        "changedVertices": 56,
+        "maxLateralDisplacementMm": 0.46868622303009033,
+        "lateralSpanBeforeMm": 30.702397227287292,
+        "lateralSpanAfterMm": 30.350789427757263
+      },
+      {
+        "id": "FJ2225",
+        "name": "Left deep brachial artery",
+        "system": "arterial",
+        "changedVertices": 56,
+        "maxLateralDisplacementMm": 0.468522310256958,
+        "lateralSpanBeforeMm": 30.663684010505676,
+        "lateralSpanAfterMm": 30.304476618766785
+      },
+      {
+        "id": "FJ1472",
+        "name": "Right extensor carpi ulnaris",
+        "system": "muscular",
+        "changedVertices": 343,
+        "maxLateralDisplacementMm": 0.45233964920043945,
+        "lateralSpanBeforeMm": 25.058552622795105,
+        "lateralSpanAfterMm": 25.490090250968933
+      },
+      {
+        "id": "FJ1472M",
+        "name": "Left extensor carpi ulnaris",
+        "system": "muscular",
+        "changedVertices": 340,
+        "maxLateralDisplacementMm": 0.45233964920043945,
+        "lateralSpanBeforeMm": 25.058552622795105,
+        "lateralSpanAfterMm": 25.490090250968933
+      },
+      {
+        "id": "FJ3076",
+        "name": "Anterior superior segmental hepatic artery",
+        "system": "arterial",
+        "changedVertices": 163,
+        "maxLateralDisplacementMm": 0.4466511309146881,
+        "lateralSpanBeforeMm": 56.209513917565346,
+        "lateralSpanAfterMm": 56.46923929452896
+      },
+      {
+        "id": "FJ3073",
+        "name": "Anterior superior segmental branch of right portal vein",
+        "system": "venous",
+        "changedVertices": 155,
+        "maxLateralDisplacementMm": 0.4285871982574463,
+        "lateralSpanBeforeMm": 59.36344154179096,
+        "lateralSpanAfterMm": 59.61156263947487
+      },
+      {
+        "id": "FJ3215",
+        "name": "Intervertebral disk of third lumbar vertebra",
+        "system": "skeletal",
+        "changedVertices": 3750,
+        "maxLateralDisplacementMm": 0.4208330065011978,
+        "lateralSpanBeforeMm": 47.726789489388466,
+        "lateralSpanAfterMm": 47.23144508898258
+      },
+      {
+        "id": "FJ3122",
+        "name": "Trunk of right portal vein",
+        "system": "venous",
+        "changedVertices": 105,
+        "maxLateralDisplacementMm": 0.41336938738822937,
+        "lateralSpanBeforeMm": 12.756336480379105,
+        "lateralSpanAfterMm": 12.642057612538338
+      },
+      {
+        "id": "FJ3117",
+        "name": "Trunk of right hepatic artery",
+        "system": "arterial",
+        "changedVertices": 223,
+        "maxLateralDisplacementMm": 0.4009343683719635,
+        "lateralSpanBeforeMm": 11.046899482607841,
+        "lateralSpanAfterMm": 10.947229340672493
+      },
+      {
+        "id": "VH_F_fat_L",
+        "name": "Adipose tissue of left breast",
+        "system": "mammary",
+        "changedVertices": 574,
+        "maxLateralDisplacementMm": 0.39871037006378174,
+        "lateralSpanBeforeMm": 123.3931090682745,
+        "lateralSpanAfterMm": 123.3931090682745
+      },
+      {
+        "id": "VH_F_fat_R",
+        "name": "Adipose tissue of right breast",
+        "system": "mammary",
+        "changedVertices": 574,
+        "maxLateralDisplacementMm": 0.39871037006378174,
+        "lateralSpanBeforeMm": 123.3931090682745,
+        "lateralSpanAfterMm": 123.3931090682745
+      },
+      {
+        "id": "FJ2266",
+        "name": "Right anterior interosseous artery",
+        "system": "arterial",
+        "changedVertices": 102,
+        "maxLateralDisplacementMm": 0.3975331783294678,
+        "lateralSpanBeforeMm": 25.66346526145935,
+        "lateralSpanAfterMm": 26.06099843978882
+      },
+      {
+        "id": "FJ2214",
+        "name": "Left anterior interosseous artery",
+        "system": "arterial",
+        "changedVertices": 101,
+        "maxLateralDisplacementMm": 0.3971308469772339,
+        "lateralSpanBeforeMm": 25.639355182647705,
+        "lateralSpanAfterMm": 26.03648602962494
+      },
+      {
+        "id": "FJ3102",
+        "name": "Trunk of left portal vein",
+        "system": "venous",
+        "changedVertices": 255,
+        "maxLateralDisplacementMm": 0.3895387053489685,
+        "lateralSpanBeforeMm": 26.84498718008399,
+        "lateralSpanAfterMm": 26.502940338104963
+      },
+      {
+        "id": "FJ3449",
+        "name": "Inferior phrenic vein",
+        "system": "venous",
+        "changedVertices": 101,
+        "maxLateralDisplacementMm": 0.3812238574028015,
+        "lateralSpanBeforeMm": 73.11856932938099,
+        "lateralSpanAfterMm": 72.75586016476154
+      },
+      {
+        "id": "FJ1914",
+        "name": "Caudate lobe branch of right portal vein",
+        "system": "venous",
+        "changedVertices": 177,
+        "maxLateralDisplacementMm": 0.380123034119606,
+        "lateralSpanBeforeMm": 11.951782740652561,
+        "lateralSpanAfterMm": 11.66636310517788
+      },
+      {
+        "id": "FJ1520",
+        "name": "Ascending part of right trapezius",
+        "system": "muscular",
+        "changedVertices": 445,
+        "maxLateralDisplacementMm": 0.3468310460448265,
+        "lateralSpanBeforeMm": 130.4745862726122,
+        "lateralSpanAfterMm": 130.33103896304965
+      },
+      {
+        "id": "FJ1520M",
+        "name": "Ascending part of left trapezius",
+        "system": "muscular",
+        "changedVertices": 444,
+        "maxLateralDisplacementMm": 0.34665968269109726,
+        "lateralSpanBeforeMm": 130.4745862726122,
+        "lateralSpanAfterMm": 130.33103896304965
+      },
+      {
+        "id": "FJ3095",
+        "name": "Trunk of left hepatic artery",
+        "system": "arterial",
+        "changedVertices": 351,
+        "maxLateralDisplacementMm": 0.34011155366897583,
+        "lateralSpanBeforeMm": 24.839671794325113,
+        "lateralSpanAfterMm": 24.527070112526417
+      },
+      {
+        "id": "FJ2818",
+        "name": "Hepatovenous segment II",
+        "system": "venous",
+        "changedVertices": 199,
+        "maxLateralDisplacementMm": 0.3168359398841858,
+        "lateralSpanBeforeMm": 83.99298135191202,
+        "lateralSpanAfterMm": 83.99298135191202
+      },
+      {
+        "id": "FJ1487",
+        "name": "Right brachioradialis",
+        "system": "muscular",
+        "changedVertices": 108,
+        "maxLateralDisplacementMm": 0.31432509422302246,
+        "lateralSpanBeforeMm": 87.78391778469086,
+        "lateralSpanAfterMm": 87.78391778469086
+      },
+      {
+        "id": "FJ1487M",
+        "name": "Left brachioradialis",
+        "system": "muscular",
+        "changedVertices": 111,
+        "maxLateralDisplacementMm": 0.31432509422302246,
+        "lateralSpanBeforeMm": 87.78391778469086,
+        "lateralSpanAfterMm": 87.78391778469086
+      },
+      {
+        "id": "FJ1550",
+        "name": "set of interspinales lumborum",
+        "system": "muscular",
+        "changedVertices": 520,
+        "maxLateralDisplacementMm": 0.29169581830501556,
+        "lateralSpanBeforeMm": 6.169631029479206,
+        "lateralSpanAfterMm": 6.130503839813173
+      },
+      {
+        "id": "FJ1550M",
+        "name": "Set of interspinales lumborum",
+        "system": "muscular",
+        "changedVertices": 517,
+        "maxLateralDisplacementMm": 0.29169535264372826,
+        "lateralSpanBeforeMm": 6.169631029479206,
+        "lateralSpanAfterMm": 6.130503839813173
+      },
+      {
+        "id": "FJ1490",
+        "name": "Right extensor carpi radialis longus",
+        "system": "muscular",
+        "changedVertices": 77,
+        "maxLateralDisplacementMm": 0.2904534339904785,
+        "lateralSpanBeforeMm": 70.08539140224457,
+        "lateralSpanAfterMm": 70.36009430885315
+      },
+      {
+        "id": "FJ1490M",
+        "name": "Left extensor carpi radialis longus",
+        "system": "muscular",
+        "changedVertices": 88,
+        "maxLateralDisplacementMm": 0.2904534339904785,
+        "lateralSpanBeforeMm": 70.09690999984741,
+        "lateralSpanAfterMm": 70.37341594696045
+      },
+      {
+        "id": "FJ3442",
+        "name": "Inferior mesenteric artery",
+        "system": "arterial",
+        "changedVertices": 114,
+        "maxLateralDisplacementMm": 0.28811581432819366,
+        "lateralSpanBeforeMm": 15.516048297286034,
+        "lateralSpanAfterMm": 15.488745644688606
+      },
+      {
+        "id": "FJ3440",
+        "name": "Ileocolic vein",
+        "system": "venous",
+        "changedVertices": 149,
+        "maxLateralDisplacementMm": 0.2702884376049042,
+        "lateralSpanBeforeMm": 24.52000044286251,
+        "lateralSpanAfterMm": 24.672902189195156
+      },
+      {
+        "id": "FJ1883",
+        "name": "Caudate lobe tributary of left hepatic biliary tree",
+        "system": "digestive",
+        "changedVertices": 174,
+        "maxLateralDisplacementMm": 0.2640029415488243,
+        "lateralSpanBeforeMm": 17.38556567579508,
+        "lateralSpanAfterMm": 17.133166082203388
+      },
+      {
+        "id": "FJ3094",
+        "name": "Left duct of caudate lobe of liver",
+        "system": "digestive",
+        "changedVertices": 171,
+        "maxLateralDisplacementMm": 0.2640029415488243,
+        "lateralSpanBeforeMm": 17.38556567579508,
+        "lateralSpanAfterMm": 17.133166082203388
+      },
+      {
+        "id": "FJ2615",
+        "name": "Distal part of jejunum",
+        "system": "digestive",
+        "changedVertices": 122,
+        "maxLateralDisplacementMm": 0.24705473333597183,
+        "lateralSpanBeforeMm": 28.890824876725674,
+        "lateralSpanAfterMm": 28.797955252230167
+      },
+      {
+        "id": "FJ2923",
+        "name": "Left lateral basal segmental artery",
+        "system": "arterial",
+        "changedVertices": 38,
+        "maxLateralDisplacementMm": 0.24043768644332886,
+        "lateralSpanBeforeMm": 6.035074591636658,
+        "lateralSpanAfterMm": 6.035074591636658
+      },
+      {
+        "id": "FJ3439",
+        "name": "Ileocolic artery",
+        "system": "arterial",
+        "changedVertices": 131,
+        "maxLateralDisplacementMm": 0.22677984088659286,
+        "lateralSpanBeforeMm": 28.497837018221617,
+        "lateralSpanAfterMm": 28.59891951084137
+      },
+      {
+        "id": "FJ3085",
+        "name": "Medial inferior segmental tributary of middle hepatic vein",
+        "system": "venous",
+        "changedVertices": 53,
+        "maxLateralDisplacementMm": 0.20413845777511597,
+        "lateralSpanBeforeMm": 3.0086133629083633,
+        "lateralSpanAfterMm": 2.8093717992305756
+      },
+      {
+        "id": "FJ3603",
+        "name": "Right iliolumbar vein",
+        "system": "venous",
+        "changedVertices": 292,
+        "maxLateralDisplacementMm": 0.20354986190795898,
+        "lateralSpanBeforeMm": 111.0016368329525,
+        "lateralSpanAfterMm": 111.0016368329525
+      },
+      {
+        "id": "FJ3510",
+        "name": "Left iliolumbar vein",
+        "system": "venous",
+        "changedVertices": 295,
+        "maxLateralDisplacementMm": 0.201396644115448,
+        "lateralSpanBeforeMm": 121.07944022864103,
+        "lateralSpanAfterMm": 121.07944022864103
+      },
+      {
+        "id": "FJ3077",
+        "name": "Caudate lobe branch of left hepatic artery",
+        "system": "arterial",
+        "changedVertices": 196,
+        "maxLateralDisplacementMm": 0.1921132206916809,
+        "lateralSpanBeforeMm": 18.593633663840592,
+        "lateralSpanAfterMm": 18.40930723119527
+      },
+      {
+        "id": "FJ2533",
+        "name": "Left lateral basal segmental bronchial tree",
+        "system": "respiratory",
+        "changedVertices": 40,
+        "maxLateralDisplacementMm": 0.15551596879959106,
+        "lateralSpanBeforeMm": 9.006887674331665,
+        "lateralSpanAfterMm": 9.006887674331665
+      },
+      {
+        "id": "FJ2563",
+        "name": "Esophagus",
+        "system": "digestive",
+        "changedVertices": 25,
+        "maxLateralDisplacementMm": 0.1344643533229828,
+        "lateralSpanBeforeMm": 28.671968262642622,
+        "lateralSpanAfterMm": 28.663416858762503
+      },
+      {
+        "id": "FJ3099",
+        "name": "Lateral inferior segmental tributary of left hepatic vein",
+        "system": "venous",
+        "changedVertices": 122,
+        "maxLateralDisplacementMm": 0.1181475818157196,
+        "lateralSpanBeforeMm": 13.218396343290806,
+        "lateralSpanAfterMm": 13.151929713785648
+      },
+      {
+        "id": "FJ3092",
+        "name": "Lateral inferior segmental hepatic artery",
+        "system": "arterial",
+        "changedVertices": 233,
+        "maxLateralDisplacementMm": 0.11761114001274109,
+        "lateralSpanBeforeMm": 42.52869263291359,
+        "lateralSpanAfterMm": 42.42928512394428
+      },
+      {
+        "id": "FJ1422",
+        "name": "Right iliacus",
+        "system": "muscular",
+        "changedVertices": 383,
+        "maxLateralDisplacementMm": 0.11375546455383301,
+        "lateralSpanBeforeMm": 57.368114590644836,
+        "lateralSpanAfterMm": 57.368114590644836
+      },
+      {
+        "id": "FJ1422M",
+        "name": "Left iliacus",
+        "system": "muscular",
+        "changedVertices": 384,
+        "maxLateralDisplacementMm": 0.11375546455383301,
+        "lateralSpanBeforeMm": 57.30758607387543,
+        "lateralSpanAfterMm": 57.30758607387543
+      },
+      {
+        "id": "VH_F_ilium_compact_bone_R",
+        "name": "Right ilium",
+        "system": "skeletal",
+        "changedVertices": 61,
+        "maxLateralDisplacementMm": 0.11252611875534058,
+        "lateralSpanBeforeMm": 111.05775088071823,
+        "lateralSpanAfterMm": 111.05775088071823
+      },
+      {
+        "id": "FJ3154",
+        "name": "Tenth thoracic vertebra",
+        "system": "skeletal",
+        "changedVertices": 546,
+        "maxLateralDisplacementMm": 0.10341592133045197,
+        "lateralSpanBeforeMm": 60.13350747525692,
+        "lateralSpanAfterMm": 60.13251654803753
+      },
+      {
+        "id": "FJ3089",
+        "name": "Lateral inferior tributary of left hepatic biliary tree",
+        "system": "digestive",
+        "changedVertices": 209,
+        "maxLateralDisplacementMm": 0.09783729910850525,
+        "lateralSpanBeforeMm": 40.81052774563432,
+        "lateralSpanAfterMm": 40.72097921743989
+      },
+      {
+        "id": "FJ1491",
+        "name": "Right extensor digiti minimi",
+        "system": "muscular",
+        "changedVertices": 31,
+        "maxLateralDisplacementMm": 0.09731948375701904,
+        "lateralSpanBeforeMm": 26.073113083839417,
+        "lateralSpanAfterMm": 26.159077882766724
+      },
+      {
+        "id": "FJ1491M",
+        "name": "Left extensor digiti minimi",
+        "system": "muscular",
+        "changedVertices": 32,
+        "maxLateralDisplacementMm": 0.09731948375701904,
+        "lateralSpanBeforeMm": 26.073113083839417,
+        "lateralSpanAfterMm": 26.159077882766724
+      },
+      {
+        "id": "VH_F_ilium_compact_bone_L",
+        "name": "Left ilium",
+        "system": "skeletal",
+        "changedVertices": 45,
+        "maxLateralDisplacementMm": 0.09556859731674194,
+        "lateralSpanBeforeMm": 114.79390785098076,
+        "lateralSpanAfterMm": 114.79390785098076
+      },
+      {
+        "id": "FJ3529",
+        "name": "Left superficial epigastric artery",
+        "system": "arterial",
+        "changedVertices": 10,
+        "maxLateralDisplacementMm": 0.08384138345718384,
+        "lateralSpanBeforeMm": 35.89964658021927,
+        "lateralSpanAfterMm": 35.89964658021927
+      },
+      {
+        "id": "FJ3639",
+        "name": "Sigmoid vein",
+        "system": "venous",
+        "changedVertices": 71,
+        "maxLateralDisplacementMm": 0.08365698158740997,
+        "lateralSpanBeforeMm": 70.92767208814621,
+        "lateralSpanAfterMm": 70.92767208814621
+      },
+      {
+        "id": "FJ3614",
+        "name": "Right superficial epigastric artery",
+        "system": "arterial",
+        "changedVertices": 10,
+        "maxLateralDisplacementMm": 0.08304417133331299,
+        "lateralSpanBeforeMm": 35.81131249666214,
+        "lateralSpanAfterMm": 35.81131249666214
+      },
+      {
+        "id": "VH_F_suspensory_ligaments_L",
+        "name": "Suspensory ligament of left breast",
+        "system": "mammary",
+        "changedVertices": 92,
+        "maxLateralDisplacementMm": 0.08249282836914062,
+        "lateralSpanBeforeMm": 65.53661078214645,
+        "lateralSpanAfterMm": 65.53661078214645
+      },
+      {
+        "id": "FJ2922",
+        "name": "Left lateral basal segmental artery",
+        "system": "arterial",
+        "changedVertices": 24,
+        "maxLateralDisplacementMm": 0.08231401443481445,
+        "lateralSpanBeforeMm": 19.837558269500732,
+        "lateralSpanAfterMm": 19.7790265083313
+      },
+      {
+        "id": "FJ3638",
+        "name": "Sigmoid artery",
+        "system": "arterial",
+        "changedVertices": 73,
+        "maxLateralDisplacementMm": 0.0795852392911911,
+        "lateralSpanBeforeMm": 71.78938435390592,
+        "lateralSpanAfterMm": 71.78938435390592
+      },
+      {
+        "id": "FJ1499",
+        "name": "Right flexor digitorum superficialis",
+        "system": "muscular",
+        "changedVertices": 90,
+        "maxLateralDisplacementMm": 0.07463991641998291,
+        "lateralSpanBeforeMm": 29.653966426849365,
+        "lateralSpanAfterMm": 29.728606343269348
+      },
+      {
+        "id": "FJ1499M",
+        "name": "Left flexor digitorum superficialis",
+        "system": "muscular",
+        "changedVertices": 91,
+        "maxLateralDisplacementMm": 0.07463991641998291,
+        "lateralSpanBeforeMm": 29.653966426849365,
+        "lateralSpanAfterMm": 29.728606343269348
+      },
+      {
+        "id": "FJ3124",
+        "name": "Caudate lobe branch of left portal vein",
+        "system": "venous",
+        "changedVertices": 97,
+        "maxLateralDisplacementMm": 0.07420219480991364,
+        "lateralSpanBeforeMm": 20.866590552031994,
+        "lateralSpanAfterMm": 20.798553712666035
+      },
+      {
+        "id": "FJ3209",
+        "name": "Intervertebral disk of tenth thoracic vertebra",
+        "system": "skeletal",
+        "changedVertices": 2209,
+        "maxLateralDisplacementMm": 0.07253699004650116,
+        "lateralSpanBeforeMm": 35.23985855281353,
+        "lateralSpanAfterMm": 35.19097529351711
+      },
+      {
+        "id": "FJ2951",
+        "name": "Left lateral basal segmental vein",
+        "system": "venous",
+        "changedVertices": 17,
+        "maxLateralDisplacementMm": 0.0724494457244873,
+        "lateralSpanBeforeMm": 46.41089215874672,
+        "lateralSpanAfterMm": 46.41089215874672
+      },
+      {
+        "id": "FJ3100",
+        "name": "Lateral inferior segmental tributary of left hepatic vein",
+        "system": "venous",
+        "changedVertices": 192,
+        "maxLateralDisplacementMm": 0.062327831983566284,
+        "lateralSpanBeforeMm": 10.98346896469593,
+        "lateralSpanAfterMm": 10.937279090285301
+      },
+      {
+        "id": "FJ3566",
+        "name": "Right common iliac vein",
+        "system": "venous",
+        "changedVertices": 88,
+        "maxLateralDisplacementMm": 0.060906633734703064,
+        "lateralSpanBeforeMm": 35.216867458075285,
+        "lateralSpanAfterMm": 35.222817212343216
+      },
+      {
+        "id": "FJ3465",
+        "name": "Left common iliac vein",
+        "system": "venous",
+        "changedVertices": 113,
+        "maxLateralDisplacementMm": 0.05631241947412491,
+        "lateralSpanBeforeMm": 45.08216120302677,
+        "lateralSpanAfterMm": 45.05748860538006
+      },
+      {
+        "id": "FJ2272",
+        "name": "Right cephalic vein",
+        "system": "venous",
+        "changedVertices": 50,
+        "maxLateralDisplacementMm": 0.053301453590393066,
+        "lateralSpanBeforeMm": 183.20881575345993,
+        "lateralSpanAfterMm": 183.20881575345993
+      },
+      {
+        "id": "FJ1492",
+        "name": "Right extensor digitorum",
+        "system": "muscular",
+        "changedVertices": 49,
+        "maxLateralDisplacementMm": 0.04598498344421387,
+        "lateralSpanBeforeMm": 78.44045758247375,
+        "lateralSpanAfterMm": 78.44045758247375
+      },
+      {
+        "id": "FJ1492M",
+        "name": "Left extensor digitorum",
+        "system": "muscular",
+        "changedVertices": 40,
+        "maxLateralDisplacementMm": 0.04598498344421387,
+        "lateralSpanBeforeMm": 78.44045758247375,
+        "lateralSpanAfterMm": 78.44045758247375
+      },
+      {
+        "id": "FJ2415",
+        "name": "Left hepatic vein",
+        "system": "venous",
+        "changedVertices": 123,
+        "maxLateralDisplacementMm": 0.045958906412124634,
+        "lateralSpanBeforeMm": 58.172643184661865,
+        "lateralSpanAfterMm": 58.172643184661865
+      },
+      {
+        "id": "FJ2532",
+        "name": "Left lateral basal segmental bronchial tree",
+        "system": "respiratory",
+        "changedVertices": 21,
+        "maxLateralDisplacementMm": 0.04410743713378906,
+        "lateralSpanBeforeMm": 18.16388964653015,
+        "lateralSpanAfterMm": 18.16388964653015
+      },
+      {
+        "id": "VH_F_mammary_lobes_L",
+        "name": "mammary lobe",
+        "system": "mammary",
+        "changedVertices": 254,
+        "maxLateralDisplacementMm": 0.04268437623977661,
+        "lateralSpanBeforeMm": 66.52947515249252,
+        "lateralSpanAfterMm": 66.52947515249252
+      },
+      {
+        "id": "FJ3464",
+        "name": "Left common iliac artery",
+        "system": "arterial",
+        "changedVertices": 58,
+        "maxLateralDisplacementMm": 0.04162359982728958,
+        "lateralSpanBeforeMm": 38.24790508951992,
+        "lateralSpanAfterMm": 38.24904223438352
+      },
+      {
+        "id": "FJ2220",
+        "name": "Left cephalic vein",
+        "system": "venous",
+        "changedVertices": 50,
+        "maxLateralDisplacementMm": 0.038817524909973145,
+        "lateralSpanBeforeMm": 183.19758027791977,
+        "lateralSpanAfterMm": 183.19758027791977
+      },
+      {
+        "id": "VH_F_suspensory_ligaments_R",
+        "name": "Suspensory ligament of right breast",
+        "system": "mammary",
+        "changedVertices": 75,
+        "maxLateralDisplacementMm": 0.03609061241149902,
+        "lateralSpanBeforeMm": 64.97611477971077,
+        "lateralSpanAfterMm": 64.97611477971077
+      },
+      {
+        "id": "FJ3438",
+        "name": "Ileal vein",
+        "system": "venous",
+        "changedVertices": 40,
+        "maxLateralDisplacementMm": 0.03406032919883728,
+        "lateralSpanBeforeMm": 26.195213198661804,
+        "lateralSpanAfterMm": 26.205968111753464
+      },
+      {
+        "id": "FJ2614",
+        "name": "Distal part of jejunum",
+        "system": "digestive",
+        "changedVertices": 51,
+        "maxLateralDisplacementMm": 0.031189993023872375,
+        "lateralSpanBeforeMm": 45.186880975961685,
+        "lateralSpanAfterMm": 45.16851715743542
+      },
+      {
+        "id": "FJ2243",
+        "name": "Left radial recurrent artery",
+        "system": "arterial",
+        "changedVertices": 22,
+        "maxLateralDisplacementMm": 0.029712915420532227,
+        "lateralSpanBeforeMm": 20.31901478767395,
+        "lateralSpanAfterMm": 20.345985889434814
+      },
+      {
+        "id": "FJ2295",
+        "name": "Right radial recurrent artery",
+        "system": "arterial",
+        "changedVertices": 22,
+        "maxLateralDisplacementMm": 0.02849102020263672,
+        "lateralSpanBeforeMm": 20.274445414543152,
+        "lateralSpanAfterMm": 20.299509167671204
+      },
+      {
+        "id": "FJ3437",
+        "name": "Ileal artery",
+        "system": "arterial",
+        "changedVertices": 38,
+        "maxLateralDisplacementMm": 0.026229768991470337,
+        "lateralSpanBeforeMm": 26.212025433778763,
+        "lateralSpanAfterMm": 26.218973100185394
+      },
+      {
+        "id": "FJ2034",
+        "name": "Ileal branch of inferior branch of ileocolic artery",
+        "system": "arterial",
+        "changedVertices": 36,
+        "maxLateralDisplacementMm": 0.02544000744819641,
+        "lateralSpanBeforeMm": 26.31368115544319,
+        "lateralSpanAfterMm": 26.320625096559525
+      },
+      {
+        "id": "FJ3097",
+        "name": "Lateral inferior segmental tributary of left hepatic vein",
+        "system": "venous",
+        "changedVertices": 58,
+        "maxLateralDisplacementMm": 0.024967826902866364,
+        "lateralSpanBeforeMm": 31.756898388266563,
+        "lateralSpanAfterMm": 31.75222873687744
+      },
+      {
+        "id": "FJ3565",
+        "name": "Right common iliac artery",
+        "system": "arterial",
+        "changedVertices": 44,
+        "maxLateralDisplacementMm": 0.023733358830213547,
+        "lateralSpanBeforeMm": 51.97128374129534,
+        "lateralSpanAfterMm": 51.95573903620243
+      },
+      {
+        "id": "FJ1489",
+        "name": "Right extensor carpi radialis brevis",
+        "system": "muscular",
+        "changedVertices": 28,
+        "maxLateralDisplacementMm": 0.019103288650512695,
+        "lateralSpanBeforeMm": 57.27037787437439,
+        "lateralSpanAfterMm": 57.2894811630249
+      },
+      {
+        "id": "FJ1489M",
+        "name": "Left extensor carpi radialis brevis",
+        "system": "muscular",
+        "changedVertices": 28,
+        "maxLateralDisplacementMm": 0.019103288650512695,
+        "lateralSpanBeforeMm": 57.27037787437439,
+        "lateralSpanAfterMm": 57.2894811630249
+      },
+      {
+        "id": "VH_F_mammary_lobes_R",
+        "name": "mammary lobe",
+        "system": "mammary",
+        "changedVertices": 112,
+        "maxLateralDisplacementMm": 0.013932585716247559,
+        "lateralSpanBeforeMm": 66.41263142228127,
+        "lateralSpanAfterMm": 66.41263142228127
+      },
+      {
+        "id": "FJ2446",
+        "name": "Left posterior basal segmental bronchial tree",
+        "system": "respiratory",
+        "changedVertices": 16,
+        "maxLateralDisplacementMm": 0.010170042514801025,
+        "lateralSpanBeforeMm": 16.298286616802216,
+        "lateralSpanAfterMm": 16.298286616802216
+      },
+      {
+        "id": "FJ3084",
+        "name": "Medial inferior segmental tributary of middle hepatic vein",
+        "system": "venous",
+        "changedVertices": 23,
+        "maxLateralDisplacementMm": 0.008756760507822037,
+        "lateralSpanBeforeMm": 21.600369829684496,
+        "lateralSpanAfterMm": 21.607345901429653
+      },
+      {
+        "id": "FJ3168",
+        "name": "Fifth lumbar vertebra",
+        "system": "skeletal",
+        "changedVertices": 47,
+        "maxLateralDisplacementMm": 0.006720423698425293,
+        "lateralSpanBeforeMm": 109.47331041097641,
+        "lateralSpanAfterMm": 109.47331041097641
+      },
+      {
+        "id": "FJ3088",
+        "name": "Lateral superior tributary of left hepatic biliary tree",
+        "system": "digestive",
+        "changedVertices": 40,
+        "maxLateralDisplacementMm": 0.006373971700668335,
+        "lateralSpanBeforeMm": 48.73855714686215,
+        "lateralSpanAfterMm": 48.740710597485304
+      },
+      {
+        "id": "VH_F_main_lactiferous_ducts_L",
+        "name": "main lactiferous duct",
+        "system": "mammary",
+        "changedVertices": 45,
+        "maxLateralDisplacementMm": 0.005200505256652832,
+        "lateralSpanBeforeMm": 55.11200428009033,
+        "lateralSpanAfterMm": 55.11200428009033
+      },
+      {
+        "id": "FJ1517",
+        "name": "Right extensor carpi ulnaris",
+        "system": "muscular",
+        "changedVertices": 120,
+        "maxLateralDisplacementMm": 0.004678964614868164,
+        "lateralSpanBeforeMm": 15.56415855884552,
+        "lateralSpanAfterMm": 15.56415855884552
+      },
+      {
+        "id": "FJ1517M",
+        "name": "Left extensor carpi ulnaris",
+        "system": "muscular",
+        "changedVertices": 122,
+        "maxLateralDisplacementMm": 0.004678964614868164,
+        "lateralSpanBeforeMm": 15.56415855884552,
+        "lateralSpanAfterMm": 15.56415855884552
+      },
+      {
+        "id": "FJ1931",
+        "name": "Descending thoracic aorta",
+        "system": "arterial",
+        "changedVertices": 30,
+        "maxLateralDisplacementMm": 0.003407709300518036,
+        "lateralSpanBeforeMm": 23.86335062328726,
+        "lateralSpanAfterMm": 23.86335062328726
+      },
+      {
+        "id": "FJ3127",
+        "name": "Medial superior segmental branch of left portal vein",
+        "system": "venous",
+        "changedVertices": 105,
+        "maxLateralDisplacementMm": 0.003227032721042633,
+        "lateralSpanBeforeMm": 26.484349509701133,
+        "lateralSpanAfterMm": 26.48493438027799
+      },
+      {
+        "id": "FJ3091",
+        "name": "Lateral superior segmental hepatic artery",
+        "system": "arterial",
+        "changedVertices": 41,
+        "maxLateralDisplacementMm": 0.002560671418905258,
+        "lateralSpanBeforeMm": 49.95806864462793,
+        "lateralSpanAfterMm": 49.958927324041724
+      },
+      {
+        "id": "FJ1476",
+        "name": "Interosseous membrane of right forearm",
+        "system": "connective",
+        "changedVertices": 58,
+        "maxLateralDisplacementMm": 0.001996755599975586,
+        "lateralSpanBeforeMm": 21.861031651496887,
+        "lateralSpanAfterMm": 21.863028407096863
+      },
+      {
+        "id": "FJ1476M",
+        "name": "Interosseous membrane of left forearm",
+        "system": "connective",
+        "changedVertices": 58,
+        "maxLateralDisplacementMm": 0.001996755599975586,
+        "lateralSpanBeforeMm": 21.861031651496887,
+        "lateralSpanAfterMm": 21.863028407096863
+      },
+      {
+        "id": "FJ3175",
+        "name": "Ninth thoracic vertebra",
+        "system": "skeletal",
+        "changedVertices": 25,
+        "maxLateralDisplacementMm": 0.0014780089259147644,
+        "lateralSpanBeforeMm": 60.80283038318157,
+        "lateralSpanAfterMm": 60.80283038318157
+      },
+      {
+        "id": "FJ2612",
+        "name": "Distal part of jejunum",
+        "system": "digestive",
+        "changedVertices": 9,
+        "maxLateralDisplacementMm": 0.0014491379261016846,
+        "lateralSpanBeforeMm": 57.8120369464159,
+        "lateralSpanAfterMm": 57.8120369464159
+      },
+      {
+        "id": "FJ3104",
+        "name": "Medial superior tributary of left hepatic biliary tree",
+        "system": "digestive",
+        "changedVertices": 41,
+        "maxLateralDisplacementMm": 0.0008409842848777771,
+        "lateralSpanBeforeMm": 28.33157917484641,
+        "lateralSpanAfterMm": 28.33157917484641
+      },
+      {
+        "id": "FJ2574",
+        "name": "Proximal part of ileum",
+        "system": "digestive",
+        "changedVertices": 3,
+        "maxLateralDisplacementMm": 0.0007152557373046875,
+        "lateralSpanBeforeMm": 50.63410475850105,
+        "lateralSpanAfterMm": 50.63410475850105
+      },
+      {
+        "id": "FJ3216",
+        "name": "Intervertebral disk of fourth lumbar vertebra",
+        "system": "skeletal",
+        "changedVertices": 258,
+        "maxLateralDisplacementMm": 0.0005876645445823669,
+        "lateralSpanBeforeMm": 53.608763962984085,
+        "lateralSpanAfterMm": 53.608763962984085
+      },
+      {
+        "id": "FJ1484",
+        "name": "Right abductor pollicis longus",
+        "system": "muscular",
+        "changedVertices": 12,
+        "maxLateralDisplacementMm": 0.00046193599700927734,
+        "lateralSpanBeforeMm": 56.797221302986145,
+        "lateralSpanAfterMm": 56.797221302986145
+      },
+      {
+        "id": "FJ1484M",
+        "name": "Left abductor pollicis longus",
+        "system": "muscular",
+        "changedVertices": 11,
+        "maxLateralDisplacementMm": 0.00046193599700927734,
+        "lateralSpanBeforeMm": 56.797221302986145,
+        "lateralSpanAfterMm": 56.797221302986145
+      },
+      {
+        "id": "FJ2881",
+        "name": "Left posterior basal segmental artery",
+        "system": "arterial",
+        "changedVertices": 3,
+        "maxLateralDisplacementMm": 0.00020116567611694336,
+        "lateralSpanBeforeMm": 18.29514279961586,
+        "lateralSpanAfterMm": 18.29514279961586
+      },
+      {
+        "id": "FJ2613",
+        "name": "Distal part of jejunum",
+        "system": "digestive",
+        "changedVertices": 1,
+        "maxLateralDisplacementMm": 1.3969838619232178e-05,
+        "lateralSpanBeforeMm": 31.497620977461338,
+        "lateralSpanAfterMm": 31.497620977461338
+      }
+    ],
+    "limitations": [
+      "Shared lateral displacement also reshapes lower ribs and abdominal organs; this is not a surface-only adjustment.",
+      "Displacement and mesh span are geometry proxies, not anatomy or organ function validation."
+    ]
+  }
+}

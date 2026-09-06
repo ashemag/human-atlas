@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "issue": "SWR-519",
+  "modelDigest": null,
+  "supportedTeachingClaims": "Current prototype supports exploring and selecting displayed structures. Anatomical completeness, female-specific attachment accuracy, muscle activation and movement mechanics are not validated. Intended yoga/Pilates movement teaching remains unreleased.",
+  "coverageExclusions": [],
+  "reviews": {
+    "coverage": {
+      "status": "pending",
+      "requirements": "Review the 20 audited targets: identity, side, segmentation, selection, provenance and any teaching-scope exclusions. A source name alone is insufficient.",
+      "conclusion": null,
+      "reviewers": [],
+      "evidence": []
+    },
+    "landmarks": {
+      "status": "pending",
+      "requirements": "Document the reference build, anatomical point definitions and measured distances; distinguish bounding-box proxies and artistic proportions. Record variation and source limits.",
+      "conclusion": null,
+      "reviewers": [],
+      "evidence": []
+    },
+    "attachments": {
+      "status": "pending",
+      "requirements": "Review both hip joints, L5/sacrum, sacroiliac relationships, muscle origins/insertions and pelvic-floor supports after fitting. Record tolerances and observed errors.",
+      "conclusion": null,
+      "reviewers": [],
+      "evidence": []
+    },
+    "sections": {
+      "status": "pending",
+      "requirements": "Record coronal, sagittal and axial inspections of abdominal layers, pelvic organs/urethra/floor and breast tissue relationships; document intersections and gaps.",
+      "conclusion": null,
+      "reviewers": [],
+      "evidence": []
+    },
+    "tissuePresentation": {
+      "status": "pending",
+      "requirements": "Review breast adipose/gland/duct/support and pectoral muscle distinctions, skin visibility, source labels and current teaching text.",
+      "conclusion": null,
+      "reviewers": [],
+      "evidence": []
+    },
+    "poses": {
+      "status": "pending",
+      "requirements": "Review the SWR-518 acceptance poses: standing, overhead reach, hip flexion/squat, bridge, spinal rotation and side bend. Record joint axes, attachment continuity, muscle paths, clipping and supported movement claims.",
+      "conclusion": null,
+      "reviewers": [],
+      "evidence": [],
+      "cases": []
+    },
+    "teachingScope": {
+      "status": "pending",
+      "requirements": "An anatomist and a yoga/Pilates movement educator independently review this exact revision and agree on supported claims, limitations and any excluded critical findings.",
+      "conclusion": null,
+      "reviewers": [],
+      "evidence": []
+    }
+  }
+}

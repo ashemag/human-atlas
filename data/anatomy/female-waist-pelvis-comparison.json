@@ -1,0 +1,954 @@
+{
+  "issue": "SWR-517",
+  "method": "Exact nearest target-triangle distances at the SAME source vertex indices selected by the pre-proportion pelvis control proximity patches. Avoids conflating a changed screening patch with a placement change.",
+  "beforeAuditSha256": "118af6735bad5becf8fb2657d4e5b3dd3cf3b3f4fc4ca3678875bfce6429c482",
+  "beforeManifestSha256": "44c57151d3ea87badd028def6a9668bd43a39cca601bc29af44363978728cc33",
+  "afterManifestSha256": "c8989ebb399f504637ca3be63ff760b942e7f455d071e3ecfaffd4d3104dc8ca",
+  "results": [
+    {
+      "name": "Right femur / hip envelope",
+      "sourceId": "FJ3365",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_R",
+        "VH_F_ischium_compact_bone_R",
+        "VH_F_pubis_compact_bone_R"
+      ],
+      "fixedBaselinePatchVertices": 31,
+      "before": {
+        "minMm": 0.0091,
+        "p05Mm": 0.1836,
+        "medianMm": 3.3914,
+        "p95Mm": 9.0656,
+        "maxMm": 9.8989
+      },
+      "afterSamePatch": {
+        "minMm": 0.0083,
+        "p05Mm": 0.1882,
+        "medianMm": 3.479,
+        "p95Mm": 9.1693,
+        "maxMm": 10.3693
+      },
+      "p95ChangeMm": 0.1037,
+      "medianChangeMm": 0.0876
+    },
+    {
+      "name": "Right gluteus maximus",
+      "sourceId": "FJ1418",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_R",
+        "VH_F_ischium_compact_bone_R",
+        "VH_F_pubis_compact_bone_R",
+        "VH_F_sacrum",
+        "VH_F_coccyx"
+      ],
+      "fixedBaselinePatchVertices": 314,
+      "before": {
+        "minMm": 0.0744,
+        "p05Mm": 0.2353,
+        "medianMm": 5.3331,
+        "p95Mm": 25.0968,
+        "maxMm": 32.9077
+      },
+      "afterSamePatch": {
+        "minMm": 0.0748,
+        "p05Mm": 0.2425,
+        "medianMm": 5.696,
+        "p95Mm": 25.0976,
+        "maxMm": 32.9094
+      },
+      "p95ChangeMm": 0.0008,
+      "medianChangeMm": 0.3629
+    },
+    {
+      "name": "Right gluteus medius",
+      "sourceId": "FJ1419",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_R",
+        "VH_F_ischium_compact_bone_R",
+        "VH_F_pubis_compact_bone_R"
+      ],
+      "fixedBaselinePatchVertices": 338,
+      "before": {
+        "minMm": 0.0049,
+        "p05Mm": 0.1377,
+        "medianMm": 2.7842,
+        "p95Mm": 7.6565,
+        "maxMm": 9.8421
+      },
+      "afterSamePatch": {
+        "minMm": 0.0052,
+        "p05Mm": 0.1397,
+        "medianMm": 2.853,
+        "p95Mm": 7.946,
+        "maxMm": 10.7467
+      },
+      "p95ChangeMm": 0.2895,
+      "medianChangeMm": 0.0688
+    },
+    {
+      "name": "Right gluteus minimus",
+      "sourceId": "FJ1420",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_R",
+        "VH_F_ischium_compact_bone_R",
+        "VH_F_pubis_compact_bone_R"
+      ],
+      "fixedBaselinePatchVertices": 378,
+      "before": {
+        "minMm": 0.0331,
+        "p05Mm": 0.208,
+        "medianMm": 1.936,
+        "p95Mm": 6.0871,
+        "maxMm": 7.8391
+      },
+      "afterSamePatch": {
+        "minMm": 0.0296,
+        "p05Mm": 0.2174,
+        "medianMm": 1.9956,
+        "p95Mm": 6.4989,
+        "maxMm": 8.3151
+      },
+      "p95ChangeMm": 0.4118,
+      "medianChangeMm": 0.0596
+    },
+    {
+      "name": "Right iliacus",
+      "sourceId": "FJ1422",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_R",
+        "VH_F_ischium_compact_bone_R",
+        "VH_F_pubis_compact_bone_R"
+      ],
+      "fixedBaselinePatchVertices": 737,
+      "before": {
+        "minMm": 0.0014,
+        "p05Mm": 0.0847,
+        "medianMm": 0.8567,
+        "p95Mm": 3.5155,
+        "maxMm": 5.957
+      },
+      "afterSamePatch": {
+        "minMm": 0.005,
+        "p05Mm": 0.0829,
+        "medianMm": 0.8736,
+        "p95Mm": 3.6384,
+        "maxMm": 6.0363
+      },
+      "p95ChangeMm": 0.1229,
+      "medianChangeMm": 0.0169
+    },
+    {
+      "name": "Right adductor brevis",
+      "sourceId": "FJ1401",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_R",
+        "VH_F_ischium_compact_bone_R",
+        "VH_F_pubis_compact_bone_R"
+      ],
+      "fixedBaselinePatchVertices": 25,
+      "before": {
+        "minMm": 0.0285,
+        "p05Mm": 0.1213,
+        "medianMm": 1.2077,
+        "p95Mm": 3.7382,
+        "maxMm": 3.7382
+      },
+      "afterSamePatch": {
+        "minMm": 0.0258,
+        "p05Mm": 0.1219,
+        "medianMm": 1.2102,
+        "p95Mm": 3.7501,
+        "maxMm": 3.7501
+      },
+      "p95ChangeMm": 0.0119,
+      "medianChangeMm": 0.0025
+    },
+    {
+      "name": "Right adductor longus",
+      "sourceId": "FJ1402",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_R",
+        "VH_F_ischium_compact_bone_R",
+        "VH_F_pubis_compact_bone_R"
+      ],
+      "fixedBaselinePatchVertices": 87,
+      "before": {
+        "minMm": 0.1815,
+        "p05Mm": 0.6189,
+        "medianMm": 7.3358,
+        "p95Mm": 8.0435,
+        "maxMm": 8.3487
+      },
+      "afterSamePatch": {
+        "minMm": 0.1817,
+        "p05Mm": 0.6206,
+        "medianMm": 7.3546,
+        "p95Mm": 8.0673,
+        "maxMm": 8.381
+      },
+      "p95ChangeMm": 0.0238,
+      "medianChangeMm": 0.0188
+    },
+    {
+      "name": "Right adductor magnus",
+      "sourceId": "FJ1403",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_R",
+        "VH_F_ischium_compact_bone_R",
+        "VH_F_pubis_compact_bone_R"
+      ],
+      "fixedBaselinePatchVertices": 139,
+      "before": {
+        "minMm": 0.0675,
+        "p05Mm": 0.1605,
+        "medianMm": 5.5784,
+        "p95Mm": 9.4792,
+        "maxMm": 9.7956
+      },
+      "afterSamePatch": {
+        "minMm": 0.0675,
+        "p05Mm": 0.1604,
+        "medianMm": 5.8277,
+        "p95Mm": 9.8687,
+        "maxMm": 10.2005
+      },
+      "p95ChangeMm": 0.3895,
+      "medianChangeMm": 0.2493
+    },
+    {
+      "name": "Right adductor minimus",
+      "sourceId": "FJ1404",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_R",
+        "VH_F_ischium_compact_bone_R",
+        "VH_F_pubis_compact_bone_R"
+      ],
+      "fixedBaselinePatchVertices": 28,
+      "before": {
+        "minMm": 0.0314,
+        "p05Mm": 0.0616,
+        "medianMm": 1.2801,
+        "p95Mm": 2.0935,
+        "maxMm": 2.6001
+      },
+      "afterSamePatch": {
+        "minMm": 0.0332,
+        "p05Mm": 0.0615,
+        "medianMm": 1.3065,
+        "p95Mm": 2.1365,
+        "maxMm": 2.6214
+      },
+      "p95ChangeMm": 0.043,
+      "medianChangeMm": 0.0264
+    },
+    {
+      "name": "Right piriformis",
+      "sourceId": "FJ1428",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_R",
+        "VH_F_ischium_compact_bone_R",
+        "VH_F_pubis_compact_bone_R",
+        "VH_F_sacrum",
+        "VH_F_coccyx"
+      ],
+      "fixedBaselinePatchVertices": 236,
+      "before": {
+        "minMm": 0.9379,
+        "p05Mm": 2.253,
+        "medianMm": 10.7282,
+        "p95Mm": 13.2111,
+        "maxMm": 17.8816
+      },
+      "afterSamePatch": {
+        "minMm": 0.9536,
+        "p05Mm": 2.298,
+        "medianMm": 10.945,
+        "p95Mm": 13.3662,
+        "maxMm": 17.928
+      },
+      "p95ChangeMm": 0.1551,
+      "medianChangeMm": 0.2168
+    },
+    {
+      "name": "Right obturator internus",
+      "sourceId": "FJ1426",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_R",
+        "VH_F_ischium_compact_bone_R",
+        "VH_F_pubis_compact_bone_R"
+      ],
+      "fixedBaselinePatchVertices": 683,
+      "before": {
+        "minMm": 0.0089,
+        "p05Mm": 0.0849,
+        "medianMm": 1.8898,
+        "p95Mm": 9.9322,
+        "maxMm": 13.1441
+      },
+      "afterSamePatch": {
+        "minMm": 0.009,
+        "p05Mm": 0.0882,
+        "medianMm": 1.9316,
+        "p95Mm": 10.3186,
+        "maxMm": 13.5378
+      },
+      "p95ChangeMm": 0.3864,
+      "medianChangeMm": 0.0418
+    },
+    {
+      "name": "Right obturator externus",
+      "sourceId": "FJ1425",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_R",
+        "VH_F_ischium_compact_bone_R",
+        "VH_F_pubis_compact_bone_R"
+      ],
+      "fixedBaselinePatchVertices": 228,
+      "before": {
+        "minMm": 0.0231,
+        "p05Mm": 0.1014,
+        "medianMm": 1.1051,
+        "p95Mm": 4.4516,
+        "maxMm": 5.1459
+      },
+      "afterSamePatch": {
+        "minMm": 0.0178,
+        "p05Mm": 0.1013,
+        "medianMm": 1.1224,
+        "p95Mm": 4.5258,
+        "maxMm": 5.2624
+      },
+      "p95ChangeMm": 0.0742,
+      "medianChangeMm": 0.0173
+    },
+    {
+      "name": "Right gemellus inferior",
+      "sourceId": "FJ1416",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_R",
+        "VH_F_ischium_compact_bone_R",
+        "VH_F_pubis_compact_bone_R"
+      ],
+      "fixedBaselinePatchVertices": 228,
+      "before": {
+        "minMm": 0.0764,
+        "p05Mm": 2.8002,
+        "medianMm": 10.8285,
+        "p95Mm": 12.1813,
+        "maxMm": 12.7025
+      },
+      "afterSamePatch": {
+        "minMm": 0.0772,
+        "p05Mm": 2.8037,
+        "medianMm": 11.3534,
+        "p95Mm": 12.5281,
+        "maxMm": 13.0325
+      },
+      "p95ChangeMm": 0.3468,
+      "medianChangeMm": 0.5249
+    },
+    {
+      "name": "Right gemellus superior",
+      "sourceId": "FJ1417",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_R",
+        "VH_F_ischium_compact_bone_R",
+        "VH_F_pubis_compact_bone_R"
+      ],
+      "fixedBaselinePatchVertices": 234,
+      "before": {
+        "minMm": 0.409,
+        "p05Mm": 3.9396,
+        "medianMm": 8.7188,
+        "p95Mm": 9.9179,
+        "maxMm": 10.0947
+      },
+      "afterSamePatch": {
+        "minMm": 0.4161,
+        "p05Mm": 4.0031,
+        "medianMm": 9.377,
+        "p95Mm": 10.6768,
+        "maxMm": 10.8348
+      },
+      "p95ChangeMm": 0.7589,
+      "medianChangeMm": 0.6582
+    },
+    {
+      "name": "Right semimembranosus",
+      "sourceId": "FJ1435",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_R",
+        "VH_F_ischium_compact_bone_R",
+        "VH_F_pubis_compact_bone_R"
+      ],
+      "fixedBaselinePatchVertices": 122,
+      "before": {
+        "minMm": 2.0965,
+        "p05Mm": 2.6031,
+        "medianMm": 10.3999,
+        "p95Mm": 11.4103,
+        "maxMm": 11.7213
+      },
+      "afterSamePatch": {
+        "minMm": 2.1461,
+        "p05Mm": 2.6641,
+        "medianMm": 10.6399,
+        "p95Mm": 11.6679,
+        "maxMm": 11.9842
+      },
+      "p95ChangeMm": 0.2576,
+      "medianChangeMm": 0.24
+    },
+    {
+      "name": "Right semitendinosus",
+      "sourceId": "FJ1436",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_R",
+        "VH_F_ischium_compact_bone_R",
+        "VH_F_pubis_compact_bone_R"
+      ],
+      "fixedBaselinePatchVertices": 140,
+      "before": {
+        "minMm": 2.2603,
+        "p05Mm": 2.583,
+        "medianMm": 11.7134,
+        "p95Mm": 13.1413,
+        "maxMm": 13.3336
+      },
+      "afterSamePatch": {
+        "minMm": 2.2912,
+        "p05Mm": 2.6392,
+        "medianMm": 12.0058,
+        "p95Mm": 13.4336,
+        "maxMm": 13.6814
+      },
+      "p95ChangeMm": 0.2923,
+      "medianChangeMm": 0.2924
+    },
+    {
+      "name": "Long head of right biceps femoris",
+      "sourceId": "FJ1395",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_R",
+        "VH_F_ischium_compact_bone_R",
+        "VH_F_pubis_compact_bone_R"
+      ],
+      "fixedBaselinePatchVertices": 40,
+      "before": {
+        "minMm": 3.8387,
+        "p05Mm": 5.5964,
+        "medianMm": 10.5111,
+        "p95Mm": 14.191,
+        "maxMm": 14.2895
+      },
+      "afterSamePatch": {
+        "minMm": 3.8863,
+        "p05Mm": 5.6447,
+        "medianMm": 10.6718,
+        "p95Mm": 14.5296,
+        "maxMm": 14.5324
+      },
+      "p95ChangeMm": 0.3386,
+      "medianChangeMm": 0.1607
+    },
+    {
+      "name": "Left femur / hip envelope",
+      "sourceId": "FJ3259",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_L",
+        "VH_F_ischium_compact_bone_L",
+        "VH_F_pubis_compact_bone_L"
+      ],
+      "fixedBaselinePatchVertices": 31,
+      "before": {
+        "minMm": 0.4299,
+        "p05Mm": 0.7805,
+        "medianMm": 4.2286,
+        "p95Mm": 8.8928,
+        "maxMm": 10.233
+      },
+      "afterSamePatch": {
+        "minMm": 0.4342,
+        "p05Mm": 0.7801,
+        "medianMm": 4.3626,
+        "p95Mm": 8.9967,
+        "maxMm": 10.9696
+      },
+      "p95ChangeMm": 0.1039,
+      "medianChangeMm": 0.134
+    },
+    {
+      "name": "Left gluteus maximus",
+      "sourceId": "FJ1418M",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_L",
+        "VH_F_ischium_compact_bone_L",
+        "VH_F_pubis_compact_bone_L",
+        "VH_F_sacrum",
+        "VH_F_coccyx"
+      ],
+      "fixedBaselinePatchVertices": 323,
+      "before": {
+        "minMm": 0.0393,
+        "p05Mm": 0.289,
+        "medianMm": 4.385,
+        "p95Mm": 25.0933,
+        "maxMm": 33.0157
+      },
+      "afterSamePatch": {
+        "minMm": 0.0429,
+        "p05Mm": 0.3102,
+        "medianMm": 4.4066,
+        "p95Mm": 25.0935,
+        "maxMm": 33.0321
+      },
+      "p95ChangeMm": 0.0002,
+      "medianChangeMm": 0.0216
+    },
+    {
+      "name": "Left gluteus medius",
+      "sourceId": "FJ1419M",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_L",
+        "VH_F_ischium_compact_bone_L",
+        "VH_F_pubis_compact_bone_L"
+      ],
+      "fixedBaselinePatchVertices": 342,
+      "before": {
+        "minMm": 0.0751,
+        "p05Mm": 0.3411,
+        "medianMm": 3.556,
+        "p95Mm": 6.5215,
+        "maxMm": 8.3992
+      },
+      "afterSamePatch": {
+        "minMm": 0.082,
+        "p05Mm": 0.354,
+        "medianMm": 3.6246,
+        "p95Mm": 7.0703,
+        "maxMm": 9.0924
+      },
+      "p95ChangeMm": 0.5488,
+      "medianChangeMm": 0.0686
+    },
+    {
+      "name": "Left gluteus minimus",
+      "sourceId": "FJ1420M",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_L",
+        "VH_F_ischium_compact_bone_L",
+        "VH_F_pubis_compact_bone_L"
+      ],
+      "fixedBaselinePatchVertices": 392,
+      "before": {
+        "minMm": 0.0216,
+        "p05Mm": 0.2674,
+        "medianMm": 2.8271,
+        "p95Mm": 6.1347,
+        "maxMm": 7.3678
+      },
+      "afterSamePatch": {
+        "minMm": 0.0231,
+        "p05Mm": 0.276,
+        "medianMm": 2.9118,
+        "p95Mm": 6.5459,
+        "maxMm": 7.8439
+      },
+      "p95ChangeMm": 0.4112,
+      "medianChangeMm": 0.0847
+    },
+    {
+      "name": "Left iliacus",
+      "sourceId": "FJ1422M",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_L",
+        "VH_F_ischium_compact_bone_L",
+        "VH_F_pubis_compact_bone_L"
+      ],
+      "fixedBaselinePatchVertices": 775,
+      "before": {
+        "minMm": 0.0377,
+        "p05Mm": 0.389,
+        "medianMm": 1.7201,
+        "p95Mm": 4.2668,
+        "maxMm": 6.1627
+      },
+      "afterSamePatch": {
+        "minMm": 0.0403,
+        "p05Mm": 0.3993,
+        "medianMm": 1.7355,
+        "p95Mm": 4.3042,
+        "maxMm": 6.465
+      },
+      "p95ChangeMm": 0.0374,
+      "medianChangeMm": 0.0154
+    },
+    {
+      "name": "Left adductor brevis",
+      "sourceId": "FJ1401M",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_L",
+        "VH_F_ischium_compact_bone_L",
+        "VH_F_pubis_compact_bone_L"
+      ],
+      "fixedBaselinePatchVertices": 26,
+      "before": {
+        "minMm": 0.2024,
+        "p05Mm": 0.2719,
+        "medianMm": 1.1198,
+        "p95Mm": 2.3965,
+        "maxMm": 2.4278
+      },
+      "afterSamePatch": {
+        "minMm": 0.1969,
+        "p05Mm": 0.2683,
+        "medianMm": 1.124,
+        "p95Mm": 2.419,
+        "maxMm": 2.4528
+      },
+      "p95ChangeMm": 0.0225,
+      "medianChangeMm": 0.0042
+    },
+    {
+      "name": "Left adductor longus",
+      "sourceId": "FJ1402M",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_L",
+        "VH_F_ischium_compact_bone_L",
+        "VH_F_pubis_compact_bone_L"
+      ],
+      "fixedBaselinePatchVertices": 83,
+      "before": {
+        "minMm": 0.0303,
+        "p05Mm": 0.7915,
+        "medianMm": 5.9153,
+        "p95Mm": 6.3985,
+        "maxMm": 6.7404
+      },
+      "afterSamePatch": {
+        "minMm": 0.0309,
+        "p05Mm": 0.7921,
+        "medianMm": 5.9224,
+        "p95Mm": 6.406,
+        "maxMm": 6.7485
+      },
+      "p95ChangeMm": 0.0075,
+      "medianChangeMm": 0.0071
+    },
+    {
+      "name": "Left adductor magnus",
+      "sourceId": "FJ1403M",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_L",
+        "VH_F_ischium_compact_bone_L",
+        "VH_F_pubis_compact_bone_L"
+      ],
+      "fixedBaselinePatchVertices": 139,
+      "before": {
+        "minMm": 0.0327,
+        "p05Mm": 0.1307,
+        "medianMm": 7.2837,
+        "p95Mm": 11.3128,
+        "maxMm": 11.8337
+      },
+      "afterSamePatch": {
+        "minMm": 0.0328,
+        "p05Mm": 0.1306,
+        "medianMm": 7.5486,
+        "p95Mm": 11.7629,
+        "maxMm": 12.3097
+      },
+      "p95ChangeMm": 0.4501,
+      "medianChangeMm": 0.2649
+    },
+    {
+      "name": "Left adductor minimus",
+      "sourceId": "FJ1404M",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_L",
+        "VH_F_ischium_compact_bone_L",
+        "VH_F_pubis_compact_bone_L"
+      ],
+      "fixedBaselinePatchVertices": 35,
+      "before": {
+        "minMm": 0.122,
+        "p05Mm": 0.2009,
+        "medianMm": 1.0531,
+        "p95Mm": 2.1323,
+        "maxMm": 3.0014
+      },
+      "afterSamePatch": {
+        "minMm": 0.1232,
+        "p05Mm": 0.205,
+        "medianMm": 1.0766,
+        "p95Mm": 2.1779,
+        "maxMm": 3.0513
+      },
+      "p95ChangeMm": 0.0456,
+      "medianChangeMm": 0.0235
+    },
+    {
+      "name": "Left piriformis",
+      "sourceId": "FJ1428M",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_L",
+        "VH_F_ischium_compact_bone_L",
+        "VH_F_pubis_compact_bone_L",
+        "VH_F_sacrum",
+        "VH_F_coccyx"
+      ],
+      "fixedBaselinePatchVertices": 187,
+      "before": {
+        "minMm": 2.7481,
+        "p05Mm": 3.2598,
+        "medianMm": 8.9112,
+        "p95Mm": 12.9763,
+        "maxMm": 17.7727
+      },
+      "afterSamePatch": {
+        "minMm": 2.7927,
+        "p05Mm": 3.3076,
+        "medianMm": 9.0842,
+        "p95Mm": 13.062,
+        "maxMm": 17.7766
+      },
+      "p95ChangeMm": 0.0857,
+      "medianChangeMm": 0.173
+    },
+    {
+      "name": "Left obturator internus",
+      "sourceId": "FJ1426M",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_L",
+        "VH_F_ischium_compact_bone_L",
+        "VH_F_pubis_compact_bone_L"
+      ],
+      "fixedBaselinePatchVertices": 693,
+      "before": {
+        "minMm": 0.0024,
+        "p05Mm": 0.2279,
+        "medianMm": 1.7853,
+        "p95Mm": 11.4189,
+        "maxMm": 12.596
+      },
+      "afterSamePatch": {
+        "minMm": 0.0025,
+        "p05Mm": 0.2294,
+        "medianMm": 1.8104,
+        "p95Mm": 11.6766,
+        "maxMm": 13.0928
+      },
+      "p95ChangeMm": 0.2577,
+      "medianChangeMm": 0.0251
+    },
+    {
+      "name": "Left obturator externus",
+      "sourceId": "FJ1425M",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_L",
+        "VH_F_ischium_compact_bone_L",
+        "VH_F_pubis_compact_bone_L"
+      ],
+      "fixedBaselinePatchVertices": 228,
+      "before": {
+        "minMm": 0.0246,
+        "p05Mm": 0.0732,
+        "medianMm": 2.2837,
+        "p95Mm": 6.961,
+        "maxMm": 7.2518
+      },
+      "afterSamePatch": {
+        "minMm": 0.0219,
+        "p05Mm": 0.073,
+        "medianMm": 2.3179,
+        "p95Mm": 7.0722,
+        "maxMm": 7.3868
+      },
+      "p95ChangeMm": 0.1112,
+      "medianChangeMm": 0.0342
+    },
+    {
+      "name": "Left gemellus inferior",
+      "sourceId": "FJ1416M",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_L",
+        "VH_F_ischium_compact_bone_L",
+        "VH_F_pubis_compact_bone_L"
+      ],
+      "fixedBaselinePatchVertices": 224,
+      "before": {
+        "minMm": 1.088,
+        "p05Mm": 3.4672,
+        "medianMm": 11.5054,
+        "p95Mm": 12.2218,
+        "maxMm": 12.5956
+      },
+      "afterSamePatch": {
+        "minMm": 1.1306,
+        "p05Mm": 3.5129,
+        "medianMm": 11.7499,
+        "p95Mm": 12.56,
+        "maxMm": 12.9338
+      },
+      "p95ChangeMm": 0.3382,
+      "medianChangeMm": 0.2445
+    },
+    {
+      "name": "Left gemellus superior",
+      "sourceId": "FJ1417M",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_L",
+        "VH_F_ischium_compact_bone_L",
+        "VH_F_pubis_compact_bone_L"
+      ],
+      "fixedBaselinePatchVertices": 234,
+      "before": {
+        "minMm": 0.2022,
+        "p05Mm": 5.1824,
+        "medianMm": 9.6912,
+        "p95Mm": 10.8149,
+        "maxMm": 10.8963
+      },
+      "afterSamePatch": {
+        "minMm": 0.2027,
+        "p05Mm": 5.457,
+        "medianMm": 10.2214,
+        "p95Mm": 11.3699,
+        "maxMm": 11.5056
+      },
+      "p95ChangeMm": 0.555,
+      "medianChangeMm": 0.5302
+    },
+    {
+      "name": "Left semimembranosus",
+      "sourceId": "FJ1435M",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_L",
+        "VH_F_ischium_compact_bone_L",
+        "VH_F_pubis_compact_bone_L"
+      ],
+      "fixedBaselinePatchVertices": 123,
+      "before": {
+        "minMm": 4.2033,
+        "p05Mm": 4.5155,
+        "medianMm": 12.4768,
+        "p95Mm": 13.4336,
+        "maxMm": 13.6781
+      },
+      "afterSamePatch": {
+        "minMm": 4.3279,
+        "p05Mm": 4.6412,
+        "medianMm": 12.8744,
+        "p95Mm": 13.8154,
+        "maxMm": 14.0693
+      },
+      "p95ChangeMm": 0.3818,
+      "medianChangeMm": 0.3976
+    },
+    {
+      "name": "Left semitendinosus",
+      "sourceId": "FJ1436M",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_L",
+        "VH_F_ischium_compact_bone_L",
+        "VH_F_pubis_compact_bone_L"
+      ],
+      "fixedBaselinePatchVertices": 137,
+      "before": {
+        "minMm": 3.8139,
+        "p05Mm": 4.451,
+        "medianMm": 12.9915,
+        "p95Mm": 14.0625,
+        "maxMm": 14.3203
+      },
+      "afterSamePatch": {
+        "minMm": 3.8639,
+        "p05Mm": 4.5336,
+        "medianMm": 13.3614,
+        "p95Mm": 14.5201,
+        "maxMm": 14.7314
+      },
+      "p95ChangeMm": 0.4576,
+      "medianChangeMm": 0.3699
+    },
+    {
+      "name": "Long head of left biceps femoris",
+      "sourceId": "FJ1395M",
+      "targetIds": [
+        "VH_F_ilium_compact_bone_L",
+        "VH_F_ischium_compact_bone_L",
+        "VH_F_pubis_compact_bone_L"
+      ],
+      "fixedBaselinePatchVertices": 41,
+      "before": {
+        "minMm": 5.6246,
+        "p05Mm": 5.6246,
+        "medianMm": 11.8475,
+        "p95Mm": 15.5166,
+        "maxMm": 15.5166
+      },
+      "afterSamePatch": {
+        "minMm": 5.6356,
+        "p05Mm": 5.6356,
+        "medianMm": 11.9492,
+        "p95Mm": 15.8946,
+        "maxMm": 15.8946
+      },
+      "p95ChangeMm": 0.378,
+      "medianChangeMm": 0.1017
+    },
+    {
+      "name": "L5 / sacrum",
+      "sourceId": "FJ3168",
+      "targetIds": [
+        "VH_F_sacrum"
+      ],
+      "fixedBaselinePatchVertices": 41,
+      "before": {
+        "minMm": 0.0449,
+        "p05Mm": 0.8621,
+        "medianMm": 2.7327,
+        "p95Mm": 5.1314,
+        "maxMm": 7.0263
+      },
+      "afterSamePatch": {
+        "minMm": 0.0451,
+        "p05Mm": 0.8786,
+        "medianMm": 2.8403,
+        "p95Mm": 5.4454,
+        "maxMm": 7.2821
+      },
+      "p95ChangeMm": 0.314,
+      "medianChangeMm": 0.1076
+    },
+    {
+      "name": "L5 disc / sacrum",
+      "sourceId": "FJ3217",
+      "targetIds": [
+        "VH_F_sacrum"
+      ],
+      "fixedBaselinePatchVertices": 620,
+      "before": {
+        "minMm": 0.0323,
+        "p05Mm": 0.9525,
+        "medianMm": 7.2694,
+        "p95Mm": 12.8834,
+        "maxMm": 15.2604
+      },
+      "afterSamePatch": {
+        "minMm": 0.0323,
+        "p05Mm": 0.9614,
+        "medianMm": 7.3143,
+        "p95Mm": 12.8943,
+        "maxMm": 15.2648
+      },
+      "p95ChangeMm": 0.0109,
+      "medianChangeMm": 0.0449
+    }
+  ],
+  "limitations": [
+    "These are unannotated geometric proximity patches, not anatomical origin/insertion or articular-surface landmarks.",
+    "Distances remain unsigned and sample-based; they do not establish absence of intersections or valid attachment physiology.",
+    "The comparison measures effects of a visual body morph on an already unvalidated source registration."
+  ]
+}

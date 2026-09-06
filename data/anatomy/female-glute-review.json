@@ -1,0 +1,2456 @@
+{
+  "issue": "SWR-517",
+  "status": "Published after three-view visual review and independent scope validation; not an anatomical standard",
+  "references": [
+    "https://as2.ftcdn.net/v2/jpg/00/77/91/69/1000_F_77916955_HK9TuhgkxYxzm4SC3uvUbdCKZyRZ83FG.jpg"
+  ],
+  "referenceLocalPath": "/tmp/human-atlas-proportion-references/reference-77916955.jpg",
+  "beforeManifestSha256": "c8989ebb399f504637ca3be63ff760b942e7f455d071e3ecfaffd4d3104dc8ca",
+  "afterManifestSha256": "cca7104dda95b8bef896f9b4e42a51bddf157866e8f451bfb76f488bbcf1e11b",
+  "morphBefore": {
+    "stature": 0.95,
+    "lateralKnots": [
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.55,
+        1.0
+      ],
+      [
+        0.8,
+        1.08
+      ],
+      [
+        0.92,
+        1.22
+      ],
+      [
+        1.03,
+        1.22
+      ],
+      [
+        1.12,
+        0.955
+      ],
+      [
+        1.21,
+        0.96
+      ],
+      [
+        1.29,
+        0.93
+      ],
+      [
+        1.42,
+        0.85
+      ],
+      [
+        1.48,
+        0.85
+      ],
+      [
+        1.6,
+        1.0
+      ]
+    ],
+    "lateralBlend": {
+      "referenceKnots": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.55,
+          1.0
+        ],
+        [
+          0.8,
+          1.05
+        ],
+        [
+          0.92,
+          1.1
+        ],
+        [
+          1.03,
+          1.1
+        ],
+        [
+          1.21,
+          0.96
+        ],
+        [
+          1.29,
+          0.95
+        ],
+        [
+          1.42,
+          0.91
+        ],
+        [
+          1.48,
+          0.91
+        ],
+        [
+          1.6,
+          1.0
+        ]
+      ],
+      "innerRadius": 0.17,
+      "outerRadius": 0.23,
+      "outerTranslation": -0.006,
+      "heightRamp": [
+        0.45,
+        0.55,
+        1.48,
+        1.6
+      ]
+    },
+    "lateralRadius": 0.17,
+    "thoraxDepth": {
+      "scale": 0.96,
+      "ramp": [
+        1.05,
+        1.15,
+        1.35,
+        1.45
+      ]
+    },
+    "head": {
+      "scale": 0.95,
+      "center": [
+        0.0,
+        1.61,
+        -0.03
+      ],
+      "ramp": [
+        1.44,
+        1.56
+      ]
+    },
+    "nose": {
+      "plane": 0.062,
+      "scale": 0.52,
+      "center": [
+        0.0,
+        1.578
+      ],
+      "radius": [
+        0.03,
+        0.045
+      ],
+      "rampDepth": 0.012
+    }
+  },
+  "morphAfter": {
+    "stature": 0.95,
+    "lateralKnots": [
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.55,
+        1.0
+      ],
+      [
+        0.8,
+        1.08
+      ],
+      [
+        0.92,
+        1.15
+      ],
+      [
+        1.03,
+        1.15
+      ],
+      [
+        1.12,
+        0.955
+      ],
+      [
+        1.21,
+        0.96
+      ],
+      [
+        1.29,
+        0.93
+      ],
+      [
+        1.42,
+        0.88
+      ],
+      [
+        1.48,
+        0.88
+      ],
+      [
+        1.6,
+        1.0
+      ]
+    ],
+    "lateralBlend": {
+      "referenceKnots": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.55,
+          1.0
+        ],
+        [
+          0.8,
+          1.05
+        ],
+        [
+          0.92,
+          1.1
+        ],
+        [
+          1.03,
+          1.1
+        ],
+        [
+          1.21,
+          0.96
+        ],
+        [
+          1.29,
+          0.95
+        ],
+        [
+          1.42,
+          0.91
+        ],
+        [
+          1.48,
+          0.91
+        ],
+        [
+          1.6,
+          1.0
+        ]
+      ],
+      "innerRadius": 0.17,
+      "outerRadius": 0.23,
+      "outerTranslation": -0.003,
+      "heightRamp": [
+        0.45,
+        0.55,
+        1.48,
+        1.6
+      ]
+    },
+    "lateralRadius": 0.17,
+    "thoraxDepth": {
+      "scale": 0.96,
+      "ramp": [
+        1.05,
+        1.15,
+        1.35,
+        1.45
+      ]
+    },
+    "gluteProjection": {
+      "partIds": [
+        "FJ1418",
+        "FJ1418M",
+        "FJ3513",
+        "FJ3606"
+      ],
+      "scope": "BodyParts3D bilateral gluteus maximus and inferior gluteal veins only; posterior component excluded from bones, pelvic organs, ligaments and lumbar muscles",
+      "amplitude": 0.03,
+      "centerX": 0.07,
+      "centerY": 0.905,
+      "radiusX": 0.1,
+      "radiusY": 0.145,
+      "midlineRamp": [
+        0.03,
+        0.05
+      ],
+      "depthRamp": [
+        -0.116,
+        -0.1
+      ]
+    },
+    "head": {
+      "scale": 0.95,
+      "center": [
+        0.0,
+        1.61,
+        -0.03
+      ],
+      "ramp": [
+        1.44,
+        1.56
+      ]
+    },
+    "nose": {
+      "plane": 0.062,
+      "scale": 0.52,
+      "center": [
+        0.0,
+        1.578
+      ],
+      "radius": [
+        0.03,
+        0.045
+      ],
+      "rampDepth": 0.012
+    }
+  },
+  "parts": 2243,
+  "topologyUnchanged": true,
+  "allVerticalCoordinatesExactlyUnchanged": true,
+  "allSkeletalDepthCoordinatesExactlyUnchanged": true,
+  "extraBreastInsetsUnchanged": true,
+  "sourceRegistrationTransformsUnchanged": true,
+  "minimumSampledMorphJacobian": 0.3771252597161118,
+  "widths": {
+    "deltoidEnvelope": {
+      "ids": [
+        "FJ1467",
+        "FJ1467M",
+        "FJ1468",
+        "FJ1468M",
+        "FJ1513",
+        "FJ1513M"
+      ],
+      "heightBandM": null,
+      "beforeMm": 401.7985016107559,
+      "afterMm": 407.4839800596237,
+      "changePercent": 1.4150073795883955
+    },
+    "iliumEnvelope": {
+      "ids": [
+        "VH_F_ilium_compact_bone_R",
+        "VH_F_ilium_compact_bone_L"
+      ],
+      "heightBandM": null,
+      "beforeMm": 324.32036101818085,
+      "afterMm": 308.67354571819305,
+      "changePercent": -4.824493673744601
+    },
+    "glutealEnvelope": {
+      "ids": [
+        "FJ1418",
+        "FJ1418M",
+        "FJ1419",
+        "FJ1419M",
+        "FJ1420",
+        "FJ1420M"
+      ],
+      "heightBandM": null,
+      "beforeMm": 334.72396433353424,
+      "afterMm": 318.7428116798401,
+      "changePercent": -4.774427395873515
+    },
+    "waistExternalObliqueEnvelope": {
+      "ids": [
+        "FJ1452",
+        "FJ1452M"
+      ],
+      "heightBandM": [
+        1.055,
+        1.09
+      ],
+      "beforeMm": 245.9070086479187,
+      "afterMm": 245.9070086479187,
+      "changePercent": 0.0
+    }
+  },
+  "glutealToDeltoidWidthRatio": {
+    "before": 0.8330642423793794,
+    "after": 0.7822217001836517
+  },
+  "posteriorPartIds": [
+    "FJ1418",
+    "FJ1418M",
+    "FJ3513",
+    "FJ3606"
+  ],
+  "partsWithPosteriorDepthChange": [
+    {
+      "id": "FJ1418",
+      "name": "Right gluteus maximus",
+      "system": "muscular",
+      "vertices": 1328,
+      "depthChangedVertices": 24,
+      "maximumPosteriorChangeMm": 28.497010469436646,
+      "maximumLateralChangeMm": 7.802143692970276
+    },
+    {
+      "id": "FJ1418M",
+      "name": "Left gluteus maximus",
+      "system": "muscular",
+      "vertices": 1336,
+      "depthChangedVertices": 26,
+      "maximumPosteriorChangeMm": 28.497010469436646,
+      "maximumLateralChangeMm": 7.802143692970276
+    },
+    {
+      "id": "FJ3513",
+      "name": "Left inferior gluteal vein",
+      "system": "venous",
+      "vertices": 1250,
+      "depthChangedVertices": 497,
+      "maximumPosteriorChangeMm": 18.760718405246735,
+      "maximumLateralChangeMm": 2.2255703806877136
+    },
+    {
+      "id": "FJ3606",
+      "name": "Right inferior gluteal vein",
+      "system": "venous",
+      "vertices": 1267,
+      "depthChangedVertices": 78,
+      "maximumPosteriorChangeMm": 0.5261525511741638,
+      "maximumLateralChangeMm": 2.8450973331928253
+    }
+  ],
+  "protectedOrganDepthChanges": [],
+  "posteriorOrganExclusionPassed": true,
+  "skeletalPartsWithLateralChange": [
+    {
+      "id": "FJ1252",
+      "name": "Gingiva of upper jaw",
+      "system": "skeletal",
+      "vertices": 883,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.3676488995552063
+    },
+    {
+      "id": "FJ1253",
+      "name": "Gingiva of lower jaw",
+      "system": "skeletal",
+      "vertices": 726,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.629916787147522
+    },
+    {
+      "id": "FJ1254",
+      "name": "Left lower first secondary molar tooth",
+      "system": "skeletal",
+      "vertices": 807,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.5744583904743195
+    },
+    {
+      "id": "FJ1255",
+      "name": "Left lower first secondary premolar tooth",
+      "system": "skeletal",
+      "vertices": 454,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.4182374104857445
+    },
+    {
+      "id": "FJ1256",
+      "name": "Left lower second secondary molar tooth",
+      "system": "skeletal",
+      "vertices": 760,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.5730390548706055
+    },
+    {
+      "id": "FJ1257",
+      "name": "Left lower second secondary premolar tooth",
+      "system": "skeletal",
+      "vertices": 450,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.5077868700027466
+    },
+    {
+      "id": "FJ1258",
+      "name": "Left lower central secondary incisor tooth",
+      "system": "skeletal",
+      "vertices": 323,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.09445194154977798
+    },
+    {
+      "id": "FJ1259",
+      "name": "Left lower lateral secondary incisor tooth",
+      "system": "skeletal",
+      "vertices": 323,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.19306782633066177
+    },
+    {
+      "id": "FJ1260",
+      "name": "Left lower secondary canine tooth",
+      "system": "skeletal",
+      "vertices": 362,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.3083422780036926
+    },
+    {
+      "id": "FJ1261",
+      "name": "Left upper first secondary molar tooth",
+      "system": "skeletal",
+      "vertices": 912,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.41746534407138824
+    },
+    {
+      "id": "FJ1262",
+      "name": "Left upper first secondary premolar tooth",
+      "system": "skeletal",
+      "vertices": 562,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.3685466945171356
+    },
+    {
+      "id": "FJ1263",
+      "name": "Left upper second secondary molar tooth",
+      "system": "skeletal",
+      "vertices": 823,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.3794543445110321
+    },
+    {
+      "id": "FJ1264",
+      "name": "Left upper second secondary premolar tooth",
+      "system": "skeletal",
+      "vertices": 571,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.4102792590856552
+    },
+    {
+      "id": "FJ1265",
+      "name": "Left upper central secondary incisor tooth",
+      "system": "skeletal",
+      "vertices": 398,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.13185245916247368
+    },
+    {
+      "id": "FJ1266",
+      "name": "Left upper lateral secondary incisor tooth",
+      "system": "skeletal",
+      "vertices": 366,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.24966802448034286
+    },
+    {
+      "id": "FJ1267",
+      "name": "Left upper secondary canine tooth",
+      "system": "skeletal",
+      "vertices": 387,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.3253258764743805
+    },
+    {
+      "id": "FJ1268",
+      "name": "Right lower first secondary molar tooth",
+      "system": "skeletal",
+      "vertices": 805,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.6013121455907822
+    },
+    {
+      "id": "FJ1269",
+      "name": "Right lower first secondary premolar tooth",
+      "system": "skeletal",
+      "vertices": 462,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.4478543996810913
+    },
+    {
+      "id": "FJ1270",
+      "name": "Right lower second secondary molar tooth",
+      "system": "skeletal",
+      "vertices": 735,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.5973950028419495
+    },
+    {
+      "id": "FJ1271",
+      "name": "Right lower second secondary premolar tooth",
+      "system": "skeletal",
+      "vertices": 458,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.5379673093557358
+    },
+    {
+      "id": "FJ1272",
+      "name": "Right lower central secondary incisor tooth",
+      "system": "skeletal",
+      "vertices": 327,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.11804420500993729
+    },
+    {
+      "id": "FJ1273",
+      "name": "Right lower lateral secondary incisor tooth",
+      "system": "skeletal",
+      "vertices": 311,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.21573901176452637
+    },
+    {
+      "id": "FJ1274",
+      "name": "Right lower secondary canine tooth",
+      "system": "skeletal",
+      "vertices": 363,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.3387546166777611
+    },
+    {
+      "id": "FJ1275",
+      "name": "Right upper second secondary molar tooth",
+      "system": "skeletal",
+      "vertices": 848,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.39638206362724304
+    },
+    {
+      "id": "FJ1276",
+      "name": "Right upper first secondary molar tooth",
+      "system": "skeletal",
+      "vertices": 915,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.43578632175922394
+    },
+    {
+      "id": "FJ1277",
+      "name": "Right upper first secondary premolar tooth",
+      "system": "skeletal",
+      "vertices": 557,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.3880634903907776
+    },
+    {
+      "id": "FJ1278",
+      "name": "Right upper second secondary premolar tooth",
+      "system": "skeletal",
+      "vertices": 573,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.4297718405723572
+    },
+    {
+      "id": "FJ1279",
+      "name": "Right upper central secondary incisor tooth",
+      "system": "skeletal",
+      "vertices": 399,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.15262700617313385
+    },
+    {
+      "id": "FJ1280",
+      "name": "Right upper lateral secondary incisor tooth",
+      "system": "skeletal",
+      "vertices": 355,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.27062278240919113
+    },
+    {
+      "id": "FJ1281",
+      "name": "Right upper secondary canine tooth",
+      "system": "skeletal",
+      "vertices": 382,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.3452971577644348
+    },
+    {
+      "id": "FJ1423",
+      "name": "Right iliotibial tract",
+      "system": "skeletal",
+      "vertices": 2355,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 8.37545096874237
+    },
+    {
+      "id": "FJ1423M",
+      "name": "Left iliotibial tract",
+      "system": "skeletal",
+      "vertices": 2359,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 8.375421166419983
+    },
+    {
+      "id": "FJ1504",
+      "name": "Right subscapularis",
+      "system": "skeletal",
+      "vertices": 2368,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 3.4174472093582153
+    },
+    {
+      "id": "FJ1504M",
+      "name": "Left subscapularis",
+      "system": "skeletal",
+      "vertices": 2342,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 3.4174472093582153
+    },
+    {
+      "id": "FJ1532",
+      "name": "Right levator scapulae",
+      "system": "skeletal",
+      "vertices": 1262,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.1376758813858032
+    },
+    {
+      "id": "FJ1532M",
+      "name": "Left levator scapulae",
+      "system": "skeletal",
+      "vertices": 1285,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.1376758813858032
+    },
+    {
+      "id": "FJ2440",
+      "name": "Cricoid cartilage",
+      "system": "skeletal",
+      "vertices": 838,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.3430703654885292
+    },
+    {
+      "id": "FJ2554",
+      "name": "Right major alar cartilage",
+      "system": "skeletal",
+      "vertices": 210,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.11103227734565735
+    },
+    {
+      "id": "FJ2555",
+      "name": "Left major alar cartilage",
+      "system": "skeletal",
+      "vertices": 236,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.10314956307411194
+    },
+    {
+      "id": "FJ2769",
+      "name": "Cricoid cartilage",
+      "system": "skeletal",
+      "vertices": 838,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.3430703654885292
+    },
+    {
+      "id": "FJ2772",
+      "name": "Hyoid bone",
+      "system": "skeletal",
+      "vertices": 604,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.42381323873996735
+    },
+    {
+      "id": "FJ2773",
+      "name": "Left cuneiform cartilage",
+      "system": "skeletal",
+      "vertices": 91,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.13565458357334137
+    },
+    {
+      "id": "FJ2775",
+      "name": "Left arytenoid cartilage",
+      "system": "skeletal",
+      "vertices": 280,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.18828501924872398
+    },
+    {
+      "id": "FJ2776",
+      "name": "Left corniculate cartilage",
+      "system": "skeletal",
+      "vertices": 109,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.08591054938733578
+    },
+    {
+      "id": "FJ2792",
+      "name": "Right arytenoid cartilage",
+      "system": "skeletal",
+      "vertices": 279,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.22446969524025917
+    },
+    {
+      "id": "FJ2793",
+      "name": "Right corniculate cartilage",
+      "system": "skeletal",
+      "vertices": 108,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.12272992171347141
+    },
+    {
+      "id": "FJ2795",
+      "name": "Right cuneiform cartilage",
+      "system": "skeletal",
+      "vertices": 88,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.17065322026610374
+    },
+    {
+      "id": "FJ2808",
+      "name": "Thyroid cartilage",
+      "system": "skeletal",
+      "vertices": 1081,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.5290191620588303
+    },
+    {
+      "id": "FJ3157",
+      "name": "First lumbar vertebra",
+      "system": "skeletal",
+      "vertices": 1391,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.0945311039686203
+    },
+    {
+      "id": "FJ3158",
+      "name": "First thoracic vertebra",
+      "system": "skeletal",
+      "vertices": 915,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 1.0477621108293533
+    },
+    {
+      "id": "FJ3159",
+      "name": "Second lumbar vertebra",
+      "system": "skeletal",
+      "vertices": 1493,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.5380408838391304
+    },
+    {
+      "id": "FJ3160",
+      "name": "Second thoracic vertebra",
+      "system": "skeletal",
+      "vertices": 965,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 1.0088086128234863
+    },
+    {
+      "id": "FJ3161",
+      "name": "Third cervical vertebra",
+      "system": "skeletal",
+      "vertices": 1184,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.6886888295412064
+    },
+    {
+      "id": "FJ3162",
+      "name": "Third lumbar vertebra",
+      "system": "skeletal",
+      "vertices": 1420,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 1.428220421075821
+    },
+    {
+      "id": "FJ3163",
+      "name": "Third thoracic vertebra",
+      "system": "skeletal",
+      "vertices": 997,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.9082220494747162
+    },
+    {
+      "id": "FJ3164",
+      "name": "Fourth cervical vertebra",
+      "system": "skeletal",
+      "vertices": 1288,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.7238145917654037
+    },
+    {
+      "id": "FJ3165",
+      "name": "Fourth lumbar vertebra",
+      "system": "skeletal",
+      "vertices": 1503,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.499788999557495
+    },
+    {
+      "id": "FJ3166",
+      "name": "Fourth thoracic vertebra",
+      "system": "skeletal",
+      "vertices": 1004,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.8506923913955688
+    },
+    {
+      "id": "FJ3167",
+      "name": "Fifth cervical vertebra",
+      "system": "skeletal",
+      "vertices": 1396,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.8262265473604202
+    },
+    {
+      "id": "FJ3168",
+      "name": "Fifth lumbar vertebra",
+      "system": "skeletal",
+      "vertices": 1469,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 3.2933317124843597
+    },
+    {
+      "id": "FJ3169",
+      "name": "Fifth thoracic vertebra",
+      "system": "skeletal",
+      "vertices": 1089,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.5946699529886246
+    },
+    {
+      "id": "FJ3170",
+      "name": "Sixth cervical vertebra",
+      "system": "skeletal",
+      "vertices": 1257,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.8746776729822159
+    },
+    {
+      "id": "FJ3171",
+      "name": "Sixth thoracic vertebra",
+      "system": "skeletal",
+      "vertices": 1127,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.30861422419548035
+    },
+    {
+      "id": "FJ3172",
+      "name": "Seventh cervical vertebra",
+      "system": "skeletal",
+      "vertices": 1162,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.9319167584180832
+    },
+    {
+      "id": "FJ3173",
+      "name": "Seventh thoracic vertebra",
+      "system": "skeletal",
+      "vertices": 1223,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.059477053582668304
+    },
+    {
+      "id": "FJ3174",
+      "name": "Eighth thoracic vertebra",
+      "system": "skeletal",
+      "vertices": 1195,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 7.264316082000732e-05
+    },
+    {
+      "id": "FJ3176",
+      "name": "Atlas",
+      "system": "skeletal",
+      "vertices": 1114,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.476200133562088
+    },
+    {
+      "id": "FJ3177",
+      "name": "Axis",
+      "system": "skeletal",
+      "vertices": 1408,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.4908572882413864
+    },
+    {
+      "id": "FJ3178",
+      "name": "Body of sternum",
+      "system": "skeletal",
+      "vertices": 2511,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.24710595607757568
+    },
+    {
+      "id": "FJ3183",
+      "name": "Distal phalanx of left index finger",
+      "system": "skeletal",
+      "vertices": 198,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3184",
+      "name": "Distal phalanx of left little finger",
+      "system": "skeletal",
+      "vertices": 154,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.831384539604187
+    },
+    {
+      "id": "FJ3186",
+      "name": "Distal phalanx of left middle finger",
+      "system": "skeletal",
+      "vertices": 170,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3187",
+      "name": "Distal phalanx of left ring finger",
+      "system": "skeletal",
+      "vertices": 138,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500109910964966
+    },
+    {
+      "id": "FJ3188",
+      "name": "Distal phalanx of left thumb",
+      "system": "skeletal",
+      "vertices": 185,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3193",
+      "name": "Distal phalanx of right index finger",
+      "system": "skeletal",
+      "vertices": 187,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3194",
+      "name": "Distal phalanx of right little finger",
+      "system": "skeletal",
+      "vertices": 138,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8319954872131348
+    },
+    {
+      "id": "FJ3196",
+      "name": "Distal phalanx of right middle finger",
+      "system": "skeletal",
+      "vertices": 141,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3197",
+      "name": "Distal phalanx of right ring finger",
+      "system": "skeletal",
+      "vertices": 114,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500109910964966
+    },
+    {
+      "id": "FJ3198",
+      "name": "Distal phalanx of right thumb",
+      "system": "skeletal",
+      "vertices": 181,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3199",
+      "name": "Ethmoid",
+      "system": "skeletal",
+      "vertices": 5334,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.030219554901123047
+    },
+    {
+      "id": "FJ3200",
+      "name": "Frontal bone",
+      "system": "skeletal",
+      "vertices": 3315,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.9802322387695312e-05
+    },
+    {
+      "id": "FJ3201",
+      "name": "Hyoid bone",
+      "system": "skeletal",
+      "vertices": 604,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.42381323873996735
+    },
+    {
+      "id": "FJ3202",
+      "name": "Intervertebral disk of axis",
+      "system": "skeletal",
+      "vertices": 996,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.25587063282728195
+    },
+    {
+      "id": "FJ3203",
+      "name": "Intervertebral disk of fourth thoracic vertebra",
+      "system": "skeletal",
+      "vertices": 999,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.26825815439224243
+    },
+    {
+      "id": "FJ3204",
+      "name": "Intervertebral disk of fifth thoracic vertebra",
+      "system": "skeletal",
+      "vertices": 1280,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.15522632747888565
+    },
+    {
+      "id": "FJ3205",
+      "name": "Intervertebral disk of sixth thoracic vertebra",
+      "system": "skeletal",
+      "vertices": 1831,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.05205255001783371
+    },
+    {
+      "id": "FJ3206",
+      "name": "Intervertebral disk of seventh thoracic vertebra",
+      "system": "skeletal",
+      "vertices": 1813,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 4.889443516731262e-05
+    },
+    {
+      "id": "FJ3212",
+      "name": "Intervertebral disk of first lumbar vertebra",
+      "system": "skeletal",
+      "vertices": 3399,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.03853999078273773
+    },
+    {
+      "id": "FJ3213",
+      "name": "Intervertebral disk of third cervical vertebra",
+      "system": "skeletal",
+      "vertices": 582,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.2838503569364548
+    },
+    {
+      "id": "FJ3214",
+      "name": "Intervertebral disk of second lumbar vertebra",
+      "system": "skeletal",
+      "vertices": 2955,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.5875565111637115
+    },
+    {
+      "id": "FJ3215",
+      "name": "Intervertebral disk of third lumbar vertebra",
+      "system": "skeletal",
+      "vertices": 3750,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 1.352403312921524
+    },
+    {
+      "id": "FJ3216",
+      "name": "Intervertebral disk of fourth lumbar vertebra",
+      "system": "skeletal",
+      "vertices": 3137,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 1.6670860350131989
+    },
+    {
+      "id": "FJ3217",
+      "name": "Intervertebral disk of fifth lumbar vertebra",
+      "system": "skeletal",
+      "vertices": 1765,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 1.6086176037788391
+    },
+    {
+      "id": "FJ3218",
+      "name": "Intervertebral disk of fourth cervical vertebra",
+      "system": "skeletal",
+      "vertices": 626,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.3574443981051445
+    },
+    {
+      "id": "FJ3219",
+      "name": "Intervertebral disk of fifth cervical vertebra",
+      "system": "skeletal",
+      "vertices": 629,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.4160292446613312
+    },
+    {
+      "id": "FJ3220",
+      "name": "Intervertebral disk of sixth cervical vertebra",
+      "system": "skeletal",
+      "vertices": 850,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.4196232184767723
+    },
+    {
+      "id": "FJ3221",
+      "name": "Intervertebral disk of seventh cervical vertebra",
+      "system": "skeletal",
+      "vertices": 828,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.4638582468032837
+    },
+    {
+      "id": "FJ3222",
+      "name": "Intervertebral disk of first thoracic vertebra",
+      "system": "skeletal",
+      "vertices": 950,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.48469752073287964
+    },
+    {
+      "id": "FJ3223",
+      "name": "Intervertebral disk of second thoracic vertebra",
+      "system": "skeletal",
+      "vertices": 1128,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.4630396142601967
+    },
+    {
+      "id": "FJ3224",
+      "name": "Intervertebral disk of third thoracic vertebra",
+      "system": "skeletal",
+      "vertices": 1410,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.3778180107474327
+    },
+    {
+      "id": "FJ3225",
+      "name": "Left tenth rib",
+      "system": "skeletal",
+      "vertices": 754,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.7529854774475098
+    },
+    {
+      "id": "FJ3226",
+      "name": "Left eleventh rib",
+      "system": "skeletal",
+      "vertices": 537,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 1.965947449207306
+    },
+    {
+      "id": "FJ3227",
+      "name": "Left twelfth rib",
+      "system": "skeletal",
+      "vertices": 367,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 1.3606920838356018
+    },
+    {
+      "id": "FJ3228",
+      "name": "Left first rib",
+      "system": "skeletal",
+      "vertices": 507,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 1.8137618899345398
+    },
+    {
+      "id": "FJ3229",
+      "name": "Left second rib",
+      "system": "skeletal",
+      "vertices": 656,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.278335392475128
+    },
+    {
+      "id": "FJ3230",
+      "name": "Left third rib",
+      "system": "skeletal",
+      "vertices": 802,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.1808668971061707
+    },
+    {
+      "id": "FJ3231",
+      "name": "Left fourth rib",
+      "system": "skeletal",
+      "vertices": 981,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 1.6921758651733398
+    },
+    {
+      "id": "FJ3232",
+      "name": "Left fifth rib",
+      "system": "skeletal",
+      "vertices": 1095,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 1.0151267051696777
+    },
+    {
+      "id": "FJ3233",
+      "name": "Left sixth rib",
+      "system": "skeletal",
+      "vertices": 1147,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.35186856985092163
+    },
+    {
+      "id": "FJ3234",
+      "name": "Left seventh rib",
+      "system": "skeletal",
+      "vertices": 1122,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.07807835936546326
+    },
+    {
+      "id": "FJ3237",
+      "name": "Left clavicle",
+      "system": "skeletal",
+      "vertices": 426,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 3.339901566505432
+    },
+    {
+      "id": "FJ3239",
+      "name": "Left first costal cartilage",
+      "system": "skeletal",
+      "vertices": 391,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 1.3413988053798676
+    },
+    {
+      "id": "FJ3240",
+      "name": "Left first metacarpal bone",
+      "system": "skeletal",
+      "vertices": 293,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3242",
+      "name": "Left second costal cartilage",
+      "system": "skeletal",
+      "vertices": 309,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.733010470867157
+    },
+    {
+      "id": "FJ3243",
+      "name": "Left second metacarpal bone",
+      "system": "skeletal",
+      "vertices": 328,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3245",
+      "name": "Left third costal cartilage",
+      "system": "skeletal",
+      "vertices": 306,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.3992132842540741
+    },
+    {
+      "id": "FJ3246",
+      "name": "Left third metacarpal bone",
+      "system": "skeletal",
+      "vertices": 328,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3248",
+      "name": "Left fourth costal cartilage",
+      "system": "skeletal",
+      "vertices": 318,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.05010142922401428
+    },
+    {
+      "id": "FJ3249",
+      "name": "Left fourth metacarpal bone",
+      "system": "skeletal",
+      "vertices": 267,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500109910964966
+    },
+    {
+      "id": "FJ3251",
+      "name": "Left fifth costal cartilage",
+      "system": "skeletal",
+      "vertices": 365,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.001126900315284729
+    },
+    {
+      "id": "FJ3252",
+      "name": "Left fifth metacarpal bone",
+      "system": "skeletal",
+      "vertices": 265,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500109910964966
+    },
+    {
+      "id": "FJ3257",
+      "name": "Left capitate",
+      "system": "skeletal",
+      "vertices": 230,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3259",
+      "name": "Left femur",
+      "system": "skeletal",
+      "vertices": 459,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 6.141066551208496
+    },
+    {
+      "id": "FJ3261",
+      "name": "Left hamate",
+      "system": "skeletal",
+      "vertices": 274,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500109910964966
+    },
+    {
+      "id": "FJ3262",
+      "name": "Left humerus",
+      "system": "skeletal",
+      "vertices": 586,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 3.704935312271118
+    },
+    {
+      "id": "FJ3268",
+      "name": "Left lunate",
+      "system": "skeletal",
+      "vertices": 184,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500109910964966
+    },
+    {
+      "id": "FJ3269",
+      "name": "Left maxilla",
+      "system": "skeletal",
+      "vertices": 2678,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.34151598811149597
+    },
+    {
+      "id": "FJ3272",
+      "name": "Left nasal bone",
+      "system": "skeletal",
+      "vertices": 236,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.012279022485017776
+    },
+    {
+      "id": "FJ3273",
+      "name": "Left palatine bone",
+      "system": "skeletal",
+      "vertices": 986,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.26185065507888794
+    },
+    {
+      "id": "FJ3274",
+      "name": "Left parietal bone",
+      "system": "skeletal",
+      "vertices": 2927,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.005427747964859009
+    },
+    {
+      "id": "FJ3276",
+      "name": "Left pisiform",
+      "system": "skeletal",
+      "vertices": 116,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500109910964966
+    },
+    {
+      "id": "FJ3277",
+      "name": "Left radius",
+      "system": "skeletal",
+      "vertices": 250,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3278",
+      "name": "Left scaphoid",
+      "system": "skeletal",
+      "vertices": 172,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3279",
+      "name": "Left scapula",
+      "system": "skeletal",
+      "vertices": 3097,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 3.6469250917434692
+    },
+    {
+      "id": "FJ3281",
+      "name": "Left temporal bone",
+      "system": "skeletal",
+      "vertices": 1835,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.3515109419822693
+    },
+    {
+      "id": "FJ3283",
+      "name": "Left trapezium",
+      "system": "skeletal",
+      "vertices": 222,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3284",
+      "name": "Left trapezoid",
+      "system": "skeletal",
+      "vertices": 278,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3285",
+      "name": "Left triquetral",
+      "system": "skeletal",
+      "vertices": 178,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500109910964966
+    },
+    {
+      "id": "FJ3286",
+      "name": "Left ulna",
+      "system": "skeletal",
+      "vertices": 283,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500109910964966
+    },
+    {
+      "id": "FJ3287",
+      "name": "Left zygomatic bone",
+      "system": "skeletal",
+      "vertices": 721,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.3357790410518646
+    },
+    {
+      "id": "FJ3289",
+      "name": "Mandible",
+      "system": "skeletal",
+      "vertices": 1207,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.7999911904335022
+    },
+    {
+      "id": "FJ3290",
+      "name": "Manubrium",
+      "system": "skeletal",
+      "vertices": 1094,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.6163232028484344
+    },
+    {
+      "id": "FJ3291",
+      "name": "Middle phalanx of left ring finger",
+      "system": "skeletal",
+      "vertices": 208,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500109910964966
+    },
+    {
+      "id": "FJ3292",
+      "name": "Middle phalanx of right ring finger",
+      "system": "skeletal",
+      "vertices": 214,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500109910964966
+    },
+    {
+      "id": "FJ3296",
+      "name": "Middle phalanx of left index finger",
+      "system": "skeletal",
+      "vertices": 184,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3297",
+      "name": "Middle phalanx of left little finger",
+      "system": "skeletal",
+      "vertices": 190,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500109910964966
+    },
+    {
+      "id": "FJ3299",
+      "name": "Middle phalanx of left middle finger",
+      "system": "skeletal",
+      "vertices": 220,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3303",
+      "name": "Middle phalanx of right index finger",
+      "system": "skeletal",
+      "vertices": 186,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3304",
+      "name": "Middle phalanx of right little finger",
+      "system": "skeletal",
+      "vertices": 168,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8499960899353027
+    },
+    {
+      "id": "FJ3306",
+      "name": "Middle phalanx of right middle finger",
+      "system": "skeletal",
+      "vertices": 221,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3309",
+      "name": "Occipital bone",
+      "system": "skeletal",
+      "vertices": 2938,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.2547949552536011
+    },
+    {
+      "id": "FJ3313",
+      "name": "Proximal phalanx of left index finger",
+      "system": "skeletal",
+      "vertices": 218,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3314",
+      "name": "Proximal phalanx of left little finger",
+      "system": "skeletal",
+      "vertices": 162,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500109910964966
+    },
+    {
+      "id": "FJ3316",
+      "name": "Proximal phalanx of left middle finger",
+      "system": "skeletal",
+      "vertices": 253,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3317",
+      "name": "Proximal phalanx of left ring finger",
+      "system": "skeletal",
+      "vertices": 200,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500109910964966
+    },
+    {
+      "id": "FJ3318",
+      "name": "Proximal phalanx of left thumb",
+      "system": "skeletal",
+      "vertices": 197,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3322",
+      "name": "Proximal phalanx of right index finger",
+      "system": "skeletal",
+      "vertices": 213,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3323",
+      "name": "Proximal phalanx of right little finger",
+      "system": "skeletal",
+      "vertices": 186,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500109910964966
+    },
+    {
+      "id": "FJ3325",
+      "name": "Proximal phalanx of right middle finger",
+      "system": "skeletal",
+      "vertices": 266,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3326",
+      "name": "Proximal phalanx of right ring finger",
+      "system": "skeletal",
+      "vertices": 202,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500109910964966
+    },
+    {
+      "id": "FJ3327",
+      "name": "Proximal phalanx of right thumb",
+      "system": "skeletal",
+      "vertices": 196,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3330",
+      "name": "Right tenth rib",
+      "system": "skeletal",
+      "vertices": 754,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.7562413811683655
+    },
+    {
+      "id": "FJ3331",
+      "name": "Right eleventh rib",
+      "system": "skeletal",
+      "vertices": 538,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 1.9788369536399841
+    },
+    {
+      "id": "FJ3332",
+      "name": "Right twelfth rib",
+      "system": "skeletal",
+      "vertices": 372,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 1.38082355260849
+    },
+    {
+      "id": "FJ3333",
+      "name": "Right first costal cartilage",
+      "system": "skeletal",
+      "vertices": 401,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 1.339305192232132
+    },
+    {
+      "id": "FJ3334",
+      "name": "Right first rib",
+      "system": "skeletal",
+      "vertices": 519,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 1.8470622599124908
+    },
+    {
+      "id": "FJ3335",
+      "name": "Right second costal cartilage",
+      "system": "skeletal",
+      "vertices": 346,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.7357709109783173
+    },
+    {
+      "id": "FJ3336",
+      "name": "Right second rib",
+      "system": "skeletal",
+      "vertices": 648,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.30436772108078
+    },
+    {
+      "id": "FJ3337",
+      "name": "Right third costal cartilage",
+      "system": "skeletal",
+      "vertices": 355,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.4016570746898651
+    },
+    {
+      "id": "FJ3338",
+      "name": "Right third rib",
+      "system": "skeletal",
+      "vertices": 800,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.2060349583625793
+    },
+    {
+      "id": "FJ3339",
+      "name": "Right fourth costal cartilage",
+      "system": "skeletal",
+      "vertices": 332,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.050965696573257446
+    },
+    {
+      "id": "FJ3340",
+      "name": "Right fourth rib",
+      "system": "skeletal",
+      "vertices": 979,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 1.7097368836402893
+    },
+    {
+      "id": "FJ3341",
+      "name": "Right fifth costal cartilage",
+      "system": "skeletal",
+      "vertices": 358,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.001169741153717041
+    },
+    {
+      "id": "FJ3342",
+      "name": "Right fifth rib",
+      "system": "skeletal",
+      "vertices": 1093,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 1.0320544242858887
+    },
+    {
+      "id": "FJ3344",
+      "name": "Right sixth rib",
+      "system": "skeletal",
+      "vertices": 1147,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.35953521728515625
+    },
+    {
+      "id": "FJ3346",
+      "name": "Right seventh rib",
+      "system": "skeletal",
+      "vertices": 1122,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.08176825940608978
+    },
+    {
+      "id": "FJ3349",
+      "name": "Right radius",
+      "system": "skeletal",
+      "vertices": 249,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3350",
+      "name": "Right first metacarpal bone",
+      "system": "skeletal",
+      "vertices": 287,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3352",
+      "name": "Right second metacarpal bone",
+      "system": "skeletal",
+      "vertices": 347,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3354",
+      "name": "Right third metacarpal bone",
+      "system": "skeletal",
+      "vertices": 345,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3356",
+      "name": "Right fourth metacarpal bone",
+      "system": "skeletal",
+      "vertices": 280,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500109910964966
+    },
+    {
+      "id": "FJ3358",
+      "name": "Right fifth metacarpal bone",
+      "system": "skeletal",
+      "vertices": 236,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500109910964966
+    },
+    {
+      "id": "FJ3361",
+      "name": "Right capitate",
+      "system": "skeletal",
+      "vertices": 245,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3362",
+      "name": "Right clavicle",
+      "system": "skeletal",
+      "vertices": 420,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 3.359764814376831
+    },
+    {
+      "id": "FJ3365",
+      "name": "Right femur",
+      "system": "skeletal",
+      "vertices": 480,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 6.089493632316589
+    },
+    {
+      "id": "FJ3367",
+      "name": "Right hamate",
+      "system": "skeletal",
+      "vertices": 316,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500109910964966
+    },
+    {
+      "id": "FJ3368",
+      "name": "Right humerus",
+      "system": "skeletal",
+      "vertices": 794,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 3.702715039253235
+    },
+    {
+      "id": "FJ3374",
+      "name": "Right lunate",
+      "system": "skeletal",
+      "vertices": 191,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500109910964966
+    },
+    {
+      "id": "FJ3375",
+      "name": "Right maxilla",
+      "system": "skeletal",
+      "vertices": 2591,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.3581717610359192
+    },
+    {
+      "id": "FJ3378",
+      "name": "Right nasal bone",
+      "system": "skeletal",
+      "vertices": 253,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.017576850950717926
+    },
+    {
+      "id": "FJ3379",
+      "name": "Right palatine bone",
+      "system": "skeletal",
+      "vertices": 994,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.2739131450653076
+    },
+    {
+      "id": "FJ3380",
+      "name": "Right parietal bone",
+      "system": "skeletal",
+      "vertices": 2734,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.005323439836502075
+    },
+    {
+      "id": "FJ3382",
+      "name": "Right pisiform",
+      "system": "skeletal",
+      "vertices": 110,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500109910964966
+    },
+    {
+      "id": "FJ3383",
+      "name": "Right scaphoid",
+      "system": "skeletal",
+      "vertices": 185,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3384",
+      "name": "Right scapula",
+      "system": "skeletal",
+      "vertices": 2896,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 3.6468058824539185
+    },
+    {
+      "id": "FJ3386",
+      "name": "Right temporal bone",
+      "system": "skeletal",
+      "vertices": 1976,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.36109983921051025
+    },
+    {
+      "id": "FJ3388",
+      "name": "Right trapezium",
+      "system": "skeletal",
+      "vertices": 272,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3389",
+      "name": "Right trapezoid",
+      "system": "skeletal",
+      "vertices": 267,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500258922576904
+    },
+    {
+      "id": "FJ3390",
+      "name": "Right triquetral",
+      "system": "skeletal",
+      "vertices": 139,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500109910964966
+    },
+    {
+      "id": "FJ3391",
+      "name": "Right ulna",
+      "system": "skeletal",
+      "vertices": 305,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 2.8500109910964966
+    },
+    {
+      "id": "FJ3392",
+      "name": "Right zygomatic bone",
+      "system": "skeletal",
+      "vertices": 717,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.34520402550697327
+    },
+    {
+      "id": "FJ3394",
+      "name": "Sphenoid bone",
+      "system": "skeletal",
+      "vertices": 2791,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.19956007599830627
+    },
+    {
+      "id": "FJ3395",
+      "name": "Vomer",
+      "system": "skeletal",
+      "vertices": 820,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 0.01727242488414049
+    },
+    {
+      "id": "VH_F_sacrum",
+      "name": "Sacrum",
+      "system": "skeletal",
+      "vertices": 3216,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 3.7497207522392273
+    },
+    {
+      "id": "VH_F_coccyx",
+      "name": "Coccyx",
+      "system": "skeletal",
+      "vertices": 585,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 1.0164547711610794
+    },
+    {
+      "id": "VH_F_pubis_compact_bone_R",
+      "name": "Right pubis",
+      "system": "skeletal",
+      "vertices": 1403,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 4.998244345188141
+    },
+    {
+      "id": "VH_F_pubis_compact_bone_L",
+      "name": "Left pubis",
+      "system": "skeletal",
+      "vertices": 1463,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 4.8681944608688354
+    },
+    {
+      "id": "VH_F_ilium_compact_bone_R",
+      "name": "Right ilium",
+      "system": "skeletal",
+      "vertices": 2044,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 7.825449109077454
+    },
+    {
+      "id": "VH_F_ilium_compact_bone_L",
+      "name": "Left ilium",
+      "system": "skeletal",
+      "vertices": 2102,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 7.821366190910339
+    },
+    {
+      "id": "VH_F_ischium_compact_bone_R",
+      "name": "Right ischium",
+      "system": "skeletal",
+      "vertices": 1475,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 6.120942533016205
+    },
+    {
+      "id": "VH_F_ischium_compact_bone_L",
+      "name": "Left ischium",
+      "system": "skeletal",
+      "vertices": 1472,
+      "depthChangedVertices": 0,
+      "maximumPosteriorChangeMm": -0.0,
+      "maximumLateralChangeMm": 6.041280925273895
+    }
+  ],
+  "apRayTargetBoneIds": [
+    "VH_F_sacrum",
+    "VH_F_coccyx",
+    "VH_F_pubis_compact_bone_R",
+    "VH_F_pubis_compact_bone_L",
+    "VH_F_ilium_compact_bone_R",
+    "VH_F_ilium_compact_bone_L",
+    "VH_F_ischium_compact_bone_R",
+    "VH_F_ischium_compact_bone_L"
+  ],
+  "gluteToPelvisMatchingAPRayGaps": [
+    {
+      "id": "FJ1418",
+      "name": "Right gluteus maximus",
+      "queryVertexIndices": [
+        737,
+        767,
+        768,
+        791,
+        793,
+        794,
+        807,
+        815,
+        825,
+        826,
+        835,
+        844,
+        846,
+        847,
+        848,
+        849,
+        853,
+        854,
+        855,
+        856,
+        857,
+        866,
+        872,
+        891,
+        895,
+        937,
+        938,
+        951,
+        952,
+        988
+      ],
+      "selectedVertices": 36,
+      "raysHittingBonesBothStages": 30,
+      "beforeGapMm": {
+        "minMm": 5.6275,
+        "p05Mm": 21.8792,
+        "medianMm": 59.7542,
+        "p95Mm": 75.2063,
+        "maxMm": 102.6417
+      },
+      "afterGapMm": {
+        "minMm": 5.6271,
+        "p05Mm": 22.4217,
+        "medianMm": 68.5288,
+        "p95Mm": 94.6657,
+        "maxMm": 131.1367
+      },
+      "addedProjectionMm": {
+        "minMm": 0.0,
+        "p05Mm": 0.0,
+        "medianMm": 4.556,
+        "p95Mm": 28.493,
+        "maxMm": 28.497
+      }
+    },
+    {
+      "id": "FJ1418M",
+      "name": "Left gluteus maximus",
+      "queryVertexIndices": [
+        768,
+        769,
+        789,
+        791,
+        792,
+        793,
+        794,
+        796,
+        797,
+        810,
+        817,
+        828,
+        829,
+        840,
+        851,
+        853,
+        854,
+        855,
+        856,
+        861,
+        862,
+        863,
+        864,
+        865,
+        874,
+        880,
+        901,
+        945,
+        946,
+        958,
+        959,
+        995
+      ],
+      "selectedVertices": 41,
+      "raysHittingBonesBothStages": 32,
+      "beforeGapMm": {
+        "minMm": 0.9221,
+        "p05Mm": 27.7109,
+        "medianMm": 61.7388,
+        "p95Mm": 74.1758,
+        "maxMm": 100.4774
+      },
+      "afterGapMm": {
+        "minMm": 0.9221,
+        "p05Mm": 27.7106,
+        "medianMm": 69.7106,
+        "p95Mm": 94.7391,
+        "maxMm": 128.9695
+      },
+      "addedProjectionMm": {
+        "minMm": 0.0,
+        "p05Mm": 0.0,
+        "medianMm": 2.8336,
+        "p95Mm": 28.4926,
+        "maxMm": 28.497
+      }
+    }
+  ],
+  "limitations": [
+    "Reference-guided artistic contour, not calibrated anatomy or a population standard.",
+    "The universal lateral field is shared; the posterior component is explicitly restricted to bilateral gluteus maximus and inferior gluteal vein source IDs. Coincidence with excluded tissue is not guaranteed.",
+    "AP ray gaps use exact triangle intersections at matched x/y. Rays may meet anterior pubis when no posterior bone lies there; these gaps are not muscle thickness or annotated attachments. Selected mesh vertices are nonuniform samples.",
+    "Lateral skeletal displacement is measured separately; zero added bone depth does not imply zero bone movement.",
+    "Sampled Jacobians and topology do not validate muscle volume, attachments, joint mechanics or absence of all collisions."
+  ]
+}

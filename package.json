@@ -9,7 +9,11 @@
     "dev": "vite --host 0.0.0.0 --port 3016",
     "build": "vite build",
     "build:vercel": "vite build",
-    "check": "tsc --noEmit"
+    "check": "tsc --noEmit",
+    "audit:coverage": "node scripts/anatomy-coverage.mjs",
+    "test:coverage": "node --test scripts/anatomy-coverage.test.mjs",
+    "validate:female-readiness": "node scripts/validate-female-readiness.mjs",
+    "test:female-readiness": "node --test scripts/validate-female-readiness.test.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",

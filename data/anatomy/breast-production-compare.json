@@ -1,0 +1,50 @@
+{
+  "issue": "SWR-516",
+  "passed": true,
+  "parts": 2243,
+  "triangles": 2437922,
+  "changedParts": [
+    "VH_F_mammary_lobes_L",
+    "VH_F_main_lactiferous_ducts_L",
+    "VH_F_main_lactiferous_sinuses_L",
+    "VH_F_main_lactiferous_sinuses_R",
+    "VH_F_main_lactiferous_ducts_R",
+    "VH_F_mammary_lobes_R"
+  ],
+  "topologyUnchanged": true,
+  "otherPartPositionsExactlyUnchanged": true,
+  "wholeBodyMorphUnchanged": true,
+  "maxClonedPositionResidualMm": 6.256103510238198e-06,
+  "toleranceMm": 0.0002,
+  "beforeManifestSha256": "1913205e66157dc8b4eafd90e0b5328fb3b9615d6c4c1cd8b3ef40c62fdfb21a",
+  "afterManifestSha256": "44c57151d3ea87badd028def6a9668bd43a39cca601bc29af44363978728cc33",
+  "results": [
+    {
+      "id": "VH_F_mammary_lobes_L",
+      "maxClonedPositionResidualMm": 6.256103510238198e-06
+    },
+    {
+      "id": "VH_F_main_lactiferous_ducts_L",
+      "maxClonedPositionResidualMm": 6.256103510238198e-06
+    },
+    {
+      "id": "VH_F_main_lactiferous_sinuses_L",
+      "maxClonedPositionResidualMm": 6.256103510238198e-06
+    },
+    {
+      "id": "VH_F_main_lactiferous_sinuses_R",
+      "maxClonedPositionResidualMm": 6.256103510238198e-06
+    },
+    {
+      "id": "VH_F_main_lactiferous_ducts_R",
+      "maxClonedPositionResidualMm": 6.256103510238198e-06
+    },
+    {
+      "id": "VH_F_mammary_lobes_R",
+      "maxClonedPositionResidualMm": 6.256103510238198e-06
+    }
+  ],
+  "limitations": [
+    "This verifies the implemented correction matches the offline geometric candidate; it does not certify anatomy, internal connectivity, normal direction, or complete volume containment."
+  ]
+}
