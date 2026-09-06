@@ -86,3 +86,37 @@ h1 .edition{font-family:inherit;font-weight:500;font-size:10px;letter-spacing:.0
 @media(max-width:767px){body:has(.detail-sheet) .view-controls{visibility:hidden}}
 
 @media(max-height:600px) and (orientation:landscape){body:has(.detail-sheet) .bottom-dock{left:12px;right:324px;width:auto;transform:none;max-width:none;margin:0}}
+
+/* Assistant panel */
+.ask-panel{position:absolute;top:76px;right:20px;z-index:6;width:min(370px,calc(100vw - 40px));display:flex;flex-direction:column;gap:12px;padding:16px;max-height:calc(100vh - 210px);overflow-y:auto}
+.ask-form{display:flex;gap:8px;align-items:center}
+.ask-form input{flex:1;min-width:0;height:38px;padding:0 12px;border-radius:9px;border:1px solid color-mix(in srgb,currentColor 14%,transparent);background:color-mix(in srgb,canvas 70%,transparent);font:inherit;font-size:14px;color:inherit}
+.ask-form input:focus-visible{outline:2px solid color-mix(in srgb,currentColor 34%,transparent);outline-offset:1px}
+.ask-suggestions{display:flex;flex-direction:column;gap:4px}
+.ask-suggestions button{justify-content:flex-start;height:auto;padding:8px 10px;font-size:13px;text-align:left;white-space:normal;opacity:.85}
+.ask-status{display:flex;align-items:center;gap:8px;margin:0;font-size:13px;opacity:.72}
+.ask-status svg{animation:ask-pulse 1.4s ease-in-out infinite}
+@keyframes ask-pulse{0%,100%{opacity:.35}50%{opacity:1}}
+.ask-error{margin:0;font-size:13px;color:#b4483c}
+.ask-answer{display:flex;flex-direction:column;gap:10px}
+.ask-answer>p{margin:0;font-size:13.5px;line-height:1.55}
+.ask-tags{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.ask-tags button{display:inline-flex;align-items:center;gap:6px;padding:5px 9px;border-radius:99px;border:1px solid color-mix(in srgb,currentColor 13%,transparent);background:color-mix(in srgb,canvas 55%,transparent);font:inherit;font-size:12px;cursor:pointer;color:inherit}
+.ask-tags button:hover{background:color-mix(in srgb,currentColor 8%,transparent)}
+.ask-tags em{font-style:normal;opacity:.5;font-size:11px}
+.tag-dot{width:7px;height:7px;border-radius:50%;background:#6b7785}
+.tag-dot[data-role="primary"]{background:#37b8a5}
+.ask-missing{display:flex;gap:7px;align-items:flex-start;margin:0;font-size:12px;line-height:1.5;opacity:.66}
+.ask-missing svg{flex:none;margin-top:2px}
+.ask-clear{align-self:flex-start;height:30px;font-size:12px;opacity:.7}
+.ask-note{margin:0;font-size:11px;opacity:.45;line-height:1.4}
+
+/* Tags anchored to focused structures */
+.focus-labels{position:absolute;inset:0;pointer-events:none;z-index:4}
+.focus-label{position:absolute;padding:4px 9px;border-radius:7px;font-size:12px;font-weight:500;white-space:nowrap;background:color-mix(in srgb,canvas 86%,transparent);border:1px solid color-mix(in srgb,currentColor 12%,transparent);box-shadow:0 3px 14px rgb(0 0 0 / .1);backdrop-filter:blur(7px);transition:opacity .25s ease}
+.focus-label[data-role="secondary"]{opacity:.66;font-weight:400;font-size:11px}
+.focus-leader{position:absolute;height:1px;transform-origin:0 50%;background:linear-gradient(90deg,color-mix(in srgb,currentColor 42%,transparent),color-mix(in srgb,currentColor 12%,transparent))}
+@media (max-width:767px){
+ .ask-panel{top:auto;bottom:150px;right:20px;left:20px;width:auto;max-height:52vh}
+ .focus-label{font-size:11px;padding:3px 7px}
+}

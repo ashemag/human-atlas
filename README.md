@@ -13,6 +13,23 @@ An interactive 3D anatomy explorer built with React, Three.js, and shadcn/ui. Ta
 - Isolate a selected structure and read its details.
 - Use compact controls and detail panels on mobile.
 
+## Ask the anatomy
+
+A question in plain language selects what the viewer shows. "What is at L4-L5?" frames the lumbar spine from behind, keeps the two vertebrae and the disk in colour, recedes the rest of the skeleton, and tags each structure on the model.
+
+Answers are grounded in the atlas rather than in the model's memory. A catalogue of every structure this atlas actually contains is built by `scripts/build-catalog.mjs`, and each answer is checked against it before it reaches the viewer: an identifier that does not exist is dropped, one whose name disagrees with the atlas is repaired to the identifier that name belongs to, and every "not in this model" claim is verified before it is shown. Structures the atlas genuinely lacks - the sciatic nerve, rectus abdominis, latissimus dorsi - are reported as missing rather than quietly replaced with something else.
+
+Set up a key from [Google AI Studio](https://aistudio.google.com/apikey), then run the dev server:
+
+```sh
+cp .env.example .env   # then edit API_KEY
+npm run dev
+```
+
+The assistant runs server-side (`api/ask.ts`) so the key never reaches the browser. In development Vite serves it; in production it deploys as a Vercel function. Requests are answered in two passes - one to name the anatomy involved, one to choose structures from the matching slice of the catalogue - which keeps each request small enough for the free tier's 16,000 input-tokens-per-minute limit. Without a key the viewer still works; only the assistant is unavailable.
+
+This is educational anatomy, not medical advice.
+
 ## Run locally
 
 Requires Node.js 22.13 or newer. No API keys or accounts are needed.
