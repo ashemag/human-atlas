@@ -9,7 +9,8 @@
     "dev": "vite --host 0.0.0.0 --port 3016",
     "build": "vite build",
     "build:vercel": "vite build",
-    "check": "tsc --noEmit"
+    "check": "tsc --noEmit",
+    "lint": "oxlint --deny-warnings app components scripts web"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",
