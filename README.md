@@ -8,7 +8,8 @@ An interactive 3D anatomy explorer built with React, Three.js, and shadcn/ui. Ta
 
 - Orbit, zoom, and select structures directly on the body.
 - Toggle individual systems or use skeleton and organ presets.
-- Enter a focused study mode — heart, respiratory, digestive, kidney, or reproductive — which shows one topic and downloads only its geometry.
+- Enter a focused study mode — heart, respiratory, digestive, kidney, or reproductive — and step through its structures in order, each framed and explained.
+- Switch between the male and female reference bodies.
 - Move from assembled anatomy to a spaced inventory of every visible piece.
 - Search anatomical names and source identifiers.
 - Isolate a selected structure and read its details.
@@ -42,7 +43,11 @@ Validation covers mesh buffers, names and concept membership, nonoverlapping exp
 
 ## Anatomy data
 
-The current viewer uses **BodyParts3D 4.0**, an adult male reference anatomy, licensed **CC BY 4.0**. It does not represent every human structure or variation. Individual source meshes are distinct from named concepts, which may group multiple meshes. Descriptions distinguish general system context from individual organ explanations.
+The viewer ships two reference bodies, switchable in the header or with `?body=male` / `?body=female`.
+
+**Male** is **BodyParts3D 4.0**, an adult male reference anatomy, licensed **CC BY 4.0**. **Female** is the **Human Reference Atlas united-female v1.5** assembly, also **CC BY 4.0** — 888 meshes and 1,073 concepts including full female reproductive anatomy, with partial skeleton and muscle coverage. Eight placenta and umbilical structures sit under a Pregnancy reference system that is hidden by default.
+
+Neither represents every human structure or variation. Individual source meshes are distinct from named concepts, which may group multiple meshes. Descriptions distinguish general system context from individual organ explanations.
 
 Geometry is simplified for browser performance while retaining every source mesh. The packaged model contains 2,288,268 triangles. The whole body is approximately 33 MB of compressed geometry, but chunks are system-pure and fetched on demand, so a single system costs only its own share — from 10.8 MB for the musculature down to 0.07 MB for the urinary tract. Full credits, source links, and adaptation details are in [ATTRIBUTION.md](public/ATTRIBUTION.md).
 
@@ -50,17 +55,25 @@ This is an educational explorer, not a diagnostic or surgical tool.
 
 ## Focused study modes
 
-A study mode narrows the atlas to the systems one topic needs and frames what
-remains. Because chunks are system-pure, entering a mode downloads only those
-systems: the heart is 0.68 MB and the kidneys 0.07 MB, against 33 MB for the
-assembled body.
+A study mode is a guided walkthrough, not another way to switch a system on. It
+narrows the atlas to the systems one topic needs, then steps through named
+structures in the order they are taught — the heart mode follows blood through
+right atrium, tricuspid valve, right ventricle, pulmonary valve and on around —
+framing and explaining each one.
+
+Because chunks are system-pure, entering a mode downloads only those systems: the
+heart is 0.68 MB and the kidneys 0.07 MB, against 33 MB for the assembled body.
 
 Link straight into one with `?mode=<id>` — `?mode=kidney`, `?mode=heart`,
-`?mode=respiratory`, `?mode=digestive`, `?mode=reproductive`. The mode is applied
-before any geometry is requested, so a deep link never fetches the rest of the body.
-Modes are declared in `app/anatomy.ts`; `scripts/validate-modes.mjs` fails if a
-mode's focus concept resolves outside its own systems, which would silently pull in
-everything it was meant to avoid.
+`?mode=respiratory`, `?mode=digestive`, `?mode=reproductive`, combined with
+`?body=` if needed. The mode is applied before any geometry is requested, so a deep
+link never fetches the rest of the body.
+
+Modes are declared in `app/anatomy.ts`. Each step lists candidate concept ids and
+the first present in the loaded atlas wins, so one mode serves both reference
+bodies; steps that resolve in neither are skipped.
+`scripts/validate-modes.mjs` fails if a mode's walkthrough resolves outside its own
+systems, which would silently pull in everything it was meant to avoid.
 
 ## How it works
 

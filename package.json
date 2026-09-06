@@ -10,7 +10,7 @@
     "build": "vite build",
     "build:vercel": "vite build",
     "check": "tsc --noEmit",
-    "validate": "node scripts/validate-atlas.mjs && node scripts/validate-modes.mjs && node scripts/validate-interactions.mjs"
+    "validate": "node scripts/validate-atlas.mjs && node scripts/validate-atlas.mjs atlas-female.json && node scripts/validate-modes.mjs && node scripts/validate-modes.mjs atlas-female.json && node scripts/validate-interactions.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",

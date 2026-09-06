@@ -102,3 +102,11 @@ h1 .edition{font-family:inherit;font-weight:500;font-size:10px;letter-spacing:.0
 .mode-summary{font-size:11px;line-height:1.55;color:#78838f;margin:9px 3px 0}
 @media(max-width:767px){.mode-list{grid-template-columns:1fr 1fr 1fr}.mode-chip{min-height:48px}.mode-summary{display:none}}
 @media(max-height:600px) and (orientation:landscape){.mode-summary{display:none}.mode-group{padding-bottom:7px}}
+.tour-controls{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:9px 4px 11px;border-top:1px solid #18253612}
+.tour-progress{font-size:11px;color:#78838f;text-align:center;flex:1;font-variant-numeric:tabular-nums}
+.tour-step{display:inline-flex;align-items:center;justify-content:center;min-width:40px;min-height:40px;border:1px solid var(--border);border-radius:9px;color:#54606d}
+.body-choice{display:inline-flex;gap:2px;margin-top:12px;padding:3px;background:#edf0f2;border-radius:9px;pointer-events:auto}
+.body-choice button{height:28px;min-height:28px;padding:0 12px;font-size:11px;font-weight:500;border-radius:6px;color:#697582}
+.body-choice button[aria-pressed=true]{background:white;color:#233644;box-shadow:0 1px 3px #18253612}
+@media(max-width:767px){.body-choice{margin-top:9px}.body-choice button{height:32px;min-height:32px}}
+@media(max-height:600px) and (orientation:landscape){.body-choice{display:none}}

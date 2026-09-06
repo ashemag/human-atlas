@@ -85,9 +85,12 @@ for (const [index, group] of groups.entries()) {
   written.push({ name, out });
 }
 
-// Only rewrite the directory once every buffer has been built successfully.
+// Only rewrite the directory once every buffer has been built successfully, and
+// only ever touch this manifest's own chunks — the directory holds more than one
+// atlas, and a prefix-blind sweep here deletes the other one's geometry.
+const owned = new RegExp(`^${prefix}-.*\\.bin(\\.gz)?$`);
 for (const file of fs.readdirSync(base)) {
-  if (/^(body|female)-.*\.bin(\.gz)?$/.test(file)) fs.unlinkSync(new URL(file, base));
+  if (owned.test(file)) fs.unlinkSync(new URL(file, base));
 }
 for (const { name, out } of written) fs.writeFileSync(new URL(name, base), out);
 
