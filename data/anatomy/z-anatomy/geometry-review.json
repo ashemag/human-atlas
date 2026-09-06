@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Rectus abdominis muscle.l",
+    "vertices": 10304,
+    "triangles": 20604,
+    "boundaryEdges": 0,
+    "nonmanifoldEdges": 0,
+    "degenerateTriangles": 0,
+    "normalDisagreements": 2
+  },
+  {
+    "name": "Rectus abdominis muscle.r",
+    "vertices": 10304,
+    "triangles": 20604,
+    "boundaryEdges": 0,
+    "nonmanifoldEdges": 0,
+    "degenerateTriangles": 0,
+    "normalDisagreements": 2
+  },
+  {
+    "name": "Internal abdominal oblique muscle.l",
+    "vertices": 14411,
+    "triangles": 28869,
+    "boundaryEdges": 5,
+    "nonmanifoldEdges": 0,
+    "degenerateTriangles": 0,
+    "normalDisagreements": 37
+  },
+  {
+    "name": "Internal abdominal oblique muscle.r",
+    "vertices": 14411,
+    "triangles": 28869,
+    "boundaryEdges": 5,
+    "nonmanifoldEdges": 0,
+    "degenerateTriangles": 0,
+    "normalDisagreements": 37
+  },
+  {
+    "name": "Transversus abdominis muscle.l",
+    "vertices": 17164,
+    "triangles": 34328,
+    "boundaryEdges": 0,
+    "nonmanifoldEdges": 0,
+    "degenerateTriangles": 0,
+    "normalDisagreements": 5
+  },
+  {
+    "name": "Transversus abdominis muscle.r",
+    "vertices": 17164,
+    "triangles": 34328,
+    "boundaryEdges": 0,
+    "nonmanifoldEdges": 0,
+    "degenerateTriangles": 0,
+    "normalDisagreements": 5
+  },
+  {
+    "name": "Quadratus lumborum muscle.l",
+    "vertices": 1416,
+    "triangles": 2832,
+    "boundaryEdges": 0,
+    "nonmanifoldEdges": 0,
+    "degenerateTriangles": 0,
+    "normalDisagreements": 3
+  },
+  {
+    "name": "Quadratus lumborum muscle.r",
+    "vertices": 1416,
+    "triangles": 2832,
+    "boundaryEdges": 0,
+    "nonmanifoldEdges": 0,
+    "degenerateTriangles": 0,
+    "normalDisagreements": 3
+  },
+  {
+    "name": "Multifidus colli muscle.l",
+    "vertices": 696,
+    "triangles": 1390,
+    "boundaryEdges": 0,
+    "nonmanifoldEdges": 0,
+    "degenerateTriangles": 0,
+    "normalDisagreements": 0
+  },
+  {
+    "name": "Multifidus colli muscle.r",
+    "vertices": 696,
+    "triangles": 1390,
+    "boundaryEdges": 0,
+    "nonmanifoldEdges": 0,
+    "degenerateTriangles": 0,
+    "normalDisagreements": 0
+  },
+  {
+    "name": "Multifidus thoracis muscle.l",
+    "vertices": 1987,
+    "triangles": 3902,
+    "boundaryEdges": 0,
+    "nonmanifoldEdges": 0,
+    "degenerateTriangles": 0,
+    "normalDisagreements": 11
+  },
+  {
+    "name": "Multifidus thoracis muscle.r",
+    "vertices": 1987,
+    "triangles": 3902,
+    "boundaryEdges": 0,
+    "nonmanifoldEdges": 0,
+    "degenerateTriangles": 0,
+    "normalDisagreements": 11
+  },
+  {
+    "name": "Multifidus lumborum muscle.l",
+    "vertices": 1413,
+    "triangles": 2820,
+    "boundaryEdges": 0,
+    "nonmanifoldEdges": 0,
+    "degenerateTriangles": 0,
+    "normalDisagreements": 1
+  },
+  {
+    "name": "Multifidus lumborum muscle.r",
+    "vertices": 1413,
+    "triangles": 2820,
+    "boundaryEdges": 0,
+    "nonmanifoldEdges": 0,
+    "degenerateTriangles": 0,
+    "normalDisagreements": 1
+  }
+]

@@ -1,0 +1,1984 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "dataset": "BodyParts3D 4.0",
+    "retrievedAt": "2026-09-06",
+    "license": "CC BY 4.0 (official license page updated 2025-02-27; older OBJ headers retain historical terms)",
+    "licenseUrl": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+    "files": {
+      "isa_parts_list_e.txt": {
+        "sha256": "ab7796deedd49205e77f3609a1cb8c53e2bbee14ecb5c9a6ca05227469780513",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_parts_list_e.txt"
+      },
+      "isa_element_parts.txt": {
+        "sha256": "a3de74423f943b0d724ae8f59b3a817f87c423a544f8db98113b1980817cbeaf",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_element_parts.txt"
+      },
+      "mesh-name-index.json": {
+        "sha256": "762cf591abf02481626b5e9dd45e767a27a131125f96306aebcf39c9859f08a7",
+        "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_BP3D_4.0_obj_99.zip"
+      }
+    },
+    "archive": {
+      "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_BP3D_4.0_obj_99.zip",
+      "sha256": "40665852c49f218326590e204db91064a1ecfc3c6f8cbd7bbbcaac62c7cd409e",
+      "bytes": 142903898,
+      "meshCount": 2234,
+      "unnamedMeshCount": 17
+    },
+    "indexMethod": "scripts/index-anatomy-source.py: read File ID, English name and Concept ID from each OBJ header; preserve blank names as null, never infer names."
+  },
+  "sourceInventory": {
+    "missingFromMale": [],
+    "unlistedInArchive": [],
+    "unnamedArchiveMeshes": 17
+  },
+  "limits": "This is a nomenclature and mapping audit, not anatomical certification or proof of geometric absence.",
+  "targets": [
+    {
+      "id": "rectus-abdominis",
+      "name": "Rectus abdominis",
+      "aliases": [
+        "rectus abdominis"
+      ],
+      "atlases": {
+        "male": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        },
+        "female": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        },
+        "femaleSource": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        }
+      },
+      "source": {
+        "concepts": [],
+        "elementIds": [],
+        "archiveMeshes": []
+      },
+      "excluded": [],
+      "interpretation": "Named matches establish discoverability, not segmentation accuracy. No match does not prove the tissue is geometrically absent. Source sex and registration require separate review."
+    },
+    {
+      "id": "internal-oblique",
+      "name": "Internal oblique",
+      "aliases": [
+        "internal oblique",
+        "obliquus internus abdominis"
+      ],
+      "atlases": {
+        "male": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        },
+        "female": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        },
+        "femaleSource": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        }
+      },
+      "source": {
+        "concepts": [],
+        "elementIds": [],
+        "archiveMeshes": []
+      },
+      "excluded": [],
+      "interpretation": "Named matches establish discoverability, not segmentation accuracy. No match does not prove the tissue is geometrically absent. Source sex and registration require separate review."
+    },
+    {
+      "id": "transversus-abdominis",
+      "name": "Transversus abdominis",
+      "aliases": [
+        "transversus abdominis",
+        "transverse abdominal muscle"
+      ],
+      "atlases": {
+        "male": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        },
+        "female": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        },
+        "femaleSource": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        }
+      },
+      "source": {
+        "concepts": [],
+        "elementIds": [],
+        "archiveMeshes": []
+      },
+      "excluded": [],
+      "interpretation": "Named matches establish discoverability, not segmentation accuracy. No match does not prove the tissue is geometrically absent. Source sex and registration require separate review."
+    },
+    {
+      "id": "multifidus",
+      "name": "Multifidus",
+      "aliases": [
+        "multifidus",
+        "multifidi"
+      ],
+      "atlases": {
+        "male": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        },
+        "female": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        },
+        "femaleSource": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        }
+      },
+      "source": {
+        "concepts": [],
+        "elementIds": [],
+        "archiveMeshes": []
+      },
+      "excluded": [],
+      "interpretation": "Named matches establish discoverability, not segmentation accuracy. No match does not prove the tissue is geometrically absent. Source sex and registration require separate review."
+    },
+    {
+      "id": "quadratus-lumborum",
+      "name": "Quadratus lumborum",
+      "aliases": [
+        "quadratus lumborum"
+      ],
+      "atlases": {
+        "male": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        },
+        "female": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        },
+        "femaleSource": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        }
+      },
+      "source": {
+        "concepts": [],
+        "elementIds": [],
+        "archiveMeshes": []
+      },
+      "excluded": [],
+      "interpretation": "Named matches establish discoverability, not segmentation accuracy. No match does not prove the tissue is geometrically absent. Source sex and registration require separate review."
+    },
+    {
+      "id": "external-oblique",
+      "name": "External oblique",
+      "aliases": [
+        "external oblique",
+        "obliquus externus abdominis"
+      ],
+      "atlases": {
+        "male": {
+          "status": "named_meshes_present",
+          "parts": [
+            {
+              "id": "FJ1452",
+              "name": "Right external oblique",
+              "system": "muscular"
+            },
+            {
+              "id": "FJ1452M",
+              "name": "Left external oblique",
+              "system": "muscular"
+            }
+          ],
+          "concepts": [
+            {
+              "id": "FMA13335",
+              "name": "external oblique",
+              "elements": [
+                "FJ1452",
+                "FJ1452M"
+              ]
+            },
+            {
+              "id": "FMA13336",
+              "name": "right external oblique",
+              "elements": [
+                "FJ1452"
+              ]
+            },
+            {
+              "id": "FMA13337",
+              "name": "left external oblique",
+              "elements": [
+                "FJ1452M"
+              ]
+            }
+          ]
+        },
+        "female": {
+          "status": "named_meshes_present",
+          "parts": [
+            {
+              "id": "FJ1452",
+              "name": "Right external oblique",
+              "system": "muscular"
+            },
+            {
+              "id": "FJ1452M",
+              "name": "Left external oblique",
+              "system": "muscular"
+            }
+          ],
+          "concepts": [
+            {
+              "id": "FMA13335",
+              "name": "external oblique",
+              "elements": [
+                "FJ1452",
+                "FJ1452M"
+              ]
+            },
+            {
+              "id": "FMA13336",
+              "name": "right external oblique",
+              "elements": [
+                "FJ1452"
+              ]
+            },
+            {
+              "id": "FMA13337",
+              "name": "left external oblique",
+              "elements": [
+                "FJ1452M"
+              ]
+            }
+          ]
+        },
+        "femaleSource": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        }
+      },
+      "source": {
+        "concepts": [
+          {
+            "conceptId": "FMA13335",
+            "representationId": "BP8155",
+            "name": "external oblique"
+          },
+          {
+            "conceptId": "FMA13336",
+            "representationId": "BP4967",
+            "name": "right external oblique"
+          },
+          {
+            "conceptId": "FMA13337",
+            "representationId": "BP8154",
+            "name": "left external oblique"
+          }
+        ],
+        "elementIds": [
+          "FJ1452",
+          "FJ1452M"
+        ],
+        "archiveMeshes": [
+          {
+            "id": "FJ1452",
+            "name": "Right external oblique",
+            "conceptId": "FMA13336",
+            "file": "isa_BP3D_4.0_obj_99/FJ1452.obj"
+          },
+          {
+            "id": "FJ1452M",
+            "name": "Left external oblique",
+            "conceptId": "FMA13337",
+            "file": "isa_BP3D_4.0_obj_99/FJ1452M.obj"
+          }
+        ]
+      },
+      "excluded": [],
+      "interpretation": "Named matches establish discoverability, not segmentation accuracy. No match does not prove the tissue is geometrically absent. Source sex and registration require separate review."
+    },
+    {
+      "id": "diaphragm",
+      "name": "Diaphragm",
+      "aliases": [
+        "diaphragm"
+      ],
+      "atlases": {
+        "male": {
+          "status": "named_meshes_present",
+          "parts": [
+            {
+              "id": "FJ3131",
+              "name": "Diaphragm",
+              "system": "muscular"
+            }
+          ],
+          "concepts": [
+            {
+              "id": "FMA13295",
+              "name": "diaphragm",
+              "elements": [
+                "FJ3131"
+              ]
+            }
+          ]
+        },
+        "female": {
+          "status": "named_meshes_present",
+          "parts": [
+            {
+              "id": "FJ3131",
+              "name": "Diaphragm",
+              "system": "muscular"
+            }
+          ],
+          "concepts": [
+            {
+              "id": "FMA13295",
+              "name": "diaphragm",
+              "elements": [
+                "FJ3131"
+              ]
+            }
+          ]
+        },
+        "femaleSource": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        }
+      },
+      "source": {
+        "concepts": [
+          {
+            "conceptId": "FMA13295",
+            "representationId": "BP8798",
+            "name": "diaphragm"
+          }
+        ],
+        "elementIds": [
+          "FJ3131"
+        ],
+        "archiveMeshes": [
+          {
+            "id": "FJ3131",
+            "name": "Diaphragm",
+            "conceptId": "FMA13295",
+            "file": "isa_BP3D_4.0_obj_99/FJ3131.obj"
+          }
+        ]
+      },
+      "excluded": [],
+      "interpretation": "Named matches establish discoverability, not segmentation accuracy. No match does not prove the tissue is geometrically absent. Source sex and registration require separate review."
+    },
+    {
+      "id": "psoas-major",
+      "name": "Psoas major",
+      "aliases": [
+        "psoas major"
+      ],
+      "atlases": {
+        "male": {
+          "status": "named_meshes_present",
+          "parts": [
+            {
+              "id": "FJ1431",
+              "name": "Right psoas major",
+              "system": "muscular"
+            },
+            {
+              "id": "FJ1431M",
+              "name": "Left psoas major",
+              "system": "muscular"
+            }
+          ],
+          "concepts": [
+            {
+              "id": "FMA18060",
+              "name": "psoas major",
+              "elements": [
+                "FJ1431",
+                "FJ1431M"
+              ]
+            },
+            {
+              "id": "FMA22342",
+              "name": "right psoas major",
+              "elements": [
+                "FJ1431"
+              ]
+            },
+            {
+              "id": "FMA22343",
+              "name": "left psoas major",
+              "elements": [
+                "FJ1431M"
+              ]
+            }
+          ]
+        },
+        "female": {
+          "status": "named_meshes_present",
+          "parts": [
+            {
+              "id": "FJ1431",
+              "name": "Right psoas major",
+              "system": "muscular"
+            },
+            {
+              "id": "FJ1431M",
+              "name": "Left psoas major",
+              "system": "muscular"
+            }
+          ],
+          "concepts": [
+            {
+              "id": "FMA18060",
+              "name": "psoas major",
+              "elements": [
+                "FJ1431",
+                "FJ1431M"
+              ]
+            },
+            {
+              "id": "FMA22342",
+              "name": "right psoas major",
+              "elements": [
+                "FJ1431"
+              ]
+            },
+            {
+              "id": "FMA22343",
+              "name": "left psoas major",
+              "elements": [
+                "FJ1431M"
+              ]
+            }
+          ]
+        },
+        "femaleSource": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        }
+      },
+      "source": {
+        "concepts": [
+          {
+            "conceptId": "FMA18060",
+            "representationId": "BP8374",
+            "name": "psoas major"
+          },
+          {
+            "conceptId": "FMA22342",
+            "representationId": "BP4701",
+            "name": "right psoas major"
+          },
+          {
+            "conceptId": "FMA22343",
+            "representationId": "BP8373",
+            "name": "left psoas major"
+          }
+        ],
+        "elementIds": [
+          "FJ1431",
+          "FJ1431M"
+        ],
+        "archiveMeshes": [
+          {
+            "id": "FJ1431",
+            "name": "Right psoas major",
+            "conceptId": "FMA22342",
+            "file": "isa_BP3D_4.0_obj_99/FJ1431.obj"
+          },
+          {
+            "id": "FJ1431M",
+            "name": "Left psoas major",
+            "conceptId": "FMA22343",
+            "file": "isa_BP3D_4.0_obj_99/FJ1431M.obj"
+          }
+        ]
+      },
+      "excluded": [],
+      "interpretation": "Named matches establish discoverability, not segmentation accuracy. No match does not prove the tissue is geometrically absent. Source sex and registration require separate review."
+    },
+    {
+      "id": "iliacus",
+      "name": "Iliacus",
+      "aliases": [
+        "iliacus"
+      ],
+      "atlases": {
+        "male": {
+          "status": "named_meshes_present",
+          "parts": [
+            {
+              "id": "FJ1422",
+              "name": "Right iliacus",
+              "system": "muscular"
+            },
+            {
+              "id": "FJ1422M",
+              "name": "Left iliacus",
+              "system": "muscular"
+            }
+          ],
+          "concepts": [
+            {
+              "id": "FMA22310",
+              "name": "iliacus",
+              "elements": [
+                "FJ1422",
+                "FJ1422M"
+              ]
+            },
+            {
+              "id": "FMA22322",
+              "name": "right iliacus",
+              "elements": [
+                "FJ1422"
+              ]
+            },
+            {
+              "id": "FMA22323",
+              "name": "left iliacus",
+              "elements": [
+                "FJ1422M"
+              ]
+            }
+          ]
+        },
+        "female": {
+          "status": "named_meshes_present",
+          "parts": [
+            {
+              "id": "FJ1422",
+              "name": "Right iliacus",
+              "system": "muscular"
+            },
+            {
+              "id": "FJ1422M",
+              "name": "Left iliacus",
+              "system": "muscular"
+            }
+          ],
+          "concepts": [
+            {
+              "id": "FMA22310",
+              "name": "iliacus",
+              "elements": [
+                "FJ1422",
+                "FJ1422M"
+              ]
+            },
+            {
+              "id": "FMA22322",
+              "name": "right iliacus",
+              "elements": [
+                "FJ1422"
+              ]
+            },
+            {
+              "id": "FMA22323",
+              "name": "left iliacus",
+              "elements": [
+                "FJ1422M"
+              ]
+            }
+          ]
+        },
+        "femaleSource": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        }
+      },
+      "source": {
+        "concepts": [
+          {
+            "conceptId": "FMA22310",
+            "representationId": "BP8313",
+            "name": "iliacus"
+          },
+          {
+            "conceptId": "FMA22322",
+            "representationId": "BP5085",
+            "name": "right iliacus"
+          },
+          {
+            "conceptId": "FMA22323",
+            "representationId": "BP8312",
+            "name": "left iliacus"
+          }
+        ],
+        "elementIds": [
+          "FJ1422",
+          "FJ1422M"
+        ],
+        "archiveMeshes": [
+          {
+            "id": "FJ1422",
+            "name": "Right iliacus",
+            "conceptId": "FMA22322",
+            "file": "isa_BP3D_4.0_obj_99/FJ1422.obj"
+          },
+          {
+            "id": "FJ1422M",
+            "name": "Left iliacus",
+            "conceptId": "FMA22323",
+            "file": "isa_BP3D_4.0_obj_99/FJ1422M.obj"
+          }
+        ]
+      },
+      "excluded": [],
+      "interpretation": "Named matches establish discoverability, not segmentation accuracy. No match does not prove the tissue is geometrically absent. Source sex and registration require separate review."
+    },
+    {
+      "id": "gluteus-maximus",
+      "name": "Gluteus maximus",
+      "aliases": [
+        "gluteus maximus"
+      ],
+      "atlases": {
+        "male": {
+          "status": "named_meshes_present",
+          "parts": [
+            {
+              "id": "FJ1418",
+              "name": "Right gluteus maximus",
+              "system": "muscular"
+            },
+            {
+              "id": "FJ1418M",
+              "name": "Left gluteus maximus",
+              "system": "muscular"
+            }
+          ],
+          "concepts": [
+            {
+              "id": "FMA22314",
+              "name": "gluteus maximus",
+              "elements": [
+                "FJ1418",
+                "FJ1418M"
+              ]
+            },
+            {
+              "id": "FMA22328",
+              "name": "right gluteus maximus",
+              "elements": [
+                "FJ1418"
+              ]
+            },
+            {
+              "id": "FMA22329",
+              "name": "left gluteus maximus",
+              "elements": [
+                "FJ1418M"
+              ]
+            }
+          ]
+        },
+        "female": {
+          "status": "named_meshes_present",
+          "parts": [
+            {
+              "id": "FJ1418",
+              "name": "Right gluteus maximus",
+              "system": "muscular"
+            },
+            {
+              "id": "FJ1418M",
+              "name": "Left gluteus maximus",
+              "system": "muscular"
+            }
+          ],
+          "concepts": [
+            {
+              "id": "FMA22314",
+              "name": "gluteus maximus",
+              "elements": [
+                "FJ1418",
+                "FJ1418M"
+              ]
+            },
+            {
+              "id": "FMA22328",
+              "name": "right gluteus maximus",
+              "elements": [
+                "FJ1418"
+              ]
+            },
+            {
+              "id": "FMA22329",
+              "name": "left gluteus maximus",
+              "elements": [
+                "FJ1418M"
+              ]
+            }
+          ]
+        },
+        "femaleSource": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        }
+      },
+      "source": {
+        "concepts": [
+          {
+            "conceptId": "FMA22314",
+            "representationId": "BP8402",
+            "name": "gluteus maximus"
+          },
+          {
+            "conceptId": "FMA22328",
+            "representationId": "BP5065",
+            "name": "right gluteus maximus"
+          },
+          {
+            "conceptId": "FMA22329",
+            "representationId": "BP8401",
+            "name": "left gluteus maximus"
+          }
+        ],
+        "elementIds": [
+          "FJ1418",
+          "FJ1418M"
+        ],
+        "archiveMeshes": [
+          {
+            "id": "FJ1418",
+            "name": "Right gluteus maximus",
+            "conceptId": "FMA22328",
+            "file": "isa_BP3D_4.0_obj_99/FJ1418.obj"
+          },
+          {
+            "id": "FJ1418M",
+            "name": "Left gluteus maximus",
+            "conceptId": "FMA22329",
+            "file": "isa_BP3D_4.0_obj_99/FJ1418M.obj"
+          }
+        ]
+      },
+      "excluded": [],
+      "interpretation": "Named matches establish discoverability, not segmentation accuracy. No match does not prove the tissue is geometrically absent. Source sex and registration require separate review."
+    },
+    {
+      "id": "gluteus-medius",
+      "name": "Gluteus medius",
+      "aliases": [
+        "gluteus medius"
+      ],
+      "atlases": {
+        "male": {
+          "status": "named_meshes_present",
+          "parts": [
+            {
+              "id": "FJ1419",
+              "name": "Right gluteus medius",
+              "system": "muscular"
+            },
+            {
+              "id": "FJ1419M",
+              "name": "Left gluteus medius",
+              "system": "muscular"
+            }
+          ],
+          "concepts": [
+            {
+              "id": "FMA22315",
+              "name": "gluteus medius",
+              "elements": [
+                "FJ1419",
+                "FJ1419M"
+              ]
+            },
+            {
+              "id": "FMA22330",
+              "name": "right gluteus medius",
+              "elements": [
+                "FJ1419"
+              ]
+            },
+            {
+              "id": "FMA22331",
+              "name": "left gluteus medius",
+              "elements": [
+                "FJ1419M"
+              ]
+            }
+          ]
+        },
+        "female": {
+          "status": "named_meshes_present",
+          "parts": [
+            {
+              "id": "FJ1419",
+              "name": "Right gluteus medius",
+              "system": "muscular"
+            },
+            {
+              "id": "FJ1419M",
+              "name": "Left gluteus medius",
+              "system": "muscular"
+            }
+          ],
+          "concepts": [
+            {
+              "id": "FMA22315",
+              "name": "gluteus medius",
+              "elements": [
+                "FJ1419",
+                "FJ1419M"
+              ]
+            },
+            {
+              "id": "FMA22330",
+              "name": "right gluteus medius",
+              "elements": [
+                "FJ1419"
+              ]
+            },
+            {
+              "id": "FMA22331",
+              "name": "left gluteus medius",
+              "elements": [
+                "FJ1419M"
+              ]
+            }
+          ]
+        },
+        "femaleSource": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        }
+      },
+      "source": {
+        "concepts": [
+          {
+            "conceptId": "FMA22315",
+            "representationId": "BP9214",
+            "name": "gluteus medius"
+          },
+          {
+            "conceptId": "FMA22330",
+            "representationId": "BP5063",
+            "name": "right gluteus medius"
+          },
+          {
+            "conceptId": "FMA22331",
+            "representationId": "BP9213",
+            "name": "left gluteus medius"
+          }
+        ],
+        "elementIds": [
+          "FJ1419",
+          "FJ1419M"
+        ],
+        "archiveMeshes": [
+          {
+            "id": "FJ1419",
+            "name": "Right gluteus medius",
+            "conceptId": "FMA22330",
+            "file": "isa_BP3D_4.0_obj_99/FJ1419.obj"
+          },
+          {
+            "id": "FJ1419M",
+            "name": "Left gluteus medius",
+            "conceptId": "FMA22331",
+            "file": "isa_BP3D_4.0_obj_99/FJ1419M.obj"
+          }
+        ]
+      },
+      "excluded": [],
+      "interpretation": "Named matches establish discoverability, not segmentation accuracy. No match does not prove the tissue is geometrically absent. Source sex and registration require separate review."
+    },
+    {
+      "id": "gluteus-minimus",
+      "name": "Gluteus minimus",
+      "aliases": [
+        "gluteus minimus"
+      ],
+      "atlases": {
+        "male": {
+          "status": "named_meshes_present",
+          "parts": [
+            {
+              "id": "FJ1420",
+              "name": "Right gluteus minimus",
+              "system": "muscular"
+            },
+            {
+              "id": "FJ1420M",
+              "name": "Left gluteus minimus",
+              "system": "muscular"
+            }
+          ],
+          "concepts": [
+            {
+              "id": "FMA22317",
+              "name": "gluteus minimus",
+              "elements": [
+                "FJ1420",
+                "FJ1420M"
+              ]
+            },
+            {
+              "id": "FMA22332",
+              "name": "right gluteus minimus",
+              "elements": [
+                "FJ1420"
+              ]
+            },
+            {
+              "id": "FMA22333",
+              "name": "left gluteus minimus",
+              "elements": [
+                "FJ1420M"
+              ]
+            }
+          ]
+        },
+        "female": {
+          "status": "named_meshes_present",
+          "parts": [
+            {
+              "id": "FJ1420",
+              "name": "Right gluteus minimus",
+              "system": "muscular"
+            },
+            {
+              "id": "FJ1420M",
+              "name": "Left gluteus minimus",
+              "system": "muscular"
+            }
+          ],
+          "concepts": [
+            {
+              "id": "FMA22317",
+              "name": "gluteus minimus",
+              "elements": [
+                "FJ1420",
+                "FJ1420M"
+              ]
+            },
+            {
+              "id": "FMA22332",
+              "name": "right gluteus minimus",
+              "elements": [
+                "FJ1420"
+              ]
+            },
+            {
+              "id": "FMA22333",
+              "name": "left gluteus minimus",
+              "elements": [
+                "FJ1420M"
+              ]
+            }
+          ]
+        },
+        "femaleSource": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        }
+      },
+      "source": {
+        "concepts": [
+          {
+            "conceptId": "FMA22317",
+            "representationId": "BP8624",
+            "name": "gluteus minimus"
+          },
+          {
+            "conceptId": "FMA22332",
+            "representationId": "BP5083",
+            "name": "right gluteus minimus"
+          },
+          {
+            "conceptId": "FMA22333",
+            "representationId": "BP8623",
+            "name": "left gluteus minimus"
+          }
+        ],
+        "elementIds": [
+          "FJ1420",
+          "FJ1420M"
+        ],
+        "archiveMeshes": [
+          {
+            "id": "FJ1420",
+            "name": "Right gluteus minimus",
+            "conceptId": "FMA22332",
+            "file": "isa_BP3D_4.0_obj_99/FJ1420.obj"
+          },
+          {
+            "id": "FJ1420M",
+            "name": "Left gluteus minimus",
+            "conceptId": "FMA22333",
+            "file": "isa_BP3D_4.0_obj_99/FJ1420M.obj"
+          }
+        ]
+      },
+      "excluded": [],
+      "interpretation": "Named matches establish discoverability, not segmentation accuracy. No match does not prove the tissue is geometrically absent. Source sex and registration require separate review."
+    },
+    {
+      "id": "piriformis",
+      "name": "Piriformis",
+      "aliases": [
+        "piriformis"
+      ],
+      "atlases": {
+        "male": {
+          "status": "named_meshes_present",
+          "parts": [
+            {
+              "id": "FJ1428",
+              "name": "Right piriformis",
+              "system": "muscular"
+            },
+            {
+              "id": "FJ1428M",
+              "name": "Left piriformis",
+              "system": "muscular"
+            }
+          ],
+          "concepts": [
+            {
+              "id": "FMA19082",
+              "name": "piriformis",
+              "elements": [
+                "FJ1428",
+                "FJ1428M"
+              ]
+            },
+            {
+              "id": "FMA22340",
+              "name": "right piriformis",
+              "elements": [
+                "FJ1428"
+              ]
+            },
+            {
+              "id": "FMA22341",
+              "name": "left piriformis",
+              "elements": [
+                "FJ1428M"
+              ]
+            }
+          ]
+        },
+        "female": {
+          "status": "named_meshes_present",
+          "parts": [
+            {
+              "id": "FJ1428",
+              "name": "Right piriformis",
+              "system": "muscular"
+            },
+            {
+              "id": "FJ1428M",
+              "name": "Left piriformis",
+              "system": "muscular"
+            }
+          ],
+          "concepts": [
+            {
+              "id": "FMA19082",
+              "name": "piriformis",
+              "elements": [
+                "FJ1428",
+                "FJ1428M"
+              ]
+            },
+            {
+              "id": "FMA22340",
+              "name": "right piriformis",
+              "elements": [
+                "FJ1428"
+              ]
+            },
+            {
+              "id": "FMA22341",
+              "name": "left piriformis",
+              "elements": [
+                "FJ1428M"
+              ]
+            }
+          ]
+        },
+        "femaleSource": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        }
+      },
+      "source": {
+        "concepts": [
+          {
+            "conceptId": "FMA19082",
+            "representationId": "BP8132",
+            "name": "piriformis"
+          },
+          {
+            "conceptId": "FMA22340",
+            "representationId": "BP5076",
+            "name": "right piriformis"
+          },
+          {
+            "conceptId": "FMA22341",
+            "representationId": "BP8131",
+            "name": "left piriformis"
+          }
+        ],
+        "elementIds": [
+          "FJ1428",
+          "FJ1428M"
+        ],
+        "archiveMeshes": [
+          {
+            "id": "FJ1428",
+            "name": "Right piriformis",
+            "conceptId": "FMA22340",
+            "file": "isa_BP3D_4.0_obj_99/FJ1428.obj"
+          },
+          {
+            "id": "FJ1428M",
+            "name": "Left piriformis",
+            "conceptId": "FMA22341",
+            "file": "isa_BP3D_4.0_obj_99/FJ1428M.obj"
+          }
+        ]
+      },
+      "excluded": [],
+      "interpretation": "Named matches establish discoverability, not segmentation accuracy. No match does not prove the tissue is geometrically absent. Source sex and registration require separate review."
+    },
+    {
+      "id": "puborectalis",
+      "name": "Puborectalis",
+      "aliases": [
+        "puborectalis"
+      ],
+      "atlases": {
+        "male": {
+          "status": "named_meshes_present",
+          "parts": [
+            {
+              "id": "FJ1458M",
+              "name": "Left puborectalis",
+              "system": "muscular"
+            },
+            {
+              "id": "FJ2546",
+              "name": "Left puborectalis",
+              "system": "muscular"
+            },
+            {
+              "id": "FJ2551",
+              "name": "Right puborectalis",
+              "system": "muscular"
+            }
+          ],
+          "concepts": [
+            {
+              "id": "FMA19091",
+              "name": "puborectalis",
+              "elements": [
+                "FJ1458M",
+                "FJ2546",
+                "FJ2551"
+              ]
+            },
+            {
+              "id": "FMA45856",
+              "name": "right puborectalis",
+              "elements": [
+                "FJ2551"
+              ]
+            },
+            {
+              "id": "FMA45857",
+              "name": "left puborectalis",
+              "elements": [
+                "FJ1458M",
+                "FJ2546"
+              ]
+            }
+          ]
+        },
+        "female": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        },
+        "femaleSource": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        }
+      },
+      "source": {
+        "concepts": [
+          {
+            "conceptId": "FMA19091",
+            "representationId": "BP8203",
+            "name": "puborectalis"
+          },
+          {
+            "conceptId": "FMA45856",
+            "representationId": "BP8202",
+            "name": "right puborectalis"
+          },
+          {
+            "conceptId": "FMA45857",
+            "representationId": "BP8228",
+            "name": "left puborectalis"
+          }
+        ],
+        "elementIds": [
+          "FJ1458M",
+          "FJ2546",
+          "FJ2551"
+        ],
+        "archiveMeshes": [
+          {
+            "id": "FJ1458M",
+            "name": "Left puborectalis",
+            "conceptId": "FMA45857",
+            "file": "isa_BP3D_4.0_obj_99/FJ1458M.obj"
+          },
+          {
+            "id": "FJ2546",
+            "name": "Left puborectalis",
+            "conceptId": "FMA45857",
+            "file": "isa_BP3D_4.0_obj_99/FJ2546.obj"
+          },
+          {
+            "id": "FJ2551",
+            "name": "Right puborectalis",
+            "conceptId": "FMA45856",
+            "file": "isa_BP3D_4.0_obj_99/FJ2551.obj"
+          }
+        ]
+      },
+      "excluded": [
+        {
+          "id": "FJ1458M",
+          "name": "Left puborectalis",
+          "reason": "Sex-specific or pelvic-floor structure omitted"
+        },
+        {
+          "id": "FJ2546",
+          "name": "Left puborectalis",
+          "reason": "Sex-specific or pelvic-floor structure omitted"
+        },
+        {
+          "id": "FJ2551",
+          "name": "Right puborectalis",
+          "reason": "Sex-specific or pelvic-floor structure omitted"
+        }
+      ],
+      "interpretation": "Named matches establish discoverability, not segmentation accuracy. No match does not prove the tissue is geometrically absent. Source sex and registration require separate review."
+    },
+    {
+      "id": "pubococcygeus",
+      "name": "Pubococcygeus / pubovisceral muscle",
+      "aliases": [
+        "pubococcygeus",
+        "pubovisceral",
+        "pubovisceralis"
+      ],
+      "atlases": {
+        "male": {
+          "status": "named_meshes_present",
+          "parts": [
+            {
+              "id": "FJ1457M",
+              "name": "Left pubococcygeus",
+              "system": "muscular"
+            },
+            {
+              "id": "FJ2545",
+              "name": "Left pubococcygeus",
+              "system": "muscular"
+            },
+            {
+              "id": "FJ2550",
+              "name": "Right pubococcygeus",
+              "system": "muscular"
+            }
+          ],
+          "concepts": [
+            {
+              "id": "FMA19090",
+              "name": "pubococcygeus",
+              "elements": [
+                "FJ1457M",
+                "FJ2545",
+                "FJ2550"
+              ]
+            },
+            {
+              "id": "FMA45854",
+              "name": "right pubococcygeus",
+              "elements": [
+                "FJ2550"
+              ]
+            },
+            {
+              "id": "FMA45855",
+              "name": "left pubococcygeus",
+              "elements": [
+                "FJ1457M",
+                "FJ2545"
+              ]
+            }
+          ]
+        },
+        "female": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        },
+        "femaleSource": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        }
+      },
+      "source": {
+        "concepts": [
+          {
+            "conceptId": "FMA19090",
+            "representationId": "BP7792",
+            "name": "pubococcygeus"
+          },
+          {
+            "conceptId": "FMA45854",
+            "representationId": "BP9143",
+            "name": "right pubococcygeus"
+          },
+          {
+            "conceptId": "FMA45855",
+            "representationId": "BP7791",
+            "name": "left pubococcygeus"
+          }
+        ],
+        "elementIds": [
+          "FJ1457M",
+          "FJ2545",
+          "FJ2550"
+        ],
+        "archiveMeshes": [
+          {
+            "id": "FJ1457M",
+            "name": "Left pubococcygeus",
+            "conceptId": "FMA45855",
+            "file": "isa_BP3D_4.0_obj_99/FJ1457M.obj"
+          },
+          {
+            "id": "FJ2545",
+            "name": "Left pubococcygeus",
+            "conceptId": "FMA45855",
+            "file": "isa_BP3D_4.0_obj_99/FJ2545.obj"
+          },
+          {
+            "id": "FJ2550",
+            "name": "Right pubococcygeus",
+            "conceptId": "FMA45854",
+            "file": "isa_BP3D_4.0_obj_99/FJ2550.obj"
+          }
+        ]
+      },
+      "excluded": [
+        {
+          "id": "FJ1457M",
+          "name": "Left pubococcygeus",
+          "reason": "Sex-specific or pelvic-floor structure omitted"
+        },
+        {
+          "id": "FJ2545",
+          "name": "Left pubococcygeus",
+          "reason": "Sex-specific or pelvic-floor structure omitted"
+        },
+        {
+          "id": "FJ2550",
+          "name": "Right pubococcygeus",
+          "reason": "Sex-specific or pelvic-floor structure omitted"
+        }
+      ],
+      "interpretation": "Named matches establish discoverability, not segmentation accuracy. No match does not prove the tissue is geometrically absent. Source sex and registration require separate review."
+    },
+    {
+      "id": "iliococcygeus",
+      "name": "Iliococcygeus",
+      "aliases": [
+        "iliococcygeus"
+      ],
+      "atlases": {
+        "male": {
+          "status": "named_meshes_present",
+          "parts": [
+            {
+              "id": "FJ1453M",
+              "name": "Left iliococcygeus",
+              "system": "muscular"
+            },
+            {
+              "id": "FJ2544",
+              "name": "Left iliococcygeus",
+              "system": "muscular"
+            },
+            {
+              "id": "FJ2549",
+              "name": "Right iliococcygeus",
+              "system": "muscular"
+            }
+          ],
+          "concepts": [
+            {
+              "id": "FMA19092",
+              "name": "iliococcygeus",
+              "elements": [
+                "FJ1453M",
+                "FJ2544",
+                "FJ2549"
+              ]
+            },
+            {
+              "id": "FMA45858",
+              "name": "right iliococcygeus",
+              "elements": [
+                "FJ2549"
+              ]
+            },
+            {
+              "id": "FMA45859",
+              "name": "left iliococcygeus",
+              "elements": [
+                "FJ1453M",
+                "FJ2544"
+              ]
+            }
+          ]
+        },
+        "female": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        },
+        "femaleSource": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        }
+      },
+      "source": {
+        "concepts": [
+          {
+            "conceptId": "FMA19092",
+            "representationId": "BP8008",
+            "name": "iliococcygeus"
+          },
+          {
+            "conceptId": "FMA45858",
+            "representationId": "BP8874",
+            "name": "right iliococcygeus"
+          },
+          {
+            "conceptId": "FMA45859",
+            "representationId": "BP8007",
+            "name": "left iliococcygeus"
+          }
+        ],
+        "elementIds": [
+          "FJ1453M",
+          "FJ2544",
+          "FJ2549"
+        ],
+        "archiveMeshes": [
+          {
+            "id": "FJ1453M",
+            "name": "Left iliococcygeus",
+            "conceptId": "FMA45859",
+            "file": "isa_BP3D_4.0_obj_99/FJ1453M.obj"
+          },
+          {
+            "id": "FJ2544",
+            "name": "Left iliococcygeus",
+            "conceptId": "FMA45859",
+            "file": "isa_BP3D_4.0_obj_99/FJ2544.obj"
+          },
+          {
+            "id": "FJ2549",
+            "name": "Right iliococcygeus",
+            "conceptId": "FMA45858",
+            "file": "isa_BP3D_4.0_obj_99/FJ2549.obj"
+          }
+        ]
+      },
+      "excluded": [
+        {
+          "id": "FJ1453M",
+          "name": "Left iliococcygeus",
+          "reason": "Sex-specific or pelvic-floor structure omitted"
+        },
+        {
+          "id": "FJ2544",
+          "name": "Left iliococcygeus",
+          "reason": "Sex-specific or pelvic-floor structure omitted"
+        },
+        {
+          "id": "FJ2549",
+          "name": "Right iliococcygeus",
+          "reason": "Sex-specific or pelvic-floor structure omitted"
+        }
+      ],
+      "interpretation": "Named matches establish discoverability, not segmentation accuracy. No match does not prove the tissue is geometrically absent. Source sex and registration require separate review."
+    },
+    {
+      "id": "coccygeus",
+      "name": "Coccygeus",
+      "aliases": [
+        "coccygeus",
+        "ischiococcygeus"
+      ],
+      "atlases": {
+        "male": {
+          "status": "named_meshes_present",
+          "parts": [
+            {
+              "id": "FJ1449M",
+              "name": "Left coccygeus",
+              "system": "muscular"
+            },
+            {
+              "id": "FJ2542",
+              "name": "Left coccygeus",
+              "system": "muscular"
+            },
+            {
+              "id": "FJ2547",
+              "name": "Right coccygeus",
+              "system": "muscular"
+            }
+          ],
+          "concepts": [
+            {
+              "id": "FMA19088",
+              "name": "coccygeus",
+              "elements": [
+                "FJ1449M",
+                "FJ2542",
+                "FJ2547"
+              ]
+            },
+            {
+              "id": "FMA46443",
+              "name": "right coccygeus",
+              "elements": [
+                "FJ2547"
+              ]
+            },
+            {
+              "id": "FMA46444",
+              "name": "left coccygeus",
+              "elements": [
+                "FJ1449M",
+                "FJ2542"
+              ]
+            }
+          ]
+        },
+        "female": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        },
+        "femaleSource": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        }
+      },
+      "source": {
+        "concepts": [
+          {
+            "conceptId": "FMA19088",
+            "representationId": "BP8116",
+            "name": "coccygeus"
+          },
+          {
+            "conceptId": "FMA46443",
+            "representationId": "BP8115",
+            "name": "right coccygeus"
+          },
+          {
+            "conceptId": "FMA46444",
+            "representationId": "BP9157",
+            "name": "left coccygeus"
+          }
+        ],
+        "elementIds": [
+          "FJ1449M",
+          "FJ2542",
+          "FJ2547"
+        ],
+        "archiveMeshes": [
+          {
+            "id": "FJ1449M",
+            "name": "Left coccygeus",
+            "conceptId": "FMA46444",
+            "file": "isa_BP3D_4.0_obj_99/FJ1449M.obj"
+          },
+          {
+            "id": "FJ2542",
+            "name": "Left coccygeus",
+            "conceptId": "FMA46444",
+            "file": "isa_BP3D_4.0_obj_99/FJ2542.obj"
+          },
+          {
+            "id": "FJ2547",
+            "name": "Right coccygeus",
+            "conceptId": "FMA46443",
+            "file": "isa_BP3D_4.0_obj_99/FJ2547.obj"
+          }
+        ]
+      },
+      "excluded": [
+        {
+          "id": "FJ1449M",
+          "name": "Left coccygeus",
+          "reason": "Sex-specific or pelvic-floor structure omitted"
+        },
+        {
+          "id": "FJ2542",
+          "name": "Left coccygeus",
+          "reason": "Sex-specific or pelvic-floor structure omitted"
+        },
+        {
+          "id": "FJ2547",
+          "name": "Right coccygeus",
+          "reason": "Sex-specific or pelvic-floor structure omitted"
+        }
+      ],
+      "interpretation": "Named matches establish discoverability, not segmentation accuracy. No match does not prove the tissue is geometrically absent. Source sex and registration require separate review."
+    },
+    {
+      "id": "pelvic-arch",
+      "name": "Tendinous arch of levator ani",
+      "aliases": [
+        "tendinous arch of levator ani"
+      ],
+      "atlases": {
+        "male": {
+          "status": "named_meshes_present",
+          "parts": [
+            {
+              "id": "FJ1465",
+              "name": "tendinous arch of levator ani",
+              "system": "connective"
+            },
+            {
+              "id": "FJ1465M",
+              "name": "Tendinous arch of levator ani",
+              "system": "connective"
+            },
+            {
+              "id": "FJ2552",
+              "name": "Tendinous arch of levator ani",
+              "system": "connective"
+            },
+            {
+              "id": "FJ2553",
+              "name": "Tendinous arch of levator ani",
+              "system": "connective"
+            }
+          ],
+          "concepts": [
+            {
+              "id": "FMA46442",
+              "name": "tendinous arch of levator ani",
+              "elements": [
+                "FJ1465",
+                "FJ1465M",
+                "FJ2552",
+                "FJ2553"
+              ]
+            }
+          ]
+        },
+        "female": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        },
+        "femaleSource": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        }
+      },
+      "source": {
+        "concepts": [
+          {
+            "conceptId": "FMA46442",
+            "representationId": "BP9016",
+            "name": "tendinous arch of levator ani"
+          }
+        ],
+        "elementIds": [
+          "FJ1465",
+          "FJ1465M",
+          "FJ2552",
+          "FJ2553"
+        ],
+        "archiveMeshes": [
+          {
+            "id": "FJ1465M",
+            "name": "Tendinous arch of levator ani",
+            "conceptId": "FMA46442",
+            "file": "isa_BP3D_4.0_obj_99/FJ1465M.obj"
+          },
+          {
+            "id": "FJ2552",
+            "name": "Tendinous arch of levator ani",
+            "conceptId": "FMA46442",
+            "file": "isa_BP3D_4.0_obj_99/FJ2552.obj"
+          },
+          {
+            "id": "FJ2553",
+            "name": "Tendinous arch of levator ani",
+            "conceptId": "FMA46442",
+            "file": "isa_BP3D_4.0_obj_99/FJ2553.obj"
+          }
+        ]
+      },
+      "excluded": [
+        {
+          "id": "FJ1465",
+          "name": "tendinous arch of levator ani",
+          "reason": "Sex-specific or pelvic-floor structure omitted"
+        },
+        {
+          "id": "FJ1465M",
+          "name": "Tendinous arch of levator ani",
+          "reason": "Sex-specific or pelvic-floor structure omitted"
+        },
+        {
+          "id": "FJ2552",
+          "name": "Tendinous arch of levator ani",
+          "reason": "Sex-specific or pelvic-floor structure omitted"
+        },
+        {
+          "id": "FJ2553",
+          "name": "Tendinous arch of levator ani",
+          "reason": "Sex-specific or pelvic-floor structure omitted"
+        }
+      ],
+      "interpretation": "Named matches establish discoverability, not segmentation accuracy. No match does not prove the tissue is geometrically absent. Source sex and registration require separate review."
+    },
+    {
+      "id": "anal-sphincter",
+      "name": "External anal sphincter",
+      "aliases": [
+        "external anal sphincter"
+      ],
+      "atlases": {
+        "male": {
+          "status": "named_meshes_present",
+          "parts": [
+            {
+              "id": "FJ1450M",
+              "name": "External anal sphincter",
+              "system": "muscular"
+            },
+            {
+              "id": "FJ2543",
+              "name": "External anal sphincter",
+              "system": "muscular"
+            },
+            {
+              "id": "FJ2548",
+              "name": "External anal sphincter",
+              "system": "muscular"
+            }
+          ],
+          "concepts": [
+            {
+              "id": "FMA21930",
+              "name": "external anal sphincter",
+              "elements": [
+                "FJ1450",
+                "FJ1450M",
+                "FJ2543",
+                "FJ2548"
+              ]
+            }
+          ]
+        },
+        "female": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        },
+        "femaleSource": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        }
+      },
+      "source": {
+        "concepts": [
+          {
+            "conceptId": "FMA21930",
+            "representationId": "BP8934",
+            "name": "external anal sphincter"
+          }
+        ],
+        "elementIds": [
+          "FJ1450",
+          "FJ1450M",
+          "FJ2543",
+          "FJ2548"
+        ],
+        "archiveMeshes": [
+          {
+            "id": "FJ1450M",
+            "name": "External anal sphincter",
+            "conceptId": "FMA21930",
+            "file": "isa_BP3D_4.0_obj_99/FJ1450M.obj"
+          },
+          {
+            "id": "FJ2543",
+            "name": "External anal sphincter",
+            "conceptId": "FMA21930",
+            "file": "isa_BP3D_4.0_obj_99/FJ2543.obj"
+          },
+          {
+            "id": "FJ2548",
+            "name": "External anal sphincter",
+            "conceptId": "FMA21930",
+            "file": "isa_BP3D_4.0_obj_99/FJ2548.obj"
+          }
+        ]
+      },
+      "excluded": [
+        {
+          "id": "FJ1450M",
+          "name": "External anal sphincter",
+          "reason": "Sex-specific or pelvic-floor structure omitted"
+        },
+        {
+          "id": "FJ2543",
+          "name": "External anal sphincter",
+          "reason": "Sex-specific or pelvic-floor structure omitted"
+        },
+        {
+          "id": "FJ2548",
+          "name": "External anal sphincter",
+          "reason": "Sex-specific or pelvic-floor structure omitted"
+        }
+      ],
+      "interpretation": "Named matches establish discoverability, not segmentation accuracy. No match does not prove the tissue is geometrically absent. Source sex and registration require separate review."
+    },
+    {
+      "id": "urethra",
+      "name": "Urethra",
+      "aliases": [
+        "urethra"
+      ],
+      "atlases": {
+        "male": {
+          "status": "named_meshes_present",
+          "parts": [
+            {
+              "id": "FJ3148",
+              "name": "Urethra",
+              "system": "urinary"
+            }
+          ],
+          "concepts": [
+            {
+              "id": "FMA19667",
+              "name": "urethra",
+              "elements": [
+                "FJ3148"
+              ]
+            }
+          ]
+        },
+        "female": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        },
+        "femaleSource": {
+          "status": "not_separately_identified",
+          "parts": [],
+          "concepts": []
+        }
+      },
+      "source": {
+        "concepts": [
+          {
+            "conceptId": "FMA19667",
+            "representationId": "BP9098",
+            "name": "urethra"
+          }
+        ],
+        "elementIds": [
+          "FJ3148"
+        ],
+        "archiveMeshes": [
+          {
+            "id": "FJ3148",
+            "name": "Urethra",
+            "conceptId": "FMA19667",
+            "file": "isa_BP3D_4.0_obj_99/FJ3148.obj"
+          }
+        ]
+      },
+      "excluded": [
+        {
+          "id": "FJ3148",
+          "name": "Urethra",
+          "reason": "Male urethra omitted; no validated female replacement bundled"
+        }
+      ],
+      "interpretation": "Named matches establish discoverability, not segmentation accuracy. No match does not prove the tissue is geometrically absent. Source sex and registration require separate review."
+    }
+  ]
+}

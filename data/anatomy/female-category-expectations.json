@@ -1,0 +1,48 @@
+{
+  "scope": "Primary control-panel category for all 62 inserted HRA-derived structures in the reconstructed female model, including both regenerated breast envelopes.",
+  "policy": "Categories group anatomical assemblies, not every tissue function. Each mesh has one primary system toggle; chest presets and explicit selection further affect visibility.",
+  "expected": {
+    "skeletal": [
+      "VH_F_sacrum", "VH_F_coccyx",
+      "VH_F_pubis_compact_bone_R", "VH_F_pubis_compact_bone_L",
+      "VH_F_ilium_compact_bone_R", "VH_F_ilium_compact_bone_L",
+      "VH_F_ischium_compact_bone_R", "VH_F_ischium_compact_bone_L"
+    ],
+    "mammary": [
+      "VH_F_fat_L", "VH_F_fat_R",
+      "VH_F_mammary_lobes_L", "VH_F_mammary_lobes_R",
+      "VH_F_main_lactiferous_ducts_L", "VH_F_main_lactiferous_ducts_R",
+      "VH_F_main_lactiferous_sinuses_L", "VH_F_main_lactiferous_sinuses_R",
+      "VH_F_suspensory_ligaments_L", "VH_F_suspensory_ligaments_R"
+    ],
+    "integumentary": [
+      "VH_F_areolar_tubercles_L", "VH_F_areolar_tubercles_R",
+      "VH_F_nipple_L", "VH_F_nipple_R", "VH_F_areola_L", "VH_F_areola_R"
+    ],
+    "reproductive": [
+      "VH_F_vagina", "VH_F_cervicovaginal_junction",
+      "VH_F_ampulla_of_uterine_tube_R", "VH_F_isthmus_of_fallopian_tube_R",
+      "VH_F_fibria_of_uterine_tube_R", "VH_F_uterine_tube_infundibulum_R",
+      "VH_F_uterine_tube_infundibulum_L", "VH_F_fibria_of_uterine_tube_L",
+      "VH_F_isthmus_of_fallopian_tube_L", "VH_F_ampulla_of_uterine_tube_L",
+      "VH_F_uterovesical_pouch", "VH_F_right_round_ligament_of_uterus",
+      "VH_F_left_round_ligament_of_uterus", "VH_F_right_uterosacral_ligament",
+      "VH_F_left_uterosacral_ligament", "VH_F_right_cardinal_ligament_of_uterus",
+      "VH_F_left_cardinal_ligament_of_uterus", "VH_F_suspensory_ligament_of_ovary_R",
+      "VH_F_suspensory_ligament_of_ovary_L", "VH_F_ovarian_ligament_L", "VH_F_ovarian_ligament_R",
+      "VH_F_broad_ligament", "VH_F_mesosalpinx_L", "VH_F_mesosalpinx_R",
+      "VH_F_mesovarium_R", "VH_F_mesovarium_L", "VH_F_left_ovary", "VH_F_right_ovary",
+      "VH_F_abdominal_ostium_of_uterine_tube", "VH_F_body_of_uterus", "VH_F_fundus_of_uterus",
+      "VH_F_cornua", "VH_F_lower_uterine_segment", "VH_F_posterior_wall_of_uterus",
+      "VH_F_anterior_wall_of_uterus", "VH_F_cervix", "VH_F_internal_cervical_os", "VH_F_external_cervical_os"
+    ]
+  },
+  "regeneratedEnvelopes": ["VH_F_fat_L", "VH_F_fat_R"],
+  "notes": [
+    "The two regenerated envelopes are already members of the 62 inserted IDs; there are not 64 inserted structures.",
+    "Breast suspensory supports remain in the mammary assembly even though their rendering material uses the connective-tissue color.",
+    "Ovaries remain in the reproductive assembly despite having endocrine functions. Uterine/ovarian ligaments and peritoneal folds remain associated with reproductive anatomy.",
+    "Uterovesical pouch is an organ-associated peritoneal recess, not a urinary organ. Its reproductive assembly assignment does not classify it as glandular or contractile tissue.",
+    "Nipple, areola and areolar tubercles are optional surface structures under Body surface; they are not contractile skeletal muscles."
+  ]
+}

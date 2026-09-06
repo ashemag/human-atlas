@@ -1,0 +1,32 @@
+{
+  "beforeManifestSha256": "301a8b7f6ece71bc0c7ee7eabf197fedc89cb81b44aaf62048ce566581d11fe1",
+  "afterManifestSha256": "cca7104dda95b8bef896f9b4e42a51bddf157866e8f451bfb76f488bbcf1e11b",
+  "approvedGluteMeshPositionsExactlyIdentical": true,
+  "changedParts": [
+    {
+      "id": "FJ1527",
+      "name": "Right iliocostalis lumborum",
+      "maximumChangeMm": 0.0620037317276001
+    },
+    {
+      "id": "FJ1527M",
+      "name": "Left iliocostalis lumborum",
+      "maximumChangeMm": 0.0620037317276001
+    },
+    {
+      "id": "VH_F_right_cardinal_ligament_of_uterus",
+      "name": "Cardinal ligament",
+      "maximumChangeMm": 16.180716454982758
+    },
+    {
+      "id": "VH_F_left_cardinal_ligament_of_uterus",
+      "name": "Cardinal ligament",
+      "maximumChangeMm": 1.8438175320625305
+    },
+    {
+      "id": "VH_F_broad_ligament",
+      "name": "broad ligament of uterus",
+      "maximumChangeMm": 27.14383602142334
+    }
+  ]
+}

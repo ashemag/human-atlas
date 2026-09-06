@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "retrievedAt": "2026-09-06",
+  "dataset": "CVH5 female pelvic reconstruction from Wu et al. 2015",
+  "article": "https://doi.org/10.1371/journal.pone.0132226",
+  "correction": "https://doi.org/10.1371/journal.pone.0140736",
+  "authors": [
+    "Yi Wu",
+    "Noshir F. Dabhoiwala",
+    "Jaco Hagoort",
+    "Jin-Lu Shan",
+    "Li-Wen Tan",
+    "Bin-Ji Fang",
+    "Shao-Xiang Zhang",
+    "Wouter H. Lamers"
+  ],
+  "attribution": "© 2015 Wu et al. Source: 3D Topography of the Young Adult Anal Sphincter Complex Reconstructed from Undeformed Serial Anatomical Sections. PLoS ONE 10(8): e0132226; correction 10(10): e0140736. Passive extraction/indexing by Human Atlas; source geometry has not been changed.",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "licenseBasis": "Both original and correction publisher pages explicitly link Creative Commons Attribution 4.0.",
+  "pdfSources": [
+    {
+      "id": "10.1371/journal.pone.0132226.s003",
+      "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0132226.s003&type=supplementary",
+      "bytes": 10522121,
+      "sha256": "7d0a71d5a57f12f37a66b256dd967ef793957d82e87ecc77431f494c63773f34",
+      "pages": 1,
+      "annotationSubtype": "3D",
+      "streamSubtype": "U3D"
+    },
+    {
+      "id": "10.1371/journal.pone.0140736.s004",
+      "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0140736.s004&type=supplementary",
+      "bytes": 10519695,
+      "sha256": "b3eaa6a831bdb2efe6aec6adbe49cb2f51c2ab4dd8692dcc91f1dd0137ede6a1",
+      "pages": 1,
+      "annotationSubtype": "3D",
+      "streamSubtype": "U3D"
+    }
+  ],
+  "u3d": {
+    "sha256": "90a7bbae314e1276c62fd9a3b0144bb8a9bacafc1f34f1cf36c4f26ed8b0fc3e",
+    "bytes": 10392492,
+    "format": "U3D with RHAdobeMeshResource extension; not PRC"
+  },
+  "indexMethod": "scripts/index-cvh5-source.py: pypdf passive annotation stream extraction; ECMA-363 modifier-chain and group/model-node parsing. No viewer, embedded JavaScript or extension code executed.",
+  "specification": "https://ecma-international.org/wp-content/uploads/ECMA-363_3rd_edition_june_2006.pdf",
+  "derivedIndex": {
+    "path": "data/anatomy/cvh5/scene-index.json",
+    "sha256": "6b611a29ae2df18b828c456bfe0a0dd75f3fb4bf9ec96761944830cb8a61ab22",
+    "modelNodes": 47,
+    "groups": 1,
+    "geometryResources": 47,
+    "parserVersion": "pypdf 6.17.0 plus project passive ECMA-363 declaration parser"
+  }
+}

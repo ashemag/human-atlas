@@ -1,0 +1,19 @@
+{
+  "status": "Containment not evaluated: retained target meshes are not closed manifolds",
+  "targetChecks": [
+    {
+      "id": "FJ1452",
+      "boundaryEdges": 0,
+      "nonmanifoldEdges": 3
+    },
+    {
+      "id": "FJ1452M",
+      "boundaryEdges": 0,
+      "nonmanifoldEdges": 7
+    }
+  ],
+  "limitations": [
+    "Ray-parity volume containment is invalid for these target surfaces.",
+    "Visual overlap requires anatomical boundary review before additive integration."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "dataset": "BodyParts3D 4.0",
+  "retrievedAt": "2026-09-06",
+  "license": "CC BY 4.0 (official license page updated 2025-02-27; older OBJ headers retain historical terms)",
+  "licenseUrl": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+  "files": {
+    "isa_parts_list_e.txt": {
+      "sha256": "ab7796deedd49205e77f3609a1cb8c53e2bbee14ecb5c9a6ca05227469780513",
+      "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_parts_list_e.txt"
+    },
+    "isa_element_parts.txt": {
+      "sha256": "a3de74423f943b0d724ae8f59b3a817f87c423a544f8db98113b1980817cbeaf",
+      "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_element_parts.txt"
+    },
+    "mesh-name-index.json": {
+      "sha256": "762cf591abf02481626b5e9dd45e767a27a131125f96306aebcf39c9859f08a7",
+      "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_BP3D_4.0_obj_99.zip"
+    }
+  },
+  "archive": {
+    "url": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_BP3D_4.0_obj_99.zip",
+    "sha256": "40665852c49f218326590e204db91064a1ecfc3c6f8cbd7bbbcaac62c7cd409e",
+    "bytes": 142903898,
+    "meshCount": 2234,
+    "unnamedMeshCount": 17
+  },
+  "indexMethod": "scripts/index-anatomy-source.py: read File ID, English name and Concept ID from each OBJ header; preserve blank names as null, never infer names."
+}

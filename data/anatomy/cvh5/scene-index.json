@@ -1,0 +1,2043 @@
+{
+  "schemaVersion": 1,
+  "u3dSha256": "90a7bbae314e1276c62fd9a3b0144bb8a9bacafc1f34f1cf36c4f26ed8b0fc3e",
+  "u3dBytes": 10392492,
+  "groupCount": 1,
+  "modelNodeCount": 47,
+  "resourceCount": 47,
+  "nodes": [
+    {
+      "id": "CVH5_116",
+      "name": "CVH5_116",
+      "kind": "group",
+      "parents": [
+        {
+          "name": "",
+          "matrix": [
+            1.0,
+            0.0,
+            -0.0,
+            0.0,
+            -0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            -186.51670837402344,
+            -112.73664855957031,
+            -93.01242065429688,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Internal obturator muscle",
+      "name": "Internal obturator muscle",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh",
+      "visibility": 3
+    },
+    {
+      "id": "Coccygeal muscle",
+      "name": "Coccygeal muscle",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (1)",
+      "visibility": 3
+    },
+    {
+      "id": "Pubovisceral muscle (inner layer)",
+      "name": "Pubovisceral muscle (inner layer)",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (2)",
+      "visibility": 3
+    },
+    {
+      "id": "Pubovisceral muscle (external layer)",
+      "name": "Pubovisceral muscle (external layer)",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (3)",
+      "visibility": 3
+    },
+    {
+      "id": "Puborectal muscle (deep part)",
+      "name": "Puborectal muscle (deep part)",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (4)",
+      "visibility": 3
+    },
+    {
+      "id": "Puborectal muscle (superficial part)",
+      "name": "Puborectal muscle (superficial part)",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (5)",
+      "visibility": 3
+    },
+    {
+      "id": "Rectal lumen",
+      "name": "Rectal lumen",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (6)",
+      "visibility": 3
+    },
+    {
+      "id": "Smooth muscle of rectum",
+      "name": "Smooth muscle of rectum",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (7)",
+      "visibility": 3
+    },
+    {
+      "id": "Mesorectum",
+      "name": "Mesorectum",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (8)",
+      "visibility": 3
+    },
+    {
+      "id": "Rectococcygeal muscle",
+      "name": "Rectococcygeal muscle",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (9)",
+      "visibility": 3
+    },
+    {
+      "id": "Rectoperineal muscle ",
+      "name": "Rectoperineal muscle ",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (10)",
+      "visibility": 3
+    },
+    {
+      "id": "Internal anal sphincter ",
+      "name": "Internal anal sphincter ",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (11)",
+      "visibility": 3
+    },
+    {
+      "id": "Conjoint longitudinal muscle of rectum",
+      "name": "Conjoint longitudinal muscle of rectum",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (12)",
+      "visibility": 3
+    },
+    {
+      "id": "External anal sphincter",
+      "name": "External anal sphincter",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (13)",
+      "visibility": 3
+    },
+    {
+      "id": "Anal intermuscular septum",
+      "name": "Anal intermuscular septum",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (14)",
+      "visibility": 3
+    },
+    {
+      "id": "Anococcygeal ligament",
+      "name": "Anococcygeal ligament",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (15)",
+      "visibility": 3
+    },
+    {
+      "id": "Ovary",
+      "name": "Ovary",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (16)",
+      "visibility": 3
+    },
+    {
+      "id": "Uterine wall",
+      "name": "Uterine wall",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (17)",
+      "visibility": 3
+    },
+    {
+      "id": "Uterine tube",
+      "name": "Uterine tube",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (18)",
+      "visibility": 3
+    },
+    {
+      "id": "Uterine and vaginal lumen",
+      "name": "Uterine and vaginal lumen",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (19)",
+      "visibility": 3
+    },
+    {
+      "id": "Round ligament of uterus",
+      "name": "Round ligament of uterus",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (20)",
+      "visibility": 3
+    },
+    {
+      "id": "Vaginal wall",
+      "name": "Vaginal wall",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (21)",
+      "visibility": 3
+    },
+    {
+      "id": "Bartholin’s gland",
+      "name": "Bartholin’s gland",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (22)",
+      "visibility": 3
+    },
+    {
+      "id": "Denonvillier’s fascia",
+      "name": "Denonvillier’s fascia",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (23)",
+      "visibility": 3
+    },
+    {
+      "id": "Perineal body",
+      "name": "Perineal body",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (24)",
+      "visibility": 3
+    },
+    {
+      "id": "Deep perineal muscle",
+      "name": "Deep perineal muscle",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (25)",
+      "visibility": 3
+    },
+    {
+      "id": "Superficial transverse perineal muscle",
+      "name": "Superficial transverse perineal muscle",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (26)",
+      "visibility": 3
+    },
+    {
+      "id": "Bladder wall",
+      "name": "Bladder wall",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (27)",
+      "visibility": 3
+    },
+    {
+      "id": "Ureter",
+      "name": "Ureter",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (28)",
+      "visibility": 3
+    },
+    {
+      "id": "Pubovesical ligament ",
+      "name": "Pubovesical ligament ",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (29)",
+      "visibility": 3
+    },
+    {
+      "id": "Bladder and urethral lumen",
+      "name": "Bladder and urethral lumen",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (30)",
+      "visibility": 3
+    },
+    {
+      "id": "Urethral sphincter proper",
+      "name": "Urethral sphincter proper",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (31)",
+      "visibility": 3
+    },
+    {
+      "id": "Raphe of urethral sphincter",
+      "name": "Raphe of urethral sphincter",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (32)",
+      "visibility": 3
+    },
+    {
+      "id": "Urethral compressor muscle",
+      "name": "Urethral compressor muscle",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (33)",
+      "visibility": 3
+    },
+    {
+      "id": "Urethro-vaginal sphincter",
+      "name": "Urethro-vaginal sphincter",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (34)",
+      "visibility": 3
+    },
+    {
+      "id": "Submucous layer of urethra",
+      "name": "Submucous layer of urethra",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (35)",
+      "visibility": 3
+    },
+    {
+      "id": "Ischiocavernous muscle",
+      "name": "Ischiocavernous muscle",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (36)",
+      "visibility": 3
+    },
+    {
+      "id": "Bulbospongiosus muscle",
+      "name": "Bulbospongiosus muscle",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (37)",
+      "visibility": 3
+    },
+    {
+      "id": "Vestibular bulb",
+      "name": "Vestibular bulb",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (38)",
+      "visibility": 3
+    },
+    {
+      "id": "Cavernous body of clitoris",
+      "name": "Cavernous body of clitoris",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (39)",
+      "visibility": 3
+    },
+    {
+      "id": "Peritoneum",
+      "name": "Peritoneum",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (40)",
+      "visibility": 3
+    },
+    {
+      "id": "Fat tissue ",
+      "name": "Fat tissue ",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (41)",
+      "visibility": 3
+    },
+    {
+      "id": "Arteries",
+      "name": "Arteries",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (42)",
+      "visibility": 3
+    },
+    {
+      "id": "Veins",
+      "name": "Veins",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (43)",
+      "visibility": 3
+    },
+    {
+      "id": "Pelvic bone",
+      "name": "Pelvic bone",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (44)",
+      "visibility": 3
+    },
+    {
+      "id": "Sacral and coccygeal bone",
+      "name": "Sacral and coccygeal bone",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (45)",
+      "visibility": 3
+    },
+    {
+      "id": "Skin",
+      "name": "Skin",
+      "kind": "model",
+      "parents": [
+        {
+          "name": "CVH5_116",
+          "matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "resource": "mesh (46)",
+      "visibility": 3
+    }
+  ],
+  "resources": [
+    {
+      "id": "mesh",
+      "kind": "geometry-resource",
+      "chainOffset": 11520,
+      "declarations": [
+        {
+          "blockType": "0xffffff16",
+          "bytes": 152,
+          "sha256": "3609aff77aec83ad5ba3c386175a509abfae4a9a0611954dacdaf0da5aa81a42"
+        },
+        {
+          "blockType": "0x100",
+          "bytes": 463704,
+          "sha256": "5339e5ee1ddce97f02483058f00ddc686afb1a730ca7e1c0fca9af4626a91e36"
+        }
+      ]
+    },
+    {
+      "id": "mesh (1)",
+      "kind": "geometry-resource",
+      "chainOffset": 475432,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 172369,
+          "sha256": "45f87cf37400de8d91b2f3287d6cddf94e6c9b8f60c3cd75d6c5be596311f921"
+        }
+      ]
+    },
+    {
+      "id": "mesh (2)",
+      "kind": "geometry-resource",
+      "chainOffset": 647852,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 136334,
+          "sha256": "2bf4737a08d1edb581cbcef4ce3b78fbf95d8c57d5b5f22b4561817d5d48a76c"
+        }
+      ]
+    },
+    {
+      "id": "mesh (3)",
+      "kind": "geometry-resource",
+      "chainOffset": 784236,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 130314,
+          "sha256": "37c412cdbfa097e6c465e3befa0d3989aeb3972353f34465899a3fca688dbe2f"
+        }
+      ]
+    },
+    {
+      "id": "mesh (4)",
+      "kind": "geometry-resource",
+      "chainOffset": 914600,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 121146,
+          "sha256": "66dd9c8c96056bb3042b2c83a85d96d562b4d9385df29db18752ce8bb855e9f3"
+        }
+      ]
+    },
+    {
+      "id": "mesh (5)",
+      "kind": "geometry-resource",
+      "chainOffset": 1035796,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 47180,
+          "sha256": "43201b1aadc7f8c0333d777a78ff08a3be9c143f7d48dcf44f51e70c96dba03c"
+        }
+      ]
+    },
+    {
+      "id": "mesh (6)",
+      "kind": "geometry-resource",
+      "chainOffset": 1083024,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 138133,
+          "sha256": "c1c10234f7b69059cb43a7d6a318fb371adb8faab11da7e662648b5021a75229"
+        }
+      ]
+    },
+    {
+      "id": "mesh (7)",
+      "kind": "geometry-resource",
+      "chainOffset": 1221208,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 346244,
+          "sha256": "c446b2627f740e68101e25ca4992f06c27d9eb0832afcff0d5d3bc63e1da3d37"
+        }
+      ]
+    },
+    {
+      "id": "mesh (8)",
+      "kind": "geometry-resource",
+      "chainOffset": 1567500,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 679616,
+          "sha256": "9f945fafc1e7947add11e1311f47bdaf6abb28bb5bc160747847246c6dda2d3d"
+        }
+      ]
+    },
+    {
+      "id": "mesh (9)",
+      "kind": "geometry-resource",
+      "chainOffset": 2247164,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 53508,
+          "sha256": "e3e0fb4d229c56f618aec97bb58eed15a6385ce6b87e86ff4522811c47a44519"
+        }
+      ]
+    },
+    {
+      "id": "mesh (10)",
+      "kind": "geometry-resource",
+      "chainOffset": 2300720,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 22911,
+          "sha256": "b2232be4d307fbef4bcee7c408a84e8d87a63a0b6459c60f378067b26f277da0"
+        }
+      ]
+    },
+    {
+      "id": "mesh (11)",
+      "kind": "geometry-resource",
+      "chainOffset": 2323680,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 42036,
+          "sha256": "d1ee8d0ef174c5bcf4f3e7980c2154f7c044bb565fa418a4d9257bd89602cf9c"
+        }
+      ]
+    },
+    {
+      "id": "mesh (12)",
+      "kind": "geometry-resource",
+      "chainOffset": 2365764,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 49059,
+          "sha256": "27a99b97f4b23d48a7a7e0ee5e843ddd9ad82e428a04edf3271dbe567a7de51f"
+        }
+      ]
+    },
+    {
+      "id": "mesh (13)",
+      "kind": "geometry-resource",
+      "chainOffset": 2414872,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 82136,
+          "sha256": "4fc2e4f7576ead0efaf9f99b303561524a98e9b6952c1c3cce47a94a7ba50bbb"
+        }
+      ]
+    },
+    {
+      "id": "mesh (14)",
+      "kind": "geometry-resource",
+      "chainOffset": 2497056,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 53927,
+          "sha256": "d2d162c86dfd6c7c08726ecb61c0d01476db3837ca1e4fcd94415374b305a42f"
+        }
+      ]
+    },
+    {
+      "id": "mesh (15)",
+      "kind": "geometry-resource",
+      "chainOffset": 2551032,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 309098,
+          "sha256": "f8ec0dfb6173cb44b7d542d549d33ab38382f53f7753cdd06d097747580fec1d"
+        }
+      ]
+    },
+    {
+      "id": "mesh (16)",
+      "kind": "geometry-resource",
+      "chainOffset": 2860180,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 58358,
+          "sha256": "aad5641d3f24ae40e5fb0d68f1cb1c1f79c963ce7f745c08093bcfacf64dff0e"
+        }
+      ]
+    },
+    {
+      "id": "mesh (17)",
+      "kind": "geometry-resource",
+      "chainOffset": 2918588,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 206246,
+          "sha256": "b8d68d29b2ccf88640fc83b75bb3917828c329e0489554e47c2290a28c0067f9"
+        }
+      ]
+    },
+    {
+      "id": "mesh (18)",
+      "kind": "geometry-resource",
+      "chainOffset": 3124884,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 160301,
+          "sha256": "a838e20c6ace0517269c3e256be52b754ab7ed4e3704061d6c0bdf84fcd79fc6"
+        }
+      ]
+    },
+    {
+      "id": "mesh (19)",
+      "kind": "geometry-resource",
+      "chainOffset": 3285236,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 200045,
+          "sha256": "0e695a6b59c977bd71380abd720230232b9f36f1e69cd04b6f6b3f73e917ad2e"
+        }
+      ]
+    },
+    {
+      "id": "mesh (20)",
+      "kind": "geometry-resource",
+      "chainOffset": 3485332,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 51195,
+          "sha256": "981fd5a899861fa81749cf0162765f8071bd96ef058ad01fa48be4c832cd4a7e"
+        }
+      ]
+    },
+    {
+      "id": "mesh (21)",
+      "kind": "geometry-resource",
+      "chainOffset": 3536576,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 316387,
+          "sha256": "4dc6c0e1e1bfb9c1ad8b42139235d94586554a468732484f4d63c32565bc4885"
+        }
+      ]
+    },
+    {
+      "id": "mesh (22)",
+      "kind": "geometry-resource",
+      "chainOffset": 3853012,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 18079,
+          "sha256": "c770ffceafee4c911e95c3102a9667b95a3615ea24bf6d90b4b4c4140351a8e6"
+        }
+      ]
+    },
+    {
+      "id": "mesh (23)",
+      "kind": "geometry-resource",
+      "chainOffset": 3871140,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 57525,
+          "sha256": "0b8604d2fdb7586325ae71f31f4e359a4fc43fb4a6794e95bec973a12c6fc068"
+        }
+      ]
+    },
+    {
+      "id": "mesh (24)",
+      "kind": "geometry-resource",
+      "chainOffset": 3928716,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 93725,
+          "sha256": "d2c5fbe796d84261fcb4de8dda136da9e6d20d91c6921570139ba0c4d2b58102"
+        }
+      ]
+    },
+    {
+      "id": "mesh (25)",
+      "kind": "geometry-resource",
+      "chainOffset": 4022492,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 64385,
+          "sha256": "bca91bfff287bb22ebfbc1e070dbd9394e34cda8b67b43bda680b8e26d1f4088"
+        }
+      ]
+    },
+    {
+      "id": "mesh (26)",
+      "kind": "geometry-resource",
+      "chainOffset": 4086928,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 43604,
+          "sha256": "addac93f0927b87f996293c25c455cd02b31791f01819d1a8102af7073f9213e"
+        }
+      ]
+    },
+    {
+      "id": "mesh (27)",
+      "kind": "geometry-resource",
+      "chainOffset": 4130580,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 413668,
+          "sha256": "3bf3ce5df3fb217a0a5d671bd4983f2ecd2fc3a477628d86b95c8a6b17f59eb1"
+        }
+      ]
+    },
+    {
+      "id": "mesh (28)",
+      "kind": "geometry-resource",
+      "chainOffset": 4544296,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 42308,
+          "sha256": "b41cf6a43a1522e496c2ce3b6b00cbe687fe46ba44fd2b274d4f32792de11f04"
+        }
+      ]
+    },
+    {
+      "id": "mesh (29)",
+      "kind": "geometry-resource",
+      "chainOffset": 4586652,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 5592,
+          "sha256": "b0b990524abd1bc2955ede85661e849a73724588cecaca7ea89fa248fa8346ad"
+        }
+      ]
+    },
+    {
+      "id": "mesh (30)",
+      "kind": "geometry-resource",
+      "chainOffset": 4592292,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 169673,
+          "sha256": "01836c2859a056c0a048773afb25a4ba89a1747d291bf49a16dfa39ff9b9578c"
+        }
+      ]
+    },
+    {
+      "id": "mesh (31)",
+      "kind": "geometry-resource",
+      "chainOffset": 4762016,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 25441,
+          "sha256": "3c119875bf63e9b6ada40fd8ddf6d7e49be83cb200c28e88e2cdf3dcdcb774bc"
+        }
+      ]
+    },
+    {
+      "id": "mesh (32)",
+      "kind": "geometry-resource",
+      "chainOffset": 4787508,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 3892,
+          "sha256": "9fd29542d740b8114cb925cfc70bdf8f412202c2a170ccd9dc5fbce4448195fa"
+        }
+      ]
+    },
+    {
+      "id": "mesh (33)",
+      "kind": "geometry-resource",
+      "chainOffset": 4791448,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 23811,
+          "sha256": "1c1ef494f44c4ec59c7b9d5819da02e597a2d4e2a9c39d5ccc9c1eb87037e93a"
+        }
+      ]
+    },
+    {
+      "id": "mesh (34)",
+      "kind": "geometry-resource",
+      "chainOffset": 4815308,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 16916,
+          "sha256": "1693972456b07c7e6f5471f88fb91802a13991dc800d265eac17790a772e5fd7"
+        }
+      ]
+    },
+    {
+      "id": "mesh (35)",
+      "kind": "geometry-resource",
+      "chainOffset": 4832272,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 21018,
+          "sha256": "8d1bb2905c0235353d9733e5e50cd304c881ca9e06973a5c71c4547f9050d2b3"
+        }
+      ]
+    },
+    {
+      "id": "mesh (36)",
+      "kind": "geometry-resource",
+      "chainOffset": 4853340,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 37532,
+          "sha256": "d8569445e79fa1ef4075b17927f80a58849131358e7c3ad623db41b1e2d9cbe4"
+        }
+      ]
+    },
+    {
+      "id": "mesh (37)",
+      "kind": "geometry-resource",
+      "chainOffset": 4890920,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 67276,
+          "sha256": "0441986bd53ae87fd1ba1b2a6c95eed84203e103ec013261ad2451f818f1e157"
+        }
+      ]
+    },
+    {
+      "id": "mesh (38)",
+      "kind": "geometry-resource",
+      "chainOffset": 4958244,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 24057,
+          "sha256": "8f4b0de46805c70274d91f3dbacaabe6c51d321bb68effe1c3d35ef93fc0969b"
+        }
+      ]
+    },
+    {
+      "id": "mesh (39)",
+      "kind": "geometry-resource",
+      "chainOffset": 4982352,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 29898,
+          "sha256": "770790bc3b818b164836d9e2b8bad9d1546d71e7e54567d8609a39c929485436"
+        }
+      ]
+    },
+    {
+      "id": "mesh (40)",
+      "kind": "geometry-resource",
+      "chainOffset": 5012300,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 386464,
+          "sha256": "4641f50c273dd4f00b1eae5bdfc82008be9dcbca162a6d801962b3a30280436b"
+        }
+      ]
+    },
+    {
+      "id": "mesh (41)",
+      "kind": "geometry-resource",
+      "chainOffset": 5398812,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 861907,
+          "sha256": "f3f609d857247190f4a138b6ee0e08a7e5764eec767cf3f0bc5e8c79fe63ff94"
+        }
+      ]
+    },
+    {
+      "id": "mesh (42)",
+      "kind": "geometry-resource",
+      "chainOffset": 6260768,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 326136,
+          "sha256": "95ef82952bec3d90f438b22cf2053cbd7d1bf6481f91c9680b61ebba96449c97"
+        }
+      ]
+    },
+    {
+      "id": "mesh (43)",
+      "kind": "geometry-resource",
+      "chainOffset": 6586952,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 3306112,
+          "sha256": "afc19e002e4e7a16e26ccf773aee1f517099572fe643956981cbe77b2431d9aa"
+        }
+      ]
+    },
+    {
+      "id": "mesh (44)",
+      "kind": "geometry-resource",
+      "chainOffset": 9893112,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 208464,
+          "sha256": "1d414fdcaaf7fdbc76b397a545eefa8a36c032f3091f989db3f493180bddc5ef"
+        }
+      ]
+    },
+    {
+      "id": "mesh (45)",
+      "kind": "geometry-resource",
+      "chainOffset": 10101624,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 32094,
+          "sha256": "2ead98d920d914060974eb754514a28992fc08eb7039eb39981d768420161878"
+        }
+      ]
+    },
+    {
+      "id": "mesh (46)",
+      "kind": "geometry-resource",
+      "chainOffset": 10133768,
+      "declarations": [
+        {
+          "blockType": "0x100",
+          "bytes": 252056,
+          "sha256": "cde5b6b05ee21d4d7bb6969dd7e8e7628f50ddd7a6106216d27afcd7676c69cd"
+        }
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "name": "RHAdobeMeshResource",
+      "modifierType": 1,
+      "guid": "96a804a6-3fb9-43c5-b2df-2a31b5569340",
+      "declarationBlockType": "0x100",
+      "continuationBlockTypes": [],
+      "vendor": "Right Hemisphere Adobe Systems",
+      "informationUrls": [
+        "http://www.righthemisphere.com",
+        "http://www.adobe.com"
+      ],
+      "information": "version 1.0"
+    }
+  ],
+  "topLevelBlockCounts": {
+    "0x443355": 1,
+    "0xffffff15": 1,
+    "0xffffff14": 96,
+    "0xffffff53": 41,
+    "0xffffff54": 41,
+    "0xffffff52": 1
+  },
+  "limits": "Passive declaration index only. Group nodes do not imply geometry. Model nodes refer to source resources; their extension-compressed triangle payloads have not been decoded, anatomically validated, or imported."
+}
