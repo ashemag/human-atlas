@@ -1,7 +1,7 @@
 import {flushSync} from 'react-dom';
 import {registerAtlasTools} from './agent-tools';
 import {useEffect,useMemo,useRef,useState} from 'react';
-import {ArrowUpRight,ChevronRight,Focus,Info,Layers3,Pause,RotateCcw,RotateCw,Search,X} from 'lucide-react';
+import {Activity,ArrowUpRight,ChevronRight,Focus,Info,Layers3,Pause,RotateCcw,RotateCw,Search,Sparkles,Waves,X,Zap} from 'lucide-react';
 import {Button} from '@/components/ui/button';
 import {Badge} from '@/components/ui/badge';
 import {Slider} from '@/components/ui/slider';
@@ -10,11 +10,18 @@ import {Sheet,SheetContent,SheetTitle,SheetDescription} from '@/components/ui/sh
 import {Combobox,ComboboxInput,ComboboxContent,ComboboxList,ComboboxItem,ComboboxEmpty} from '@/components/ui/combobox';
 import AnatomyScene from './scene';
 import {DEFAULT_VISIBLE,SYSTEMS,EXPLANATIONS,explanation,type Atlas,type Concept,type SceneState,type SystemId,type View} from './anatomy';
-const initial:SceneState={explode:0,visible:DEFAULT_VISIBLE,selected:[],isolate:false,view:'three-quarter',rotate:false,reset:0};
+ const initial:SceneState={explode:0,visible:DEFAULT_VISIBLE,selected:[],isolate:false,view:'three-quarter',rotate:false,reset:0};
+ const featureSlides=[
+  {eyebrow:'NOW IN THE LAB',title:'Life, in motion.',copy:'Watch anatomy respond with living fluid motion.',icon:Waves,tone:'aqua'},
+  {eyebrow:'EXPANDED CATALOGUE',title:'More life to explore.',copy:'Discover richer organisms and new biological systems.',icon:Sparkles,tone:'violet'},
+  {eyebrow:'METABOLIC SIMULATION',title:'Follow the flow.',copy:'Trace live metabolic actions, from intake to waste release.',icon:Activity,tone:'amber'},
+  {eyebrow:'COMING INTO FOCUS',title:'A deeper kind of atlas.',copy:'New interactions, systems, and stories are on the way.',icon:Zap,tone:'rose'}
+ ];
 export default function Home(){
  const detailTitle=useRef<HTMLHeadingElement>(null);
- const [darkMode,setDarkMode]=useState(false);
+ const [darkMode,setDarkMode]=useState(false),[featureSlide,setFeatureSlide]=useState(0);
  const [atlas,setAtlas]=useState<Atlas|null>(null),[state,setState]=useState(initial),[progress,setProgress]=useState(0),[error,setError]=useState(''),[panel,setPanel]=useState<'layers'|'search'|null>(null),[details,setDetails]=useState(false),[about,setAbout]=useState(false),[query,setQuery]=useState(''),[chosen,setChosen]=useState<Concept|null>(null);
+ useEffect(()=>{const timer=window.setInterval(()=>setFeatureSlide(current=>(current+1)%featureSlides.length),5200);return()=>window.clearInterval(timer);},[]);
  useEffect(()=>{document.documentElement.classList.toggle('dark',darkMode);document.documentElement.style.colorScheme=darkMode?'dark':'light';return()=>{document.documentElement.classList.remove('dark');document.documentElement.style.colorScheme='light';};},[darkMode]);
  useEffect(()=>{const abort=new AbortController();setProgress(0);setError('');setAtlas(null);setChosen(null);setDetails(false);setState({...initial,visible:DEFAULT_VISIBLE});fetch('/models/atlas.json',{signal:abort.signal}).then(r=>{if(!r.ok)throw new Error('The anatomy catalogue could not be loaded.');return r.json();}).then(data=>setAtlas(data as Atlas)).catch(e=>{if(e.name!=='AbortError')setError(e.message);});return()=>abort.abort();},[]);
  useEffect(()=>{const key=(e:KeyboardEvent)=>{if(e.key==='/'&&!(e.target instanceof HTMLInputElement)&&!(e.target instanceof HTMLTextAreaElement)){e.preventDefault();setPanel('search');setDetails(false);}};window.addEventListener('keydown',key);return()=>window.removeEventListener('keydown',key);},[]);
@@ -33,7 +40,12 @@ export default function Home(){
  return <main className="studio">
   {atlas&&<AnatomyScene atlas={atlas} state={{...state,inspectorOpen:details&&selectedParts.length>0}} onSelect={choosePart} onProgress={n=>{setProgress(n);if(n===100)setError('');}} onError={setError}/>}
   <div className="vignette"/>
-  <header className="identity"><div className="eyebrow"><span className="status-dot"/> INTERACTIVE ANATOMY</div><h1>Human Atlas<Badge variant="outline" className="edition">3D</Badge></h1><div className="identity-meta">{atlas?atlas.parts.length.toLocaleString():'2,234'} modeled pieces <span>·</span> BodyParts3D</div></header>
+  <section className={`feature-banner ${featureSlides[featureSlide].tone}`} aria-label="New features" aria-live="polite">
+   <div className="feature-icon" aria-hidden="true">{(()=>{const Icon=featureSlides[featureSlide].icon;return <Icon size={17}/>})()}</div>
+   <div className="feature-copy"><span className="feature-eyebrow">{featureSlides[featureSlide].eyebrow}</span><strong>{featureSlides[featureSlide].title}</strong><span>{featureSlides[featureSlide].copy}</span></div>
+   <div className="feature-dots" role="tablist" aria-label="Feature slides">{featureSlides.map((slide,index)=><button key={slide.title} type="button" role="tab" aria-selected={featureSlide===index} aria-label={`Show ${slide.title}`} className={featureSlide===index?'active':''} onClick={()=>setFeatureSlide(index)}/>)}</div>
+  </section>
+  <header className="identity"><div className="eyebrow"><span className="status-dot"/> INTERACTIVE BIOLOGY</div><h1>Lumenbody<Badge variant="outline" className="edition">3D</Badge></h1><div className="identity-meta">{atlas?atlas.parts.length.toLocaleString():'2,234'} modeled pieces <span>·</span> BodyParts3D</div></header>
   <nav className="top-actions" aria-label="Explorer panels"><Button variant="ghost" className={panel==='search'?'active':''} onClick={()=>openPanel('search')} aria-label="Search anatomy"><Search size={18}/><span>Find a structure</span><kbd>/</kbd></Button><Button variant="ghost" className="icon-button" aria-label="About this atlas" onClick={()=>{setDetails(false);setPanel(null);setAbout(true);}}><Info size={18}/></Button><div className="theme-toggle"><input type="checkbox" id="checkboxInput" checked={darkMode} onChange={e=>setDarkMode(e.target.checked)} aria-label="Toggle dark mode"/><label htmlFor="checkboxInput" className="toggleSwitch" title={darkMode?'Switch to light mode':'Switch to dark mode'}/></div></nav>
   <section className={`layers-panel glass ${panel==='layers'?'mobile-open':''}`} aria-label="Anatomical layers">
    <div className="panel-heading"><span>Systems</span><Button variant="ghost" className="mobile-only icon-button" onClick={()=>setPanel(null)} aria-label="Close systems"><X size={18}/></Button><Badge variant="secondary" className="desktop-only small-number">{activeSystems.length}</Badge></div>
