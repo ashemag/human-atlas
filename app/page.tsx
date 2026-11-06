@@ -61,6 +61,7 @@ import { Popover, PopoverContent, PopoverTitle, PopoverTrigger } from "@/compone
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { Badge } from "@/components/ui/badge";
 import { Slider } from "@/components/ui/slider";
+import { ControlTooltip } from "./control-tooltip";
 import { Switch } from "@/components/ui/switch";
 import { Sheet, SheetContent, SheetTitle, SheetDescription } from "@/components/ui/sheet";
 import {
@@ -102,6 +103,11 @@ const ORGAN_SYSTEMS: SystemId[] = [
   "reproductive",
   "mammary",
 ];
+function syncHomeScroll(element: HTMLElement | null) {
+  if (!element) return;
+  element.parentElement?.style.setProperty("--home-scroll", `${element.scrollTop}px`);
+}
+
 export default function Home() {
   const updater = useClientUpdate();
   const [selectionColor, setSelectionColor] = useState(() => {
@@ -474,6 +480,7 @@ export default function Home() {
     }));
   };
   return (
+    <TooltipProvider delay={350}>
     <main className={`studio mode-${screen} ${panel === "search" ? "is-search" : ""} ${sidebarCollapsed ? "sidebar-collapsed" : ""} ${details && selectedParts.length ? "has-inspector" : ""} ${detailWide ? "inspector-wide" : ""}`} onClick={externalClick}>
       {atlas && (
         <Suspense fallback={null}><AnatomyScene
@@ -525,7 +532,10 @@ export default function Home() {
         </select>
       </div>
       <nav className="top-actions" aria-label={t("Explorer panels")}>
-        <Button variant="ghost" className="header-random" disabled={!randomReady} onClick={chooseRandomOrgan} aria-label={t("Random exploration")} title={t("Random organ")}><Shuffle size={17} /><span>{t("Random exploration")}</span></Button>
+        <ControlTooltip label={t("Random organ")} side="bottom">
+          <Button variant="ghost" className="header-random" disabled={!randomReady} onClick={chooseRandomOrgan} aria-label={t("Random exploration")}><Shuffle size={17} /><span>{t("Random exploration")}</span></Button>
+        </ControlTooltip>
+        <ControlTooltip label={t("Search anatomy")} side="bottom">
         <Button
           variant="ghost"
           className={`header-search ${panel === "search" && screen === "explore" ? "active" : ""}`}
@@ -536,22 +546,24 @@ export default function Home() {
           <span>{t("Search anatomy")}</span>
           <kbd>/</kbd>
         </Button>
+        </ControlTooltip>
+        <ControlTooltip label={updater.native && updater.state.update ? t(updater.state.status === "ready" ? "Restart to update" : "New version available") : t("About this atlas")} side="bottom">
         <Button
           variant="ghost"
           className={`icon-button header-about ${updater.native && updater.state.update ? "has-update" : ""}`}
           aria-label={t("About this atlas")}
-          title={updater.native && updater.state.update ? t(updater.state.status === "ready" ? "Restart to update" : "New version available") : t("About this atlas")}
           onClick={() => {
             setCreditsOpen(true);
           }}
         >
           <Info size={18} />
         </Button>
+        </ControlTooltip>
       </nav>
       </header>
       {linkError && <div className="link-status glass" role="status">{t("Could not open this link.")}</div>}
       {screen === "home" && (
-        <section className="home-screen" aria-label={t("Home")}>
+        <section ref={syncHomeScroll} className="home-screen" aria-label={t("Home")} onScroll={(event) => syncHomeScroll(event.currentTarget)}>
           <div className="home-intro">
             <div className="home-eyebrow"><span className="status-dot" />{t("YOUR INTERACTIVE ANATOMY ATLAS")}</div>
             <h1>{t("See the body.")}<br /><span>{t("Understand every layer.")}</span></h1>
@@ -587,9 +599,11 @@ export default function Home() {
       )}
       {screen === "explore" && <>
       <div className="scene-heading">
-        <button className="sidebar-toggle" onClick={() => setSidebarCollapsed((v) => !v)} aria-label={sidebarCollapsed ? t("Show exploration tools") : t("Hide exploration tools")} title={sidebarCollapsed ? t("Show exploration tools") : t("Hide exploration tools")}>
+        <ControlTooltip label={sidebarCollapsed ? t("Show exploration tools") : t("Hide exploration tools")} side="right">
+        <button className="sidebar-toggle" onClick={() => setSidebarCollapsed((v) => !v)} aria-label={sidebarCollapsed ? t("Show exploration tools") : t("Hide exploration tools")}>
           {sidebarCollapsed ? <PanelLeftOpen size={19} /> : <PanelLeftClose size={19} />}
         </button>
+        </ControlTooltip>
         <div><h1>{t("3D anatomy explorer")}</h1><span>{t(model === "female" ? "Female study model · estimated anatomy" : "Click a structure to discover more")}</span></div>
         <span className="scene-status"><span className="status-dot" />{layerStatus}</span>
       </div>
@@ -665,7 +679,7 @@ export default function Home() {
           )}
         </div>
         <Suspense fallback={null}>
-          <SystemLayers key={model} locale={locale} structures={structuresBySystem} visibleIds={visiblePartIds}
+          <SystemLayers key={model} locale={locale} structures={structuresBySystem} visibleIds={visiblePartIds} selectedId={selectedParts.length ? chosen?.id : undefined}
             ready={progress >= 100 && !error} isOnly={(id) => !state.isolate && visiblePartIds.size > 0 &&
               (atlas?.parts.every((part) => visiblePartIds.has(part.id) === (part.system === id)) ?? false)}
             onSystem={toggle} onOnly={(id) => applyLayers([id], id)} onStructure={toggleStructure} onInspect={choose} />
@@ -880,6 +894,7 @@ export default function Home() {
           variant="ghost"
           disabled={state.explode >= 0.4}
           aria-label={state.rotate ? t("Pause rotation") : t("Rotate body")}
+          aria-pressed={state.rotate}
           title={t("Auto rotate")}
           className={state.rotate ? "active" : ""}
           onClick={() => setState((s) => ({ ...s, rotate: !s.rotate }))}
@@ -916,27 +931,29 @@ export default function Home() {
           </PopoverContent>
         </Popover>
         </div>
+        <ControlTooltip label={t("Reset view; keep layers, selection and separation")}>
         <Button
           variant="ghost"
           className="view-reset"
           aria-label={t("Reset view")}
-          title={t("Reset view; keep layers, selection and separation")}
           onClick={resetView}
         >
           <RotateCcw size={17} />
           <span>{t("Reset view")}</span>
         </Button>
+        </ControlTooltip>
+        <ControlTooltip label={t(showBase ? "Hide base" : "Show base")}>
         <Button
           variant="ghost"
           className={`base-toggle${showBase ? " active" : ""}`}
           aria-pressed={showBase}
           aria-label={t(showBase ? "Hide base" : "Show base")}
-          title={t(showBase ? "Hide base" : "Show base")}
           onClick={() => setShowBase((shown) => !shown)}
         >
           {showBase ? <Eye size={16} /> : <EyeOff size={16} />}
           <span>{t("Base")}</span>
         </Button>
+        </ControlTooltip>
       </nav>
       <div className="scene-caption">
         <span className="caption-line" />
@@ -1323,5 +1340,6 @@ export default function Home() {
         </SheetContent>
       </Sheet>
     </main>
+    </TooltipProvider>
   );
 }
