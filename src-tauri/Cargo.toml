@@ -1,6 +1,6 @@
 [package]
 name = "anatolume"
-version = "1.4.1"
+version = "1.5.0"
 description = "Offline bilingual anatomy explorer"
 authors = ["isunky"]
 edition = "2021"
