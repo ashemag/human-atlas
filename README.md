@@ -205,7 +205,7 @@ Systems are arranged compactly while preserving internal relationships; move the
 
 React · TypeScript · Three.js · Tauri · Vite。网页和客户端共享交互与渲染逻辑，仓库已包含模型，普通运行无需重新转换数据。
 
-需要 **Node.js 22.18+**；仓库 `.node-version` 指定 Node 24。
+需要 **Node.js 26 LTS 或更高版本**；仓库 `.node-version` 指定 Node 26。
 
 ```sh
 git clone https://github.com/isunky/Anatolume.git
@@ -392,7 +392,7 @@ The female model is adapted from BodyParts3D and HRA through Human Atlas Enhance
 
 React · TypeScript · Three.js · Tauri · Vite. Web and desktop share interactions and rendering. Models are included in the repository; normal builds do not require reconversion.
 
-Requires **Node.js 22.18+**; the repository's `.node-version` selects Node 24.
+Requires **Node.js 26 LTS or later**; the repository's `.node-version` selects Node 26.
 
 ```sh
 git clone https://github.com/isunky/Anatolume.git

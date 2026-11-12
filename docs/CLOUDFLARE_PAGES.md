@@ -15,7 +15,7 @@
 | 根目录 | 留空，使用仓库根目录 |
 | 构建命令 | `npm ci && npm run build:pages` |
 | 构建输出目录 | `dist` |
-| Node 版本 | `24`，仓库 `.node-version` 已指定 |
+| Node 版本 | `26`，仓库 `.node-version` 已指定 |
 | 环境变量 | `SKIP_DEPENDENCY_INSTALL=1`，生产和预览均设置 |
 
 使用 Pages 的 Git 构建设置；根目录必须包含 `package.json` 和 `vite.config.ts`，不要选 `web/`。`SKIP_DEPENDENCY_INSTALL=1` 跳过平台自动安装，由构建命令中的 `npm ci` 严格按锁文件安装。
@@ -42,7 +42,7 @@ npm run build:pages
 | 现象 | 检查项 |
 | --- | --- |
 | 找不到仓库 | 检查 Cloudflare GitHub App 对 `isunky/Anatolume` 的仓库访问授权。 |
-| Node 版本错误 | 使用当前 Pages v3 构建环境；删除旧的 `NODE_VERSION` 覆盖值，或设为 `24`。 |
+| Node 版本错误 | 使用当前 Pages v3 构建环境；删除旧的 `NODE_VERSION` 覆盖值，或设为 `26`。 |
 | 找不到 `package.json` | 将构建根目录恢复为仓库根目录。 |
 | 报单文件超限 | 保持 `npm run build:pages`，检查新增资源；大型文件需拆分或使用独立对象存储。 |
 | 构建成功但页面空白 | 输出目录应为 `dist`；确认是 Pages Git 项目，并检查浏览器控制台。 |

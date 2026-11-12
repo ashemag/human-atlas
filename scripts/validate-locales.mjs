@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import ts from 'typescript';
+// TypeScript 7 does not yet expose the compiler API used by this validator.
+import ts from '@typescript/typescript6';
 import {displayName, text, searchText, readLocale, UI_ZH, LANGUAGE_STORAGE_KEY, LOCALES, normalizeSearch, structureExplanation} from '../client/i18n/index.ts';
 import {UI_TRANSLATIONS} from '../client/i18n/ui.translations.ts';
 import {anatomyGlossary, SYSTEM_NAMES} from '../client/i18n/anatomy.translations.ts';
