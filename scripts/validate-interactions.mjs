@@ -7,6 +7,24 @@ import {randomOrganCandidates,pickRandomOrgan} from '../app/core/random-organ.ts
 import {privacyHiddenParts,isPartVisible,readPrivacyMode,PRIVACY_MODE_STORAGE_KEY} from '../app/core/privacy-mode.ts';
 import {systemStructures,clearStructureOverrides,explicitSystemOverrides,hideSelectedStructure} from '../app/core/structure-layers.ts';
 import {prepareShaders} from '../app/core/shader-preparation.ts';
+import {readRenderQuality, renderPixelRatio, RENDER_QUALITY_STORAGE_KEY} from '../app/core/render-quality.ts';
+
+{
+  const storage = (value) => ({getItem: (key) => key === RENDER_QUALITY_STORAGE_KEY ? value : null});
+  assert.equal(readRenderQuality(), 'balanced');
+  assert.equal(readRenderQuality(storage('sharp')), 'sharp');
+  assert.equal(readRenderQuality(storage('smooth')), 'smooth');
+  assert.equal(readRenderQuality(storage('invalid')), 'balanced');
+  assert.equal(readRenderQuality({getItem() { throw new Error('unavailable'); }}), 'balanced');
+  assert.equal(renderPixelRatio('balanced', 3, false), 2);
+  assert.equal(renderPixelRatio('balanced', 3, true), 1.5);
+  assert.equal(renderPixelRatio('sharp', 3, false), 3);
+  assert.equal(renderPixelRatio('sharp', 3, true), 2);
+  assert.equal(renderPixelRatio('smooth', 1, false), 0.8);
+  assert.equal(renderPixelRatio('smooth', 3, false), 1);
+  assert.equal(renderPixelRatio('balanced', NaN, false), 1);
+  console.log('Rendering quality defaults, scaling and storage fallback passed.');
+}
 
 {
   const controller = new AbortController();

@@ -1,4 +1,4 @@
-import { ArrowUpRight, Check, Code2, Download, EyeOff, Heart, Palette } from "lucide-react";
+import { ArrowUpRight, Check, Code2, Download, EyeOff, Heart, Monitor, Palette } from "lucide-react";
 import { Switch } from "@/components/ui/switch";
 import { useRef } from "react";
 import { Sheet, SheetContent, SheetDescription, SheetTitle } from "@/components/ui/sheet";
@@ -8,6 +8,7 @@ import { staticAssetUrl } from "./core/static-asset";
 import UpdatePanel from "./update-panel";
 import type { ClientUpdate } from "../hooks/use-client-update";
 import { SELECTION_COLORS, type SelectionColorId } from "./core/selection-colors";
+import type { RenderQuality } from "./core/render-quality";
 
 const tools = [
   ["React", "https://react.dev/"],
@@ -20,7 +21,7 @@ const tools = [
   ["meshoptimizer", "https://github.com/zeux/meshoptimizer"],
 ];
 
-export default function About({ locale, open, onOpenChange, updater, privacyMode, onPrivacyModeChange, focusPrivacy = false, selectionColor, onSelectionColorChange }: {
+export default function About({ locale, open, onOpenChange, updater, privacyMode, onPrivacyModeChange, focusPrivacy = false, selectionColor, onSelectionColorChange, renderQuality, onRenderQualityChange }: {
   locale: Locale;
   open: boolean;
   onOpenChange: (open: boolean) => void;
@@ -30,6 +31,8 @@ export default function About({ locale, open, onOpenChange, updater, privacyMode
   focusPrivacy?: boolean;
   selectionColor: SelectionColorId;
   onSelectionColorChange: (color: SelectionColorId) => void;
+  renderQuality: RenderQuality;
+  onRenderQualityChange: (quality: RenderQuality) => void;
 }) {
   const t = (english: string) => text(english, locale);
   const runtime = runtimeInfo();
@@ -49,6 +52,15 @@ export default function About({ locale, open, onOpenChange, updater, privacyMode
         <section className="privacy-preference" data-targeted={focusPrivacy || undefined} aria-labelledby="privacy-heading">
           <div><h2 id="privacy-heading"><EyeOff size={17} />{t("Privacy mode")}</h2><Switch ref={privacySwitchRef} checked={privacyMode} onCheckedChange={onPrivacyModeChange} aria-labelledby="privacy-heading" aria-describedby="privacy-description" /></div>
           <p id="privacy-description">{t("Hide male reproductive structures, female breasts and external genitalia in default views and random exploration. Internal female organs remain visible; explicitly open a system or structure from the list, or select a search result, to view hidden structures.")}</p>
+        </section>
+        <section className="quality-preference" aria-labelledby="quality-heading">
+          <h2 id="quality-heading"><Monitor size={17} aria-hidden="true" />{t("Rendering quality")}</h2>
+          <div className="quality-options" role="group" aria-labelledby="quality-heading">
+            <button type="button" aria-pressed={renderQuality === "sharp"} onClick={() => onRenderQualityChange("sharp")}>{t("Sharp")}</button>
+            <button type="button" aria-pressed={renderQuality === "balanced"} onClick={() => onRenderQualityChange("balanced")}>{t("Balanced")}</button>
+            <button type="button" aria-pressed={renderQuality === "smooth"} onClick={() => onRenderQualityChange("smooth")}>{t("Smooth")}</button>
+          </div>
+          <p>{t("Adjusts 3D resolution. Higher quality can use more graphics power; smooth mode may look less sharp on high-resolution screens.")}</p>
         </section>
         <section className="selection-preference" aria-labelledby="selection-color-heading">
           <h2 id="selection-color-heading"><Palette size={17} aria-hidden="true" />{t("Selection highlight")}</h2>

@@ -9,6 +9,7 @@ import { mergeGeometries } from "three/examples/jsm/utils/BufferGeometryUtils.js
 import { createExplosionLayout, createSystemSeparationLayout } from "./core/explosion-layout";
 import { decodeModelResponse } from "./core/model-download";
 import { prepareShaders } from "./core/shader-preparation";
+import { renderPixelRatio } from "./core/render-quality";
 import { staticAssetUrl } from "./core/static-asset";
 import { PointerTap } from "./core/pointer-tap";
 import { isPartVisible } from "./core/privacy-mode";
@@ -87,7 +88,7 @@ export default function AnatomyScene({
       );
       return;
     }
-    renderer.setPixelRatio(Math.min(devicePixelRatio, innerWidth < 768 ? 1.5 : 2));
+    renderer.setPixelRatio(renderPixelRatio(latest.current.renderQuality ?? "balanced", devicePixelRatio, innerWidth < 768));
     renderer.setClearColor("#f3f6f5");
     renderer.outputColorSpace = T.SRGBColorSpace;
     renderer.toneMapping = T.ACESFilmicToneMapping;
@@ -456,9 +457,8 @@ export default function AnatomyScene({
       layoutKey = "";
       lastSelectionFrame = "";
       lastState = null;
-      renderer.setPixelRatio(
-        Math.min(devicePixelRatio, el.clientWidth < 768 || el.clientHeight < 600 ? 1.5 : 2),
-      );
+      renderer.setPixelRatio(renderPixelRatio(latest.current.renderQuality ?? "balanced", devicePixelRatio,
+        el.clientWidth < 768 || el.clientHeight < 600));
       camera.aspect = el.clientWidth / el.clientHeight;
       camera.updateProjectionMatrix();
       renderer.setSize(el.clientWidth, el.clientHeight);
@@ -539,12 +539,19 @@ export default function AnatomyScene({
     renderer.domElement.addEventListener("pointerup", up);
     renderer.domElement.addEventListener("pointercancel", cancel);
     let lastExtent = -1;
+    let lastQuality = latest.current.renderQuality ?? "balanced";
     animate = (time) => {
       frame = 0;
       if (disposed) return;
       const dt = lastTime ? Math.min((time - lastTime) / 1000, 0.05) : 1 / 60,
         s = latest.current;
       lastTime = time;
+      const quality = s.renderQuality ?? "balanced";
+      if (quality !== lastQuality) {
+        renderer.setPixelRatio(renderPixelRatio(quality, devicePixelRatio, el.clientWidth < 768 || el.clientHeight < 600));
+        lastQuality = quality;
+        dirty = true;
+      }
       if (lastSelectionColor !== s.selectionColor) {
         const preset = selectionColorPreset(s.selectionColor);
         selectionColors.color.set(preset.color);

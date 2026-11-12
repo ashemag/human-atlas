@@ -162,6 +162,7 @@ export interface Atlas {
 }
 export type View = "three-quarter" | "front" | "back" | "side";
 export interface SceneState {
+  renderQuality?: import("./render-quality").RenderQuality;
   showBase?: boolean;
   hiddenParts?: readonly string[];
   inspectorOpen?: boolean;

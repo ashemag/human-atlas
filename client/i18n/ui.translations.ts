@@ -4,6 +4,11 @@ import type { AddedLocale } from "./locales.ts";
 // Tuple order: Spanish, Japanese, Korean. Keep placeholders unchanged.
 export const UI_TRANSLATIONS: Record<string, readonly [string, string, string]> = {
   "Selection highlight": ["Resaltado de selección", "選択時の強調色", "선택 강조색"],
+  "Rendering quality": ["Calidad y rendimiento", "画質とパフォーマンス", "화질 및 성능"],
+  "Sharp": ["Nítida", "高画質", "선명"],
+  "Balanced": ["Equilibrada", "バランス", "균형"],
+  "Smooth": ["Fluida", "動作優先", "부드러움"],
+  "Adjusts 3D resolution. Higher quality can use more graphics power; smooth mode may look less sharp on high-resolution screens.": ["Ajusta la resolución 3D. Una mayor calidad puede exigir más a la GPU; el modo fluido puede verse menos nítido en pantallas de alta resolución.", "3Dの描画解像度を調整します。高画質はGPUの負荷が高くなり、動作優先では高解像度画面で画面がぼやける場合があります。", "3D 렌더링 해상도를 조절합니다. 선명 모드는 그래픽 성능을 더 사용하며, 부드러움 모드는 고해상도 화면에서 덜 선명할 수 있습니다."],
   "Teal": ["Verde azulado", "青緑", "청록색"],
   "Sky blue": ["Azul celeste", "空色", "하늘색"],
   "Lavender": ["Lavanda", "ラベンダー", "연보라색"],

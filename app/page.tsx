@@ -26,6 +26,7 @@ import { anatomySearchIndex, matchedSearchAlias, type SearchEntry } from "./core
 import { pickRandomOrgan, randomOrganCandidates } from "./core/random-organ";
 import { isPartVisible, privacyHiddenParts, readPrivacyMode, PRIVACY_MODE_STORAGE_KEY } from "./core/privacy-mode";
 import { readSelectionColor, SELECTION_COLOR_STORAGE_KEY } from "./core/selection-colors";
+import { readRenderQuality, RENDER_QUALITY_STORAGE_KEY } from "./core/render-quality";
 import { InputGroupButton } from "@/components/ui/input-group";
 import { lazy, Suspense, useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import {
@@ -110,6 +111,13 @@ function syncHomeScroll(element: HTMLElement | null) {
 
 export default function Home() {
   const updater = useClientUpdate();
+  const [renderQuality, setRenderQuality] = useState(() => {
+    try { return readRenderQuality(localStorage); } catch { return readRenderQuality(); }
+  });
+  useEffect(() => {
+    try { localStorage.setItem(RENDER_QUALITY_STORAGE_KEY, renderQuality); }
+    catch { /* The setting remains usable without persistent storage. */ }
+  }, [renderQuality]);
   const [selectionColor, setSelectionColor] = useState(() => {
     try { return readSelectionColor(localStorage); } catch { return readSelectionColor(); }
   });
@@ -494,6 +502,7 @@ export default function Home() {
           state={{
             ...state,
             selectionColor,
+            renderQuality,
             showBase,
             hiddenParts,
             inspectorOpen: details && selectedParts.length > 0,
@@ -1236,7 +1245,7 @@ export default function Home() {
           </div>
         </SheetContent>
       </Sheet>
-      <Suspense fallback={null}><About locale={locale} open={creditsOpen} onOpenChange={(open) => { setCreditsOpen(open); if (!open) setFocusPrivacy(false); }} updater={updater} privacyMode={privacyMode} onPrivacyModeChange={changePrivacyMode} focusPrivacy={focusPrivacy} selectionColor={selectionColor} onSelectionColorChange={setSelectionColor} /></Suspense>
+      <Suspense fallback={null}><About locale={locale} open={creditsOpen} onOpenChange={(open) => { setCreditsOpen(open); if (!open) setFocusPrivacy(false); }} updater={updater} privacyMode={privacyMode} onPrivacyModeChange={changePrivacyMode} focusPrivacy={focusPrivacy} selectionColor={selectionColor} onSelectionColorChange={setSelectionColor} renderQuality={renderQuality} onRenderQualityChange={setRenderQuality} /></Suspense>
       <Sheet open={about} onOpenChange={setAbout}>
         <SheetContent closeLabel={t("Close")} className="about-sheet glass">
           <div className="eyebrow"><BookOpen size={15} />{t("Learning guide")}</div>
