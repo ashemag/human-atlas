@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import { Activity, Bone, Brain, ChevronRight, CircleDot, Droplets, Eye, Focus, GitBranch, Hand, Heart, Layers3, Network, PersonStanding, Search, Sparkles, Utensils, Wind, X, type LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
@@ -31,6 +31,8 @@ const systemIcons: Record<SystemId, LucideIcon> = {
 export default function SystemLayers({ locale, structures, visibleIds, selectedId, ready, isOnly, onSystem, onOnly, onStructure, onInspect }: Props) {
   const [expanded, setExpanded] = useState<SystemId | null>(null);
   const [query, setQuery] = useState("");
+  const deferredQuery = useDeferredValue(query);
+  const filterPending = query !== deferredQuery;
   const [limit, setLimit] = useState(24);
   const listRef = useRef<HTMLDivElement>(null);
   const filterRef = useRef<HTMLInputElement>(null);
@@ -43,9 +45,13 @@ export default function SystemLayers({ locale, structures, visibleIds, selectedI
       behavior: query || matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" });
   }, [expanded, query]);
   const t = (key: string, values: Record<string, string | number> = {}) => text(key, locale, values);
-  const children = useMemo(() => (expanded ? structures.get(expanded) ?? [] : [])
-    .filter((c) => searchText(c.name, c.id).includes(normalizeSearch(query)))
-    .sort((a, b) => displayName(a.name, locale).localeCompare(displayName(b.name, locale), locale)), [structures, expanded, query, locale]);
+  const indexedChildren = useMemo(() => (expanded ? structures.get(expanded) ?? [] : [])
+    .map((concept) => ({ concept, searchable: searchText(concept.name, concept.id), label: displayName(concept.name, locale) }))
+    .sort((a, b) => a.label.localeCompare(b.label, locale)), [structures, expanded, locale]);
+  const children = useMemo(() => {
+    const term = normalizeSearch(deferredQuery);
+    return indexedChildren.filter((entry) => entry.searchable.includes(term)).map((entry) => entry.concept);
+  }, [indexedChildren, deferredQuery]);
   const clearFilter = () => {
     setQuery("");
     setLimit(24);
@@ -83,6 +89,10 @@ export default function SystemLayers({ locale, structures, visibleIds, selectedI
                 event.stopPropagation();
                 clearFilter();
               }
+              if (event.key === "Enter" && filterPending) {
+                event.preventDefault();
+                return;
+              }
               if (event.key === "Enter" && query.trim() && children.length === 1 && ready) {
                 event.preventDefault();
                 onInspect(children[0]);
@@ -90,20 +100,22 @@ export default function SystemLayers({ locale, structures, visibleIds, selectedI
             }} />
             {query && <button className="structure-filter-clear" type="button" aria-label={t("Clear search")} title={t("Clear search")} onClick={clearFilter}><X size={13} aria-hidden="true" /></button>}
           </div>
+          <div aria-busy={filterPending}>
           <p className="structure-summary"><span role="status">{t("{count} structures", { count: children.length })}</span><span>{t("Click a name to inspect")}</span></p>
           {children.slice(0, limit).map((structure) => {
             const count = structure.elements.filter((id) => visibleIds.has(id)).length;
             const label = displayName(structure.name, locale);
             const selected = structure.id === selectedId;
             return <div className={`structure-row ${count ? "is-visible" : ""} ${selected ? "is-selected" : ""}`} key={structure.id}>
-              <button className="structure-name" title={structure.name} aria-current={selected ? "true" : undefined} onClick={() => onInspect(structure)} disabled={!ready}>
+              <button className="structure-name" title={structure.name} aria-current={selected ? "true" : undefined} onClick={() => onInspect(structure)} disabled={!ready || filterPending}>
                 <span>{label}</span>{structure.elements.length > 1 && <small>{count && count < structure.elements.length ? t("{shown} of {total} pieces visible", { shown: count, total: structure.elements.length }) : t("{count} pieces", { count: structure.elements.length })}</small>}
               </button>
-              <Switch size="sm" checked={count > 0} onCheckedChange={(enabled) => onStructure(structure, enabled)} aria-label={t("Show structure: {name}", { name: label })} disabled={!ready} />
+              <Switch size="sm" checked={count > 0} onCheckedChange={(enabled) => onStructure(structure, enabled)} aria-label={t("Show structure: {name}", { name: label })} disabled={!ready || filterPending} />
             </div>;
           })}
           {!children.length && <p className="structure-empty">{t("No matching structures")}</p>}
-          {children.length > limit && <Button variant="ghost" className="structure-more" onClick={() => setLimit((n) => n + 24)}>{t("Show more ({count} remaining)", { count: children.length - limit })}</Button>}
+          {children.length > limit && <Button variant="ghost" className="structure-more" disabled={filterPending} onClick={() => setLimit((n) => n + 24)}>{t("Show more ({count} remaining)", { count: children.length - limit })}</Button>}
+          </div>
         </section>}
       </div>;
     })}

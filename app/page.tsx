@@ -27,7 +27,7 @@ import { pickRandomOrgan, randomOrganCandidates } from "./core/random-organ";
 import { isPartVisible, privacyHiddenParts, readPrivacyMode, PRIVACY_MODE_STORAGE_KEY } from "./core/privacy-mode";
 import { readSelectionColor, SELECTION_COLOR_STORAGE_KEY } from "./core/selection-colors";
 import { InputGroupButton } from "@/components/ui/input-group";
-import { lazy, Suspense, useEffect, useMemo, useRef, useState } from "react";
+import { lazy, Suspense, useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import {
   Activity,
   ArrowUpRight,
@@ -292,6 +292,12 @@ export default function Home() {
     () => (atlas ? anatomySearchIndex(atlas) : new Map<string, SearchEntry>()),
     [atlas],
   );
+  const sortedSearchConcepts = useMemo(
+    () => [...(atlas?.concepts ?? [])].sort((a, b) => a.name.length - b.name.length),
+    [atlas],
+  );
+  const deferredQuery = useDeferredValue(query);
+  const searchPending = query !== deferredQuery;
   const counts = useMemo(
     () =>
       Object.fromEntries(
@@ -350,7 +356,7 @@ export default function Home() {
   };
   const searchResults = useMemo(() => {
     if (!atlas) return { items: [] as Concept[], total: 0 };
-    const term = normalizeSearch(query);
+    const term = normalizeSearch(deferredQuery);
     if (!term) {
       const popular = [
         "heart",
@@ -367,11 +373,9 @@ export default function Home() {
       const recent = recentIds.flatMap((id) => searchIndex.get(id)?.concept ?? []);
       return { items: [...recent, ...popular.filter((c) => !recentIds.includes(c.id))], total: 0 };
     }
-    const matches = atlas.concepts
-      .filter((c) => searchIndex.get(c.id)?.searchable.includes(term))
-      .sort((a, b) => a.name.length - b.name.length);
+    const matches = sortedSearchConcepts.filter((c) => searchIndex.get(c.id)?.searchable.includes(term));
     return { items: matches.slice(0, 80), total: matches.length };
-  }, [atlas, query, recentIds, searchIndex]);
+  }, [atlas, deferredQuery, recentIds, searchIndex, sortedSearchConcepts]);
   const results = searchResults.items;
   const remember = (id: string) =>
     setRecentIds((ids) => [id, ...ids.filter((existing) => existing !== id)].slice(0, 6));
@@ -712,7 +716,7 @@ export default function Home() {
             onItemHighlighted={(value) => { highlightedConcept.current = value; }}
             value={null}
             onValueChange={(value) => {
-              if (value) choose(value);
+              if (value && !searchPending) choose(value);
             }}
             inputValue={query}
             onInputValueChange={(value) => {
@@ -731,7 +735,13 @@ export default function Home() {
               aria-describedby="search-help"
               onKeyDown={(event) => {
                 if (event.key === "Escape") setPanel(innerWidth >= 768 ? "layers" : null);
-                if (event.key === "Enter" && !event.nativeEvent.isComposing) {
+                if (event.key === "Enter" && (event.nativeEvent.isComposing || event.nativeEvent.keyCode === 229)) return;
+                if (event.key === "Enter" && searchPending) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                  return;
+                }
+                if (event.key === "Enter") {
                   const concept = results.find((item) => item.id === highlightedConcept.current?.id) ?? results[0];
                   if (concept) {
                     event.preventDefault();
@@ -764,29 +774,29 @@ export default function Home() {
             </p>
             <div className="search-result-summary">
               <span role="status">
-                {query.trim()
+                {deferredQuery.trim()
                   ? t("{count} matches", { count: searchResults.total })
                   : recentIds.length
                     ? t("Recent & common structures")
                     : t("Common structures")}
               </span>
-              {!query.trim() && recentIds.length > 0 && (
+              {!deferredQuery.trim() && recentIds.length > 0 && (
                 <Button variant="ghost" onClick={() => setRecentIds([])}>
                   {t("Clear recent")}
                 </Button>
               )}
             </div>
-            <div className="anatomy-search-results search-inline">
+            <div className="anatomy-search-results search-inline" aria-busy={searchPending}>
               <ComboboxEmpty className="search-empty block p-0">
                 {t("No structures match your search.")}
               </ComboboxEmpty>
               <ComboboxList className="search-list" aria-label={t("Anatomical search results")}>
                 {(c: Concept) => {
                   const entry = searchIndex.get(c.id);
-                  const alias = entry && matchedSearchAlias(entry, query);
+                  const alias = entry && matchedSearchAlias(entry, deferredQuery);
                   const side = entry?.side;
                   return (
-                    <ComboboxItem key={c.id} value={c} className="search-result">
+                    <ComboboxItem key={c.id} value={c} disabled={searchPending} className="search-result">
                       <span className="search-result-body">
                         <span className="search-result-title">
                           <span className="search-result-name">{dn(c.name)}</span>
@@ -813,7 +823,7 @@ export default function Home() {
                             );
                           })}
                           <span>{t("{count} pieces", { count: c.elements.length })}</span>
-                          {!query.trim() && recentIds.includes(c.id) && (
+                          {!deferredQuery.trim() && recentIds.includes(c.id) && (
                             <span className="search-recent">{t("Recent")}</span>
                           )}
                         </span>
@@ -834,7 +844,7 @@ export default function Home() {
             </div>
           </Combobox>
           <p className="search-note">
-            {query
+            {deferredQuery
               ? searchResults.total > 80
                 ? t("Showing up to 80 matches. Refine your search to find smaller structures.")
                 : t("Search by localized or English name, alias or source ID.")
