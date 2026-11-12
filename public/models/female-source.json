@@ -1,0 +1,105 @@
+{
+  "repository": "https://github.com/PrejudiceNeutrino/human-atlas-enhanced",
+  "revision": "9e0d710fcc1d467dc758d61d6f417231cb1472fe",
+  "imported": "2026-10-11",
+  "manifest": "public/models/atlas-female-reconstructed.json",
+  "license": "CC-BY-4.0",
+  "geometryChanged": false,
+  "files": [
+    {
+      "name": "atlas-female.json",
+      "bytes": 1612830,
+      "sha256": "60a098028eedcb164249a2f7d0b99fb1b9eab56733cd2b90e90b509d29f1da5f"
+    },
+    {
+      "name": "female-fit-report.json",
+      "bytes": 273385,
+      "sha256": "3bd226a86e96ead166ca87ab45bcab4ff80188e5b179c35d47104d0e55d743e5"
+    },
+    {
+      "name": "female-base-0.bin.gz",
+      "bytes": 2279399,
+      "sha256": "6f8c4840f554fa9bd1b90f866077be877985a72d6fef39a9926b0dd196974eb4"
+    },
+    {
+      "name": "female-base-1.bin.gz",
+      "bytes": 2325209,
+      "sha256": "937fea4230ab38265005ae4a258271b35d7dedc54e340567c9f773b183301424"
+    },
+    {
+      "name": "female-base-2.bin.gz",
+      "bytes": 2388965,
+      "sha256": "61c90df32afdb1bcff5da60262278beebfe5283729d6d49d48005e0b4ed49799"
+    },
+    {
+      "name": "female-base-3.bin.gz",
+      "bytes": 2152130,
+      "sha256": "47667d765348ea054947b216ae4c7b18669103f1f61bc02b238d9723d8dd90ad"
+    },
+    {
+      "name": "female-base-4.bin.gz",
+      "bytes": 2170207,
+      "sha256": "964c63442a589089de35d12e67d1b39afa93f6c1fe1b4c931a4f20af16f6c894"
+    },
+    {
+      "name": "female-base-5.bin.gz",
+      "bytes": 2233971,
+      "sha256": "8b6d8848a23f6fff5b60e76d902dece22b37aa8bb75f59e0eb4eeedc7ae632b8"
+    },
+    {
+      "name": "female-base-6.bin.gz",
+      "bytes": 2392219,
+      "sha256": "242b580fc48aa54a302ec11c56cabf46f5190907caa7f21def0014d17ce0ec30"
+    },
+    {
+      "name": "female-base-7.bin.gz",
+      "bytes": 2391078,
+      "sha256": "12a2c1a764b449ad7d7ad2d7ab3cac0a5286c93fcfaaae45b7870d1f43c1f94d"
+    },
+    {
+      "name": "female-base-8.bin.gz",
+      "bytes": 2372384,
+      "sha256": "b09da50abe143ccb582dec3be0b22d9b9d3dd87d1c890a2a71583a49928e1783"
+    },
+    {
+      "name": "female-base-9.bin.gz",
+      "bytes": 2296708,
+      "sha256": "ea0a89fe9b0d9dfd1e0fc8a21674e864d2b0938ecc40423cf03965c65c1a6a67"
+    },
+    {
+      "name": "female-base-10.bin.gz",
+      "bytes": 2298571,
+      "sha256": "e1e8d3897e1a164c810a14f49bf901d4f39ee9f1f52bb775904e2ee606c512e3"
+    },
+    {
+      "name": "female-base-11.bin.gz",
+      "bytes": 2302440,
+      "sha256": "24979f2f2a46266b2e06de588b5164d4a5a066182eb2a13c03c58b16663cdaeb"
+    },
+    {
+      "name": "female-base-12.bin.gz",
+      "bytes": 2608638,
+      "sha256": "90a09e2d11cff48bfe1b766fe7e90a8682e2c3e3b10098d607207c89e6ceaaad"
+    },
+    {
+      "name": "female-base-13.bin.gz",
+      "bytes": 2387855,
+      "sha256": "3f9ac79f7e260a495b3ef425255b007e5f014790cb6d231d32853858a0d6d516"
+    },
+    {
+      "name": "female-base-14.bin.gz",
+      "bytes": 2352106,
+      "sha256": "36e5e66cd2e565d06b19e7dec264da9a1cb21c66b4d8a186109405be1bd9d6c1"
+    },
+    {
+      "name": "female-base-15.bin.gz",
+      "bytes": 177424,
+      "sha256": "1f29d60df0b4b8d56ae1a9f5cf1f875b607f184dc855c8de84d52bfdf6e98277"
+    },
+    {
+      "name": "female-joint-additions-8d95b6b434cd4e04.bin.gz",
+      "bytes": 9333,
+      "sha256": "4d4de687fbe5c0ba8a843088e32550380e6695bc4f307cee88afc7cd674888c6"
+    }
+  ]
+}

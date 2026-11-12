@@ -1,0 +1,50 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "main",
+  "description": "Main window can open author, project, open-source credit and anatomy source links.",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    "core:window:allow-set-title",
+    "allow-check-update",
+    "allow-install-update",
+    "allow-restart-updated-app",
+    {
+      "identifier": "opener:allow-open-url",
+      "allow": [
+        { "url": "https://www.sunky.net" },
+        { "url": "https://www.sunky.net/" },
+        { "url": "https://github.com/isunky/Anatolume" },
+        { "url": "https://github.com/isunky/Anatolume/blob/main/public/ATTRIBUTION.md" },
+        { "url": "https://github.com/isunky/Anatolume/blob/main/docs/LOCALIZATION.md" },
+        { "url": "https://github.com/ashemag/human-atlas" },
+        { "url": "https://github.com/PrejudiceNeutrino/human-atlas-enhanced" },
+        { "url": "https://github.com/PrejudiceNeutrino" },
+        { "url": "https://lod.humanatlas.io/ref-organ/united-female/v1.5" },
+        { "url": "https://react.dev/" },
+        { "url": "https://threejs.org/" },
+        { "url": "https://tauri.app/" },
+        { "url": "https://vite.dev/" },
+        { "url": "https://tailwindcss.com/" },
+        { "url": "https://base-ui.com/" },
+        { "url": "https://lucide.dev/" },
+        { "url": "https://github.com/zeux/meshoptimizer" },
+        { "url": "https://lifesciencedb.jp/bp3d/" },
+        { "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/*" },
+        { "url": "https://academic.oup.com/nar/article/37/suppl_1/D782/1000752" },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-6-anatomical-terminology"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-1-the-pectoral-girdle"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+        }
+      ]
+    }
+  ]
+}

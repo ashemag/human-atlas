@@ -1,0 +1,249 @@
+name: Manual version, build and release
+run-name: Release ${{ inputs.bump }} from ${{ github.ref_name }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      bump:
+        description: Version increment to publish from main
+        type: choice
+        default: patch
+        options:
+          - patch
+          - minor
+          - major
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.repository }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  version:
+    name: Plan synchronized version
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.plan.outputs.version }}
+      tag: ${{ steps.plan.outputs.tag }}
+      release: ${{ steps.plan.outputs.release }}
+      prerelease: ${{ steps.plan.outputs.prerelease }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '26'
+      - name: Compute next version or reuse this run's existing tag
+        id: plan
+        env:
+          RELEASE_ENABLED: ${{ github.ref == 'refs/heads/main' && github.event_name == 'workflow_dispatch' }}
+          VERSION_BUMP: ${{ inputs.bump || 'patch' }}
+        run: node scripts/release-version.mjs plan
+
+  checks:
+    name: Core checks and frontend builds
+    needs: version
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '26'
+          cache: npm
+      - name: Apply planned version
+        env:
+          RELEASE_VERSION: ${{ needs.version.outputs.version }}
+        run: node scripts/release-version.mjs sync "$RELEASE_VERSION"
+      - run: npm ci
+      - name: Types, locales, atlas, interactions and Web/Pages/client builds
+        run: npm run ci:check
+
+  windows:
+    name: Windows x64 installer and portable
+    needs: [version, checks]
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '26'
+          cache: npm
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: src-tauri
+      - name: Apply planned version
+        env:
+          RELEASE_VERSION: ${{ needs.version.outputs.version }}
+        run: node scripts/release-version.mjs sync "$env:RELEASE_VERSION"
+      - run: npm ci
+      - run: cargo fmt --manifest-path src-tauri/Cargo.toml -- --check
+      - run: cargo test --manifest-path src-tauri/Cargo.toml --lib --locked
+      - name: Build signed Windows updater and installer
+        env:
+          TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
+          TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
+        run: npm run client:build
+      - name: Package installer and portable ZIP
+        env:
+          RELEASE_VERSION: ${{ needs.version.outputs.version }}
+          TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
+          TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
+        run: node scripts/release-assets.mjs windows
+      - uses: actions/upload-artifact@v7
+        with:
+          name: release-Windows-${{ needs.version.outputs.version }}
+          path: release-assets/*
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 30
+
+  macos:
+    name: macOS universal (Intel and Apple Silicon)
+    needs: [version, checks]
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '26'
+          cache: npm
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: aarch64-apple-darwin,x86_64-apple-darwin
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: src-tauri
+      - name: Apply planned version
+        env:
+          RELEASE_VERSION: ${{ needs.version.outputs.version }}
+        run: node scripts/release-version.mjs sync "$RELEASE_VERSION"
+      - run: npm ci
+      - run: cargo fmt --manifest-path src-tauri/Cargo.toml -- --check
+      - run: cargo test --manifest-path src-tauri/Cargo.toml --lib --locked
+      - name: Build signed universal macOS updater and DMG
+        env:
+          TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
+          TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
+        run: npm run client:build:mac
+      - name: Verify universal architectures and ad-hoc signature
+        shell: bash
+        run: |
+          app="src-tauri/target/universal-apple-darwin/release/bundle/macos/Anatolume.app"
+          executable="$(/usr/libexec/PlistBuddy -c 'Print :CFBundleExecutable' "$app/Contents/Info.plist")"
+          binary="$app/Contents/MacOS/$executable"
+          archs="$(lipo -archs "$binary")"
+          [[ "$archs" == *arm64* && "$archs" == *x86_64* ]]
+          codesign --verify --deep --strict --verbose=2 "$app"
+      - name: Package universal DMG
+        env:
+          RELEASE_VERSION: ${{ needs.version.outputs.version }}
+        run: node scripts/release-assets.mjs macos
+      - uses: actions/upload-artifact@v7
+        with:
+          name: release-macOS-${{ needs.version.outputs.version }}
+          path: release-assets/*
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 30
+
+  web:
+    name: Web archive and Pages artifact
+    needs: [version, checks]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '26'
+          cache: npm
+      - name: Apply planned version
+        env:
+          RELEASE_VERSION: ${{ needs.version.outputs.version }}
+        run: node scripts/release-version.mjs sync "$RELEASE_VERSION"
+      - run: npm ci
+      - run: npm run build
+      - name: Package deployable Web ZIP
+        env:
+          RELEASE_VERSION: ${{ needs.version.outputs.version }}
+        run: node scripts/release-assets.mjs web
+      - uses: actions/upload-artifact@v7
+        with:
+          name: release-Web-${{ needs.version.outputs.version }}
+          path: release-assets/*
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 30
+      - uses: actions/upload-pages-artifact@v5
+        if: needs.version.outputs.release == 'true'
+        with:
+          path: dist
+
+  release:
+    name: Publish complete multiplatform release
+    if: needs.version.outputs.release == 'true' && github.ref == 'refs/heads/main' && github.event_name == 'workflow_dispatch'
+    needs: [version, checks, windows, macos, web]
+    outputs:
+      published: ${{ steps.publish.outputs.published }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '26'
+      - uses: actions/download-artifact@v8
+        with:
+          pattern: release-*-${{ needs.version.outputs.version }}
+          merge-multiple: true
+          path: release-assets
+      - name: Verify all platform checksums and source provenance
+        env:
+          RELEASE_VERSION: ${{ needs.version.outputs.version }}
+        run: |
+          node scripts/release-version.mjs sync "$RELEASE_VERSION"
+          npm ci
+          node scripts/release-assets.mjs merge
+      - name: Commit version, tag and publish complete release
+        id: publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_VERSION: ${{ needs.version.outputs.version }}
+          VERSION_BUMP: ${{ inputs.bump || 'patch' }}
+        run: node scripts/publish-release.mjs publish
+
+  pages:
+    name: Deploy released Web version to GitHub Pages
+    needs: release
+    if: needs.release.outputs.published == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy matching Web artifact
+        id: deployment
+        uses: actions/deploy-pages@v5

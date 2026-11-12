@@ -1,0 +1,31 @@
+[package]
+name = "anatolume"
+version = "1.5.0"
+description = "Offline bilingual anatomy explorer"
+authors = ["isunky"]
+edition = "2021"
+license = "MIT"
+
+[lib]
+name = "anatolume_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-opener = "=2.7.3"
+tauri-plugin-updater = "=2.13.3"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[target.'cfg(windows)'.dependencies]
+self-replace = "1.5"
+tempfile = "3"
+zip = { version = "2", default-features = false, features = ["deflate"] }
+
+[profile.release]
+codegen-units = 1
+lto = true
+strip = true

@@ -33,7 +33,13 @@ yarn-error.log*
 .vercel
 next-env.d.ts
 /dist/
+/dist-client/
+/src-tauri/target/
+/src-tauri/gen/schemas/
+/output/
+/.playwright-cli/
 /.wrangler/
 /outputs/
 /work/
+/release-assets/
 *.tsbuildinfo

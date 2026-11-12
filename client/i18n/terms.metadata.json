@@ -1,0 +1,19 @@
+{
+  "status": "draft",
+  "source": "BodyParts3D 4.0 and HRA female study model English names",
+  "method": "Offline anatomical stem dictionary, reviewed compound terms, and qualifier-preserving composition.",
+  "entries": 5172,
+  "models": [
+    {
+      "sex": "male",
+      "parts": 2234,
+      "concepts": 3432
+    },
+    {
+      "sex": "female",
+      "parts": 2245,
+      "concepts": 4248
+    }
+  ],
+  "reviewNote": "Full Chinese draft; not professionally reviewed. Preserve English names and source identifiers when correcting terms."
+}

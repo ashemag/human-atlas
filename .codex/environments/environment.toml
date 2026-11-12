@@ -1,0 +1,25 @@
+version = 1
+name = "Anatolume"
+
+[setup]
+script = "npm ci --no-audit --no-fund"
+
+[[actions]]
+name = "网页预览"
+icon = "run"
+command = "npm run dev"
+
+[[actions]]
+name = "桌面调试"
+icon = "run"
+command = "npm run client:dev"
+
+[[actions]]
+name = "检查代码"
+icon = "run"
+command = "npm run check"
+
+[[actions]]
+name = "打包安装包"
+icon = "run"
+command = "npm run client:build -- --config src-tauri/tauri.local.conf.json"

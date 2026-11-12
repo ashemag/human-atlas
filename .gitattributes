@@ -1,0 +1,3 @@
+# Preserve imported source records byte for byte across Windows/macOS/Linux.
+public/models/atlas-female.json -text
+public/models/female-fit-report.json -text

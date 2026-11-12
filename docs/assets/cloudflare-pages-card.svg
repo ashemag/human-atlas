@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="288" height="80" viewBox="0 0 288 80" role="img" aria-labelledby="title desc">
+  <title id="title">在线体验 / Try online · Cloudflare Pages</title>
+  <desc id="desc">打开层知 Anatolume 的 Cloudflare Pages 在线图谱</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="288" y2="76" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#faf7f1"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="4" width="286" height="76" rx="18" fill="#33483d" opacity=".04"/>
+  <rect x=".5" y=".5" width="287" height="75" rx="17.5" fill="url(#background)" stroke="#e7e2d8"/>
+  <rect x="17" y="16" width="44" height="44" rx="13" fill="#fff0db"/>
+  <path d="M24 42a7 7 0 0 1 6-7 10 10 0 0 1 19 2 5 5 0 0 1 5 5Z" fill="#d99849"/>
+  <path d="M23 44h25m-21 4h29" fill="none" stroke="#e9b673" stroke-width="2.5" stroke-linecap="round"/>
+  <g font-family="Segoe UI,Microsoft YaHei,PingFang SC,sans-serif">
+    <text x="77" y="34" fill="#33473d" font-size="17" font-weight="600">Cloudflare Pages</text>
+    <text x="77" y="54" fill="#66786e" font-size="12">在线体验 · Try online</text>
+  </g>
+  <circle cx="256" cy="38" r="13" fill="#eeeee6"/>
+  <path d="m251 43 10-10m-9 0h9v9" fill="none" stroke="#6d8577" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

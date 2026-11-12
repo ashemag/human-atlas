@@ -55,10 +55,12 @@ function ComboboxInput({
   disabled = false,
   showTrigger = true,
   showClear = false,
+  endAdornment,
   ...props
 }: ComboboxPrimitive.Input.Props & {
   showTrigger?: boolean;
   showClear?: boolean;
+  endAdornment?: React.ReactNode;
 }) {
   return (
     <InputGroup className={cn('w-auto', className)}>
@@ -78,6 +80,7 @@ function ComboboxInput({
           />
         )}
         {showClear && <ComboboxClear disabled={disabled} />}
+        {endAdornment}
       </InputGroupAddon>
       {children}
     </InputGroup>
