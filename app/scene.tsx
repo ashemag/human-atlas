@@ -8,6 +8,7 @@ import { RoomEnvironment } from "three/examples/jsm/environments/RoomEnvironment
 import { mergeGeometries } from "three/examples/jsm/utils/BufferGeometryUtils.js";
 import { createExplosionLayout, createSystemSeparationLayout } from "./core/explosion-layout";
 import { decodeModelResponse } from "./core/model-download";
+import { prepareShaders } from "./core/shader-preparation";
 import { staticAssetUrl } from "./core/static-asset";
 import { PointerTap } from "./core/pointer-tap";
 import { isPartVisible } from "./core/privacy-mode";
@@ -55,6 +56,7 @@ export default function AnatomyScene({
   useEffect(() => {
     const el = host.current!;
     let disposed = false,
+      contextUnavailable = false,
       frame = 0,
       dirty = true,
       ready = false,
@@ -287,6 +289,27 @@ export default function AnatomyScene({
         return [system.id, material];
       }),
     );
+    // Compile against the final lights and environment while chunks download.
+    // Real meshes are kept hidden until this finishes, so they cannot force a
+    // synchronous shader link on the first frame. Unsupported GPUs fall back.
+    const warmupGeometry = new T.BufferGeometry();
+    warmupGeometry.setAttribute("position", new T.Float32BufferAttribute([0, 0, 0, 1, 0, 0, 0, 1, 0], 3));
+    warmupGeometry.setAttribute("normal", new T.Float32BufferAttribute([0, 0, 1, 0, 0, 1, 0, 0, 1], 3));
+    warmupGeometry.setAttribute("partIndex", new T.Float32BufferAttribute([0, 0, 0], 1));
+    const warmupGroup = new T.Group();
+    mats.forEach((material) => warmupGroup.add(new T.Mesh(warmupGeometry, material)));
+    let shadersReady = !renderer.extensions.has("KHR_parallel_shader_compile");
+    const shaderPreparation = prepareShaders(!shadersReady,
+      () => renderer.compileAsync(warmupGroup, camera, scene), abort.signal)
+      .finally(() => {
+        warmupGeometry.dispose();
+        if (!disposed && !contextUnavailable) {
+          shadersReady = true;
+          lastState = null;
+          dirty = true;
+          requestFrame();
+        }
+      });
     const batches: DrawBatch[] = [];
     const partVisibility = new Uint8Array(atlas.parts.length);
     let loaded = 0;
@@ -295,7 +318,7 @@ export default function AnatomyScene({
         compressed = !!chunk.gzip;
       const response = await fetch(staticAssetUrl(compressed ? chunk.gzip! : chunk.url), { signal: abort.signal });
       const buffer = await decodeModelResponse(response, chunk.bytes, compressed);
-      if (disposed) return;
+      if (disposed || contextUnavailable) return;
       const groups = new Map<string, { geometry: T.BufferGeometry; part: number }[]>();
       atlas.parts.forEach((p, i) => {
         if (p.chunk !== ci) return;
@@ -354,7 +377,7 @@ export default function AnatomyScene({
       });
       lastState = null;
       loaded++;
-      onProgress(Math.round((loaded / atlas.chunks.length) * 100));
+      onProgress(Math.min(99, Math.round((loaded / atlas.chunks.length) * 100)));
       dirty = true;
       requestFrame();
     };
@@ -369,13 +392,15 @@ export default function AnatomyScene({
             }
           }),
         );
-        if (!disposed) {
+        await shaderPreparation;
+        if (!disposed && !contextUnavailable) {
           ready = true;
+          onProgress(100);
           dirty = true;
           requestFrame();
         }
       } catch (e) {
-        if (!disposed) onError(e instanceof Error ? e.message : "Could not load the anatomy.");
+        if (!disposed && !contextUnavailable) onError(e instanceof Error ? e.message : "Could not load the anatomy.");
       }
     })();
     const viewDirection = (view: string) => (
@@ -585,6 +610,7 @@ export default function AnatomyScene({
           if (amount > 0.05 && !s.isolate) fit(s.view, amount);
         }
         updateDrawBatches(batches, partVisibility);
+        if (!shadersReady) batches.forEach(({ mesh }) => { mesh.visible = false; });
         selectionTexture.needsUpdate = true;
       }
 
@@ -926,6 +952,8 @@ export default function AnatomyScene({
     requestFrame();
     const contextLost = (e: Event) => {
       e.preventDefault();
+      contextUnavailable = true;
+      abort.abort();
       onError("The 3D session was paused by your device. Reload to continue.");
     };
     renderer.domElement.addEventListener("webglcontextlost", contextLost);

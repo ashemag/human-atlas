@@ -6,6 +6,24 @@ import {atlasTools} from '../app/core/agent-tools.ts';
 import {randomOrganCandidates,pickRandomOrgan} from '../app/core/random-organ.ts';
 import {privacyHiddenParts,isPartVisible,readPrivacyMode,PRIVACY_MODE_STORAGE_KEY} from '../app/core/privacy-mode.ts';
 import {systemStructures,clearStructureOverrides,explicitSystemOverrides,hideSelectedStructure} from '../app/core/structure-layers.ts';
+import {prepareShaders} from '../app/core/shader-preparation.ts';
+
+{
+  const controller = new AbortController();
+  let calls = 0;
+  await prepareShaders(false, () => { calls++; return Promise.resolve(); }, controller.signal);
+  assert.equal(calls, 0, 'Unsupported contexts skip shader prewarming');
+  await prepareShaders(true, () => { calls++; return Promise.resolve(); }, controller.signal);
+  assert.equal(calls, 1, 'Supported contexts prewarm shaders');
+  await prepareShaders(true, () => Promise.reject(new Error('compile failed')), controller.signal);
+  await prepareShaders(true, () => new Promise(() => {}), controller.signal, 5);
+  const cancelled = new AbortController();
+  const pending = prepareShaders(true, () => new Promise(() => {}), cancelled.signal, 1000);
+  cancelled.abort();
+  await pending;
+  await prepareShaders(true, () => { throw new Error('aborted work must not start'); }, cancelled.signal);
+  console.log('Shader prewarming supports fallback, timeout and cancellation.');
+}
 
 for (const file of ['atlas.json', 'atlas-female.json']) {
   const atlas=JSON.parse(await readFile(new URL(`../public/models/${file}`,import.meta.url)));
